@@ -1,0 +1,16 @@
+# KiCad machine-specific state, locks and automatic backups
+*.kicad_prl
+*.lck
+*.bak
+*-backups/
+_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+.history/
+fp-info-cache
+# OS/editor/Python temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc

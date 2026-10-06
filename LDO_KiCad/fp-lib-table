@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "LDO_Power") (type "KiCad") (uri "${KIPRJMOD}/LDO_Power.pretty") (options "") (descr "TI DRB0008A land pattern")))

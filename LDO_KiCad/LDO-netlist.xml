@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\jyasu\OneDrive - purdue.edu\Class\Fall 2026\Senior Design\Delivery_Robot_PCB\LDO_KiCad\STM32_LDO.kicad_sch</source>
+    <date>2026-10-05T20:21:16</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>LDO supply - integration example</title>
+        <company>Senior Design</company>
+        <rev>1.0</rev>
+        <date>2026-10-05</date>
+        <source>STM32_LDO.kicad_sch</source>
+        <comment number="1" value="5 V to 3.3 V, 1 A total rail capacity"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/LDO Power/" tstamps="/026c5c7e-ba70-4993-aaba-279397872ebb/">
+      <title_block>
+        <title>LDO power supply - reusable sheet</title>
+        <company>Senior Design</company>
+        <rev>1.0</rev>
+        <date>2026-10-05</date>
+        <source>LDO_Power.kicad_sch</source>
+        <comment number="1" value="5 V to 3.3 V, 1 A total rail capacity"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="TP1">
+      <value>3V3 test point</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="STM32_LDO"/>
+      <property name="Sheetfile" value="STM32_LDO.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5736637c-3db9-48d1-a791-e2b722761741</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>1uF / 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">EMK107B7105KA-T</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="EMK107B7105KA-T"/>
+      <property name="Manufacturer" value="Taiyo Yuden"/>
+      <property name="Sheetname" value="LDO Power"/>
+      <property name="Sheetfile" value="LDO_Power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/LDO Power/" tstamps="/026c5c7e-ba70-4993-aaba-279397872ebb/"/>
+      <tstamps>ed85134e-1de8-42e7-b0f0-549eeedabe8b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>10uF / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">C2012X7R1A106K125AC</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C2012X7R1A106K125AC"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Sheetname" value="LDO Power"/>
+      <property name="Sheetfile" value="LDO_Power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/LDO Power/" tstamps="/026c5c7e-ba70-4993-aaba-279397872ebb/"/>
+      <tstamps>a201313e-b22b-4b7c-abee-e6b99f3f7ef9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>470nF / 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Sheetname" value="LDO Power"/>
+      <property name="Sheetfile" value="LDO_Power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/LDO Power/" tstamps="/026c5c7e-ba70-4993-aaba-279397872ebb/"/>
+      <tstamps>7486ddd4-4e0a-4f03-b915-9f7f4384a9de</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>470nF / 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Sheetname" value="LDO Power"/>
+      <property name="Sheetfile" value="LDO_Power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/LDO Power/" tstamps="/026c5c7e-ba70-4993-aaba-279397872ebb/"/>
+      <tstamps>edfe535f-6ef9-4d68-963f-4692262450f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>31.2k / 0.1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Sheetname" value="LDO Power"/>
+      <property name="Sheetfile" value="LDO_Power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/LDO Power/" tstamps="/026c5c7e-ba70-4993-aaba-279397872ebb/"/>
+      <tstamps>e300e6c6-0252-4757-b61d-e2a74fafd5ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k / 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Sheetname" value="LDO Power"/>
+      <property name="Sheetfile" value="LDO_Power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/LDO Power/" tstamps="/026c5c7e-ba70-4993-aaba-279397872ebb/"/>
+      <tstamps>650c189d-0cea-4ad1-b867-eafd71d9bf39</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>TPS7A8101DRBR</value>
+      <footprint>LDO_Power:TI_DRB0008A_VSON8_3x3mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps7a8101.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS7A8101DRBR</field>
+        <field name="Footprint">LDO_Power:TI_DRB0008A_VSON8_3x3mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps7a8101.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LDO_Power" part="TPS7A8101DRBR" description="1 A adjustable LDO; EP pad 9 connects to ground"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="TPS7A8101DRBR"/>
+      <property name="Sheetname" value="LDO Power"/>
+      <property name="Sheetfile" value="LDO_Power.kicad_sch"/>
+      <sheetpath names="/LDO Power/" tstamps="/026c5c7e-ba70-4993-aaba-279397872ebb/"/>
+      <tstamps>05f6e360-a866-41f7-af61-c9c50b9fc1c3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LDO_Power" part="TPS7A8101DRBR">
+      <description>1 A adjustable LDO; EP pad 9 connects to ground</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps7a8101.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS7A8101DRBR</field>
+        <field name="Footprint">LDO_Power:TI_DRB0008A_VSON8_3x3mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps7a8101.pdf</field>
+        <field name="Description">1 A adjustable LDO; EP pad 9 connects to ground</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="power_out"/>
+        <pin num="2" name="OUT" type="passive"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="NR" type="passive"/>
+        <pin num="7" name="IN" type="power_in"/>
+        <pin num="8" name="IN" type="power_in"/>
+        <pin num="9" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="LDO_Power">
+      <uri>${KIPRJMOD}/LDO_Power.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="EP_9" pintype="passive"/>
+    </net>
+    <net code="2" name="/VIN_5V" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="EN_5" pintype="input"/>
+      <node ref="U1" pin="7" pinfunction="IN_7" pintype="power_in"/>
+      <node ref="U1" pin="8" pinfunction="IN_8" pintype="power_in"/>
+    </net>
+    <net code="3" name="/VOUT_3V3" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="OUT_1" pintype="power_out"/>
+      <node ref="U1" pin="2" pinfunction="OUT_2" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(U1-FB)" class="Default">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="FB_3" pintype="input"/>
+    </net>
+    <net code="5" name="Net-(U1-NR)" class="Default">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="NR_6" pintype="passive"/>
+    </net>
+  </nets>
+</export>

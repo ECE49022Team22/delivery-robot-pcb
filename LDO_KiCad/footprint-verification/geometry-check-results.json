@@ -1,0 +1,12 @@
+{
+  "source": "TI TPS7A8101 datasheet, DRB0008A drawing 4218875/A, pages 25-27; pin table page 3",
+  "footprint_sha256": "cd5c19929da404239c84a2e4f173ba3feb73d67bcb5e83fc81adcfd36f98d765",
+  "datasheet_sha256": "f087223cc240f3e448482c25f3ee823e6f67b999d7c252f032e8489e149b558c",
+  "checks": [
+    "PASS: pads 1-8 positions, size, pitch, numbering, copper/mask/paste layers and R0.05 corners",
+    "PASS: central EP 1.5 x 1.75 and four 0.23-wide copper extensions; all assigned ground pad 9",
+    "PASS: TI stencil central aperture and four tabs; overall tab extent 2.674 mm",
+    "PASS: explicit +0.07 mm mask expansion; no additional paste shrink"
+  ],
+  "scope": "Nominal footprint geometry and pin mapping. Not manufacturing, thermal or assembly approval."
+}
