@@ -1,8 +1,22 @@
 # Power supply integration
 
-The root schematic contains two separate buck converter outputs:
-- TPS54202: +5V, 2A.
-- TPSM63606: +5V, 6A.
+The power supply is split into hierarchical sheets. The root schematic keeps the 12 V input connector and fuse (J2, F1) and connects each sheet through global labels (+12V, GND and the rail names).
+
+| Sheet file | Sheet name | Regulator | Input | Output net |
+| --- | --- | --- | --- | --- |
+| Buck_5V_2A.kicad_sch | Buck 12V-5V 2A | TPS54202DDCR (U3) | +12V | +5V, 2A |
+| Buck_5V_6A.kicad_sch | Buck 12V-5V 6A | TPSM63606RDLR (U2) | +12V | +5V, 6A |
+| LDO_3V3.kicad_sch | LDO Power | TPS7A8101DRBR (U4) | +5V, 2A | +3V3 |
+
+Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The two buck outputs are separate nets and must not be tied together. The +5V, 6A net currently has no loads other than U2's own output capacitors.
+
+The regulator symbols (U2, U3) carry the datasheet link, product page, key specifications and design notes in their symbol properties.
+
+Open items from the sheet split:
+- U2: C9 (1 uF) sits on VLDOIN/VOUT while VCC (pin 7) is flagged no-connect. The datasheet calls for 1 uF from VCC to AGND, so C9 placement needs checking.
+- U2: R4 = 40k and R5 = 10k give about 5.0 V, while the old schematic note said 5.1 V.
+- U3: EN (pin 5) is flagged no-connect; confirm a floating EN is allowed, otherwise tie it to VIN.
+- U3: R6 = 100k and R7 = 13.7k give about 4.95 V assuming a 0.596 V reference; verify against the datasheet.
 
 The TPS7A8101 LDO in LDO_3V3.kicad_sch is supplied by the +5V, 2A rail. Its +3V3 output supplies the STM32 digital power pins, associated decoupling, programming-header supply, and the FB2 input feeding the separate +3.3VA analog rail. The two buck outputs are separate nets.
 
