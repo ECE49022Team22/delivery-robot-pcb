@@ -44,7 +44,7 @@ C14 retains 22 uF with a 50 V X7R part to provide voltage headroom and room for 
 - [Murata 470 nF reference sheet](https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C474KA88-01A.pdf): 0603, 16 V X7R.
 - Coilcraft Document 887, page 4: nominal body 6.56 x 6.36 mm, maximum height 6.1 mm; recommended two 1.43 x 5.50 mm pads on 4.04 mm centers. The installed KiCad XAL6060 footprint exactly matches those pad sizes and center spacing. Place the marked winding start toward the SW node as recommended for EMI; the inductor is electrically nonpolarized.
 
-Existing MCU ceramic footprints are retained; this change does not assign their purchasing part numbers. C5/C6 remain unassigned because their values and Y3 crystal specification are undecided. F1/J2/Y3 remain other outstanding footprint choices. Input transient suppression, input bulk damping, capacitor RMS heating, final loop stability and PCB thermal/layout review remain separate work.
+Existing MCU bypass-capacitor footprints are retained; this power-passive selection does not assign their purchasing part numbers. Y3 and C5/C6 were subsequently selected together; see [clock-selection.md](clock-selection.md) for the 8 MHz crystal, 16 pF C0G pair and manufacturer land-pattern checks. F1/J2 remain outstanding footprint choices. Input transient suppression, input bulk damping, capacitor RMS heating, final loop stability and PCB thermal/layout review remain separate work.
 
 ## Verification
 

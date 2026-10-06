@@ -96,5 +96,26 @@
     "Murata",
     "GRM188R71C474KA88D",
     "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C474KA88-01A.pdf"
+  ],
+  "Y3": [
+    "8MHz / CL=18pF / ESR<=200 ohm",
+    "Crystal:Crystal_SMD_Abracon_ABM3B-4Pin_5.0x3.2mm",
+    "Abracon",
+    "ABM3B-8.000MHZ-B2-T",
+    "https://abracon.com/Resonators/abm3b.pdf"
+  ],
+  "C5": [
+    "16pF / 50V C0G / 5%",
+    "project_footprints:C_Murata_GRM1885C1H160JA01",
+    "Murata",
+    "GRM1885C1H160JA01D",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H160JA01-01A.pdf"
+  ],
+  "C6": [
+    "16pF / 50V C0G / 5%",
+    "project_footprints:C_Murata_GRM1885C1H160JA01",
+    "Murata",
+    "GRM1885C1H160JA01D",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H160JA01-01A.pdf"
   ]
 }

@@ -14518,7 +14518,7 @@
 				)
 			)
 		)
-		(property "Value" "Crystal_GND24"
+		(property "Value" "8MHz"
 			(at 54.61 90.0998 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14528,7 +14528,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM3B-4Pin_5.0x3.2mm"
 			(at 43.18 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -14539,7 +14539,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://abracon.com/Resonators/abm3b.pdf"
 			(at 43.18 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -14551,6 +14551,39 @@
 			)
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 43.18 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Abracon"
+			(at 43.18 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ABM3B-8.000MHZ-B2-T"
+			(at 43.18 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "8MHz / CL=18pF / ESR<=200 ohm"
 			(at 43.18 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -15622,7 +15655,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "16pF"
 			(at 38.1 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15633,7 +15666,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "project_footprints:C_Murata_GRM1885C1H160JA01"
 			(at 35.2552 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15644,7 +15677,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H160JA01-01A.pdf"
 			(at 34.29 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -15656,6 +15689,39 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 34.29 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 34.29 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM1885C1H160JA01D"
+			(at 34.29 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "16pF / 50V C0G / 5%"
 			(at 34.29 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -16270,7 +16336,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "16pF"
 			(at 54.61 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16281,7 +16347,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "project_footprints:C_Murata_GRM1885C1H160JA01"
 			(at 51.7652 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -16292,7 +16358,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H160JA01-01A.pdf"
 			(at 50.8 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -16304,6 +16370,39 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 50.8 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 50.8 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM1885C1H160JA01D"
+			(at 50.8 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "16pF / 50V C0G / 5%"
 			(at 50.8 101.6 0)
 			(hide yes)
 			(show_name no)
