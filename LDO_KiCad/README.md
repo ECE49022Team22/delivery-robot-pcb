@@ -37,7 +37,7 @@ You can also copy/paste the components and wires into a flat system schematic, r
 
 - TPS7A8101DRBR, 5 V nominal input, 3.296 V nominal output, **1 A combined rail capacity**.
 - R1 31.2 kΩ / 0.1%; R2 10 kΩ / 1%; C1 1 µF; C2 10 µF; C3/C4 470 nF.
-- C1 Taiyo Yuden EMK107B7105KA-T; C2 TDK C2012X7R1A106K125AC. Resistor and C3/C4 procurement part numbers remain TBD; footprints and ratings are assigned.
+- C1 Murata GRM188R71C105KA12D; C2 TDK C2012X7R1A106K125AC; C3/C4 Murata GRM188R71C474KA88D. Resistor procurement part numbers remain TBD; both resistor footprints are 0805. See ../docs/passive-selection-review.md for selection rationale and remaining electrical checks.
 - Custom U1 symbol follows TI's pin-function table. Pad 9 represents the exposed ground pad. OUT pin 2 is typed passive to represent its intentional connection to OUT pin 1 without declaring a second independent power source.
 - Local footprint was dimensionally verified and corrected against TI DRB0008A drawing 4218875/A: 0.65 mm pitch, 0.6 × 0.31 mm lead pads, 1.5 × 1.75 mm central exposed pad with four narrow extensions, and TI's central paste aperture plus four extensions. See `footprint-verification/VERIFICATION.md` for the full comparison and actual KiCad layer plots. Thermal vias must be added during PCB layout; confirm fabrication and assembly requirements before manufacturing.
 - KiCad ERC passed with **0 errors and 0 warnings** on the parent + child project. The exported netlist was checked against the intended five circuit nets and all nine U1 pads.

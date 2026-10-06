@@ -10554,7 +10554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 93.6752 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -10565,7 +10565,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H680JA01-01A.pdf"
 			(at 92.71 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10600,6 +10600,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 92.71 186.69 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "GRM1885C1H680JA01D"
+			(at 92.71 186.69 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "68pF / 50V C0G"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -10636,7 +10651,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "project_footprints:C_TDK_C5750X7R1H226M250KB"
 			(at 18.7452 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -10647,7 +10662,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C5750X7R1H226M250KB"
 			(at 17.78 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -10682,6 +10697,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 17.78 190.5 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "C5750X7R1H226M250KB"
+			(at 17.78 190.5 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "22uF / 50V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -12149,7 +12179,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "project_footprints:C_Murata_GRM32ER71A476ME15"
 			(at 148.2852 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -12160,7 +12190,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf"
 			(at 147.32 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -12195,6 +12225,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 147.32 237.49 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "GRM32ER71A476ME15L"
+			(at 147.32 237.49 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "47uF / 10V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -12933,7 +12978,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "project_footprints:C_Murata_GRM32ER71A476ME15"
 			(at 124.1552 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -12944,7 +12989,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf"
 			(at 123.19 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -12979,6 +13024,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 123.19 193.04 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "GRM32ER71A476ME15L"
+			(at 123.19 193.04 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "47uF / 10V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -14373,7 +14433,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 121.6152 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -14384,7 +14444,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H8R2DA01-01A.pdf"
 			(at 120.65 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -14419,6 +14479,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 120.65 237.49 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "GRM1885C1H8R2DA01D"
+			(at 120.65 237.49 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "8.2pF / 50V C0G"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -15015,7 +15090,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 78.74 181.9148 0)
 			(hide yes)
 			(show_name no)
@@ -15026,7 +15101,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
 			(at 74.93 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -15061,6 +15136,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 74.93 182.88 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "C1608X7R1H104K080AA"
+			(at 74.93 182.88 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "100nF / 50V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -15097,7 +15187,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 31.4452 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -15108,7 +15198,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf"
 			(at 30.48 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -15143,6 +15233,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 30.48 255.27 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "GRM188R71C105KA12D"
+			(at 30.48 255.27 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "1uF / 16V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -15254,7 +15359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 18.7452 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -15265,7 +15370,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf"
 			(at 17.78 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -15300,6 +15405,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 17.78 232.41 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "GRM32ER71H106KA12L"
+			(at 17.78 232.41 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "10uF / 50V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -15336,7 +15456,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "project_footprints:C_Murata_GRM32ER71A476ME15"
 			(at 135.5852 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -15347,7 +15467,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf"
 			(at 134.62 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -15382,6 +15502,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 134.62 237.49 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "GRM32ER71A476ME15L"
+			(at 134.62 237.49 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "47uF / 10V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -16039,7 +16174,7 @@
 				)
 			)
 		)
-		(property "Value" "10uH"
+		(property "Value" "15uH"
 			(at 85.09 180.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16049,7 +16184,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL6060-XXX"
 			(at 85.09 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -16060,7 +16195,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/ea51f14b-7f32-4dc6-8dfe-d4b70549040f/xal60xx.pdf"
 			(at 85.09 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -16095,6 +16230,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Coilcraft"
+			(at 85.09 182.88 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "XAL6060-153MEC"
+			(at 85.09 182.88 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "15uH / 20%"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -16369,7 +16519,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 31.4452 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -16380,7 +16530,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf"
 			(at 30.48 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -16415,6 +16565,21 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 30.48 232.41 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "MPN" "GRM32ER71H106KA12L"
+			(at 30.48 232.41 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Specification" "10uF / 50V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol

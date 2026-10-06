@@ -14,6 +14,8 @@ The project-local symbol and footprint tables include all supplied custom power 
 
 All system resistors R1-R9 use Resistor_SMD:R_0805_2012Metric to meet the team's 0805 package requirement. The reusable LDO example uses the same resistor footprint. Resistance values and tolerances are unchanged; select purchasing parts in 0805 with suitable power and working-voltage ratings. Footprint assignment alone does not establish those ratings.
 
+See [passive-selection-review.md](passive-selection-review.md) for the capacitor/inductor purchasing candidates, manufacturer dimensions, L1's 15 uH selection, and outstanding transient checks.
+
 ## Integration validation
 
 validation/verify_integration.py checks the KiCad-exported system netlist against validation/before-integration.xml. It verifies the five LDO nets, all nine U4 pads, MCU supply connections, analog filter input, unique component references, and preservation of the original circuit except the intended VDD/+3V3 merge.

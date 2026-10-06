@@ -1,0 +1,100 @@
+{
+  "C7": [
+    "10uF / 50V X7R",
+    "Capacitor_SMD:C_1210_3225Metric",
+    "Murata",
+    "GRM32ER71H106KA12L",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf"
+  ],
+  "C8": [
+    "10uF / 50V X7R",
+    "Capacitor_SMD:C_1210_3225Metric",
+    "Murata",
+    "GRM32ER71H106KA12L",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf"
+  ],
+  "C9": [
+    "1uF / 16V X7R",
+    "Capacitor_SMD:C_0603_1608Metric",
+    "Murata",
+    "GRM188R71C105KA12D",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf"
+  ],
+  "C10": [
+    "8.2pF / 50V C0G",
+    "Capacitor_SMD:C_0603_1608Metric",
+    "Murata",
+    "GRM1885C1H8R2DA01D",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H8R2DA01-01A.pdf"
+  ],
+  "C11": [
+    "47uF / 10V X7R",
+    "project_footprints:C_Murata_GRM32ER71A476ME15",
+    "Murata",
+    "GRM32ER71A476ME15L",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf"
+  ],
+  "C12": [
+    "47uF / 10V X7R",
+    "project_footprints:C_Murata_GRM32ER71A476ME15",
+    "Murata",
+    "GRM32ER71A476ME15L",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf"
+  ],
+  "C14": [
+    "22uF / 50V X7R",
+    "project_footprints:C_TDK_C5750X7R1H226M250KB",
+    "TDK",
+    "C5750X7R1H226M250KB",
+    "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C5750X7R1H226M250KB"
+  ],
+  "C15": [
+    "100nF / 50V X7R",
+    "Capacitor_SMD:C_0603_1608Metric",
+    "TDK",
+    "C1608X7R1H104K080AA",
+    "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+  ],
+  "C16": [
+    "68pF / 50V C0G",
+    "Capacitor_SMD:C_0603_1608Metric",
+    "Murata",
+    "GRM1885C1H680JA01D",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H680JA01-01A.pdf"
+  ],
+  "C17": [
+    "47uF / 10V X7R",
+    "project_footprints:C_Murata_GRM32ER71A476ME15",
+    "Murata",
+    "GRM32ER71A476ME15L",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf"
+  ],
+  "L1": [
+    "15uH / 20%",
+    "Inductor_SMD:L_Coilcraft_XAL6060-XXX",
+    "Coilcraft",
+    "XAL6060-153MEC",
+    "https://www.coilcraft.com/getmedia/ea51f14b-7f32-4dc6-8dfe-d4b70549040f/xal60xx.pdf"
+  ],
+  "C24": [
+    "1uF / 16V X7R",
+    "Capacitor_SMD:C_0603_1608Metric",
+    "Murata",
+    "GRM188R71C105KA12D",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf"
+  ],
+  "C26": [
+    "470nF / 16V X7R",
+    "Capacitor_SMD:C_0603_1608Metric",
+    "Murata",
+    "GRM188R71C474KA88D",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C474KA88-01A.pdf"
+  ],
+  "C27": [
+    "470nF / 16V X7R",
+    "Capacitor_SMD:C_0603_1608Metric",
+    "Murata",
+    "GRM188R71C474KA88D",
+    "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C474KA88-01A.pdf"
+  ]
+}

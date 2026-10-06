@@ -1285,6 +1285,7 @@
 		)
 		(property "Datasheet" ""
 			(at 165.1 116.84 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1373,8 +1374,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C474KA88-01A.pdf"
 			(at 96.52 116.84 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1393,7 +1395,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "GRM188R71C474KA88D"
 			(at 96.52 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -1417,6 +1419,11 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 96.52 116.84 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -1465,6 +1472,7 @@
 		)
 		(property "Datasheet" ""
 			(at 210.82 106.68 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1566,6 +1574,7 @@
 		)
 		(property "Datasheet" ""
 			(at 165.1 88.9 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1654,8 +1663,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf"
 			(at 76.2 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1674,7 +1684,7 @@
 				)
 			)
 		)
-		(property "MPN" "EMK107B7105KA-T"
+		(property "MPN" "GRM188R71C105KA12D"
 			(at 76.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1685,7 +1695,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Taiyo Yuden"
+		(property "Manufacturer" "Murata"
 			(at 76.2 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -1755,8 +1765,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C474KA88-01A.pdf"
 			(at 190.5 88.9 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1775,7 +1786,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "GRM188R71C474KA88D"
 			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1799,6 +1810,11 @@
 					(unit 1)
 				)
 			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 190.5 88.9 0)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
 		)
 	)
 )
