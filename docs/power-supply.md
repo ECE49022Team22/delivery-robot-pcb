@@ -8,7 +8,26 @@ The power supply is split into hierarchical sheets. The root schematic keeps the
 | Buck_5V_6A.kicad_sch | Buck 12V-5V 6A | TPSM63606RDLR (U2) | +12V | +5V, 6A |
 | LDO_3V3.kicad_sch | LDO Power | TPS7A8101DRBR (U4) | +5V, 2A | +3V3 |
 
-Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The two buck outputs are separate nets and must not be tied together. The +5V, 6A net currently has no loads other than U2's own output capacitors.
+Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The two buck outputs are separate nets and must not be tied together. The +5V, 6A net feeds the off-board Raspberry Pi 5 through F2 and J14.
+
+## Battery input (J2)
+
+The board is powered from a DJLBERMPW 12V 50Ah LiFePO4 battery (12.8 V nominal, 50 A BMS). The battery has M8 (5/16 in) bolt terminals, so it connects to the PCB through a short harness rather than directly:
+
+`battery M8 terminals -> M8 ring lugs -> inline fuse at the battery -> 16 AWG pair -> AMASS XT30U-F plug -> J2`
+
+| Item | Part | Notes |
+| --- | --- | --- |
+| J2 (PCB) | AMASS XT30PW-M, right-angle PCB male | Footprint `Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal`. Rated 15 A continuous, 30 A short-term, 500 V. Keyed housing prevents reversed mating. |
+| Harness plug | AMASS XT30U-F | Female on the battery side so no exposed live contacts when unplugged. |
+| Battery lugs | M8 (5/16 in) ring terminals for 16 AWG | Crimp and heat-shrink. |
+| Harness fuse | Inline fuse close to the battery + terminal | Protects the harness; F1 on the PCB only protects downstream of J2. Size it to the wire and above F1 (7.5 A), e.g. 10 A for 16 AWG. |
+
+J2 pin 2 (the pad marked + on the footprint silkscreen) is battery + to F1; pin 1 (marked -) is GND. Confirm the polarity of the assembled XT30U-F harness against the board silkscreen with a meter before first power-up. The PCB has no reverse-polarity protection, so the keyed connector and harness check are the only safeguards.
+
+J2 carries only the board electronics (about 4.4 A estimated maximum; see [fuse-selection.md](fuse-selection.md)). The MDD20A motor driver connects to the battery through its own wiring and protection, not through J2.
+
+## Regulator notes
 
 The regulator symbols (U2, U3) carry the datasheet link, product page, key specifications and design notes in their symbol properties.
 
