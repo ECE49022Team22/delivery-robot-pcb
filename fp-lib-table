@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "project_footprints")(type "KiCad")(uri "${KIPRJMOD}/libs/project_footprints.pretty")(options "")(descr "Teammate supplied custom footprints"))
+(lib (name "LDO_Power")(type "KiCad")(uri "${KIPRJMOD}/LDO_KiCad/LDO_Power.pretty")(options "")(descr "Verified LDO footprint"))
+)
