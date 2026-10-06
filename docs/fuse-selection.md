@@ -1,6 +1,6 @@
 # F1 battery-input fuse and holder
 
-Selected 2026-10-05. The user confirmed that the requested "F2" means the existing F1, between J2 pin 1 and the +12V net feeding both buck converters. F1 is populated. Connectivity and all other part selections are unchanged. This branch supplies the PCB/Pi electronics; it does not include the separately wired 12 V motor-driver power branch.
+Selected 2026-10-05. The user confirmed that the requested "F2" means the existing F1, between the J2 battery input (+ pin) and the +12V net feeding both buck converters. F1 is populated. Connectivity and all other part selections are unchanged. This branch supplies the PCB/Pi electronics; it does not include the separately wired 12 V motor-driver power branch.
 
 ## Purchasing and assembly
 
@@ -46,4 +46,4 @@ A 7.5 A fuse does **not** open immediately at 7.5 A. The datasheet page 3 openin
 
 F1 provides branch overcurrent protection; it is not a TVS, reverse-polarity protector or a guarantee against semiconductor damage. The PCB fuse does not protect the battery cable segment before F1; protection near the battery must cover that segment. Motor-branch fusing and regenerative transient suppression require their own design. Do not size this PCB fuse to the battery's 50 A BMS rating.
 
-KiCad export verifies that only F1's purchasing fields/value/footprint changed and all component-pin net sets are identical. Clock Y3/C5/C6 remain DNP. J2 remains the sole missing footprint. Physical fit has been checked against the holder drawing; inrush, thermal and fault-current coordination have not been measured or simulated.
+KiCad export verifies that only F1's purchasing fields/value/footprint changed and all component-pin net sets are identical. Clock Y3/C5/C6 remain DNP. J2 was later assigned the AMASS XT30PW-M footprint; see [power-supply.md](power-supply.md#battery-input-j2). Physical fit has been checked against the holder drawing; inrush, thermal and fault-current coordination have not been measured or simulated.

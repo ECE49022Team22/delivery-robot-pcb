@@ -16468,8 +16468,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 35.56 161.29 0)
-		(mirror y)
+		(at 35.56 163.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16477,10 +16476,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5d66bb85-76d8-4901-b677-bf7eb400fe42")
 		(property "Reference" "J2"
-			(at 33.02 161.2899 0)
+			(at 33.02 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16490,8 +16488,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 33.02 163.8299 0)
+		(property "Value" "XT30PW-M"
+			(at 33.02 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16501,7 +16499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
 			(at 35.56 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -16512,7 +16510,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.tme.eu/Document/6eb2005a51a52592b3f19e8a450c54c8/XT30PW-M.pdf"
 			(at 35.56 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -16523,8 +16521,41 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "12 V battery input, AMASS XT30PW-M right-angle PCB male (15 A continuous, 30 A short-term, 500 V), keyed. Pin 2 (+ silkscreen) = battery + to F1; pin 1 (- silkscreen) = GND. Mates with an XT30U-F plug on the battery harness: DJLBERMPW 12V 50Ah LiFePO4 M8 terminals -> M8 ring lugs -> inline fuse at the battery -> 16 AWG -> XT30U-F."
 			(at 35.56 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "AMASS"
+			(at 35.56 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "XT30PW-M"
+			(at 35.56 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MatingPart" "AMASS XT30U-F on the battery harness"
+			(at 35.56 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
