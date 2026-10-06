@@ -38,6 +38,8 @@ Custom symbol and footprint libraries are included and registered in the project
 
 Power supply details are documented in [docs/power-supply.md](docs/power-supply.md). Earlier simulation notes are in [STM32-LDO-design.md](STM32-LDO-design.md).
 
+Component-selection rationale is in [docs/passive-selection-review.md](docs/passive-selection-review.md), [docs/clock-selection.md](docs/clock-selection.md) and [docs/fuse-selection.md](docs/fuse-selection.md). The fuse selection includes both the PCB-mounted holder and its separately purchased insert.
+
 ## Design status
 
 The project is in schematic development. No system PCB layout has been committed yet.

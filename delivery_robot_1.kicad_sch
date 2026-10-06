@@ -10226,7 +10226,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse"
+		(property "Value" "7.5A / 32VDC"
 			(at 40.64 163.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10236,7 +10236,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuseholder_Blade_Mini_Keystone_3568"
 			(at 40.64 165.862 90)
 			(hide yes)
 			(show_name no)
@@ -10247,7 +10247,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=306"
 			(at 40.64 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -10258,7 +10258,84 @@
 				)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "Replaceable MINI fuse assembly: Keystone 3568 holder and Littelfuse 029707.5L fuse"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3568"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "MINI holder with 7.5A / 32VDC fuse; 1000A DC interrupt rating belongs to fuse"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FuseManufacturer" "Littelfuse"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FuseMPN" "029707.5L"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FuseDatasheet" "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AssemblyBOM" "1x Keystone 3568 holder + 1x Littelfuse 029707.5L fuse; order both"
 			(at 40.64 167.64 0)
 			(hide yes)
 			(show_name no)

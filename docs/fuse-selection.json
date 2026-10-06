@@ -1,0 +1,24 @@
+{
+  "reference": "F1",
+  "footprint": "Fuse:Fuseholder_Blade_Mini_Keystone_3568",
+  "populate": true,
+  "parts": [
+    {
+      "role": "PCB-mounted holder",
+      "manufacturer": "Keystone Electronics",
+      "mpn": "3568",
+      "quantity": 1,
+      "datasheet": "https://www.keyelco.com/product-pdf.cfm?p=306"
+    },
+    {
+      "role": "inserted replaceable fuse",
+      "manufacturer": "Littelfuse",
+      "mpn": "029707.5L",
+      "quantity": 1,
+      "datasheet": "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1"
+    }
+  ],
+  "maximum_estimated_normal_input_current_A": 4.357298474945534,
+  "efficiency_assumption": 0.85,
+  "selection_status": "candidate; verify inrush, thermal conditions, conductor coordination and prospective fault current before production"
+}
