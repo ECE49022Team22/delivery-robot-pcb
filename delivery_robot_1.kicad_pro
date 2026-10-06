@@ -440,6 +440,14 @@
     [
       "b2e73f71-a0c4-4534-a55b-a02f9bc6bb89",
       "LDO Power"
+    ],
+    [
+      "6703cd4e-ae4e-4732-91ad-54a19544ca3e",
+      "Buck 12V-5V 6A"
+    ],
+    [
+      "45fd30b8-e3d0-4ad8-a19a-9569735f4754",
+      "Buck 12V-5V 2A"
     ]
   ],
   "text_variables": {},
