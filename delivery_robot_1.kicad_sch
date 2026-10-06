@@ -1459,6 +1459,220 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Capacitance"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Capacitance"
+				(at 0 -3.302 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Variable capacitance diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitance diode varicap varactor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Capacitance_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.778) (xy -0.1524 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.1524 -1.27) (xy -0.1524 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.1524 -1.27) (xy 0.1524 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.1524 -1.778) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Capacitance_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:FerriteBead_Small"
 			(pin_numbers
 				(hide yes)
@@ -10664,6 +10878,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 92.71 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM1885C1H680JA01D"
+			(at 92.71 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "68pF / 50V C0G"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2190ac47-b35d-414f-9f5e-c078305d4fe5")
 		)
@@ -10677,21 +10924,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 92.71 186.69 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "GRM1885C1H680JA01D"
-			(at 92.71 186.69 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "68pF / 50V C0G"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -10761,6 +10993,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 17.78 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C5750X7R1H226M250KB"
+			(at 17.78 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "22uF / 50V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2420b5cf-b8a0-4d73-87a7-68021b45fa21")
 		)
@@ -10774,21 +11039,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 17.78 190.5 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "C5750X7R1H226M250KB"
-			(at 17.78 190.5 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "22uF / 50V X7R"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -12289,6 +12539,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 147.32 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM32ER71A476ME15L"
+			(at 147.32 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "47uF / 10V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ce46554c-56fe-4724-9a87-9dabe2a7096b")
 		)
@@ -12302,21 +12585,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 147.32 237.49 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "GRM32ER71A476ME15L"
-			(at 147.32 237.49 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "47uF / 10V X7R"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -13088,6 +13356,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 123.19 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM32ER71A476ME15L"
+			(at 123.19 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "47uF / 10V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "60780e3a-00d6-4a41-add8-5bc2b49a05e2")
 		)
@@ -13101,21 +13402,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 123.19 193.04 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "GRM32ER71A476ME15L"
-			(at 123.19 193.04 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "47uF / 10V X7R"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -13507,6 +13793,86 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Capacitance")
+		(at 160.02 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a126e5ad-2670-43ea-b526-bc556e430041")
+		(property "Reference" "D1"
+			(at 160.02 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Capacitance"
+			(at 160.02 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Variable capacitance diode"
+			(at 160.02 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7fbf3b56-3388-4267-8efb-40b7cdbedf91")
+		)
+		(pin "1"
+			(uuid "8c92f7b9-185d-4011-801d-df545424ab36")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -14543,6 +14909,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 120.65 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM1885C1H8R2DA01D"
+			(at 120.65 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "8.2pF / 50V C0G"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fdb64d49-2712-4896-a2a5-bfdb18fd2626")
 		)
@@ -14556,21 +14955,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 120.65 237.49 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "GRM1885C1H8R2DA01D"
-			(at 120.65 237.49 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "8.2pF / 50V C0G"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -15233,6 +15617,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 74.93 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1608X7R1H104K080AA"
+			(at 74.93 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "100nF / 50V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2f033c5f-f4bd-4510-a475-41191e774e23")
 		)
@@ -15246,21 +15663,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 74.93 182.88 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "C1608X7R1H104K080AA"
-			(at 74.93 182.88 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "100nF / 50V X7R"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -15330,6 +15732,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 30.48 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM188R71C105KA12D"
+			(at 30.48 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "1uF / 16V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d594637b-b2d0-4c0f-b062-afda671bfd8d")
 		)
@@ -15343,21 +15778,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 30.48 255.27 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "GRM188R71C105KA12D"
-			(at 30.48 255.27 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "1uF / 16V X7R"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -15502,6 +15922,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 17.78 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM32ER71H106KA12L"
+			(at 17.78 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "10uF / 50V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4343f9ba-fde4-4d8b-871d-ff0f38342a7f")
 		)
@@ -15515,21 +15968,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 17.78 232.41 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "GRM32ER71H106KA12L"
-			(at 17.78 232.41 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "10uF / 50V X7R"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -15599,6 +16037,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 134.62 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM32ER71A476ME15L"
+			(at 134.62 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "47uF / 10V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fe8b22e1-7c26-4080-a9de-2085110311de")
 		)
@@ -15612,21 +16083,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 134.62 237.49 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "GRM32ER71A476ME15L"
-			(at 134.62 237.49 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "47uF / 10V X7R"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -16360,6 +16816,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Coilcraft"
+			(at 85.09 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "XAL6060-153MEC"
+			(at 85.09 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "15uH / 20%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "61c79527-0a62-431b-a369-d481547f6250")
 		)
@@ -16373,21 +16862,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Coilcraft"
-			(at 85.09 182.88 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "XAL6060-153MEC"
-			(at 85.09 182.88 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "15uH / 20%"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -16728,6 +17202,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 30.48 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM32ER71H106KA12L"
+			(at 30.48 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "10uF / 50V X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "adca7630-80e7-4e2a-968e-05ac9d06a506")
 		)
@@ -16741,21 +17248,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 30.48 232.41 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "MPN" "GRM32ER71H106KA12L"
-			(at 30.48 232.41 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Specification" "10uF / 50V X7R"
-			(at 0 0 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol

@@ -1406,6 +1406,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 96.52 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e71c38b1-8923-4487-8576-cfaa13039f42")
 		)
@@ -1419,11 +1430,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 96.52 116.84 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 	(symbol
@@ -1797,6 +1803,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 190.5 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "616d3a60-f98c-4c4d-9295-4f21fbc3a21d")
 		)
@@ -1810,11 +1827,6 @@
 					(unit 1)
 				)
 			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 190.5 88.9 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
 		)
 	)
 )
