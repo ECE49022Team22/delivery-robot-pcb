@@ -2876,6 +2876,212 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Screw_Terminal_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Screw_Terminal_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Screw_Terminal_01x03"
 			(pin_names
 				(offset 1.016)
@@ -3437,6 +3643,129 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8562,8 +8891,8 @@
 		(uuid "1f367d4f-b1d7-4f79-aa06-4fe46da90af9")
 	)
 	(rectangle
-		(start 330.2 166.37)
-		(end 403.86 246.38)
+		(start 328.93 151.13)
+		(end 402.59 231.14)
 		(stroke
 			(width 0)
 			(type default)
@@ -8586,8 +8915,8 @@
 		(uuid "affb78a0-cc0c-4fbd-8647-acfa93626a0d")
 	)
 	(rectangle
-		(start 259.08 153.67)
-		(end 318.77 215.9)
+		(start 250.19 142.24)
+		(end 309.88 204.47)
 		(stroke
 			(width 0)
 			(type default)
@@ -8608,6 +8937,18 @@
 			(type none)
 		)
 		(uuid "c4986f8f-9979-4406-8b3e-e5c94e744f96")
+	)
+	(rectangle
+		(start 250.19 210.82)
+		(end 322.58 245.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d2e7d729-ee13-4ca4-95d0-a871554cbf8c")
 	)
 	(text "MCU GPIO breakout - 2.54 mm male pin headers (J8 port A, J9 port B, J10 ports C/D)\nEvery spare STM32 pin is brought out by global label; the last pin of each header is GND."
 		(exclude_from_sim no)
@@ -8644,7 +8985,7 @@
 	)
 	(text "IMU - BNO085 breakout (off-board)"
 		(exclude_from_sim no)
-		(at 340.36 170.18 0)
+		(at 339.09 154.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8677,7 +9018,7 @@
 	)
 	(text "I2C1 AF1: PB6 SCL, PB7 SDA\nINT -> PC4 (EXTI4), RST -> PC5\nJ11 STEMMA QT: 1 GND, 2 3V3, 3 SDA, 4 SCL\nR10/R11 DNP: breakout has pull-ups"
 		(exclude_from_sim no)
-		(at 335.28 234.19 0)
+		(at 334.01 218.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8699,7 +9040,7 @@
 	)
 	(text "J13 1 <- Pi GPIO14 TXD (header pin 8)\nJ13 2 -> Pi GPIO15 RXD (header pin 10)\nJ13 3 = GND (Pi header pin 6); 3.3 V logic\nR12/R13 near U1, U5 ESD near J13"
 		(exclude_from_sim no)
-		(at 265.176 203.962 0)
+		(at 256.286 192.532 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8710,7 +9051,7 @@
 	)
 	(text "Raspberry Pi 5 UART (USART2, PA2 TX / PA3 RX)"
 		(exclude_from_sim no)
-		(at 260.35 157.48 0)
+		(at 251.46 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8730,6 +9071,17 @@
 		)
 		(uuid "a5dd1135-503c-4437-b291-e0d6bf4b9d57")
 	)
+	(text "Bring-up: F2 out, check TP1; fit F2, load-test J14;\nthen connect the Pi. 5-6 A path"
+		(exclude_from_sim no)
+		(at 252.73 237.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d11d4de4-ad57-4728-91e6-e410ca3df342")
+	)
 	(text "Screw terminals: Phoenix MKDS 1,5 (5.0 mm), 17.5 A / 250 V rated; used at 5 V, 2 A max."
 		(exclude_from_sim no)
 		(at 181.61 86.36 0)
@@ -8740,6 +9092,17 @@
 			(justify left top)
 		)
 		(uuid "e1f405b9-aa89-4ce3-8e00-9c1a0b94e7f3")
+	)
+	(text "Pi 5 power: +5V, 6A -> F2 isolation fuse -> J14 USB-C pigtail"
+		(exclude_from_sim no)
+		(at 252.73 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ec193a06-11ca-405a-81f2-2e5d6594350f")
 	)
 	(text "these two caps for VDDA pin 13"
 		(exclude_from_sim no)
@@ -8785,6 +9148,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0e493779-3b34-4c46-afe2-57e1dc4a377a")
+	)
+	(junction
+		(at 273.05 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fa8cede-25c3-48f0-b36c-fda7dffacc35")
 	)
 	(junction
 		(at 102.87 36.83)
@@ -8901,6 +9270,12 @@
 		(uuid "c7916589-8919-4f93-b86c-5b2cfa52fea2")
 	)
 	(junction
+		(at 295.91 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf85cda7-ff92-494a-8785-cd339c96a3c2")
+	)
+	(junction
 		(at 195.58 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8980,6 +9355,16 @@
 	)
 	(wire
 		(pts
+			(xy 306.07 228.6) (xy 300.99 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05faece5-e424-4a2d-aebb-c0c30d4321a5")
+	)
+	(wire
+		(pts
 			(xy 360.68 68.58) (xy 365.76 68.58)
 		)
 		(stroke
@@ -8990,7 +9375,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 167.64) (xy 289.56 167.64)
+			(xy 275.59 156.21) (xy 280.67 156.21)
 		)
 		(stroke
 			(width 0)
@@ -9027,6 +9412,16 @@
 			(type default)
 		)
 		(uuid "08e4e040-0366-4ea8-b585-c3a5bdeb892b")
+	)
+	(wire
+		(pts
+			(xy 267.97 226.06) (xy 273.05 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08f2497c-1912-4ece-9e64-58cf0e2cfbca")
 	)
 	(wire
 		(pts
@@ -9150,7 +9545,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 228.6) (xy 368.3 228.6)
+			(xy 364.49 213.36) (xy 367.03 213.36)
 		)
 		(stroke
 			(width 0)
@@ -9190,7 +9585,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 179.07) (xy 360.68 179.07)
+			(xy 346.71 163.83) (xy 359.41 163.83)
 		)
 		(stroke
 			(width 0)
@@ -9260,7 +9655,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 175.26) (xy 304.8 175.26)
+			(xy 288.29 163.83) (xy 295.91 163.83)
 		)
 		(stroke
 			(width 0)
@@ -9270,7 +9665,7 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 190.5) (xy 293.37 190.5)
+			(xy 289.56 179.07) (xy 284.48 179.07)
 		)
 		(stroke
 			(width 0)
@@ -9440,7 +9835,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 175.26) (xy 289.56 175.26)
+			(xy 275.59 163.83) (xy 280.67 163.83)
 		)
 		(stroke
 			(width 0)
@@ -9480,7 +9875,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 181.61) (xy 360.68 181.61)
+			(xy 346.71 166.37) (xy 359.41 166.37)
 		)
 		(stroke
 			(width 0)
@@ -9570,7 +9965,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 184.15) (xy 360.68 184.15)
+			(xy 346.71 168.91) (xy 359.41 168.91)
 		)
 		(stroke
 			(width 0)
@@ -9670,6 +10065,16 @@
 	)
 	(wire
 		(pts
+			(xy 273.05 226.06) (xy 280.67 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51c5ff7c-5b4d-474a-a695-62a50054fae0")
+	)
+	(wire
+		(pts
 			(xy 195.58 111.76) (xy 198.12 111.76)
 		)
 		(stroke
@@ -9680,7 +10085,7 @@
 	)
 	(wire
 		(pts
-			(xy 293.37 190.5) (xy 293.37 193.04)
+			(xy 284.48 179.07) (xy 284.48 181.61)
 		)
 		(stroke
 			(width 0)
@@ -9727,6 +10132,16 @@
 			(type default)
 		)
 		(uuid "56606803-399f-444b-a782-e98ac11cc7b4")
+	)
+	(wire
+		(pts
+			(xy 295.91 226.06) (xy 306.07 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a224d74-6585-4a60-9924-bd0e1a197867")
 	)
 	(wire
 		(pts
@@ -9860,7 +10275,7 @@
 	)
 	(wire
 		(pts
-			(xy 386.08 231.14) (xy 388.62 231.14)
+			(xy 384.81 215.9) (xy 387.35 215.9)
 		)
 		(stroke
 			(width 0)
@@ -10010,7 +10425,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 167.64) (xy 304.8 167.64)
+			(xy 288.29 156.21) (xy 295.91 156.21)
 		)
 		(stroke
 			(width 0)
@@ -10080,7 +10495,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 185.42) (xy 298.45 185.42)
+			(xy 276.86 173.99) (xy 289.56 173.99)
 		)
 		(stroke
 			(width 0)
@@ -10160,7 +10575,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 187.96) (xy 298.45 187.96)
+			(xy 276.86 176.53) (xy 289.56 176.53)
 		)
 		(stroke
 			(width 0)
@@ -10250,7 +10665,7 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 199.39) (xy 355.6 199.39)
+			(xy 349.25 184.15) (xy 354.33 184.15)
 		)
 		(stroke
 			(width 0)
@@ -10270,7 +10685,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 234.95) (xy 236.22 234.95)
+			(xy 246.38 234.95) (xy 236.22 234.95)
 		)
 		(stroke
 			(width 0)
@@ -10350,7 +10765,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 224.79) (xy 365.76 228.6)
+			(xy 364.49 209.55) (xy 364.49 213.36)
 		)
 		(stroke
 			(width 0)
@@ -10410,7 +10825,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 186.69) (xy 360.68 186.69)
+			(xy 346.71 171.45) (xy 359.41 171.45)
 		)
 		(stroke
 			(width 0)
@@ -10580,7 +10995,7 @@
 	)
 	(wire
 		(pts
-			(xy 386.08 224.79) (xy 386.08 231.14)
+			(xy 384.81 209.55) (xy 384.81 215.9)
 		)
 		(stroke
 			(width 0)
@@ -10597,6 +11012,16 @@
 			(type default)
 		)
 		(uuid "c31a42f6-8ff6-49c6-a946-8a683e35557d")
+	)
+	(wire
+		(pts
+			(xy 300.99 228.6) (xy 300.99 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c449c9b1-f9cf-47d5-aba9-2516a0a6dc6a")
 	)
 	(wire
 		(pts
@@ -10880,7 +11305,17 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 201.93) (xy 355.6 201.93)
+			(xy 288.29 226.06) (xy 295.91 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eedc7a29-84da-483b-836b-b4c2beda8cb3")
+	)
+	(wire
+		(pts
+			(xy 349.25 186.69) (xy 354.33 186.69)
 		)
 		(stroke
 			(width 0)
@@ -11033,7 +11468,7 @@
 	)
 	(global_label "IMU_INT"
 		(shape bidirectional)
-		(at 355.6 199.39 0)
+		(at 354.33 184.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11043,7 +11478,7 @@
 		)
 		(uuid "01d0b9ae-980d-4f3d-9791-6ad5ffcaae03")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 355.6 199.39 0)
+			(at 354.33 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11091,6 +11526,29 @@
 		(uuid "073f513b-ddd6-48a9-9b0d-93e47eb85c18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 365.76 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "+5V, 6A"
+		(shape bidirectional)
+		(at 267.97 226.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0af63c08-63b1-4977-b847-2154ac7fe0ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 267.97 226.06 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11313,7 +11771,7 @@
 	)
 	(global_label "USART2_TX"
 		(shape bidirectional)
-		(at 284.48 175.26 180)
+		(at 275.59 163.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11323,7 +11781,7 @@
 		)
 		(uuid "1b41548c-39da-4588-bf41-6d045e785337")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 284.48 175.26 180)
+			(at 275.59 163.83 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11498,7 +11956,7 @@
 	)
 	(global_label "PI_RXD"
 		(shape bidirectional)
-		(at 285.75 187.96 180)
+		(at 276.86 176.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11508,7 +11966,7 @@
 		)
 		(uuid "3921b77b-7f8d-460e-af2e-5d90e7e4faee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 285.75 187.96 180)
+			(at 276.86 176.53 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12006,7 +12464,7 @@
 	)
 	(global_label "IMU_SCL"
 		(shape bidirectional)
-		(at 347.98 186.69 180)
+		(at 346.71 171.45 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12016,7 +12474,7 @@
 		)
 		(uuid "6e8efb0d-4fb9-45a7-9459-b0b99f41c243")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 347.98 186.69 180)
+			(at 346.71 171.45 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12052,7 +12510,7 @@
 	)
 	(global_label "IMU_SDA"
 		(shape bidirectional)
-		(at 368.3 228.6 0)
+		(at 367.03 213.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12062,7 +12520,7 @@
 		)
 		(uuid "70fe5ed7-c10f-429c-a104-95ed56c898f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 368.3 228.6 0)
+			(at 367.03 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12402,7 +12860,7 @@
 	)
 	(global_label "PI_TXD"
 		(shape bidirectional)
-		(at 304.8 167.64 0)
+		(at 295.91 156.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12412,7 +12870,7 @@
 		)
 		(uuid "8ae8ac09-44fd-47d3-8fd9-8b81bec1aaee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 304.8 167.64 0)
+			(at 295.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12562,7 +13020,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 347.98 179.07 180)
+		(at 346.71 163.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12572,7 +13030,7 @@
 		)
 		(uuid "920ef688-caa5-4ac8-b427-c9697effe805")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 347.98 179.07 180)
+			(at 346.71 163.83 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12769,7 +13227,7 @@
 	)
 	(global_label "IMU_RST"
 		(shape bidirectional)
-		(at 355.6 201.93 0)
+		(at 354.33 186.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12779,7 +13237,7 @@
 		)
 		(uuid "9f9d95e6-de6d-4b72-ba13-55488a27dee2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 355.6 201.93 0)
+			(at 354.33 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12884,7 +13342,7 @@
 	)
 	(global_label "+3V3"
 		(shape output)
-		(at 254 234.95 180)
+		(at 246.38 234.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12893,7 +13351,7 @@
 		)
 		(uuid "a73db9de-104e-4601-bacc-5fa006695678")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 254 234.95 180)
+			(at 246.38 234.95 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13554,7 +14012,7 @@
 	)
 	(global_label "PI_TXD"
 		(shape bidirectional)
-		(at 285.75 185.42 180)
+		(at 276.86 173.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13564,7 +14022,7 @@
 		)
 		(uuid "e5f81bf0-c644-44d8-86a5-42719115ac4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 285.75 185.42 180)
+			(at 276.86 173.99 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13625,7 +14083,7 @@
 	)
 	(global_label "IMU_SDA"
 		(shape bidirectional)
-		(at 347.98 184.15 180)
+		(at 346.71 168.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13635,7 +14093,7 @@
 		)
 		(uuid "ebe9afe9-de42-46b9-be6e-538dc4711ad7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 347.98 184.15 180)
+			(at 346.71 168.91 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13648,7 +14106,7 @@
 	)
 	(global_label "+3V3"
 		(shape bidirectional)
-		(at 347.98 181.61 180)
+		(at 346.71 166.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13658,7 +14116,7 @@
 		)
 		(uuid "ec61dc80-a574-4eea-a506-7c5ca181d822")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 347.98 181.61 180)
+			(at 346.71 166.37 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13671,7 +14129,7 @@
 	)
 	(global_label "USART2_RX"
 		(shape bidirectional)
-		(at 284.48 167.64 180)
+		(at 275.59 156.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13681,7 +14139,7 @@
 		)
 		(uuid "ee151df2-49e0-4e4f-a00b-4291d3e8e095")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 284.48 167.64 180)
+			(at 275.59 156.21 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13740,7 +14198,7 @@
 	)
 	(global_label "IMU_SCL"
 		(shape bidirectional)
-		(at 388.62 231.14 0)
+		(at 387.35 215.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13750,7 +14208,7 @@
 		)
 		(uuid "f2170b14-7c1d-4b2b-8f2c-f70d3a5418bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 388.62 231.14 0)
+			(at 387.35 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13833,7 +14291,7 @@
 	)
 	(global_label "PI_RXD"
 		(shape bidirectional)
-		(at 304.8 175.26 0)
+		(at 295.91 163.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13843,7 +14301,7 @@
 		)
 		(uuid "f62f821d-c787-4c8c-ac9f-34c296a971bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 304.8 175.26 0)
+			(at 295.91 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14018,6 +14476,163 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Fuse")
+		(at 284.48 226.06 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "009c1a6e-adcd-4a97-9d1f-8d84fff9ebe9")
+		(property "Reference" "F2"
+			(at 284.48 219.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "7.5A / 32VDC"
+			(at 284.48 222.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuseholder_Blade_Mini_Keystone_3568"
+			(at 284.48 224.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=306"
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pi 5 supply isolation and fuse: Keystone 3568 holder and Littelfuse 029707.5L 7.5 A fuse. Remove the fuse to isolate the Pi for buck bring-up; 6.0 A allowed at 40 C per Littelfuse derating table, above the Pi 5 5 A maximum."
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3568"
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "MINI holder with 7.5A / 32VDC fuse; 1000A DC interrupt rating belongs to fuse"
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FuseManufacturer" "Littelfuse"
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FuseMPN" "029707.5L"
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FuseDatasheet" "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1"
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AssemblyBOM" "1x Keystone 3568 holder + 1x Littelfuse 029707.5L fuse; order both"
+			(at 284.48 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "66a653b5-b588-496a-bde9-5b5963aeb3d0")
+		)
+		(pin "1"
+			(uuid "6cd51171-c67f-4427-b25e-dc722caec7c4")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 40.64 163.83 0)
@@ -14092,6 +14707,106 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 295.91 226.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "04a30563-a8d4-425b-af23-369a5e047d95")
+		(property "Reference" "TP2"
+			(at 298.45 222.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PI_5V"
+			(at 295.91 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
+			(at 295.91 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1309"
+			(at 295.91 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pi 5 supply after F2"
+			(at 295.91 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 295.91 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "5000 (red miniature test loop)"
+			(at 295.91 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a3ee558-abf8-487e-97ba-adf57bfca921")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -14191,7 +14906,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 293.37 175.26 90)
+		(at 284.48 163.83 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14201,7 +14916,7 @@
 		(dnp no)
 		(uuid "0bc24871-9931-47ef-bd61-cbfde0c30621")
 		(property "Reference" "R12"
-			(at 293.37 172.72 90)
+			(at 284.48 161.29 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14211,7 +14926,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 293.37 177.8 90)
+			(at 284.48 166.37 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14221,7 +14936,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 293.37 175.26 0)
+			(at 284.48 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14232,7 +14947,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 293.37 175.26 0)
+			(at 284.48 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14243,7 +14958,7 @@
 			)
 		)
 		(property "Description" "Series 100R on UART TX (PA2 USART2_TX -> Pi RXD). Place near U1."
-			(at 293.37 175.26 0)
+			(at 284.48 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14851,6 +15566,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 300.99 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c864463-d59a-48f6-a2fc-2076459815a8")
+		(property "Reference" "#PWR075"
+			(at 300.99 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 300.99 234.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 300.99 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 300.99 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 300.99 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9ff1cb3-c7a1-4d13-a622-fc179a9725a5")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 44.45 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -14927,7 +15719,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 365.76 217.17 0)
+		(at 364.49 201.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14937,7 +15729,7 @@
 		(dnp no)
 		(uuid "38d06749-4480-4494-b4d0-6cf28e6e8127")
 		(property "Reference" "#PWR071"
-			(at 365.76 209.55 0)
+			(at 364.49 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14948,7 +15740,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 365.76 213.36 0)
+			(at 364.49 198.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14958,7 +15750,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 365.76 217.17 0)
+			(at 364.49 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14969,7 +15761,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 365.76 217.17 0)
+			(at 364.49 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14980,7 +15772,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 365.76 217.17 0)
+			(at 364.49 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15238,7 +16030,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 386.08 220.98 0)
+		(at 384.81 205.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15248,7 +16040,7 @@
 		(dnp yes)
 		(uuid "4998c4a2-64dd-4929-885e-e8a636c876e6")
 		(property "Reference" "R11"
-			(at 388.62 219.71 0)
+			(at 387.35 204.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15259,7 +16051,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 388.62 222.25 0)
+			(at 387.35 207.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15270,7 +16062,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 386.08 220.98 0)
+			(at 384.81 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15281,7 +16073,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 386.08 220.98 0)
+			(at 384.81 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15292,7 +16084,7 @@
 			)
 		)
 		(property "Description" "Optional IMU_SCL pull-up to +3V3, DNP: the Adafruit BNO085 breakout already has pull-ups. Fit 4.7k if the breakout lacks them or the bus misbehaves over the cable."
-			(at 386.08 220.98 0)
+			(at 384.81 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15399,7 +16191,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 365.76 220.98 0)
+		(at 364.49 205.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15409,7 +16201,7 @@
 		(dnp yes)
 		(uuid "4e1a67b7-1c77-4d7f-bee5-e0fdfea008ee")
 		(property "Reference" "R10"
-			(at 368.3 219.71 0)
+			(at 367.03 204.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15420,7 +16212,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 368.3 222.25 0)
+			(at 367.03 207.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15431,7 +16223,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 365.76 220.98 0)
+			(at 364.49 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15442,7 +16234,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 365.76 220.98 0)
+			(at 364.49 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15453,7 +16245,7 @@
 			)
 		)
 		(property "Description" "Optional IMU_SDA pull-up to +3V3, DNP: the Adafruit BNO085 breakout already has pull-ups. Fit 4.7k if the breakout lacks them or the bus misbehaves over the cable."
-			(at 365.76 220.98 0)
+			(at 364.49 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15835,7 +16627,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 365.76 191.77 0)
+		(at 364.49 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15845,7 +16637,7 @@
 		(dnp no)
 		(uuid "69de91dd-24ab-4183-9d9f-03884b8a8a24")
 		(property "Reference" "#PWR070"
-			(at 365.76 199.39 0)
+			(at 364.49 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15856,7 +16648,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 365.76 195.58 0)
+			(at 364.49 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15866,7 +16658,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 365.76 191.77 0)
+			(at 364.49 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15877,7 +16669,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 365.76 191.77 0)
+			(at 364.49 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15888,7 +16680,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 365.76 191.77 0)
+			(at 364.49 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16530,7 +17322,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 365.76 181.61 0)
+		(at 364.49 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16540,7 +17332,7 @@
 		(dnp no)
 		(uuid "8624a1de-286b-4e05-a3fb-3d75bd55cfea")
 		(property "Reference" "J11"
-			(at 368.3 180.34 0)
+			(at 367.03 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16551,7 +17343,7 @@
 			)
 		)
 		(property "Value" "IMU I2C (STEMMA QT)"
-			(at 368.3 182.88 0)
+			(at 367.03 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16562,7 +17354,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
-			(at 365.76 181.61 0)
+			(at 364.49 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16573,7 +17365,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 365.76 181.61 0)
+			(at 364.49 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16584,7 +17376,7 @@
 			)
 		)
 		(property "Description" "STEMMA QT / Qwiic 4-pin JST SH 1.0 mm to off-board BNO085 IMU breakout: 1 = GND (black), 2 = +3V3 (red), 3 = SDA (blue), 4 = SCL (yellow). Keep this order for off-the-shelf cables."
-			(at 365.76 181.61 0)
+			(at 364.49 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16595,7 +17387,7 @@
 			)
 		)
 		(property "Manufacturer" "JST"
-			(at 365.76 181.61 0)
+			(at 364.49 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16606,7 +17398,7 @@
 			)
 		)
 		(property "MPN" "SM04B-SRSS-TB"
-			(at 365.76 181.61 0)
+			(at 364.49 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18072,6 +18864,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 273.05 226.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a9a4f01c-9ff5-448a-81de-01f0aa9fefd8")
+		(property "Reference" "TP1"
+			(at 270.51 222.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "+5V, 6A"
+			(at 273.05 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
+			(at 273.05 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1309"
+			(at 273.05 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "6 A buck output before F2: check voltage here with the F2 fuse removed"
+			(at 273.05 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 273.05 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "5000 (red miniature test loop)"
+			(at 273.05 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2dc37315-4bae-4358-acab-d9aadd87a6f3")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 41.91 97.79 0)
 		(unit 1)
@@ -18740,7 +19632,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 345.44 199.39 0)
+		(at 344.17 184.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18750,7 +19642,7 @@
 		(dnp no)
 		(uuid "c9a5712a-87bf-44fb-a5fd-f98a5448826c")
 		(property "Reference" "J12"
-			(at 345.44 194.31 0)
+			(at 344.17 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18760,7 +19652,7 @@
 			)
 		)
 		(property "Value" "IMU INT/RST"
-			(at 345.44 204.47 0)
+			(at 344.17 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18770,7 +19662,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 345.44 199.39 0)
+			(at 344.17 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18781,7 +19673,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 345.44 199.39 0)
+			(at 344.17 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18792,7 +19684,7 @@
 			)
 		)
 		(property "Description" "2.54 mm male header to BNO085 breakout: 1 = INT (active-low data ready) to PC4 / EXTI4, 2 = RST (active-low) from PC5"
-			(at 345.44 199.39 0)
+			(at 344.17 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18970,6 +19862,118 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 311.15 226.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cac610fd-5612-4a48-8ee5-3dfb91b8df10")
+		(property "Reference" "J14"
+			(at 311.15 220.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Pi 5 power"
+			(at 312.42 232.918 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+			(at 311.15 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-2-1715022"
+			(at 311.15 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pi 5 power out to a USB-C plug pigtail: 1 = PI_5V (pigtail VBUS, red), 2 = GND (black). Up to 5 A continuous."
+			(at 311.15 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 311.15 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1715022 (MKDS 1,5/2, 5.0 mm pitch)"
+			(at 311.15 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; used at 5 V, 5-6 A"
+			(at 311.15 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5388206-8824-4008-8c45-c91157cf6eeb")
+		)
+		(pin "2"
+			(uuid "9577bf38-0d18-467c-b452-82744d987215")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -19324,7 +20328,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 386.08 217.17 0)
+		(at 384.81 201.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19334,7 +20338,7 @@
 		(dnp no)
 		(uuid "ede34c06-2c2e-4fbd-8d0c-202518e14245")
 		(property "Reference" "#PWR072"
-			(at 386.08 209.55 0)
+			(at 384.81 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19345,7 +20349,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 386.08 213.36 0)
+			(at 384.81 198.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19355,7 +20359,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 386.08 217.17 0)
+			(at 384.81 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19366,7 +20370,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 386.08 217.17 0)
+			(at 384.81 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19377,7 +20381,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 386.08 217.17 0)
+			(at 384.81 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19799,7 +20803,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 303.53 187.96 0)
+		(at 294.64 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19809,7 +20813,7 @@
 		(dnp no)
 		(uuid "f85f3c29-c994-43be-9195-4e0866488204")
 		(property "Reference" "J13"
-			(at 303.53 181.61 0)
+			(at 294.64 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19819,7 +20823,7 @@
 			)
 		)
 		(property "Value" "Pi 5 UART"
-			(at 303.53 194.31 0)
+			(at 294.64 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19829,7 +20833,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal"
-			(at 303.53 187.96 0)
+			(at 294.64 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19840,7 +20844,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-3-1715035"
-			(at 303.53 187.96 0)
+			(at 294.64 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19851,7 +20855,7 @@
 			)
 		)
 		(property "Description" "UART to Raspberry Pi 5 GPIO header: 1 = PI_TXD from Pi GPIO14 TXD (pin 8) to STM32 RX; 2 = PI_RXD to Pi GPIO15 RXD (pin 10) from STM32 TX; 3 = GND (Pi pin 6). 3.3 V logic."
-			(at 303.53 187.96 0)
+			(at 294.64 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19862,7 +20866,7 @@
 			)
 		)
 		(property "Manufacturer" "Phoenix Contact"
-			(at 303.53 187.96 0)
+			(at 294.64 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19873,7 +20877,7 @@
 			)
 		)
 		(property "MPN" "1715035 (MKDS 1,5/3, 5.0 mm pitch)"
-			(at 303.53 187.96 0)
+			(at 294.64 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19884,7 +20888,7 @@
 			)
 		)
 		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; used for 3.3 V UART signals"
-			(at 303.53 187.96 0)
+			(at 294.64 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19914,7 +20918,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 293.37 167.64 90)
+		(at 284.48 156.21 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19924,7 +20928,7 @@
 		(dnp no)
 		(uuid "fcb8437d-b329-44f3-92be-f085fd47d7ad")
 		(property "Reference" "R13"
-			(at 293.37 165.1 90)
+			(at 284.48 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19934,7 +20938,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 293.37 170.18 90)
+			(at 284.48 158.75 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19944,7 +20948,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 293.37 167.64 0)
+			(at 284.48 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19955,7 +20959,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 293.37 167.64 0)
+			(at 284.48 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19966,7 +20970,7 @@
 			)
 		)
 		(property "Description" "Series 100R on UART RX (Pi TXD -> PA3 USART2_RX). Place near U1."
-			(at 293.37 167.64 0)
+			(at 284.48 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20073,7 +21077,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 293.37 193.04 0)
+		(at 284.48 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20083,7 +21087,7 @@
 		(dnp no)
 		(uuid "ffd93fbe-2202-43ed-9fa6-0f4cb870cf00")
 		(property "Reference" "#PWR074"
-			(at 293.37 200.66 0)
+			(at 284.48 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20094,7 +21098,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 293.37 196.85 0)
+			(at 284.48 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20104,7 +21108,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 293.37 193.04 0)
+			(at 284.48 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20115,7 +21119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 293.37 193.04 0)
+			(at 284.48 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20126,7 +21130,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 293.37 193.04 0)
+			(at 284.48 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
