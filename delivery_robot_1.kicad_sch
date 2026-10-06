@@ -8972,7 +8972,7 @@
 		)
 		(uuid "074bd2c2-2d1b-4d47-b2c1-96832da4ac92")
 	)
-	(text "Motor 1 off-board connections (DFRobot DRI0002 driver + 37D encoder motor)\nPWM on TIM3 (PA6), encoder on TIM2 (PA15 / PB3).\nEncoder Vcc is +5V, 2A from the TPS54202 buck (before the LDO), not from the MCU.\nDriver VS/GND and Motor+/- wire directly between DRI0002 and motor (not on this board)."
+	(text "Motor 1 off-board connections (Cytron MDD20A driver + 37D encoder motor)\nPWM on TIM3 (PA6), encoder on TIM2 (PA15 / PB3).\nEncoder Vcc is +5V, 2A from the TPS54202 buck (before the LDO), not from the MCU.\nDriver VB+/VB- (6-30 V battery) and M1A/M1B wire directly to the MDD20A (not on this board)."
 		(exclude_from_sim no)
 		(at 181.61 26.67 0)
 		(effects
@@ -16291,7 +16291,7 @@
 				)
 			)
 		)
-		(property "Value" "DRI0002 E1/M1/GND"
+		(property "Value" "MDD20A PWM1/DIR1/GND"
 			(at 218.44 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16324,7 +16324,7 @@
 				)
 			)
 		)
-		(property "Description" "Motor 1 driver control to DFRobot DRI0002: 1 = E1 speed PWM (PA6, TIM3_CH1), 2 = M1 direction (PB0), 3 = GND"
+		(property "Description" "Motor 1 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM1 speed (PA6, TIM3_CH1, max 20 kHz), 2 = DIR1 direction (PB0), 3 = GND. MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
 			(at 214.63 46.99 0)
 			(hide yes)
 			(show_name no)
