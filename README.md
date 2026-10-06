@@ -1,34 +1,57 @@
-# Delivery robot PCB
+# Delivery Robot PCB
 
-Private team repository: https://github.com/ECE49022Team22/delivery-robot-pcb
+KiCad design files for the ECE49022 Team 22 senior design delivery robot control board.
 
-## Open the integrated schematic
+This repository is the shared workspace for the board schematic, PCB layout, project libraries and design documentation.
 
-Open delivery_robot_1.kicad_pro in KiCad 10, then delivery_robot_1.kicad_sch. LDO Power (page 2) contains the TPS7A8101 5 V to 3.3 V regulator.
+## System overview
 
-The system schematic and custom buck symbol/footprint libraries came from the top-level files in senior_design.zip. That version has no missing child-sheet references. No routed system PCB was supplied.
+The current schematic includes an STM32F091RC microcontroller core, programming/debug and UART headers, reset and boot circuitry, clock and decoupling components, test points, and power conversion from 12 V to 5 V and 3.3 V.
 
-## Integrated LDO
+Motor-driver and IMU interfaces are part of the planned system and still need to be completed and reviewed in the board design.
 
-- Input: +5V, 2A from the TPS54202 buck output, selected by the user. The separate +5V, 6A rail is not connected to this input.
-- Output: +3V3 feeds STM32 supply pins 1, 19, 32, 48 and 64, digital decoupling, programming-header supply, and FB2's input for the separate +3.3VA analog rail.
-- Former VDD power symbols now use +3V3 so the MCU is actually connected to the LDO output. Original component values and other net connections are preserved.
-- Regulator U4, divider R8/R9, capacitors C24-C27. LDO_3V3.kicad_sch is the integrated child. The LDO_KiCad directory retains the independent reusable example.
-- Project library tables include both teammate custom buck libraries and the LDO libraries, using project-relative paths.
-- Added the previously missing footprint library table and corrected the two custom buck footprint library names.
+## Getting started
 
-## Validation and remaining work
+1. Install KiCad 10 with its standard symbol and footprint libraries.
+2. Clone this repository.
+3. Open delivery_robot_1.kicad_pro in KiCad Manager.
+4. Open delivery_robot_1.kicad_sch to view the complete schematic. Use the Schematic Hierarchy panel to navigate between sheets.
 
-The actual KiCad-exported netlist passed validation/verify_integration.py: all five LDO nets, all nine U4 pads, MCU supply connections, analog filter input, component-reference uniqueness, and preservation of existing component values/connections except the intended VDD/+3V3 merge.
+Custom symbol and footprint libraries are included and registered in the project library tables. Keep the directory structure intact so project-relative library paths resolve.
 
-ERC before integration: 9 errors and 55 warnings. After integration: 7 errors and 55 warnings, with no findings in the LDO child. Remaining power-driver errors and system warnings require review; do not declare the full board production-ready. Several existing system components still lack footprints or finalized values.
+## Repository contents
 
-The 1 A figure is combined 3.3 V rail capacity. At 5 V input, full-load LDO dissipation is approximately 1.7 W. PCB thermal copper/vias, actual loads and component procurement remain to be finalized. Buck footprints are present and resolve; their physical dimensions were not reviewed in this integration.
+| Path | Purpose |
+| --- | --- |
+| delivery_robot_1.kicad_pro | Active KiCad project settings |
+| delivery_robot_1.kicad_sch | Main board schematic |
+| LDO_3V3.kicad_sch | Hierarchical 3.3 V power supply sheet |
+| libs/ | Custom buck converter symbols and footprints |
+| LDO_KiCad/ | Reusable LDO example, libraries and footprint review |
+| sym-lib-table, fp-lib-table | Project-specific library configuration |
+| docs/ | Subsystem documentation and design notes |
+| validation/ | Connectivity checks and reference netlist |
+| system-ERC-report.txt | Saved electrical rules check results |
+| system-netlist.xml | Exported system connectivity |
+| system-preview/ | Rendered schematic sheets |
+| received-project-settings/ | Archived initial settings; not the active project |
 
-system-ERC-report.txt and system-netlist.xml contain the system checks. system-preview contains rendered sheets. The archived initial project settings are in received-project-settings; they are not the active project.
+Power supply details are documented in [docs/power-supply.md](docs/power-supply.md). Earlier simulation notes are in [STM32-LDO-design.md](STM32-LDO-design.md).
+
+## Design status
+
+The project is in schematic development. No system PCB layout has been committed yet.
+
+The saved ERC report from October 5, 2026 contains 7 errors and 55 warnings. Remaining work includes reviewing power connectivity and symbol definitions, completing peripheral interfaces, finalizing component values and footprints, and designing and checking the PCB layout.
+
+Saved reports describe the checked revision. Regenerate them after relevant design changes.
 
 ## Team workflow
 
-Use this repository's delivery_robot_1 project for combined-system work. Save KiCad files before committing. Avoid concurrent edits to the same sheet or PCB. Review schematic changes before merging. Locks, local UI settings and automatic backups are excluded from Git.
+- Use the active delivery_robot_1 project for board work.
+- Pull current changes before editing and coordinate ownership of schematic sheets and the PCB.
+- Work on branches and review changes before merging.
+- Save files in KiCad before committing. Include required project-local libraries with design changes.
+- Run ERC after schematic changes and DRC after layout changes. Review outstanding findings before ordering boards.
 
-Do not rerun the original LDO generator over these sources. Edit the native KiCad project files.
+Editing locks, local UI settings and automatic backups are excluded from Git. Edit the native KiCad sources directly; regenerating files from older scripts may overwrite manual changes.
