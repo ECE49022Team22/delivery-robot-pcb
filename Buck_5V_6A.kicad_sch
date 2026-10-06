@@ -816,20 +816,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "BUCK CONVERTOR 12V-5.1V, 6AMPS\n"
-		(exclude_from_sim no)
-		(at 44.96 83.31 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "21ce7019-e661-4f3c-841f-cb1336f68078")
-	)
 	(text "Reusable sheet: VIN_12V input, VOUT_5V output, common GND\nVOUT set by R4/R5 divider on FB; RT = R2; EN tied to VIN.\nRBOOT shorted to CBOOT; SW left unconnected (inductor is inside the module)."
 		(exclude_from_sim no)
-		(at 44.96 167.64 0)
+		(at 91.95 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -840,7 +829,7 @@
 	)
 	(text "12 V to 5 V buck converter - TPSM63606 (U2)"
 		(exclude_from_sim no)
-		(at 44.96 60.96 0)
+		(at 34.038 45.974 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -849,169 +838,186 @@
 		)
 		(uuid "70211262-cb90-40d4-926d-a67584dec4e6")
 	)
+	(text "12 V - 5 V, 6A Buck Convertor"
+		(exclude_from_sim no)
+		(at 34.036 33.528 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "fcb445a0-ad48-488b-ba3b-d1b25c5c2b7a")
+	)
 	(junction
-		(at 58.42 154.94)
+		(at 105.41 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d3e686d-5f12-4cee-99f6-1480860b0da9")
 	)
 	(junction
-		(at 111.76 144.78)
+		(at 158.75 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0fda7c23-1a63-44d7-b47c-a13aa23a3e2d")
 	)
 	(junction
-		(at 68.58 106.68)
+		(at 115.57 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12d548ad-fb3c-47ae-a525-c1f972d60df4")
 	)
 	(junction
-		(at 111.76 154.94)
+		(at 158.75 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "208c63d1-2c67-4a1e-9c91-1e06a758b8fb")
 	)
 	(junction
-		(at 160.02 106.68)
+		(at 207.01 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25a33311-38c1-4c73-89db-9910cf7a3888")
 	)
 	(junction
-		(at 111.76 106.68)
+		(at 158.75 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b70647c-f897-4c77-b8f7-6d32e78327bc")
 	)
 	(junction
-		(at 146.05 106.68)
+		(at 193.04 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c765140-36ff-41f1-955d-de8601657545")
 	)
 	(junction
-		(at 166.37 114.3)
+		(at 213.36 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f4f5eeb-024c-4d89-9002-ae37024ed130")
 	)
 	(junction
-		(at 111.76 104.14)
+		(at 90.17 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a6e50fa-eac7-489b-9ee6-28d03b867caf")
+	)
+	(junction
+		(at 158.75 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b376513-362d-4667-b565-9c82f1db1e25")
 	)
 	(junction
-		(at 129.54 106.68)
+		(at 176.53 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c914426-9e9b-45f2-a1f1-9b0271b744d1")
 	)
 	(junction
-		(at 172.72 106.68)
+		(at 219.71 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "656e8ba5-50f3-44c0-87bd-9ec9741d9c58")
 	)
 	(junction
-		(at 50.8 154.94)
+		(at 97.79 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "896a2af3-f35b-4a4f-a071-a1e7c1b172cb")
 	)
 	(junction
-		(at 55.88 154.94)
+		(at 102.87 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9877d2ec-ba5c-4928-91b3-5a274eafaace")
 	)
 	(junction
-		(at 50.8 109.22)
+		(at 97.79 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ec0ea06-c220-4d31-997e-e35f104f80a7")
 	)
 	(junction
-		(at 129.54 115.57)
+		(at 176.53 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f65460c-c746-4ccd-a250-3c1447dcaccf")
 	)
 	(junction
-		(at 68.58 104.14)
+		(at 115.57 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6e77f33-cba1-481e-9f3a-5c3db922664a")
 	)
 	(junction
-		(at 111.76 142.24)
+		(at 158.75 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf2a3e6e-b54c-468d-980f-ba4a33ec3c6d")
 	)
 	(junction
-		(at 111.76 134.62)
+		(at 158.75 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d26e86e0-86ea-4701-955d-0c34f06b2b41")
 	)
 	(junction
-		(at 66.04 124.46)
+		(at 113.03 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e19d526a-5fdb-4240-872d-c4f58c758726")
 	)
 	(junction
-		(at 111.76 137.16)
+		(at 158.75 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea59750d-a4b8-4bd1-8b70-38e58b0ee043")
 	)
 	(junction
-		(at 111.76 139.7)
+		(at 158.75 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec5b294d-8949-4ccb-ae70-674dbb7a7826")
 	)
 	(junction
-		(at 129.54 154.94)
+		(at 176.53 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2e34db1-ac84-45a4-bb9b-e1b7a5da20cb")
 	)
 	(junction
-		(at 129.54 116.84)
+		(at 176.53 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9fe00a3-4c06-4853-a5a1-960467ab9cfc")
 	)
 	(junction
-		(at 55.88 101.6)
+		(at 102.87 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "facaa1b2-c3f2-48cc-8b9b-98e5222dc4e8")
 	)
 	(no_connect
-		(at 68.58 129.54)
+		(at 115.57 111.76)
 		(uuid "304f1235-e8c5-4dc0-94cc-d7187ac8dd37")
 	)
 	(no_connect
-		(at 68.58 144.78)
+		(at 115.57 127)
 		(uuid "52d2f457-e7a4-4215-9f82-40ca1e55c49d")
 	)
 	(no_connect
-		(at 111.76 127)
+		(at 158.75 109.22)
 		(uuid "694cb69a-4e87-43c4-ae87-8651f2df62d4")
 	)
 	(no_connect
-		(at 68.58 134.62)
+		(at 115.57 116.84)
 		(uuid "ac754d0c-889a-4ef3-b28a-25db37d4cde1")
 	)
 	(wire
 		(pts
-			(xy 121.92 111.76) (xy 121.92 116.84)
+			(xy 168.91 93.98) (xy 168.91 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1021,7 +1027,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 116.84) (xy 129.54 121.92)
+			(xy 176.53 99.06) (xy 176.53 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1031,7 +1037,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 115.57) (xy 129.54 116.84)
+			(xy 176.53 97.79) (xy 176.53 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1041,7 +1047,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 129.54) (xy 129.54 154.94)
+			(xy 176.53 111.76) (xy 176.53 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1051,7 +1057,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 116.84) (xy 129.54 116.84)
+			(xy 168.91 99.06) (xy 176.53 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1061,7 +1067,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 101.6) (xy 55.88 101.6)
+			(xy 90.17 83.82) (xy 102.87 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1071,7 +1077,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 106.68) (xy 187.96 106.68)
+			(xy 219.71 88.9) (xy 234.95 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1081,7 +1087,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 115.57) (xy 146.05 115.57)
+			(xy 176.53 97.79) (xy 193.04 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1091,7 +1097,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 114.3) (xy 129.54 115.57)
+			(xy 176.53 96.52) (xy 176.53 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1101,7 +1107,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 104.14) (xy 111.76 106.68)
+			(xy 158.75 86.36) (xy 158.75 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1111,7 +1117,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 109.22) (xy 50.8 109.22)
+			(xy 90.17 91.44) (xy 97.79 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1121,7 +1127,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 124.46) (xy 68.58 124.46)
+			(xy 113.03 106.68) (xy 115.57 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1131,7 +1137,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 132.08) (xy 111.76 134.62)
+			(xy 158.75 114.3) (xy 158.75 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1141,7 +1147,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 154.94) (xy 166.37 154.94)
+			(xy 85.09 137.16) (xy 213.36 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1151,7 +1157,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 109.22) (xy 55.88 109.22)
+			(xy 97.79 91.44) (xy 102.87 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1161,7 +1167,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 134.62) (xy 111.76 137.16)
+			(xy 158.75 116.84) (xy 158.75 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1171,7 +1177,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 114.3) (xy 172.72 114.3)
+			(xy 213.36 96.52) (xy 219.71 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1181,7 +1187,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 124.46) (xy 66.04 90.17)
+			(xy 113.03 106.68) (xy 113.03 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1191,7 +1197,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 144.78) (xy 111.76 154.94)
+			(xy 158.75 127) (xy 158.75 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1201,7 +1207,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 137.16) (xy 111.76 139.7)
+			(xy 158.75 119.38) (xy 158.75 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1211,7 +1217,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 139.7) (xy 111.76 142.24)
+			(xy 158.75 121.92) (xy 158.75 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1221,7 +1227,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 147.32) (xy 58.42 154.94)
+			(xy 105.41 129.54) (xy 105.41 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1231,7 +1237,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 115.57) (xy 146.05 114.3)
+			(xy 193.04 97.79) (xy 193.04 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1241,7 +1247,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 111.76) (xy 121.92 111.76)
+			(xy 158.75 93.98) (xy 168.91 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1251,7 +1257,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 106.68) (xy 172.72 106.68)
+			(xy 207.01 88.9) (xy 219.71 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1261,7 +1267,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 109.22) (xy 50.8 154.94)
+			(xy 97.79 91.44) (xy 97.79 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1271,7 +1277,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 142.24) (xy 111.76 144.78)
+			(xy 158.75 124.46) (xy 158.75 127)
 		)
 		(stroke
 			(width 0)
@@ -1281,7 +1287,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 106.68) (xy 160.02 106.68)
+			(xy 193.04 88.9) (xy 207.01 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1291,7 +1297,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 106.68) (xy 129.54 106.68)
+			(xy 158.75 88.9) (xy 176.53 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1301,7 +1307,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 124.46) (xy 66.04 124.46)
+			(xy 102.87 106.68) (xy 113.03 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1311,7 +1317,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 114.3) (xy 166.37 114.3)
+			(xy 207.01 96.52) (xy 213.36 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1321,7 +1327,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 106.68) (xy 146.05 106.68)
+			(xy 176.53 88.9) (xy 193.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1331,7 +1337,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 106.68) (xy 68.58 114.3)
+			(xy 115.57 88.9) (xy 115.57 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1341,7 +1347,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 132.08) (xy 55.88 154.94)
+			(xy 102.87 114.3) (xy 102.87 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1351,7 +1357,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 101.6) (xy 68.58 101.6)
+			(xy 102.87 83.82) (xy 115.57 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1361,7 +1367,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 139.7) (xy 68.58 139.7)
+			(xy 105.41 121.92) (xy 115.57 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1371,7 +1377,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 90.17) (xy 111.76 104.14)
+			(xy 158.75 72.39) (xy 158.75 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1381,7 +1387,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 101.6) (xy 68.58 104.14)
+			(xy 115.57 83.82) (xy 115.57 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1391,7 +1397,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 90.17) (xy 111.76 90.17)
+			(xy 113.03 72.39) (xy 158.75 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1401,7 +1407,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 116.84) (xy 111.76 121.92)
+			(xy 158.75 99.06) (xy 158.75 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1411,7 +1417,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 104.14) (xy 68.58 106.68)
+			(xy 115.57 86.36) (xy 115.57 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1421,7 +1427,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 114.3) (xy 166.37 154.94)
+			(xy 213.36 96.52) (xy 213.36 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1431,7 +1437,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 101.6) (xy 43.18 101.6)
+			(xy 77.47 83.82) (xy 90.17 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1441,7 +1447,7 @@
 	)
 	(hierarchical_label "VIN_12V"
 		(shape input)
-		(at 30.48 101.6 180)
+		(at 77.47 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1452,7 +1458,7 @@
 	)
 	(hierarchical_label "VOUT_5V"
 		(shape output)
-		(at 187.96 106.68 0)
+		(at 234.95 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1463,7 +1469,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape bidirectional)
-		(at 38.1 154.94 180)
+		(at 85.09 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1474,7 +1480,7 @@
 	)
 	(symbol
 		(lib_id "TPSM63606RDLR:PTPSM63606RDLR")
-		(at 68.58 104.14 0)
+		(at 115.57 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1485,7 +1491,7 @@
 		(fields_autoplaced yes)
 		(uuid "64bf58f9-a57a-4278-bd2c-82eb9b2a7875")
 		(property "Reference" "U2"
-			(at 90.17 93.98 0)
+			(at 137.16 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1495,7 +1501,7 @@
 			)
 		)
 		(property "Value" "PTPSM63606RDLR"
-			(at 90.17 96.52 0)
+			(at 137.16 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1505,7 +1511,7 @@
 			)
 		)
 		(property "Footprint" "project_footprints:RDL0020A-MFG"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1517,7 +1523,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/tpsm63606"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1529,7 +1535,7 @@
 			)
 		)
 		(property "Description" "36 V, 6 A synchronous step-down power module with integrated inductor, Enhanced HotRod QFN-20 (5.0 x 5.5 x 4 mm)"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1540,7 +1546,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1551,7 +1557,7 @@
 			)
 		)
 		(property "MPN" "TPSM63606RDLR (schematic symbol: PTPSM63606RDLR)"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1562,7 +1568,7 @@
 			)
 		)
 		(property "Product Page" "https://www.ti.com/product/TPSM63606"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1573,7 +1579,7 @@
 			)
 		)
 		(property "Key Specs" "VIN 3-36 V; VOUT 1-16 V adjustable; IOUT max 6 A; fsw 200 kHz-2.2 MHz set by RT; current-mode, spread spectrum; peak efficiency >95%; Tj -40 to 125 C"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1584,7 +1590,7 @@
 			)
 		)
 		(property "Design Notes" "VOUT = VREF x (1 + R4/R5) with FB divider R4 40k / R5 10k, C10 feed-forward; RT = R2 12.1k; EN tied to VIN; RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC needs 1 uF to AGND per datasheet - CHECK C9 placement (currently on VLDOIN/VOUT, VCC flagged NC)"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1595,7 +1601,7 @@
 			)
 		)
 		(property "Used In" "Sheet Buck_5V_6A: 12 V in, +5V 6A net out"
-			(at 68.58 104.14 0)
+			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1676,7 +1682,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 172.72 110.49 0)
+		(at 219.71 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1687,7 +1693,7 @@
 		(fields_autoplaced yes)
 		(uuid "803c769d-9277-4e8e-863d-5387e431dba4")
 		(property "Reference" "C12"
-			(at 176.53 109.22 0)
+			(at 223.52 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1698,7 +1704,7 @@
 			)
 		)
 		(property "Value" "47uF"
-			(at 176.53 111.76 0)
+			(at 223.52 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1709,7 +1715,7 @@
 			)
 		)
 		(property "Footprint" "project_footprints:C_Murata_GRM32ER71A476ME15"
-			(at 173.69 114.3 0)
+			(at 220.68 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1720,7 +1726,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf"
-			(at 172.72 110.49 0)
+			(at 219.71 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1731,7 +1737,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 172.72 110.49 0)
+			(at 219.71 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1742,7 +1748,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 172.72 110.49 0)
+			(at 219.71 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1753,7 +1759,7 @@
 			)
 		)
 		(property "MPN" "GRM32ER71A476ME15L"
-			(at 172.72 110.49 0)
+			(at 219.71 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1764,7 +1770,7 @@
 			)
 		)
 		(property "Specification" "47uF / 10V X7R"
-			(at 25.4 -127 0)
+			(at 72.39 -144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1791,7 +1797,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 129.54 125.73 0)
+		(at 176.53 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1802,7 +1808,7 @@
 		(fields_autoplaced yes)
 		(uuid "a807698f-5df5-4d34-8966-85225bbd90be")
 		(property "Reference" "R5"
-			(at 132.08 124.46 0)
+			(at 179.07 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1813,7 +1819,7 @@
 			)
 		)
 		(property "Value" "10kOhms"
-			(at 132.08 127 0)
+			(at 179.07 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1824,7 +1830,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 127.76 125.73 90)
+			(at 174.75 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1835,7 +1841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 125.73 0)
+			(at 176.53 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1846,7 +1852,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 129.54 125.73 0)
+			(at 176.53 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1873,7 +1879,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 146.05 110.49 0)
+		(at 193.04 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1884,7 +1890,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4cdbd9e-ef2b-4119-ad7f-edad0d96ca85")
 		(property "Reference" "C10"
-			(at 149.86 109.22 0)
+			(at 196.85 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1895,7 +1901,7 @@
 			)
 		)
 		(property "Value" "8.2pF"
-			(at 149.86 111.76 0)
+			(at 196.85 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1906,7 +1912,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 147.02 114.3 0)
+			(at 194.01 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1917,7 +1923,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H8R2DA01-01A.pdf"
-			(at 146.05 110.49 0)
+			(at 193.04 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1928,7 +1934,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 146.05 110.49 0)
+			(at 193.04 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1939,7 +1945,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 146.05 110.49 0)
+			(at 193.04 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1950,7 +1956,7 @@
 			)
 		)
 		(property "MPN" "GRM1885C1H8R2DA01D"
-			(at 146.05 110.49 0)
+			(at 193.04 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1961,7 +1967,7 @@
 			)
 		)
 		(property "Specification" "8.2pF / 50V C0G"
-			(at 25.4 -127 0)
+			(at 72.39 -144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1988,7 +1994,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 129.54 110.49 0)
+		(at 176.53 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1999,7 +2005,7 @@
 		(fields_autoplaced yes)
 		(uuid "bdbaebb3-b3cd-44dc-8860-91582565fe0a")
 		(property "Reference" "R4"
-			(at 132.08 109.22 0)
+			(at 179.07 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2010,7 +2016,7 @@
 			)
 		)
 		(property "Value" "40kOhms"
-			(at 132.08 111.76 0)
+			(at 179.07 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2021,7 +2027,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 127.76 110.49 90)
+			(at 174.75 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2032,7 +2038,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 110.49 0)
+			(at 176.53 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2043,7 +2049,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 129.54 110.49 0)
+			(at 176.53 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2070,7 +2076,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 55.88 128.27 0)
+		(at 102.87 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2081,7 +2087,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5249e2d-d119-4b1e-86e8-bb9b6602b780")
 		(property "Reference" "C9"
-			(at 59.69 127 0)
+			(at 106.68 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2092,7 +2098,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 59.69 129.54 0)
+			(at 106.68 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2103,7 +2109,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 56.85 132.08 0)
+			(at 103.84 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2114,7 +2120,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf"
-			(at 55.88 128.27 0)
+			(at 102.87 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2125,7 +2131,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 55.88 128.27 0)
+			(at 102.87 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2136,7 +2142,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 55.88 128.27 0)
+			(at 102.87 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2147,7 +2153,7 @@
 			)
 		)
 		(property "MPN" "GRM188R71C105KA12D"
-			(at 55.88 128.27 0)
+			(at 102.87 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2158,7 +2164,7 @@
 			)
 		)
 		(property "Specification" "1uF / 16V X7R"
-			(at 25.4 -127 0)
+			(at 72.39 -144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2185,7 +2191,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 43.18 105.41 0)
+		(at 90.17 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2195,7 +2201,7 @@
 		(dnp no)
 		(uuid "ca3d04b5-5da6-4d4e-93c6-f1a20e6d06a8")
 		(property "Reference" "C8"
-			(at 46.99 104.14 0)
+			(at 93.98 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2206,7 +2212,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 46.99 106.68 0)
+			(at 93.98 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2217,7 +2223,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 44.15 109.22 0)
+			(at 91.14 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2228,7 +2234,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf"
-			(at 43.18 105.41 0)
+			(at 90.17 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2239,7 +2245,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 43.18 105.41 0)
+			(at 90.17 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2250,7 +2256,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 43.18 105.41 0)
+			(at 90.17 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2261,7 +2267,7 @@
 			)
 		)
 		(property "MPN" "GRM32ER71H106KA12L"
-			(at 43.18 105.41 0)
+			(at 90.17 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2272,7 +2278,7 @@
 			)
 		)
 		(property "Specification" "10uF / 50V X7R"
-			(at 25.4 -127 0)
+			(at 72.39 -144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2299,7 +2305,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 160.02 110.49 0)
+		(at 207.01 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2310,7 +2316,7 @@
 		(fields_autoplaced yes)
 		(uuid "cfa51912-8068-4e7a-ae80-970b9600db9f")
 		(property "Reference" "C11"
-			(at 163.83 109.22 0)
+			(at 210.82 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2321,7 +2327,7 @@
 			)
 		)
 		(property "Value" "47uF"
-			(at 163.83 111.76 0)
+			(at 210.82 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2332,7 +2338,7 @@
 			)
 		)
 		(property "Footprint" "project_footprints:C_Murata_GRM32ER71A476ME15"
-			(at 160.99 114.3 0)
+			(at 207.98 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2343,7 +2349,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf"
-			(at 160.02 110.49 0)
+			(at 207.01 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2354,7 +2360,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 160.02 110.49 0)
+			(at 207.01 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2365,7 +2371,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 160.02 110.49 0)
+			(at 207.01 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2376,7 +2382,7 @@
 			)
 		)
 		(property "MPN" "GRM32ER71A476ME15L"
-			(at 160.02 110.49 0)
+			(at 207.01 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2387,7 +2393,7 @@
 			)
 		)
 		(property "Specification" "47uF / 10V X7R"
-			(at 25.4 -127 0)
+			(at 72.39 -144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2414,7 +2420,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 143.51 0)
+		(at 105.41 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2425,7 +2431,7 @@
 		(fields_autoplaced yes)
 		(uuid "de94d4f5-f797-4797-91f8-9a9a0aa52aee")
 		(property "Reference" "R2"
-			(at 60.96 142.24 0)
+			(at 107.95 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2436,7 +2442,7 @@
 			)
 		)
 		(property "Value" "12.1k"
-			(at 60.96 144.78 0)
+			(at 107.95 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2447,7 +2453,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 56.64 143.51 90)
+			(at 103.63 125.73 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2458,7 +2464,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 143.51 0)
+			(at 105.41 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2469,7 +2475,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 58.42 143.51 0)
+			(at 105.41 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2496,7 +2502,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 55.88 105.41 0)
+		(at 102.87 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2507,7 +2513,7 @@
 		(fields_autoplaced yes)
 		(uuid "f635ffa2-1d91-471e-9977-fe0fba13aa6e")
 		(property "Reference" "C7"
-			(at 59.69 104.14 0)
+			(at 106.68 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2518,7 +2524,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 59.69 106.68 0)
+			(at 106.68 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2529,7 +2535,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 56.85 109.22 0)
+			(at 103.84 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2540,7 +2546,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf"
-			(at 55.88 105.41 0)
+			(at 102.87 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2551,7 +2557,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 55.88 105.41 0)
+			(at 102.87 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2562,7 +2568,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 55.88 105.41 0)
+			(at 102.87 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2573,7 +2579,7 @@
 			)
 		)
 		(property "MPN" "GRM32ER71H106KA12L"
-			(at 55.88 105.41 0)
+			(at 102.87 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2584,7 +2590,7 @@
 			)
 		)
 		(property "Specification" "10uF / 50V X7R"
-			(at 25.4 -127 0)
+			(at 72.39 -144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
