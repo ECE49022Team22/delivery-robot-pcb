@@ -9518,7 +9518,7 @@
 			)
 		)
 		(property "Value" "TP"
-			(at 85.09 137.16 0)
+			(at 83.566 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15726,7 +15726,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5V, 2A"
 			(at 90.17 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
