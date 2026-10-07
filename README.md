@@ -26,8 +26,11 @@ Custom symbol and footprint libraries are included and registered in the project
 | delivery_robot_1.kicad_pro | Active KiCad project settings |
 | delivery_robot_1.kicad_sch | Main board schematic |
 | Buck_5V_2A.kicad_sch | Hierarchical 12 V to 5 V, 2 A buck sheet (TPS54202) |
-| Buck_5V_6A.kicad_sch | Hierarchical 12 V to 5 V, 6 A buck sheet (TPSM63606) |
+| Buck_5V_6A.kicad_sch | Hierarchical 12 V to 5 V, 6 A buck sheet (TPSM63606), feeds the Pi 5 |
+| Buck_5V_6A_AUX.kicad_sch | Second 12 V to 5 V, 6 A buck sheet (TPSM63606), +5V, 6A AUX rail |
 | LDO_3V3.kicad_sch | Hierarchical 3.3 V power supply sheet |
+| Pi5_Interface.kicad_sch | Raspberry Pi 5 UART (J13) and fused power output (F2, J14) |
+| GPIO_Breakout.kicad_sch | 2.54 mm headers J8-J10 for all spare STM32 pins (global labels) |
 | libs/ | Custom buck converter symbols and footprints |
 | LDO_KiCad/ | Reusable LDO example, libraries and footprint review |
 | sym-lib-table, fp-lib-table | Project-specific library configuration |

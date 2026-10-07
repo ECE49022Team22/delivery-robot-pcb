@@ -5,10 +5,11 @@ The power supply is split into hierarchical sheets. The root schematic keeps the
 | Sheet file | Sheet name | Regulator | Input | Output net |
 | --- | --- | --- | --- | --- |
 | Buck_5V_2A.kicad_sch | Buck 12V-5V 2A | TPS54202DDCR (U3) | +12V | +5V, 2A |
-| Buck_5V_6A.kicad_sch | Buck 12V-5V 6A | TPSM63606RDLR (U2) | +12V | +5V, 6A |
+| Buck_5V_6A.kicad_sch | Buck 12V-5V 6A PI | TPSM63606RDLR (U2) | +12V | +5V, 6A PI |
+| Buck_5V_6A_AUX.kicad_sch | Buck 12V-5V 6A AUX | TPSM63606RDLR (U5) | +12V | +5V, 6A AUX |
 | LDO_3V3.kicad_sch | LDO Power | TPS7A8101DRBR (U4) | +5V, 2A | +3V3 |
 
-Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The two buck outputs are separate nets and must not be tied together. The +5V, 6A net feeds the off-board Raspberry Pi 5 through F2 and J14.
+Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The buck outputs are separate nets and must not be tied together. +5V, 6A PI feeds the off-board Raspberry Pi 5 through F2 and J14. +5V, 6A AUX comes from a second, independent copy of the 6 A buck (U5, C28-C33, R14-R16) and has no loads assigned yet. The AUX sheet inherits the open items listed for U2 below (C9 -> C30 placement, R4/R5 -> R15/R16 output voltage).
 
 ## Battery input (J2)
 
