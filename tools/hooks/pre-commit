@@ -1,0 +1,40 @@
+#!/bin/sh
+# Regenerate delivery_robot_1.pdf whenever schematic files are committed.
+#
+# The PDF is plotted from the *staged* files (not the working tree), so it
+# always matches exactly what is being committed. Enable once per clone:
+#     git config core.hooksPath tools/hooks
+
+PDF=delivery_robot_1.pdf
+ROOT_SCH=delivery_robot_1.kicad_sch
+
+# Only run when a schematic or the project file is part of this commit.
+if ! git diff --cached --name-only --diff-filter=ACMRD | grep -Eq '\.kicad_(sch|pro)$'; then
+	exit 0
+fi
+
+# Locate kicad-cli: $KICAD_CLI, then PATH, then the default macOS install.
+CLI=${KICAD_CLI:-}
+[ -z "$CLI" ] && CLI=$(command -v kicad-cli 2>/dev/null)
+[ -z "$CLI" ] && [ -x /Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli ] &&
+	CLI=/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli
+if [ -z "$CLI" ]; then
+	echo "pre-commit: kicad-cli not found; $PDF was NOT updated." >&2
+	echo "pre-commit: install KiCad or set KICAD_CLI, then recommit." >&2
+	exit 1
+fi
+
+TMP=$(mktemp -d "${TMPDIR:-/tmp}/sch-pdf.XXXXXX") || exit 1
+trap 'rm -rf "$TMP"' EXIT
+
+# Snapshot the index (staged content, including project libraries).
+git checkout-index -a --prefix="$TMP/" || exit 1
+
+if ! "$CLI" sch export pdf -o "$TMP/$PDF" "$TMP/$ROOT_SCH" >"$TMP/plot.log" 2>&1; then
+	grep -v Fontconfig "$TMP/plot.log" >&2
+	echo "pre-commit: schematic PDF export failed; commit aborted." >&2
+	exit 1
+fi
+
+cp "$TMP/$PDF" "$PDF" && git add "$PDF" || exit 1
+echo "pre-commit: updated $PDF"
