@@ -31,6 +31,8 @@ Custom symbol and footprint libraries are included and registered in the project
 | LDO_3V3.kicad_sch | Hierarchical 3.3 V power supply sheet |
 | Pi5_Interface.kicad_sch | Raspberry Pi 5 UART (J13) and fused power output (F2, J14) |
 | GPIO_Breakout.kicad_sch | 2.54 mm headers J8-J10 for all spare STM32 pins (global labels) |
+| delivery_robot_1.pdf | Plot of all schematic sheets, regenerated automatically on every schematic commit |
+| tools/hooks/ | Git hooks (pre-commit regenerates the schematic PDF) |
 | libs/ | Custom buck converter symbols and footprints |
 | LDO_KiCad/ | Reusable LDO example, libraries and footprint review |
 | sym-lib-table, fp-lib-table | Project-specific library configuration |
@@ -60,5 +62,6 @@ Saved reports describe the checked revision. Regenerate them after relevant desi
 - Work on branches and review changes before merging.
 - Save files in KiCad before committing. Include required project-local libraries with design changes.
 - Run ERC after schematic changes and DRC after layout changes. Review outstanding findings before ordering boards.
+- Enable the repository hooks once per clone with `git config core.hooksPath tools/hooks`. The pre-commit hook then re-plots delivery_robot_1.pdf from the staged schematic files and adds it to any commit that changes a `.kicad_sch` or `.kicad_pro` file. It needs KiCad installed; set `KICAD_CLI` if kicad-cli is not in the default location.
 
 Editing locks, local UI settings and automatic backups are excluded from Git. Edit the native KiCad sources directly; regenerating files from older scripts may overwrite manual changes.
