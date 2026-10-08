@@ -892,7 +892,7 @@
 			)
 		)
 	)
-	(global_label "+5V, 6A PI"
+	(global_label "+5V_PI"
 		(shape input)
 		(at 76.2 76.2 180)
 		(fields_autoplaced yes)
@@ -915,7 +915,7 @@
 			)
 		)
 	)
-	(global_label "+5V, 6A AUX"
+	(global_label "+5V_AUX"
 		(shape input)
 		(at 76.2 88.9 180)
 		(fields_autoplaced yes)
@@ -1007,7 +1007,7 @@
 			)
 		)
 	)
-	(global_label "+5V, 2A"
+	(global_label "+5V_SYS"
 		(shape input)
 		(at 76.2 101.6 180)
 		(fields_autoplaced yes)
@@ -1621,7 +1621,7 @@
 				)
 			)
 		)
-		(property "Description" "Current limit for the +5V, 6A AUX power LED D6: 2.0 mA"
+		(property "Description" "Current limit for the +5V_AUX power LED D6: 2.0 mA"
 			(at 83.82 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -2082,7 +2082,7 @@
 				)
 			)
 		)
-		(property "Description" "+5V, 2A rail power indicator, 0603 green LED (2.0 V typ, 571 nm)"
+		(property "Description" "+5V_SYS rail power indicator, 0603 green LED (2.0 V typ, 571 nm)"
 			(at 96.52 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2493,7 +2493,7 @@
 				)
 			)
 		)
-		(property "Description" "+5V, 6A PI rail power indicator, 0603 green LED (2.0 V typ, 571 nm)"
+		(property "Description" "+5V_PI rail power indicator, 0603 green LED (2.0 V typ, 571 nm)"
 			(at 96.52 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2849,7 +2849,7 @@
 				)
 			)
 		)
-		(property "Description" "Current limit for the +5V, 6A PI power LED D5: 2.0 mA"
+		(property "Description" "Current limit for the +5V_PI power LED D5: 2.0 mA"
 			(at 83.82 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3183,7 +3183,7 @@
 				)
 			)
 		)
-		(property "Description" "Current limit for the +5V, 2A power LED D7: 2.0 mA"
+		(property "Description" "Current limit for the +5V_SYS power LED D7: 2.0 mA"
 			(at 83.82 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -3262,7 +3262,7 @@
 				)
 			)
 		)
-		(property "Description" "+5V, 6A AUX rail power indicator, 0603 green LED (2.0 V typ, 571 nm)"
+		(property "Description" "+5V_AUX rail power indicator, 0603 green LED (2.0 V typ, 571 nm)"
 			(at 96.52 88.9 0)
 			(hide yes)
 			(show_name no)

@@ -429,7 +429,7 @@
         "uuid": "30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
       }
     ],
-    "used_designators": "J5,D1",
+    "used_designators": "D1,J5",
     "variants": []
   },
   "sheets": [
@@ -443,15 +443,15 @@
     ],
     [
       "6703cd4e-ae4e-4732-91ad-54a19544ca3e",
-      "Buck 12V-5V 6A PI"
+      "Buck 5V PI"
     ],
     [
       "45fd30b8-e3d0-4ad8-a19a-9569735f4754",
-      "Buck 12V-5V 2A"
+      "Buck 5V SYS"
     ],
     [
       "472ee453-7701-4e13-8d8d-09d254496392",
-      "Buck 12V-5V 6A AUX"
+      "Buck 5V AUX"
     ],
     [
       "c056b61f-6369-4e88-a9e3-647282746e13",

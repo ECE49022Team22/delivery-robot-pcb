@@ -3,4 +3,5 @@
   (lib (name "TPS54202DDCR")(type "KiCad")(uri "${KIPRJMOD}/libs/TPS54202DDCR.kicad_sym")(options "")(descr ""))
   (lib (name "TPSM63606RDLR")(type "KiCad")(uri "${KIPRJMOD}/libs/TPSM63606RDLR.kicad_sym")(options "")(descr ""))
 (lib (name "LDO_Power")(type "KiCad")(uri "${KIPRJMOD}/LDO_KiCad/LDO_Power.kicad_sym")(options "")(descr "Reusable LDO symbol"))
+  (lib (name "project_symbols")(type "KiCad")(uri "${KIPRJMOD}/libs/project_symbols.kicad_sym")(options "")(descr "Symbols frozen at the versions used in this design"))
 )
