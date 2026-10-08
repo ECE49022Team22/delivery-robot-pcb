@@ -429,7 +429,7 @@
         "uuid": "30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
       }
     ],
-    "used_designators": "D1,J5",
+    "used_designators": "J5,D1",
     "variants": []
   },
   "sheets": [
@@ -468,6 +468,10 @@
     [
       "99151f47-1745-4fb4-8589-dc344779a195",
       "Motor Control"
+    ],
+    [
+      "9305f25b-bf2a-4152-80b2-35e00eebe697",
+      "Test Points"
     ]
   ],
   "text_variables": {},
