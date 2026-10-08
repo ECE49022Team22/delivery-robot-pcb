@@ -460,6 +460,10 @@
     [
       "d46f29d0-063e-4ee0-adfc-cd928cf11044",
       "MCU GPIO Breakout"
+    ],
+    [
+      "e19dfacc-2886-4cd4-8ac7-6c77d5df361d",
+      "Power Indicators"
     ]
   ],
   "text_variables": {},
