@@ -8914,17 +8914,6 @@
 		)
 		(uuid "c4986f8f-9979-4406-8b3e-e5c94e744f96")
 	)
-	(text "power led indicator"
-		(exclude_from_sim no)
-		(at 32.004 116.332 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "074bd2c2-2d1b-4d47-b2c1-96832da4ac92")
-	)
 	(text "Motor 1 off-board connections (Cytron MDD20A driver + 37D encoder motor)\nPWM on TIM3 (PA6), encoder on TIM2 (PA15 / PB3).\nEncoder Vcc is +5V, 2A from the TPS54202 buck (before the LDO), not from the MCU.\nDriver VB+/VB- (6-30 V battery) and M1A/M1B wire directly to the MDD20A (not on this board)."
 		(exclude_from_sim no)
 		(at 181.61 26.67 0)
@@ -9224,16 +9213,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 127) (xy 55.88 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "022d30b1-0a00-43ee-bef7-de83ad850060")
-	)
-	(wire
-		(pts
 			(xy 213.36 149.86) (xy 218.44 149.86)
 		)
 		(stroke
@@ -9454,16 +9433,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 135.89) (xy 55.88 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "236b0df3-574b-4d0b-a903-b5764b8d6a44")
-	)
-	(wire
-		(pts
 			(xy 104.14 243.84) (xy 119.38 243.84)
 		)
 		(stroke
@@ -9501,16 +9470,6 @@
 			(type default)
 		)
 		(uuid "2a1c9f90-c5ad-42ae-b6a6-2901edbbaf1b")
-	)
-	(wire
-		(pts
-			(xy 55.88 119.38) (xy 55.88 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a66bcef-e43c-4243-80ac-57e62419e662")
 	)
 	(wire
 		(pts
@@ -10311,16 +10270,6 @@
 			(type default)
 		)
 		(uuid "b335bd71-c409-4a42-8509-8a7c94e43ffd")
-	)
-	(wire
-		(pts
-			(xy 40.64 135.89) (xy 35.56 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3ba26ce-6da5-4b16-b433-3b33bbd02050")
 	)
 	(wire
 		(pts
@@ -11305,7 +11254,7 @@
 			)
 		)
 	)
-	(global_label "PB14"
+	(global_label "LED_MOTOR"
 		(shape bidirectional)
 		(at 218.44 200.66 0)
 		(fields_autoplaced yes)
@@ -11397,7 +11346,7 @@
 			)
 		)
 	)
-	(global_label "PB13"
+	(global_label "LED_IMU"
 		(shape bidirectional)
 		(at 218.44 198.12 0)
 		(fields_autoplaced yes)
@@ -11999,7 +11948,7 @@
 			)
 		)
 	)
-	(global_label "PB12"
+	(global_label "LED_PI_LINK"
 		(shape bidirectional)
 		(at 218.44 195.58 0)
 		(fields_autoplaced yes)
@@ -15548,82 +15497,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 35.56 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "995c3eec-0cb9-4637-b509-0b70d1421023")
-		(property "Reference" "#PWR056"
-			(at 35.56 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 35.56 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 35.56 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e3e59b04-4b0c-424b-957f-e5052ca43404")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 49.53 58.42 270)
 		(unit 1)
@@ -15698,86 +15571,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 44.45 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9c884ca3-9033-482c-9bb5-1fe977df4d0c")
-		(property "Reference" "D3"
-			(at 46.99 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GREEN"
-			(at 46.99 137.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 44.45 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 44.45 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "729e1793-6a7e-4062-bbb3-2b90095b82e6")
-		)
-		(pin "2"
-			(uuid "969758cc-ff74-4bcc-80cb-76ed331dddf3")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -16504,86 +16297,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ad2a0fad-3333-4ba5-9270-08564c3d0238")
-		(property "Reference" "R3"
-			(at 58.42 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "510"
-			(at 58.42 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 55.88 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 123.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc45bc6a-daf4-4c7b-8ebc-271b8884055e")
-		)
-		(pin "2"
-			(uuid "ee68d916-e320-4699-993c-c26c18bacf8a")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -17881,82 +17594,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 55.88 116.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f2819cf9-6dd9-420a-ab44-7a42b196ce62")
-		(property "Reference" "#PWR012"
-			(at 55.88 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 55.88 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "abf4096d-46bb-4953-9701-2d7a9cc969d1")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 36.83 58.42 0)
 		(unit 1)
@@ -18455,6 +18092,225 @@
 				)
 			)
 		)
+	)
+	(sheet
+		(at 27.94 116.84)
+		(size 30.48 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e19dfacc-2886-4cd4-8ac7-6c77d5df361d")
+		(property "Sheetname" "Power Indicators"
+			(at 27.94 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power_Indicators.kicad_sch"
+			(at 27.94 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(page "8")
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 41.91 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ba98336-f68e-4a0c-8a20-db7f4d536b00")
+		(property "Reference" "R25"
+			(at 44.449999999999996 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 44.449999999999996 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 41.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "NRST pull-up to +3V3. Supplements the STM32 internal ~40k pull-up for a firmer reset-line level against noise."
+			(at 41.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "184b2868-2fb3-4be7-bec7-b483f312e761")
+		)
+		(pin "2"
+			(uuid "bfbf32dc-a850-461b-b804-b4a47a7e80d0")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 41.91 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6ebc9c0c-20bf-4816-b285-11c0505b964d")
+		(property "Reference" "#PWR085"
+			(at 41.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 41.91 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4d005c2f-0c4c-4f0e-8d8a-5d5f23c253dd")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.91 50.8) (xy 41.91 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4fce129-db0d-4593-a72e-4fc3e3872ec0")
+	)
+	(junction
+		(at 41.91 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f7f5531-8407-4e03-bdac-5b0c25bb3d92")
 	)
 	(sheet_instances
 		(path "/"
