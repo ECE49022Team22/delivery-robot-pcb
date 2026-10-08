@@ -1501,7 +1501,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "40kOhms"
+		(property "Value" "40.2k / 1%"
 			(at 179.07 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2098,7 +2098,7 @@
 				)
 			)
 		)
-		(property "Design Notes" "VOUT = VREF x (1 + R15/R16) with FB divider R15 40k / R16 10k, C31 feed-forward; RT = R14 12.1k; EN tied to VIN; RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC needs 1 uF to AGND per datasheet - CHECK C30 placement (currently on VLDOIN/VOUT, VCC flagged NC)"
+		(property "Design Notes" "VOUT = VREF x (1 + R15/R16) with FB divider R15 40.2k / R16 10k (VOUT = 5.02 V), C31 feed-forward; RT = R14 12.1k; EN tied to VIN; RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC needs 1 uF to AGND per datasheet - CHECK C30 placement (currently on VLDOIN/VOUT, VCC flagged NC)"
 			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
