@@ -7,7 +7,7 @@
 	(title_block
 		(title "Motor control - MDD20A driver and encoders")
 		(date "2026-10-08")
-		(rev "1.0")
+		(rev "1.1")
 		(company "Senior Design")
 	)
 	(lib_symbols
@@ -582,6 +582,1133 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Power_Protection:USBLC6-4SC6"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 1.27 9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "USBLC6-4SC6"
+				(at 1.27 6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 2.54 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-4.pdf"
+				(at 2.54 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "Very low capacitance ESD protection diode, 4 data-line, SOT-23-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "usb ethernet sim card video"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "USBLC6-4SC6_0_0"
+				(circle
+					(center -3.556 2.54)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.778 4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.778 0)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.778 -7.112)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.508 4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.508 -7.112)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 -7.112)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.778 4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.778 -5.08)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.778 -7.112)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USBLC6-4SC6_0_1"
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -3.556 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -1.778 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy 1.778 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.064 3.048) (xy -3.048 3.048) (xy -3.556 4.064) (xy -4.064 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.064 -5.588) (xy -3.048 -5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 4.064) (xy -4.064 4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -6.604) (xy -4.064 -6.604) (xy -3.556 -5.588) (xy -3.048 -6.604)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 4.064) (xy -1.27 4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 -5.588) (xy -1.27 -5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.048) (xy -2.286 3.048) (xy -1.778 4.064) (xy -1.27 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -6.604) (xy -2.286 -6.604) (xy -1.778 -5.588) (xy -1.27 -6.604)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 3.048) (xy 0.508 3.048) (xy 0 4.064) (xy -0.508 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -5.588) (xy 0.508 -5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -6.604) (xy 0.508 -6.604) (xy 0 -5.588) (xy -0.508 -6.604)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0.508 4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 4.064) (xy -0.508 4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -7.112) (xy -0.508 -7.112)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 4.064) (xy 2.286 4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -6.604) (xy 2.286 -6.604) (xy 1.778 -5.588) (xy 1.27 -6.604)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 4.572) (xy 3.302 4.572) (xy 3.302 -7.112) (xy 1.778 -7.112)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 3.048) (xy 1.27 3.048) (xy 1.778 4.064) (xy 2.286 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -5.588) (xy 1.27 -5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.762) (xy 2.794 -0.381) (xy 3.81 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.524) (xy 2.794 -1.524) (xy 3.302 -0.508) (xy 3.81 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USBLC6-4SC6_1_1"
+				(rectangle
+					(start -5.08 5.334)
+					(end 5.08 -7.874)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 4.572) (xy -3.556 4.572) (xy -3.556 -7.112) (xy -1.778 -7.112)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 4.572) (xy 1.778 4.572) (xy 1.778 -7.112) (xy 0.508 -7.112)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -7.62) (xy -0.508 -7.112) (xy -1.778 -7.112) (xy -1.778 4.572) (xy -0.508 4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -7.112) (xy 0 -6.604) (xy 0 4.064) (xy -0.508 4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "I/O3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(name "I/O4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3V3"
+			(power global)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_names
@@ -831,319 +1958,390 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Motor control - Cytron MDD20A dual-channel driver + two 37D encoder motors"
-		(exclude_from_sim no)
-		(at 25.4 27.94 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left top)
-		)
-		(uuid "2e8bc2ef-2807-43c5-b79e-39b0537c8fe2")
-	)
-	(text "STM32F091 PIN ASSIGNMENT\n\nMotor 1  (J6 driver, J7 encoder)\n  MOTOR1_PWM  PA6   TIM3_CH1  -> MDD20A PWM1\n  MOTOR1_DIR  PB0   GPIO      -> MDD20A DIR1\n  ENC1_A      PA15  TIM2_CH1  <- encoder A (yellow)\n  ENC1_B      PB3   TIM2_CH2  <- encoder B (white)\n\nMotor 2  (J16 driver, J15 encoder)\n  MOTOR2_PWM  PA7   TIM3_CH2  -> MDD20A PWM2\n  MOTOR2_DIR  PB2   GPIO      -> MDD20A DIR2\n  ENC2_A      PA8   TIM1_CH1  <- encoder A (yellow)\n  ENC2_B      PA9   TIM1_CH2  <- encoder B (white)\n\nTimers: TIM3 = both PWMs (same frequency, <= 20 kHz for MDD20A)\n        TIM2 = encoder 1, TIM1 = encoder 2 (encoder mode)\nEncoders powered from +5V, 2A; A/B pins must be 5 V tolerant (FT).\nDriver VB+/VB- (battery) and M1A/M1B, M2A/M2B wire directly to the MDD20A."
-		(exclude_from_sim no)
-		(at 127 45.72 0)
+	(hierarchical_label "MOTOR1_PWM"
+		(shape input)
+		(at 45.72 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
+			(justify right)
 		)
-		(uuid "721ff8e8-dfae-4340-b884-7d4408af366a")
+		(uuid "cc49e312-4b00-49a8-a273-075962a66563")
 	)
 	(wire
 		(pts
-			(xy 46.99 85.09) (xy 59.69 85.09)
+			(xy 45.72 50.8) (xy 54.61 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "08e4e040-0366-4ea8-b585-c3a5bdeb892b")
+		(uuid "ab6c95ca-5417-4aec-9da2-b6d83e5a920e")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 50.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6e11bc0a-02c2-4585-b093-44f63d58fbbc")
+		(property "Reference" "R26"
+			(at 58.42 48.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 58.42 53.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 58.42 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100R series resistor on MOTOR1_PWM (J6 pin 1): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+			(at 58.42 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "124ee6c2-f2d7-46fc-b562-1d012495e856")
+		)
+		(pin "2"
+			(uuid "05f3b0fe-5f36-4768-ae98-fcdc76257b37")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(wire
 		(pts
-			(xy 54.61 87.63) (xy 54.61 90.17)
+			(xy 62.23 50.8) (xy 69.85 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1ae17f6c-43bd-4d74-b264-59c514036bf1")
+		(uuid "2dedcb99-7832-4b4c-b307-3c01f376046f")
 	)
-	(wire
-		(pts
-			(xy 59.69 130.81) (xy 54.61 130.81)
+	(label "MOTOR1_PWM_CONN"
+		(at 69.85 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ff2fe3f-7e8b-441d-bd8b-cc61b9ce4cf8")
-	)
-	(wire
-		(pts
-			(xy 54.61 80.01) (xy 54.61 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a1c9f90-c5ad-42ae-b6a6-2901edbbaf1b")
-	)
-	(wire
-		(pts
-			(xy 46.99 57.15) (xy 59.69 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cede182-43d4-4a10-9228-3515579e2193")
-	)
-	(wire
-		(pts
-			(xy 59.69 138.43) (xy 54.61 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51e4a72c-f828-4f9f-8ff7-65b73b6a1942")
-	)
-	(wire
-		(pts
-			(xy 59.69 113.03) (xy 54.61 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77cbdc7c-33a1-4e53-b836-02f420b7c63d")
-	)
-	(wire
-		(pts
-			(xy 46.99 107.95) (xy 59.69 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "830f5916-943d-4622-8a5a-729838f40d42")
-	)
-	(wire
-		(pts
-			(xy 54.61 130.81) (xy 54.61 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ff98950-6fa3-4b9b-98d5-2205b7dfccc3")
-	)
-	(wire
-		(pts
-			(xy 59.69 87.63) (xy 54.61 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2bc545c-7620-4f42-a8ed-f817a5fbf2a1")
-	)
-	(wire
-		(pts
-			(xy 46.99 59.69) (xy 59.69 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad3b91b8-c61e-4f6c-89ab-70786219d8bd")
-	)
-	(wire
-		(pts
-			(xy 59.69 80.01) (xy 54.61 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b335bd71-c409-4a42-8509-8a7c94e43ffd")
-	)
-	(wire
-		(pts
-			(xy 59.69 62.23) (xy 54.61 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b40a5d21-54a1-4314-854a-095928921bd0")
-	)
-	(wire
-		(pts
-			(xy 46.99 133.35) (xy 59.69 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0c92293-15cd-4045-aef4-50c374b1380e")
-	)
-	(wire
-		(pts
-			(xy 54.61 113.03) (xy 54.61 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce5cfada-0101-47f5-85c3-23cedcc76dd0")
-	)
-	(wire
-		(pts
-			(xy 46.99 135.89) (xy 59.69 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1e9d871-c6e0-4ff8-ac8c-8efc508485fc")
-	)
-	(wire
-		(pts
-			(xy 46.99 82.55) (xy 59.69 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2eb09d0-c0fd-4d93-af7c-9951b94822c5")
-	)
-	(wire
-		(pts
-			(xy 54.61 62.23) (xy 54.61 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3b08b46-eb07-456f-b71c-869d30e75a2b")
-	)
-	(wire
-		(pts
-			(xy 54.61 138.43) (xy 54.61 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8375926-4952-4ebf-9ea4-56a2d061b0db")
-	)
-	(wire
-		(pts
-			(xy 46.99 110.49) (xy 59.69 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea9177bd-7dbf-4501-a36f-0becfde16654")
+		(uuid "a6dc5b8d-6ecd-4b3a-9af9-74066b2a5c01")
 	)
 	(hierarchical_label "MOTOR1_DIR"
 		(shape input)
-		(at 46.99 59.69 180)
+		(at 45.72 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "0319fbbd-8522-401c-83b6-3bc335831500")
+		(uuid "a4660cc2-7ab4-4a6e-9a4e-2efb6a198eeb")
+	)
+	(wire
+		(pts
+			(xy 45.72 58.42) (xy 54.61 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "988af23a-0546-4d03-b212-48271cb06bee")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 58.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bdfc6959-5658-409c-915c-c9c6488507f6")
+		(property "Reference" "R27"
+			(at 58.42 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 58.42 60.96 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 58.42 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100R series resistor on MOTOR1_DIR (J6 pin 2): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+			(at 58.42 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a810ba65-e577-4d4f-8619-61bd28d79b66")
+		)
+		(pin "2"
+			(uuid "7f263d07-af89-4e5b-92f8-a785ddbd232a")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 62.23 58.42) (xy 69.85 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5b03381-262b-476f-a6c5-a6414571b4e3")
+	)
+	(label "MOTOR1_DIR_CONN"
+		(at 69.85 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e653804-bdbe-4859-8371-f85ffd571cfb")
 	)
 	(hierarchical_label "ENC1_A"
 		(shape output)
-		(at 46.99 82.55 180)
+		(at 45.72 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "138f7fa7-ec07-4522-ae1a-bb15475dca7c")
+		(uuid "6134a354-0b18-4cf2-bae6-40eac9d850ee")
 	)
-	(hierarchical_label "ENC2_A"
-		(shape output)
-		(at 46.99 133.35 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(wire
+		(pts
+			(xy 45.72 66.04) (xy 54.61 66.04)
 		)
-		(uuid "288e2c6f-ea9e-4074-90a5-35fc1749518a")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9f0a4cb-70ce-4a1f-8fa4-09bdd8bb2eae")
 	)
-	(hierarchical_label "MOTOR2_PWM"
-		(shape input)
-		(at 46.99 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3f977770-7622-45e0-835c-057a7d3d7c66")
+		(property "Reference" "R28"
+			(at 58.42 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify right)
 		)
-		(uuid "29ec3c2d-3e8d-487a-abf2-ad68f918d6a7")
+		(property "Value" "100"
+			(at 58.42 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 58.42 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100R series resistor on ENC1_A (J7 pin 2): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+			(at 58.42 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac8c1823-6984-40b0-a1ae-397924e5f661")
+		)
+		(pin "2"
+			(uuid "2dee1ed7-4789-4451-a2d4-6975b0dbaccf")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(hierarchical_label "MOTOR2_DIR"
-		(shape input)
-		(at 46.99 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(wire
+		(pts
+			(xy 62.23 66.04) (xy 69.85 66.04)
 		)
-		(uuid "2cbf8e7d-bfcb-400b-991b-f67bf922e08e")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be4faff3-7bc3-4be4-80ce-bff2e1383f07")
 	)
-	(hierarchical_label "ENC2_B"
-		(shape output)
-		(at 46.99 135.89 180)
+	(label "ENC1_A_CONN"
+		(at 69.85 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "3c1033f8-9b1b-45d4-a3b0-e3a1b11b222e")
-	)
-	(hierarchical_label "MOTOR1_PWM"
-		(shape input)
-		(at 46.99 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7cc5a232-39a9-42a1-9d89-3c1059874e58")
+		(uuid "bf9b0d46-f942-49da-a388-f4bbb14cd67b")
 	)
 	(hierarchical_label "ENC1_B"
 		(shape output)
-		(at 46.99 85.09 180)
+		(at 45.72 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f442f654-dcc8-4c4b-a586-5e2abed45a8d")
+		(uuid "b64c3985-c328-48bc-aae6-fb8afe4c2cd8")
+	)
+	(wire
+		(pts
+			(xy 45.72 73.66) (xy 54.61 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3c25419-ef6b-42aa-bce0-45660ef8f4e9")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 54.61 115.57 0)
+		(lib_id "Device:R")
+		(at 58.42 73.66 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1151,9 +2349,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0c101792-0b03-43e1-b977-c868375af531")
-		(property "Reference" "#PWR086"
-			(at 54.61 123.19 0)
+		(uuid "83260cfb-ae95-4b99-ae53-26adcca39985")
+		(property "Reference" "R29"
+			(at 58.42 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 58.42 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1163,18 +2381,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 54.61 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 115.57 0)
+		(property "Datasheet" "~"
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1184,19 +2392,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 54.61 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 115.57 0)
+		(property "Description" "100R series resistor on ENC1_B (J7 pin 3): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1207,20 +2404,64 @@
 			)
 		)
 		(pin "1"
-			(uuid "b886e662-8cc2-47f8-b0ac-3dbac0b706b9")
+			(uuid "ac63cc51-7d39-4f26-b7a2-2a046913b33a")
+		)
+		(pin "2"
+			(uuid "a6adf2c8-5d21-4b1c-a86f-a41d7ab63675")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR086")
+					(reference "R29")
 					(unit 1)
 				)
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 62.23 73.66) (xy 69.85 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3851c40f-a1d1-4375-a7e0-f1bea7b13ef2")
+	)
+	(label "ENC1_B_CONN"
+		(at 69.85 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e22c8e6-5fd6-4684-9939-10d4b5ad349f")
+	)
+	(hierarchical_label "MOTOR2_PWM"
+		(shape input)
+		(at 45.72 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45bbd3fd-ad44-4551-abff-8d509c0f9c55")
+	)
+	(wire
+		(pts
+			(xy 45.72 81.28) (xy 54.61 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fda074b6-7009-4462-91c0-857d2dbbbdef")
+	)
 	(symbol
-		(lib_id "power:GND")
-		(at 54.61 64.77 0)
+		(lib_id "Device:R")
+		(at 58.42 81.28 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1228,9 +2469,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0cf35b53-258b-4518-82f1-2f6cb1e4d33b")
-		(property "Reference" "#PWR064"
-			(at 54.61 72.39 0)
+		(uuid "537752ef-d054-41f1-a8bd-97c56e9757af")
+		(property "Reference" "R30"
+			(at 58.42 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 58.42 83.82 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 58.42 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1240,18 +2501,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 54.61 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 64.77 0)
+		(property "Datasheet" "~"
+			(at 58.42 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1261,19 +2512,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 54.61 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 64.77 0)
+		(property "Description" "100R series resistor on MOTOR2_PWM (J16 pin 1): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+			(at 58.42 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1284,20 +2524,64 @@
 			)
 		)
 		(pin "1"
-			(uuid "c33cc527-e87c-4670-beb8-d0ee1ba3824e")
+			(uuid "dc9ab5be-9c92-4c88-b9f2-6d43793c4694")
+		)
+		(pin "2"
+			(uuid "96e5e0c4-d3fc-49e2-8de5-b632a3dce605")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR064")
+					(reference "R30")
 					(unit 1)
 				)
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 62.23 81.28) (xy 69.85 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71c71cfa-add4-49bc-8e39-afbf1182125e")
+	)
+	(label "MOTOR2_PWM_CONN"
+		(at 69.85 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "56fedbf7-7647-41b7-891d-78a06b88d783")
+	)
+	(hierarchical_label "MOTOR2_DIR"
+		(shape input)
+		(at 45.72 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "efde4d9b-96fd-439b-a4c6-71bd98d0fa76")
+	)
+	(wire
+		(pts
+			(xy 45.72 88.9) (xy 54.61 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb30089e-5baf-439d-8d10-15e6c5d119d4")
+	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 64.77 82.55 0)
+		(lib_id "Device:R")
+		(at 58.42 88.9 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1305,9 +2589,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "17e0e922-ebb1-426a-b956-959952f32ea9")
-		(property "Reference" "J7"
-			(at 64.77 74.93 0)
+		(uuid "404cb952-4b92-4913-bed6-5711e9f7ff0a")
+		(property "Reference" "R31"
+			(at 58.42 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1316,8 +2600,370 @@
 				)
 			)
 		)
-		(property "Value" "Motor1 encoder"
-			(at 68.58 83.82 0)
+		(property "Value" "100"
+			(at 58.42 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 58.42 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100R series resistor on MOTOR2_DIR (J16 pin 2): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+			(at 58.42 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d2bf39a-3d1c-4960-8040-64feeb75b048")
+		)
+		(pin "2"
+			(uuid "12fed033-e0a8-47bb-9beb-00232f42dd7a")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 62.23 88.9) (xy 69.85 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0216cb3-775e-4449-a4ce-b34540dc5d78")
+	)
+	(label "MOTOR2_DIR_CONN"
+		(at 69.85 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bccb77e2-7132-4c0c-bce0-9113142012c6")
+	)
+	(hierarchical_label "ENC2_A"
+		(shape output)
+		(at 45.72 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0bba39e1-42e2-4507-be6a-0064465a766b")
+	)
+	(wire
+		(pts
+			(xy 45.72 96.52) (xy 54.61 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c0c2fb6-b863-4991-8810-f1d1a1e70d7f")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 96.52 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9f8830eb-7a21-4bc2-8b9e-062e3129958a")
+		(property "Reference" "R32"
+			(at 58.42 93.98 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 58.42 99.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100R series resistor on ENC2_A (J15 pin 2): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b43c329-a88e-4a2a-ba51-30acf3942df6")
+		)
+		(pin "2"
+			(uuid "d3afb6d9-465a-4b76-857c-f8249092434c")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 62.23 96.52) (xy 69.85 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f769b230-2c88-4390-a29e-7cae9c00fe83")
+	)
+	(label "ENC2_A_CONN"
+		(at 69.85 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "460297a9-86f7-4e98-abbf-914a36ecacd3")
+	)
+	(hierarchical_label "ENC2_B"
+		(shape output)
+		(at 45.72 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67b556d4-9d39-4606-b592-845bb88d3883")
+	)
+	(wire
+		(pts
+			(xy 45.72 104.14) (xy 54.61 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c63b55f-dacb-47cd-86ed-3e570c40feee")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 104.14 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "95b0b898-bff7-4c26-8c5e-7e612b9506f8")
+		(property "Reference" "R33"
+			(at 58.42 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 58.42 106.68 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 58.42 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100R series resistor on ENC2_B (J15 pin 3): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+			(at 58.42 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2164e149-d1e7-4bd1-a2a1-d92cc7924348")
+		)
+		(pin "2"
+			(uuid "0daa651e-162a-415c-ba1d-665882844098")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 62.23 104.14) (xy 69.85 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "616e5b86-4ad4-4268-b578-b6c7409431e4")
+	)
+	(label "ENC2_B_CONN"
+		(at 69.85 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1d7462c-10ec-4444-9813-5977a13a2197")
+	)
+	(rectangle
+		(start 25.4 40.64)
+		(end 104.14 111.76)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "9b2edf66-5388-4713-b36c-d5d0a68ae56c")
+	)
+	(text "Series 100R (MCU side)"
+		(exclude_from_sim no)
+		(at 27.94 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d24a1b42-39bf-43ff-b986-c30ce9e8769b")
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 149.86 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4ec50e94-ee8f-4dde-a7dc-a5afbce0ec65")
+		(property "Reference" "J6"
+			(at 149.86 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MDD20A PWM1/DIR1/GND"
+			(at 153.67 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1327,8 +2973,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal"
-			(at 64.77 82.55 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal"
+			(at 149.86 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1338,8 +2984,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-4-1715048"
-			(at 64.77 82.55 0)
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-3-1715035"
+			(at 149.86 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1349,8 +2995,8 @@
 				)
 			)
 		)
-		(property "Description" "Motor 1 (37D) Hall encoder: 1 = Vcc +5V, 2A (blue), 2 = A (yellow, PA15 TIM2_CH1), 3 = B (white, PB3 TIM2_CH2), 4 = GND (green)"
-			(at 64.77 82.55 0)
+		(property "Description" "Motor 1 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM1 speed (PA6, TIM3_CH1, max 20 kHz), 2 = DIR1 direction (PB0), 3 = GND. MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
+			(at 149.86 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1361,7 +3007,7 @@
 			)
 		)
 		(property "Manufacturer" "Phoenix Contact"
-			(at 64.77 82.55 0)
+			(at 149.86 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1371,8 +3017,8 @@
 				)
 			)
 		)
-		(property "MPN" "1715048 (MKDS 1,5/4, 5.0 mm pitch)"
-			(at 64.77 82.55 0)
+		(property "MPN" "1715035 (MKDS 1,5/3, 5.0 mm pitch)"
+			(at 149.86 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1383,7 +3029,260 @@
 			)
 		)
 		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; this design: 5 V, 2 A max per terminal"
-			(at 64.77 82.55 0)
+			(at 149.86 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3765361-62ce-4d66-a9f8-2f6ef5159a75")
+		)
+		(pin "2"
+			(uuid "9d78cb37-8548-48c8-844f-27165ab06ffc")
+		)
+		(pin "3"
+			(uuid "6e16b984-1714-4b60-b6cd-06e39061030d")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 134.62 50.8) (xy 144.78 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "546186e2-3911-4bf2-8e9f-56d1a6ec44ae")
+	)
+	(label "MOTOR1_PWM_CONN"
+		(at 134.62 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a9d1fedd-8fc0-430f-a37e-0f4c273f0fcd")
+	)
+	(wire
+		(pts
+			(xy 134.62 53.34) (xy 144.78 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7760a98-c3fd-4cea-9ae4-afa510b76862")
+	)
+	(label "MOTOR1_DIR_CONN"
+		(at 134.62 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "57dbcd78-0b39-422b-a18d-e2b9ab283790")
+	)
+	(wire
+		(pts
+			(xy 144.78 55.88) (xy 139.7 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d638157-aa9f-4f7b-975f-6bc96202557e")
+	)
+	(wire
+		(pts
+			(xy 139.7 55.88) (xy 139.7 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ded44a00-73b5-40c3-b0b9-1cb43a318671")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18535e05-bd8a-4aa5-acff-77236c537aa5")
+		(property "Reference" "#PWR091"
+			(at 139.7 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "290a6443-8544-472d-99fe-490c9b62ceae")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x04")
+		(at 149.86 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "17e0e922-ebb1-426a-b956-959952f32ea9")
+		(property "Reference" "J7"
+			(at 149.86 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Motor1 encoder"
+			(at 153.67 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal"
+			(at 149.86 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-4-1715048"
+			(at 149.86 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Motor 1 (37D) Hall encoder: 1 = Vcc +5V, 2A (blue), 2 = A (yellow, PA15 TIM2_CH1), 3 = B (white, PB3 TIM2_CH2), 4 = GND (green)"
+			(at 149.86 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 149.86 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1715048 (MKDS 1,5/4, 5.0 mm pitch)"
+			(at 149.86 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; this design: 5 V, 2 A max per terminal"
+			(at 149.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1414,86 +3313,29 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 54.61 140.97 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "19266ff9-60ed-490c-80d0-da58d68e8e3b")
-		(property "Reference" "#PWR088"
-			(at 54.61 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+	(wire
+		(pts
+			(xy 144.78 71.12) (xy 139.7 71.12)
 		)
-		(property "Value" "GND"
-			(at 54.61 144.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(property "Footprint" ""
-			(at 54.61 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(uuid "e6c34176-772c-42f0-b54d-99b83d87e784")
+	)
+	(wire
+		(pts
+			(xy 139.7 71.12) (xy 139.7 68.58)
 		)
-		(property "Datasheet" ""
-			(at 54.61 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(property "Description" ""
-			(at 54.61 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "01bcdd32-f1f2-4f53-8067-37fe82b4f214")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR088")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "5396a735-9491-4576-89b7-82ea39413841")
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 54.61 128.27 0)
+		(at 139.7 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1501,9 +3343,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2e68a825-5b0c-4aed-a013-fba1255e13ce")
-		(property "Reference" "#PWR087"
-			(at 54.61 120.65 0)
+		(uuid "f121d999-9285-4ed8-a55f-6c9b03ce1177")
+		(property "Reference" "#PWR092"
+			(at 139.7 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1514,7 +3356,7 @@
 			)
 		)
 		(property "Value" "+5V, 2A"
-			(at 54.61 124.46 0)
+			(at 139.7 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1524,7 +3366,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 128.27 0)
+			(at 139.7 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1535,7 +3377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 128.27 0)
+			(at 139.7 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1546,7 +3388,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 128.27 0)
+			(at 139.7 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1557,20 +3399,80 @@
 			)
 		)
 		(pin "1"
-			(uuid "972c09ad-975c-4fb2-9537-4073d3828979")
+			(uuid "9031b2bb-f2ad-4041-9482-8c9ad9cf9b46")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR087")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 134.62 73.66) (xy 144.78 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f240ed-becc-42f7-9c4d-9bd57d983d35")
+	)
+	(label "ENC1_A_CONN"
+		(at 134.62 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "77fbe1ce-857e-4e14-a555-8021963012ea")
+	)
+	(wire
+		(pts
+			(xy 134.62 76.2) (xy 144.78 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3ee9055-42f4-40fd-a8cf-307770f5b75c")
+	)
+	(label "ENC1_B_CONN"
+		(at 134.62 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "52ac1517-c02b-4cb3-83ed-6b56ea52c54c")
+	)
+	(wire
+		(pts
+			(xy 144.78 78.74) (xy 139.7 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e721f73e-37af-46f7-b005-eeec8eb22374")
+	)
+	(wire
+		(pts
+			(xy 139.7 78.74) (xy 139.7 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a027436-b573-4812-a9e5-beb7571556a8")
+	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 64.77 59.69 0)
+		(lib_id "power:GND")
+		(at 139.7 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1578,9 +3480,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4ec50e94-ee8f-4dde-a7dc-a5afbce0ec65")
-		(property "Reference" "J6"
-			(at 64.77 53.34 0)
+		(uuid "d947abb8-43e3-4159-b140-75673dccf7d7")
+		(property "Reference" "#PWR093"
+			(at 139.7 88.9 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1589,8 +3492,84 @@
 				)
 			)
 		)
-		(property "Value" "MDD20A PWM1/DIR1/GND"
-			(at 68.58 59.69 0)
+		(property "Value" "GND"
+			(at 139.7 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "923ffb37-1b72-4e2c-9ccc-9dcfd7930b76")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 149.86 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "639c8cb5-9a11-47ae-9802-5bbf00ab7577")
+		(property "Reference" "J16"
+			(at 149.86 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MDD20A PWM2/DIR2/GND"
+			(at 153.67 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1601,7 +3580,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal"
-			(at 64.77 59.69 0)
+			(at 149.86 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1612,7 +3591,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-3-1715035"
-			(at 64.77 59.69 0)
+			(at 149.86 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1622,8 +3601,8 @@
 				)
 			)
 		)
-		(property "Description" "Motor 1 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM1 speed (PA6, TIM3_CH1, max 20 kHz), 2 = DIR1 direction (PB0), 3 = GND. MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
-			(at 64.77 59.69 0)
+		(property "Description" "Motor 2 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM2 speed (PA7, TIM3_CH2, max 20 kHz), 2 = DIR2 direction (PB2), 3 = GND. MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
+			(at 149.86 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1634,7 +3613,7 @@
 			)
 		)
 		(property "Manufacturer" "Phoenix Contact"
-			(at 64.77 59.69 0)
+			(at 149.86 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1645,7 +3624,7 @@
 			)
 		)
 		(property "MPN" "1715035 (MKDS 1,5/3, 5.0 mm pitch)"
-			(at 64.77 59.69 0)
+			(at 149.86 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1656,7 +3635,7 @@
 			)
 		)
 		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; this design: 5 V, 2 A max per terminal"
-			(at 64.77 59.69 0)
+			(at 149.86 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1667,18 +3646,155 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3765361-62ce-4d66-a9f8-2f6ef5159a75")
+			(uuid "b56e5fa2-0c66-45e9-9ffb-ddca6ed01f28")
 		)
 		(pin "2"
-			(uuid "9d78cb37-8548-48c8-844f-27165ab06ffc")
+			(uuid "65b818a8-9946-4d3d-a740-93b60aab3085")
 		)
 		(pin "3"
-			(uuid "6e16b984-1714-4b60-b6cd-06e39061030d")
+			(uuid "396edf6b-63df-4409-8901-972268caf430")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "J6")
+					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 134.62 96.52) (xy 144.78 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03d0400d-926f-4f08-8023-fda8183e318e")
+	)
+	(label "MOTOR2_PWM_CONN"
+		(at 134.62 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f032cfb6-008c-456b-bd69-64d55c53102b")
+	)
+	(wire
+		(pts
+			(xy 134.62 99.06) (xy 144.78 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d46f823-be36-4bc5-8746-90b8748de1f4")
+	)
+	(label "MOTOR2_DIR_CONN"
+		(at 134.62 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6001a53d-f767-4b22-bb62-890a6199bd4d")
+	)
+	(wire
+		(pts
+			(xy 144.78 101.6) (xy 139.7 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52d15d44-61d9-470d-8a39-dbc9b8797fd3")
+	)
+	(wire
+		(pts
+			(xy 139.7 101.6) (xy 139.7 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55fdf98e-d949-45e8-b98d-5b3dbd294950")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "81a2ed45-544e-4392-be89-641e8fe829ef")
+		(property "Reference" "#PWR094"
+			(at 139.7 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76696160-0ffb-4a2c-b05f-0e6618c09dbd")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -1686,7 +3802,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 64.77 133.35 0)
+		(at 149.86 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1696,7 +3812,7 @@
 		(dnp no)
 		(uuid "4f31eaf0-0f30-4aeb-ab8d-bc5c14790e0a")
 		(property "Reference" "J15"
-			(at 64.77 125.73 0)
+			(at 149.86 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1706,7 +3822,7 @@
 			)
 		)
 		(property "Value" "Motor2 encoder"
-			(at 68.58 134.62 0)
+			(at 153.67 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1717,7 +3833,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal"
-			(at 64.77 133.35 0)
+			(at 149.86 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1728,7 +3844,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-4-1715048"
-			(at 64.77 133.35 0)
+			(at 149.86 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1739,7 +3855,7 @@
 			)
 		)
 		(property "Description" "Motor 2 (37D) Hall encoder: 1 = Vcc +5V, 2A (blue), 2 = A (yellow, PA8 TIM1_CH1), 3 = B (white, PA9 TIM1_CH2), 4 = GND (green)"
-			(at 64.77 133.35 0)
+			(at 149.86 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1750,7 +3866,7 @@
 			)
 		)
 		(property "Manufacturer" "Phoenix Contact"
-			(at 64.77 133.35 0)
+			(at 149.86 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1761,7 +3877,7 @@
 			)
 		)
 		(property "MPN" "1715048 (MKDS 1,5/4, 5.0 mm pitch)"
-			(at 64.77 133.35 0)
+			(at 149.86 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1772,7 +3888,7 @@
 			)
 		)
 		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; this design: 5 V, 2 A max per terminal"
-			(at 64.77 133.35 0)
+			(at 149.86 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1803,125 +3919,29 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 64.77 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "639c8cb5-9a11-47ae-9802-5bbf00ab7577")
-		(property "Reference" "J16"
-			(at 64.77 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+	(wire
+		(pts
+			(xy 144.78 116.84) (xy 139.7 116.84)
 		)
-		(property "Value" "MDD20A PWM2/DIR2/GND"
-			(at 68.58 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal"
-			(at 64.77 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(uuid "f9b3b158-a1aa-48ae-a572-83e7d7767208")
+	)
+	(wire
+		(pts
+			(xy 139.7 116.84) (xy 139.7 114.3)
 		)
-		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-3-1715035"
-			(at 64.77 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(property "Description" "Motor 2 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM2 speed (PA7, TIM3_CH2, max 20 kHz), 2 = DIR2 direction (PB2), 3 = GND. MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
-			(at 64.77 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Phoenix Contact"
-			(at 64.77 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "1715035 (MKDS 1,5/3, 5.0 mm pitch)"
-			(at 64.77 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; this design: 5 V, 2 A max per terminal"
-			(at 64.77 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b56e5fa2-0c66-45e9-9ffb-ddca6ed01f28")
-		)
-		(pin "2"
-			(uuid "65b818a8-9946-4d3d-a740-93b60aab3085")
-		)
-		(pin "3"
-			(uuid "396edf6b-63df-4409-8901-972268caf430")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "J16")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "5e804502-7a0f-45ae-a60b-34e0e7a4d3fe")
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 54.61 77.47 0)
+		(at 139.7 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1929,9 +3949,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "7c13756a-5053-492e-bb1a-f5048249105e")
-		(property "Reference" "#PWR065"
-			(at 54.61 69.85 0)
+		(uuid "59ae96fd-15c0-4153-8df3-f91fdfad81a1")
+		(property "Reference" "#PWR095"
+			(at 139.7 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1942,7 +3962,7 @@
 			)
 		)
 		(property "Value" "+5V, 2A"
-			(at 54.61 73.66 0)
+			(at 139.7 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1952,7 +3972,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 77.47 0)
+			(at 139.7 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1963,7 +3983,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 77.47 0)
+			(at 139.7 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1974,7 +3994,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 77.47 0)
+			(at 139.7 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1985,20 +4005,80 @@
 			)
 		)
 		(pin "1"
-			(uuid "c18cb043-6335-4676-a6e4-432e35d97f74")
+			(uuid "40a70324-d492-4979-897e-2f4c4b6aef97")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR065")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 134.62 119.38) (xy 144.78 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db982769-e13a-4bea-a345-f63602eae791")
+	)
+	(label "ENC2_A_CONN"
+		(at 134.62 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "78718807-edff-4c69-b8c6-b779ed1bd607")
+	)
+	(wire
+		(pts
+			(xy 134.62 121.92) (xy 144.78 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d381f77-2dce-45c7-8a91-41698183128c")
+	)
+	(label "ENC2_B_CONN"
+		(at 134.62 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0f841ace-93b6-44a2-8693-f760395a3512")
+	)
+	(wire
+		(pts
+			(xy 144.78 124.46) (xy 139.7 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afc964f6-0012-48aa-a452-f854bc268f13")
+	)
+	(wire
+		(pts
+			(xy 139.7 124.46) (xy 139.7 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f196b868-5666-445f-a219-4fb64d54f579")
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 90.17 0)
+		(at 139.7 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2006,9 +4086,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "897563dc-88f3-4d67-af8c-2a1ee59b230d")
-		(property "Reference" "#PWR066"
-			(at 54.61 97.79 0)
+		(uuid "9266f5f6-fcf6-4565-a356-6226d9cb0aa6")
+		(property "Reference" "#PWR096"
+			(at 139.7 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2019,7 +4099,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 93.98 0)
+			(at 139.7 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2029,7 +4109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 90.17 0)
+			(at 139.7 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2040,7 +4120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 90.17 0)
+			(at 139.7 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2051,7 +4131,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 90.17 0)
+			(at 139.7 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2062,15 +4142,1053 @@
 			)
 		)
 		(pin "1"
-			(uuid "1160b56d-a076-4087-b9be-2dc62e9428b9")
+			(uuid "094d7595-65ee-44db-8344-5859e8b6a41d")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR066")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 109.22 40.64)
+		(end 185.42 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fb3ec6ba-f096-4e80-a276-f1b3d27d6e93")
+	)
+	(text "Off-board connectors"
+		(exclude_from_sim no)
+		(at 111.76 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4b505d90-f563-42c4-a374-2b010a228e66")
+	)
+	(symbol
+		(lib_id "Power_Protection:USBLC6-4SC6")
+		(at 236.22 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1116c347-53c2-4538-8468-699c55fbe4e9")
+		(property "Reference" "U6"
+			(at 238.76 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USBLC6-4SC6"
+			(at 238.76 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 236.22 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-4.pdf"
+			(at 236.22 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ST USBLC6-4SC6 4-line ESD array (SOT-23-6, ~3.5 pF, hand-solderable). VBUS tied to the rail the protected lines swing to, with 100 nF to GND at the pin. Place at the connector with short VBUS/GND paths. Protects J6 (motor 1 PWM and DIR, 3.3 V signals, VBUS = +3V3). I/O3-4 unused."
+			(at 236.22 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 236.22 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "USBLC6-4SC6"
+			(at 236.22 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b89d55b6-afdb-4de2-b7a9-6d83aab67e30")
+		)
+		(pin "2"
+			(uuid "607afadd-bd9f-44ca-9940-88fd9ff6e1e3")
+		)
+		(pin "3"
+			(uuid "f649d791-e073-4335-bd27-4de425b96a24")
+		)
+		(pin "4"
+			(uuid "86de58fd-df35-4610-80dc-a942c0d41989")
+		)
+		(pin "5"
+			(uuid "bffeac64-88ed-41b3-8f14-a300409cb6a9")
+		)
+		(pin "6"
+			(uuid "e47f8489-2b55-4cbf-acb1-6745c8b034cf")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 60.96) (xy 223.52 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaefdc08-85d0-426e-9df3-815778dfbae4")
+	)
+	(label "MOTOR1_PWM_CONN"
+		(at 223.52 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c171362d-5f2f-4766-a414-2fe105da707f")
+	)
+	(wire
+		(pts
+			(xy 228.6 63.5) (xy 223.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb1a6255-7e53-4d56-b417-884d0770add2")
+	)
+	(label "MOTOR1_DIR_CONN"
+		(at 223.52 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "88e01b7e-729b-40b4-b865-2bd346c16b44")
+	)
+	(no_connect
+		(at 228.6 66.04)
+		(uuid "f79c4630-8819-447f-a733-f0f39e1e6636")
+	)
+	(no_connect
+		(at 228.6 68.58)
+		(uuid "8ecc55fd-1802-4456-a66f-b017c05ca0cb")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aaec0f5a-72d5-4048-88ee-f7e30497fb9a")
+		(property "Reference" "#PWR097"
+			(at 236.22 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9e4fa49-45a1-4126-bc22-990a8f2342d7")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 236.22 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "10a8cc09-0bf0-4308-b95c-ed8d000cb7d0")
+		(property "Reference" "#PWR098"
+			(at 236.22 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 236.22 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae0237cc-3305-455b-bcfb-eb8ea0feea8f")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 236.22 55.88) (xy 246.38 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a68128ad-6405-444a-bcb5-37c92c4bb102")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 246.38 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3a37cd45-cfca-4165-aa57-80971db920ac")
+		(property "Reference" "C34"
+			(at 248.92 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 248.92 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 246.38 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VBUS decoupling for U6 (ST recommends 100 nF from VBUS to GND close to the pin)"
+			(at 246.38 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59ff6147-bd61-4942-8d8e-6c3c4569309d")
+		)
+		(pin "2"
+			(uuid "81713cb1-7cac-4d16-8fdd-1ed93069d1fb")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fbc9da5b-9e4e-497d-9a80-6e5f6af16290")
+		(property "Reference" "#PWR099"
+			(at 246.38 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7da409e2-68b1-46cc-8ff6-2b07e139969e")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Protection:USBLC6-4SC6")
+		(at 236.22 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "36d4e2ab-bdcd-4645-9d66-222e4c422ab2")
+		(property "Reference" "U7"
+			(at 238.76 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USBLC6-4SC6"
+			(at 238.76 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 236.22 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-4.pdf"
+			(at 236.22 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ST USBLC6-4SC6 4-line ESD array (SOT-23-6, ~3.5 pF, hand-solderable). VBUS tied to the rail the protected lines swing to, with 100 nF to GND at the pin. Place at the connector with short VBUS/GND paths. Protects J7 (encoder 1 A/B, 5 V signals, VBUS = +5V, 2A, the encoder supply). I/O3-4 unused."
+			(at 236.22 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 236.22 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "USBLC6-4SC6"
+			(at 236.22 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae75933d-3baf-4d7d-ade2-954e30a0cafd")
+		)
+		(pin "2"
+			(uuid "45607d71-def2-493d-89c9-77f016aebf63")
+		)
+		(pin "3"
+			(uuid "e9dad015-0e06-4bd0-8756-f0157e6bc955")
+		)
+		(pin "4"
+			(uuid "750c337c-bdec-492e-930f-6b80d487fc59")
+		)
+		(pin "5"
+			(uuid "62dcd526-d50a-43eb-a0a7-b262ae0d93a3")
+		)
+		(pin "6"
+			(uuid "4809f01e-c497-4e43-8407-567c11f15146")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 101.6) (xy 223.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da6070bb-619c-41f5-8700-d2403ced218e")
+	)
+	(label "ENC1_A_CONN"
+		(at 223.52 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c45af47d-6a04-4ef0-b88f-8d6ffcde5ae0")
+	)
+	(wire
+		(pts
+			(xy 228.6 104.14) (xy 223.52 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a93bf8-1307-427f-80a8-ccd7fb89c79a")
+	)
+	(label "ENC1_B_CONN"
+		(at 223.52 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a3de82b1-f272-446f-b1d8-3f9f6dcca851")
+	)
+	(no_connect
+		(at 228.6 106.68)
+		(uuid "7b02bba7-9659-457b-9767-e62466381316")
+	)
+	(no_connect
+		(at 228.6 109.22)
+		(uuid "1d4a0455-6b05-4ca5-84c0-00e0248fe9bb")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85a8e5bd-fb77-43e7-abcc-f5bf507d1ceb")
+		(property "Reference" "#PWR0100"
+			(at 236.22 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f77643a-7a79-4249-aa8a-44c2f9faac65")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 236.22 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a292c989-5a75-43e9-9261-8404c5b12871")
+		(property "Reference" "#PWR0101"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V, 2A"
+			(at 236.22 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ab1fc97-9b68-47fa-a4ca-5e4a86451d80")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 236.22 96.52) (xy 246.38 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e42c5b7-c67f-4d78-9bd5-7a897c906f52")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 246.38 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d82e73b6-3d26-4ac6-8a22-d4b41ce9d918")
+		(property "Reference" "C35"
+			(at 248.92 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 248.92 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 246.38 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VBUS decoupling for U7 (ST recommends 100 nF from VBUS to GND close to the pin)"
+			(at 246.38 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c68aaf1-c541-4eaa-b705-ba858e392381")
+		)
+		(pin "2"
+			(uuid "c50fe4b1-1af6-4e59-9ab9-5c2523b8cf14")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1689ee09-19d2-4b82-993f-5f361c0101de")
+		(property "Reference" "#PWR0102"
+			(at 246.38 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45304d3a-2517-445e-af1a-e1bba057d3b9")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 190.5 40.64)
+		(end 274.32 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4c357f3a-c9c0-4e79-b62c-a058dbcf37fb")
+	)
+	(text "ESD arrays - J6 and J7 only"
+		(exclude_from_sim no)
+		(at 193.04 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "02ea85cf-fc6e-4c18-b3a9-907729968da2")
+	)
+	(text "Motor control - Cytron MDD20A dual-channel driver + two 37D encoder motors"
+		(exclude_from_sim no)
+		(at 25.4 27.94 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "31d45c15-c8a3-4797-9ed6-045dbeab02ee")
+	)
+	(text "STM32F091 PIN ASSIGNMENT          series R    connector\n  MOTOR1_PWM  PA6   TIM3_CH1    R26 100R    J6 pin 1 -> MDD20A PWM1\n  MOTOR1_DIR  PB0   GPIO        R27 100R    J6 pin 2 -> MDD20A DIR1\n  ENC1_A      PA15  TIM2_CH1    R28 100R    J7 pin 2 <- encoder A (yellow)\n  ENC1_B      PB3   TIM2_CH2    R29 100R    J7 pin 3 <- encoder B (white)\n  MOTOR2_PWM  PA7   TIM3_CH2    R30 100R    J16 pin 1 -> MDD20A PWM2\n  MOTOR2_DIR  PB2   GPIO        R31 100R    J16 pin 2 -> MDD20A DIR2\n  ENC2_A      PA8   TIM1_CH1    R32 100R    J15 pin 2 <- encoder A (yellow)\n  ENC2_B      PA9   TIM1_CH2    R33 100R    J15 pin 3 <- encoder B (white)\nTimers: TIM3 = both PWMs (<= 20 kHz for MDD20A); TIM2 = encoder 1, TIM1 = encoder 2.\nESD: USBLC6-4SC6 arrays on motor 1 only - U6 on J6 PWM/DIR (VBUS +3V3), U7 on J7 encoder A/B (VBUS +5V 2A). Encoders powered from +5V, 2A;\nA/B pins must be 5 V tolerant (FT). Battery and motor leads wire directly to the MDD20A."
+		(exclude_from_sim no)
+		(at 25.4 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5a527e6e-bb4b-498d-aafe-d4bb1770db03")
 	)
 )
