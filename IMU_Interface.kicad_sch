@@ -1227,7 +1227,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4.75k"
 			(at 82.55 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1260,7 +1260,7 @@
 				)
 			)
 		)
-		(property "Description" "Optional IMU_SCL pull-up to +3V3, DNP: the Adafruit BNO085 breakout already has pull-ups. Fit 4.7k if the breakout lacks them or the bus misbehaves over the cable."
+		(property "Description" "Optional IMU_SCL pull-up to +3V3, DNP: the Adafruit BNO085 breakout already has pull-ups. Fit 4.75k if the breakout lacks them or the bus misbehaves over the cable."
 			(at 80.01 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -1308,7 +1308,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4.75k"
 			(at 62.23 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1341,7 +1341,7 @@
 				)
 			)
 		)
-		(property "Description" "Optional IMU_SDA pull-up to +3V3, DNP: the Adafruit BNO085 breakout already has pull-ups. Fit 4.7k if the breakout lacks them or the bus misbehaves over the cable."
+		(property "Description" "Optional IMU_SDA pull-up to +3V3, DNP: the Adafruit BNO085 breakout already has pull-ups. Fit 4.75k if the breakout lacks them or the bus misbehaves over the cable."
 			(at 59.69 104.14 0)
 			(hide yes)
 			(show_name no)
