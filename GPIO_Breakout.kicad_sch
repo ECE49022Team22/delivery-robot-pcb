@@ -2935,7 +2935,7 @@
 			)
 		)
 	)
-	(global_label "PB2"
+	(global_label "MOTOR2_DIR"
 		(shape bidirectional)
 		(at 111.76 63.5 0)
 		(fields_autoplaced yes)
@@ -3050,7 +3050,7 @@
 			)
 		)
 	)
-	(global_label "PA9"
+	(global_label "ENC2_B"
 		(shape bidirectional)
 		(at 66.04 81.28 0)
 		(fields_autoplaced yes)
@@ -3326,7 +3326,7 @@
 			)
 		)
 	)
-	(global_label "PA8"
+	(global_label "ENC2_A"
 		(shape bidirectional)
 		(at 66.04 78.74 0)
 		(fields_autoplaced yes)
@@ -3395,7 +3395,7 @@
 			)
 		)
 	)
-	(global_label "PA7"
+	(global_label "MOTOR2_PWM"
 		(shape bidirectional)
 		(at 66.04 76.2 0)
 		(fields_autoplaced yes)
@@ -4016,7 +4016,7 @@
 				)
 			)
 		)
-		(property "Description" "Male 2.54 mm pin header, 1x13 vertical: pins 1-12 = PA0, PA1, USART2_TX, USART2_RX, PA4, LED_USER, PA7, PA8, PA9, PA10, PA11, PA12; pin 13 = GND"
+		(property "Description" "Male 2.54 mm pin header, 1x13 vertical: pins 1-12 = PA0, PA1, USART2_TX, USART2_RX, PA4, LED_USER, MOTOR2_PWM (PA7), ENC2_A (PA8), ENC2_B (PA9), PA10, PA11, PA12; pin 13 = GND"
 			(at 55.88 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4205,7 +4205,7 @@
 				)
 			)
 		)
-		(property "Description" "Male 2.54 mm pin header, 1x15 vertical: pins 1-14 = PB1, PB2, PB4, PB5, IMU_SCL (PB6), IMU_SDA (PB7), PB8, PB9, PB10, PB11, LED_PI_LINK (PB12), LED_IMU (PB13), LED_MOTOR (PB14), PB15; pin 15 = GND"
+		(property "Description" "Male 2.54 mm pin header, 1x15 vertical: pins 1-14 = PB1, MOTOR2_DIR (PB2), PB4, PB5, IMU_SCL (PB6), IMU_SDA (PB7), PB8, PB9, PB10, PB11, LED_PI_LINK (PB12), LED_IMU (PB13), LED_MOTOR (PB14), PB15; pin 15 = GND"
 			(at 101.6 78.74 0)
 			(hide yes)
 			(show_name no)

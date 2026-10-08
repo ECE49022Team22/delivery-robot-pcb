@@ -8902,29 +8902,6 @@
 		)
 		(uuid "affb78a0-cc0c-4fbd-8647-acfa93626a0d")
 	)
-	(rectangle
-		(start 175.26 21.59)
-		(end 278.13 93.98)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "c4986f8f-9979-4406-8b3e-e5c94e744f96")
-	)
-	(text "Motor 1 off-board connections (Cytron MDD20A driver + 37D encoder motor)\nPWM on TIM3 (PA6), encoder on TIM2 (PA15 / PB3).\nEncoder Vcc is +5V, 2A from the TPS54202 buck (before the LDO), not from the MCU.\nDriver VB+/VB- (6-30 V battery) and M1A/M1B wire directly to the MDD20A (not on this board)."
-		(exclude_from_sim no)
-		(at 181.61 26.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "0e50440d-e953-44f9-8aef-2ec31f2abece")
-	)
 	(text "IMU - BNO085 breakout (off-board)"
 		(exclude_from_sim no)
 		(at 339.09 154.94 0)
@@ -9012,17 +8989,6 @@
 			(justify left top)
 		)
 		(uuid "c5a29a81-b54d-459b-8a6f-543db355178a")
-	)
-	(text "Screw terminals: Phoenix MKDS 1,5 (5.0 mm), 17.5 A / 250 V rated; used at 5 V, 2 A max."
-		(exclude_from_sim no)
-		(at 181.61 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "e1f405b9-aa89-4ce3-8e00-9c1a0b94e7f3")
 	)
 	(text "these two caps for VDDA pin 13"
 		(exclude_from_sim no)
@@ -9243,16 +9209,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 72.39) (xy 209.55 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08e4e040-0366-4ea8-b585-c3a5bdeb892b")
-	)
-	(wire
-		(pts
 			(xy 213.36 134.62) (xy 218.44 134.62)
 		)
 		(stroke
@@ -9363,16 +9319,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 74.93) (xy 204.47 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ae17f6c-43bd-4d74-b264-59c514036bf1")
-	)
-	(wire
-		(pts
 			(xy 346.71 163.83) (xy 359.41 163.83)
 		)
 		(stroke
@@ -9460,16 +9406,6 @@
 			(type default)
 		)
 		(uuid "283303f5-e02f-4ebc-a846-0116b4d9a2ef")
-	)
-	(wire
-		(pts
-			(xy 204.47 67.31) (xy 204.47 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a1c9f90-c5ad-42ae-b6a6-2901edbbaf1b")
 	)
 	(wire
 		(pts
@@ -9730,16 +9666,6 @@
 			(type default)
 		)
 		(uuid "4ab4b689-07bf-47a1-a21e-67569e4c7791")
-	)
-	(wire
-		(pts
-			(xy 196.85 44.45) (xy 209.55 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cede182-43d4-4a10-9228-3515579e2193")
 	)
 	(wire
 		(pts
@@ -10163,16 +10089,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 74.93) (xy 204.47 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2bc545c-7620-4f42-a8ed-f817a5fbf2a1")
-	)
-	(wire
-		(pts
 			(xy 349.25 184.15) (xy 354.33 184.15)
 		)
 		(stroke
@@ -10233,16 +10149,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 46.99) (xy 209.55 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad3b91b8-c61e-4f6c-89ab-70786219d8bd")
-	)
-	(wire
-		(pts
 			(xy 364.49 209.55) (xy 364.49 213.36)
 		)
 		(stroke
@@ -10260,26 +10166,6 @@
 			(type default)
 		)
 		(uuid "b135e610-7ce0-4ee3-8e17-995b3fae0f57")
-	)
-	(wire
-		(pts
-			(xy 209.55 67.31) (xy 204.47 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b335bd71-c409-4a42-8509-8a7c94e43ffd")
-	)
-	(wire
-		(pts
-			(xy 209.55 49.53) (xy 204.47 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b40a5d21-54a1-4314-854a-095928921bd0")
 	)
 	(wire
 		(pts
@@ -10573,16 +10459,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 69.85) (xy 209.55 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2eb09d0-c0fd-4d93-af7c-9951b94822c5")
-	)
-	(wire
-		(pts
 			(xy 114.3 88.9) (xy 93.98 88.9)
 		)
 		(stroke
@@ -10590,16 +10466,6 @@
 			(type default)
 		)
 		(uuid "e30b8eec-3e86-411d-b6ad-c087bf656fe5")
-	)
-	(wire
-		(pts
-			(xy 204.47 49.53) (xy 204.47 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3b08b46-eb07-456f-b71c-869d30e75a2b")
 	)
 	(wire
 		(pts
@@ -10787,30 +10653,6 @@
 			)
 		)
 	)
-	(global_label "MOTOR1_DIR"
-		(shape input)
-		(at 196.85 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0319fbbd-8522-401c-83b6-3bc335831500")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.1929 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "PC7"
 		(shape bidirectional)
 		(at 175.26 160.02 180)
@@ -10858,30 +10700,6 @@
 			)
 		)
 	)
-	(global_label "ENC1_A"
-		(shape input)
-		(at 196.85 69.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "138f7fa7-ec07-4522-ae1a-bb15475dca7c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.8496 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "MOTOR1_DIR"
 		(shape input)
 		(at 223.52 165.1 0)
@@ -10906,7 +10724,7 @@
 			)
 		)
 	)
-	(global_label "PB2"
+	(global_label "MOTOR2_DIR"
 		(shape bidirectional)
 		(at 218.44 170.18 0)
 		(fields_autoplaced yes)
@@ -11532,30 +11350,6 @@
 			)
 		)
 	)
-	(global_label "MOTOR1_PWM"
-		(shape input)
-		(at 196.85 44.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7cc5a232-39a9-42a1-9d89-3c1059874e58")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.1649 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "OSC_OUT"
 		(shape input)
 		(at 165.1 129.54 180)
@@ -11627,7 +11421,7 @@
 			)
 		)
 	)
-	(global_label "PA9"
+	(global_label "ENC2_B"
 		(shape bidirectional)
 		(at 218.44 144.78 0)
 		(fields_autoplaced yes)
@@ -11673,7 +11467,7 @@
 			)
 		)
 	)
-	(global_label "PA7"
+	(global_label "MOTOR2_PWM"
 		(shape bidirectional)
 		(at 218.44 139.7 0)
 		(fields_autoplaced yes)
@@ -11833,7 +11627,7 @@
 			)
 		)
 	)
-	(global_label "PA8"
+	(global_label "ENC2_A"
 		(shape bidirectional)
 		(at 218.44 142.24 0)
 		(fields_autoplaced yes)
@@ -12620,30 +12414,6 @@
 			)
 		)
 	)
-	(global_label "ENC1_B"
-		(shape input)
-		(at 196.85 72.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f442f654-dcc8-4c4b-a586-5e2abed45a8d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.6682 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "PB10"
 		(shape bidirectional)
 		(at 218.44 190.5 0)
@@ -12935,83 +12705,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 204.47 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0cf35b53-258b-4518-82f1-2f6cb1e4d33b")
-		(property "Reference" "#PWR064"
-			(at 204.47 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 204.47 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c33cc527-e87c-4670-beb8-d0ee1ba3824e")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 93.98 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -13081,125 +12774,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 214.63 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "17e0e922-ebb1-426a-b956-959952f32ea9")
-		(property "Reference" "J7"
-			(at 214.63 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Motor1 encoder"
-			(at 218.44 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal"
-			(at 214.63 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-4-1715048"
-			(at 214.63 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Motor 1 (37D) Hall encoder: 1 = Vcc +5V, 2A (blue), 2 = A (yellow, PA15 TIM2_CH1), 3 = B (white, PB3 TIM2_CH2), 4 = GND (green)"
-			(at 214.63 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Phoenix Contact"
-			(at 214.63 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "1715048 (MKDS 1,5/4, 5.0 mm pitch)"
-			(at 214.63 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; this design: 5 V, 2 A max per terminal"
-			(at 214.63 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eeb1aea5-8170-4803-bad1-fcf859d36774")
-		)
-		(pin "2"
-			(uuid "ed21efc0-fc6b-4d99-85ad-09c2b054a279")
-		)
-		(pin "3"
-			(uuid "b900bd5d-2c25-4081-b449-1d4a825ab667")
-		)
-		(pin "4"
-			(uuid "9c61a2bb-2182-4332-acd9-b994abdedeee")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -13990,122 +13564,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 214.63 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4ec50e94-ee8f-4dde-a7dc-a5afbce0ec65")
-		(property "Reference" "J6"
-			(at 214.63 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MDD20A PWM1/DIR1/GND"
-			(at 218.44 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal"
-			(at 214.63 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-3-1715035"
-			(at 214.63 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Motor 1 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM1 speed (PA6, TIM3_CH1, max 20 kHz), 2 = DIR1 direction (PB0), 3 = GND. MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
-			(at 214.63 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Phoenix Contact"
-			(at 214.63 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "1715035 (MKDS 1,5/3, 5.0 mm pitch)"
-			(at 214.63 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; this design: 5 V, 2 A max per terminal"
-			(at 214.63 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b3765361-62ce-4d66-a9f8-2f6ef5159a75")
-		)
-		(pin "2"
-			(uuid "9d78cb37-8548-48c8-844f-27165ab06ffc")
-		)
-		(pin "3"
-			(uuid "6e16b984-1714-4b60-b6cd-06e39061030d")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 125.73 33.02 0)
 		(unit 1)
@@ -14605,83 +14063,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 204.47 64.77 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7c13756a-5053-492e-bb1a-f5048249105e")
-		(property "Reference" "#PWR065"
-			(at 204.47 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V, 2A"
-			(at 204.47 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c18cb043-6335-4676-a6e4-432e35d97f74")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 80.01 58.42 0)
 		(unit 1)
@@ -14946,83 +14327,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 204.47 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "897563dc-88f3-4d67-af8c-2a1ee59b230d")
-		(property "Reference" "#PWR066"
-			(at 204.47 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 204.47 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1160b56d-a076-4087-b9be-2dc62e9428b9")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -18311,6 +17615,406 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f7f5531-8407-4e03-bdac-5b0c25bb3d92")
+	)
+	(sheet
+		(at 208.28 27.94)
+		(size 43.18 45.72)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "99151f47-1745-4fb4-8589-dc344779a195")
+		(property "Sheetname" "Motor Control"
+			(at 208.28 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Motor_Control.kicad_sch"
+			(at 208.28 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "MOTOR1_PWM" input
+			(at 208.28 33.02 180)
+			(uuid "b6f8acc7-05fd-48a1-9e14-4e0e4c77dc6a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR1_DIR" input
+			(at 208.28 38.1 180)
+			(uuid "47a17579-28ea-4385-a720-d7b62fc27591")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC1_A" output
+			(at 208.28 43.18 180)
+			(uuid "d5b9210e-9ede-43b9-8579-c8eeb76d81bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC1_B" output
+			(at 208.28 48.26 180)
+			(uuid "14e3e5d0-f67e-4da0-b0f8-686b624f3db8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR2_PWM" input
+			(at 208.28 53.34 180)
+			(uuid "8709e36b-d183-46e6-bafe-c8f0f79f033a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR2_DIR" input
+			(at 208.28 58.42 180)
+			(uuid "4bf7c824-f130-46a5-aa56-f9de0e5d68ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC2_A" output
+			(at 208.28 63.5 180)
+			(uuid "c8d60a60-d667-4818-ba14-f3315e28f303")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC2_B" output
+			(at 208.28 68.58 180)
+			(uuid "4ef04db7-b1c5-4eb2-8d98-fa361e260a14")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(page "9")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 200.66 33.02) (xy 208.28 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61a65e8b-2bf2-4b62-a99a-6a128fc80349")
+	)
+	(global_label "MOTOR1_PWM"
+		(shape bidirectional)
+		(at 200.66 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e93726d7-44de-409f-8270-eb3731d88b2e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 33.02 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 200.66 38.1) (xy 208.28 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51bd5ae5-4ba0-47fd-b2d3-d13a1ec807eb")
+	)
+	(global_label "MOTOR1_DIR"
+		(shape bidirectional)
+		(at 200.66 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aac0b8fe-36b7-477b-97c9-108cf359ac6b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 38.1 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 200.66 43.18) (xy 208.28 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "405ecf6c-8b6a-43b0-ae4b-b056818e134b")
+	)
+	(global_label "ENC1_A"
+		(shape bidirectional)
+		(at 200.66 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3aac3617-bdcb-4822-8354-ae0ba688244d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 43.18 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 200.66 48.26) (xy 208.28 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "209a1377-8292-4029-b2eb-203b97aec36d")
+	)
+	(global_label "ENC1_B"
+		(shape bidirectional)
+		(at 200.66 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e9d74c7e-a757-4650-9b9c-f9f1fc36752e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 48.26 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 200.66 53.34) (xy 208.28 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fb3826b-ec11-4e0b-aa30-29a223bcf68e")
+	)
+	(global_label "MOTOR2_PWM"
+		(shape bidirectional)
+		(at 200.66 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5252b28a-83c0-4763-b173-9d570f55cb48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 53.34 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 200.66 58.42) (xy 208.28 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d685a16-f8cd-48ea-8cae-576b958ba990")
+	)
+	(global_label "MOTOR2_DIR"
+		(shape bidirectional)
+		(at 200.66 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "beaaa70c-a81a-4748-a27f-d27f07be75de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 58.42 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 200.66 63.5) (xy 208.28 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cd7fc45-a090-4815-b482-2c744ea87d48")
+	)
+	(global_label "ENC2_A"
+		(shape bidirectional)
+		(at 200.66 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e051f8c-ac03-460b-913a-e55ee87769a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 63.5 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 200.66 68.58) (xy 208.28 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffc5794c-d4f7-4bd1-ad83-0bfddff50b9b")
+	)
+	(global_label "ENC2_B"
+		(shape bidirectional)
+		(at 200.66 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c0e7c0c-31b9-49aa-a756-841e3d69dee6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 68.58 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(text "M1: PWM PA6, DIR PB0, ENC PA15/PB3 (TIM3/TIM2)\nM2: PWM PA7, DIR PB2, ENC PA8/PA9 (TIM3/TIM1)"
+		(exclude_from_sim no)
+		(at 208.28 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "81962038-89ce-47ac-b96b-5e71e01789f4")
 	)
 	(sheet_instances
 		(path "/"
