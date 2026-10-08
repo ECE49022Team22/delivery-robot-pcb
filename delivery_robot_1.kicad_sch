@@ -8879,18 +8879,6 @@
 		)
 	)
 	(rectangle
-		(start 328.93 151.13)
-		(end 402.59 231.14)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "7cd6f89c-f729-4409-8987-eebe59266d3e")
-	)
-	(rectangle
 		(start 15.24 21.59)
 		(end 151.13 144.78)
 		(stroke
@@ -8901,17 +8889,6 @@
 			(type none)
 		)
 		(uuid "affb78a0-cc0c-4fbd-8647-acfa93626a0d")
-	)
-	(text "IMU - BNO085 breakout (off-board)"
-		(exclude_from_sim no)
-		(at 339.09 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "2261bb98-6709-4421-97d0-a717952a6f61")
 	)
 	(text "J13 Pi UART (R12/R13 100R)\nJ14 Pi power via F2 isolation fuse"
 		(exclude_from_sim no)
@@ -8934,17 +8911,6 @@
 			(justify left top)
 		)
 		(uuid "4a3c20b9-3e22-4b8a-a4eb-d856651983d3")
-	)
-	(text "I2C1 AF1: PB6 SCL, PB7 SDA\nINT -> PC4 (EXTI4), RST -> PC5\nJ11 STEMMA QT: 1 GND, 2 3V3, 3 SDA, 4 SCL\nR10/R11 DNP: breakout has pull-ups"
-		(exclude_from_sim no)
-		(at 334.01 218.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "5d694c26-bf8e-4ed8-9be5-d6298fd8f3d8")
 	)
 	(text "M1: PWM PA6, DIR PB0, ENC PA15/PB3 (TIM3/TIM2)\nM2: PWM PA7, DIR PB2, ENC PA8/PA9 (TIM3/TIM1)"
 		(exclude_from_sim no)
@@ -9305,16 +9271,6 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 213.36) (xy 367.03 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "159535fa-7539-4da5-a628-d5b9f74377be")
-	)
-	(wire
-		(pts
 			(xy 203.2 114.3) (xy 208.28 114.3)
 		)
 		(stroke
@@ -9322,16 +9278,6 @@
 			(type default)
 		)
 		(uuid "16a42890-02d2-4c3f-bd76-d6f4c161b6cb")
-	)
-	(wire
-		(pts
-			(xy 346.71 163.83) (xy 359.41 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b337b5d-0600-4dfc-b277-1fe3288d6388")
 	)
 	(wire
 		(pts
@@ -9555,16 +9501,6 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 166.37) (xy 359.41 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a478624-2b17-420e-8c5d-72625163d7e3")
-	)
-	(wire
-		(pts
 			(xy 180.34 154.94) (xy 175.26 154.94)
 		)
 		(stroke
@@ -9642,16 +9578,6 @@
 			(type default)
 		)
 		(uuid "45c75d3a-b174-4158-8773-159cdabf0d11")
-	)
-	(wire
-		(pts
-			(xy 346.71 168.91) (xy 359.41 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46913466-fecc-4a60-af65-325d5dbe9221")
 	)
 	(wire
 		(pts
@@ -9872,16 +9798,6 @@
 			(type default)
 		)
 		(uuid "6eb5d83e-61a2-4288-a6cf-c2be27c565b7")
-	)
-	(wire
-		(pts
-			(xy 384.81 215.9) (xy 387.35 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f05a821-76fe-4197-a343-26a90d707fdb")
 	)
 	(wire
 		(pts
@@ -10135,16 +10051,6 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 184.15) (xy 354.33 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a34ee05d-ebbe-43c9-98cc-fea0bebb2e08")
-	)
-	(wire
-		(pts
 			(xy 198.12 213.36) (xy 195.58 213.36)
 		)
 		(stroke
@@ -10195,16 +10101,6 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 209.55) (xy 364.49 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0ce9406-c6a7-4eab-92cb-3f5cb3bc1595")
-	)
-	(wire
-		(pts
 			(xy 198.12 210.82) (xy 198.12 213.36)
 		)
 		(stroke
@@ -10222,16 +10118,6 @@
 			(type default)
 		)
 		(uuid "b48f4bfc-05e5-4e00-a64a-b052452395bf")
-	)
-	(wire
-		(pts
-			(xy 346.71 171.45) (xy 359.41 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b51188ce-b37b-460a-b547-170dee31b331")
 	)
 	(wire
 		(pts
@@ -10362,16 +10248,6 @@
 			(type default)
 		)
 		(uuid "c18f7844-504e-4e02-bd2b-8c8f2cffbf7d")
-	)
-	(wire
-		(pts
-			(xy 384.81 209.55) (xy 384.81 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c282c8c3-ce1b-48fb-b23b-5b197573619b")
 	)
 	(wire
 		(pts
@@ -10555,16 +10431,6 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 186.69) (xy 354.33 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef559eeb-5916-44c7-8560-36bffd6fe463")
-	)
-	(wire
-		(pts
 			(xy 58.42 86.36) (xy 58.42 90.17)
 		)
 		(stroke
@@ -10676,29 +10542,6 @@
 		(uuid "00f011b9-a02a-4f7d-bfcf-a0b32895cb43")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 175.26 175.26 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "IMU_INT"
-		(shape bidirectional)
-		(at 354.33 184.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "01d0b9ae-980d-4f3d-9791-6ad5ffcaae03")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.33 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11289,29 +11132,6 @@
 			)
 		)
 	)
-	(global_label "IMU_SCL"
-		(shape bidirectional)
-		(at 346.71 171.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6e8efb0d-4fb9-45a7-9459-b0b99f41c243")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 346.71 171.45 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "OSC32_IN"
 		(shape bidirectional)
 		(at 175.26 177.8 180)
@@ -11325,29 +11145,6 @@
 		(uuid "7016b2c6-6504-4e98-b4b1-9ca85839be5d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 175.26 177.8 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "IMU_SDA"
-		(shape bidirectional)
-		(at 367.03 213.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "70fe5ed7-c10f-429c-a104-95ed56c898f7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.03 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11683,29 +11480,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 346.71 163.83 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "920ef688-caa5-4ac8-b427-c9697effe805")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 346.71 163.83 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "IMU_SDA"
 		(shape bidirectional)
 		(at 218.44 182.88 0)
@@ -11857,29 +11631,6 @@
 		(uuid "9f0f6b63-ff9c-42ec-8fd9-26f537c5d2bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 218.44 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "IMU_RST"
-		(shape bidirectional)
-		(at 354.33 186.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9f9d95e6-de6d-4b72-ba13-55488a27dee2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.33 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12539,52 +12290,6 @@
 			)
 		)
 	)
-	(global_label "IMU_SDA"
-		(shape bidirectional)
-		(at 346.71 168.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ebe9afe9-de42-46b9-be6e-538dc4711ad7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 346.71 168.91 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "+3V3"
-		(shape bidirectional)
-		(at 346.71 166.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec61dc80-a574-4eea-a506-7c5ca181d822")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 346.71 166.37 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "PB8"
 		(shape bidirectional)
 		(at 218.44 185.42 0)
@@ -12598,29 +12303,6 @@
 		(uuid "f07cc3a5-041d-439d-90ee-e9a6f883e49b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 218.44 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "IMU_SCL"
-		(shape bidirectional)
-		(at 387.35 215.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f2170b14-7c1d-4b2b-8f2c-f70d3a5418bc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.35 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13328,83 +13010,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 364.49 201.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "38d06749-4480-4494-b4d0-6cf28e6e8127")
-		(property "Reference" "#PWR071"
-			(at 364.49 194.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 364.49 198.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 364.49 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 364.49 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 364.49 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7bd195c4-16f0-42ac-b7b5-adb654556376")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "#PWR071")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Fuse")
 		(at 44.45 161.29 270)
 		(unit 1)
@@ -13562,87 +13167,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 384.81 205.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "4998c4a2-64dd-4929-885e-e8a636c876e6")
-		(property "Reference" "R11"
-			(at 387.35 204.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 387.35 207.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 384.81 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 384.81 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Optional IMU_SCL pull-up to +3V3, DNP: the Adafruit BNO085 breakout already has pull-ups. Fit 4.7k if the breakout lacks them or the bus misbehaves over the cable."
-			(at 384.81 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "24d0226f-9fa7-497a-8e08-8287ccf016a6")
-		)
-		(pin "2"
-			(uuid "ce7c8e9a-c06f-4237-a2bc-06db5eb330ec")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 102.87 33.02 0)
 		(unit 1)
@@ -13717,87 +13241,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 364.49 205.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "4e1a67b7-1c77-4d7f-bee5-e0fdfea008ee")
-		(property "Reference" "R10"
-			(at 367.03 204.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 367.03 207.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 364.49 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 364.49 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Optional IMU_SDA pull-up to +3V3, DNP: the Adafruit BNO085 breakout already has pull-ups. Fit 4.7k if the breakout lacks them or the bus misbehaves over the cable."
-			(at 364.49 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "db171564-dec0-46af-bc95-7abb3126356e")
-		)
-		(pin "2"
-			(uuid "c70b49af-818e-4c74-a079-5fb6399e9e7a")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -14068,83 +13511,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 364.49 176.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "69de91dd-24ab-4183-9d9f-03884b8a8a24")
-		(property "Reference" "#PWR070"
-			(at 364.49 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 364.49 180.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 364.49 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 364.49 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 364.49 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c2792718-d50a-41e7-bc34-f2cd6c82dac7")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -14456,118 +13822,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 364.49 166.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8624a1de-286b-4e05-a3fb-3d75bd55cfea")
-		(property "Reference" "J11"
-			(at 367.03 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IMU I2C (STEMMA QT)"
-			(at 367.03 167.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
-			(at 364.49 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 364.49 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "STEMMA QT / Qwiic 4-pin JST SH 1.0 mm to off-board BNO085 IMU breakout: 1 = GND (black), 2 = +3V3 (red), 3 = SDA (blue), 4 = SCL (yellow). Keep this order for off-the-shelf cables."
-			(at 364.49 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "JST"
-			(at 364.49 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "SM04B-SRSS-TB"
-			(at 364.49 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6c5edc16-5ebf-4f9b-bd00-ba7a8772a8f4")
-		)
-		(pin "2"
-			(uuid "9e5c18af-9871-449c-b7c1-f2109b74b032")
-		)
-		(pin "3"
-			(uuid "b4f92dd9-4207-4e39-9ff5-7923fc0deb43")
-		)
-		(pin "MP"
-			(uuid "ccb3bd01-f148-4564-9c1f-22d961113fad")
-		)
-		(pin "4"
-			(uuid "02cc7144-bb97-4270-9b55-81392c36d571")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -16364,85 +15618,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 344.17 184.15 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c9a5712a-87bf-44fb-a5fd-f98a5448826c")
-		(property "Reference" "J12"
-			(at 344.17 179.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IMU INT/RST"
-			(at 344.17 189.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 344.17 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 344.17 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "2.54 mm male header to BNO085 breakout: 1 = INT (active-low data ready) to PC4 / EXTI4, 2 = RST (active-low) from PC5"
-			(at 344.17 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f98c9f67-f018-4d55-8f80-d26fb6be5cc0")
-		)
-		(pin "2"
-			(uuid "099b9401-fde3-41f7-af8a-a5f45e03a51f")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 85.09 49.53 0)
 		(unit 1)
@@ -16708,83 +15883,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 384.81 201.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ede34c06-2c2e-4fbd-8d0c-202518e14245")
-		(property "Reference" "#PWR072"
-			(at 384.81 194.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 384.81 198.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 384.81 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 384.81 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 384.81 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e32e5485-3307-4580-ac33-681c4e07e1ad")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -17699,6 +16797,62 @@
 				)
 			)
 		)
+	)
+	(sheet
+		(at 339.09 170.18)
+		(size 38.1 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b545aee1-32b7-415d-95c5-89c338cb4a13")
+		(property "Sheetname" "IMU Interface"
+			(at 339.09 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IMU_Interface.kicad_sch"
+			(at 339.09 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(page "11")
+				)
+			)
+		)
+	)
+	(text "J11 I2C: SDA PB7, SCL PB6 (I2C1)\nJ12: INT PC4, RST PC5 (via R34/R35)\nGlobal labels - no sheet pins"
+		(exclude_from_sim no)
+		(at 339.09 194.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4704a73e-6e7b-4d0c-8355-273385f0392d")
 	)
 	(sheet_instances
 		(path "/"

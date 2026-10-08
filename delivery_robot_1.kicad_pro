@@ -472,6 +472,10 @@
     [
       "9305f25b-bf2a-4152-80b2-35e00eebe697",
       "Test Points"
+    ],
+    [
+      "b545aee1-32b7-415d-95c5-89c338cb4a13",
+      "IMU Interface"
     ]
   ],
   "text_variables": {},

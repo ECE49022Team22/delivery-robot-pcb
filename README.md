@@ -29,11 +29,12 @@ Custom symbol and footprint libraries are included and registered in the project
 | Buck_5V_6A.kicad_sch | Hierarchical 12 V to 5 V, 6 A buck sheet (TPSM63606), feeds the Pi 5 |
 | Buck_5V_6A_AUX.kicad_sch | Second 12 V to 5 V, 6 A buck sheet (TPSM63606), +5V, 6A AUX rail |
 | LDO_3V3.kicad_sch | Hierarchical 3.3 V power supply sheet |
-| Pi5_Interface.kicad_sch | Raspberry Pi 5 UART (J13) and fused power output (F2, J14) |
+| Pi5_Interface.kicad_sch | Raspberry Pi 5 UART (J13, R12/R13 100R) and fused power output (F2, J14) |
 | GPIO_Breakout.kicad_sch | 2.54 mm headers J8-J10 for all spare STM32 pins (global labels) |
 | Power_Indicators.kicad_sch | Green power LED per rail (+12V, +5V 6A PI, +5V 6A AUX, +5V 2A, +3V3) and yellow STM32 debug LEDs (PA5, PB12-PB14) |
-| Motor_Control.kicad_sch | Cytron MDD20A driver terminals (J6, J16) and encoder terminals (J7, J15) for two motors, with STM32 pin table |
+| Motor_Control.kicad_sch | MDD20A driver terminals (J6, J16) and encoder terminals (J7, J15) for two motors, 100R series resistors, USBLC6-4SC6 ESD arrays on J6 (U6) and J7 (U7), STM32 pin table |
 | Test_Points.kicad_sch | Power test points: J5 1x06 2.54 mm header (GND, +3V3, +3.3VA, +5V 2A, +5V 6A AUX, +12V) and TP3 scope GND loop |
+| IMU_Interface.kicad_sch | Off-board BNO085: J11 STEMMA QT I2C, J12 INT/RST with 100R series resistors, DNP I2C pull-ups |
 | delivery_robot_1.pdf | Plot of all schematic sheets, regenerated automatically on every schematic commit |
 | tools/hooks/ | Git hooks (pre-commit regenerates the schematic PDF) |
 | libs/ | Custom buck converter symbols and footprints |
