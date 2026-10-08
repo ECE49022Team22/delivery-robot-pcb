@@ -33,6 +33,7 @@ Custom symbol and footprint libraries are included and registered in the project
 | GPIO_Breakout.kicad_sch | 2.54 mm headers J8-J10 for all spare STM32 pins (global labels) |
 | Power_Indicators.kicad_sch | Green power LED per rail (+12V, +5V 6A PI, +5V 6A AUX, +5V 2A, +3V3) and yellow STM32 debug LEDs (PA5, PB12-PB14) |
 | Motor_Control.kicad_sch | Cytron MDD20A driver terminals (J6, J16) and encoder terminals (J7, J15) for two motors, with STM32 pin table |
+| Test_Points.kicad_sch | Power test points: J5 1x06 2.54 mm header (GND, +3V3, +3.3VA, +5V 2A, +5V 6A AUX, +12V) and TP3 scope GND loop |
 | delivery_robot_1.pdf | Plot of all schematic sheets, regenerated automatically on every schematic commit |
 | tools/hooks/ | Git hooks (pre-commit regenerates the schematic PDF) |
 | libs/ | Custom buck converter symbols and footprints |
