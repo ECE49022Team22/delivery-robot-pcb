@@ -470,7 +470,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 43.18 -22.86 180)
 					(length 5.08)
 					(name "SW"
@@ -488,7 +488,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 43.18 -12.7 180)
 					(length 5.08)
 					(name "CBOOT"
@@ -506,7 +506,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 43.18 -17.78 180)
 					(length 5.08)
 					(name "RBOOT"
@@ -524,7 +524,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 0 -20.32 0)
 					(length 5.08)
 					(name "VLDOIN"
@@ -560,7 +560,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_out line
 					(at 0 -30.48 0)
 					(length 5.08)
 					(name "VCC"
@@ -578,7 +578,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_out line
 					(at 43.18 0 180)
 					(length 5.08)
 					(name "VOUT"
@@ -596,7 +596,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 43.18 -2.54 180)
 					(length 5.08)
 					(name "VOUT"
@@ -614,7 +614,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 43.18 -7.62 180)
 					(length 5.08)
 					(name "FB"
@@ -650,7 +650,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -35.56 0)
 					(length 5.08)
 					(name "RT"
@@ -704,7 +704,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin no_connect line
 					(at 0 -40.64 0)
 					(length 5.08)
 					(name "NC"
@@ -2109,7 +2109,7 @@
 				)
 			)
 		)
-		(property "Used In" "Sheet Buck_5V_6A_AUX: 12 V in, +5V, 6A AUX net out"
+		(property "Used In" "Sheet Buck_5V_6A_AUX: 12 V in, +5V_AUX net out"
 			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)

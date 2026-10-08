@@ -4,12 +4,12 @@ The power supply is split into hierarchical sheets. The root schematic keeps the
 
 | Sheet file | Sheet name | Regulator | Input | Output net |
 | --- | --- | --- | --- | --- |
-| Buck_5V_2A.kicad_sch | Buck 12V-5V 2A | TPS54202DDCR (U3) | +12V | +5V, 2A |
-| Buck_5V_6A.kicad_sch | Buck 12V-5V 6A PI | TPSM63606RDLR (U2) | +12V | +5V, 6A PI |
-| Buck_5V_6A_AUX.kicad_sch | Buck 12V-5V 6A AUX | TPSM63606RDLR (U5) | +12V | +5V, 6A AUX |
-| LDO_3V3.kicad_sch | LDO Power | TPS7A8101DRBR (U4) | +5V, 2A | +3V3 |
+| Buck_5V_2A.kicad_sch | Buck 5V SYS | TPS54202DDCR (U3) | +12V | +5V_SYS |
+| Buck_5V_6A.kicad_sch | Buck 5V PI | TPSM63606RDLR (U2) | +12V | +5V_PI |
+| Buck_5V_6A_AUX.kicad_sch | Buck 5V AUX | TPSM63606RDLR (U5) | +12V | +5V_AUX |
+| LDO_3V3.kicad_sch | LDO Power | TPS7A8101DRBR (U4) | +5V_SYS | +3V3 |
 
-Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The buck outputs are separate nets and must not be tied together. +5V, 6A PI feeds the off-board Raspberry Pi 5 through F2 and J14. +5V, 6A AUX comes from a second, independent copy of the 6 A buck (U5, C28-C33, R14-R16) and has no loads assigned yet. The AUX sheet inherits the open items listed for U2 below (C9 -> C30 placement).
+Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The buck outputs are separate nets and must not be tied together. +5V_PI feeds the off-board Raspberry Pi 5 through F2 and J14. +5V_AUX comes from a second, independent copy of the 6 A buck (U5, C28-C33, R14-R16) and has no loads assigned yet. The AUX sheet inherits the open items listed for U2 below (C9 -> C30 placement).
 
 ## Battery input (J2)
 
@@ -42,7 +42,7 @@ Open items from the sheet split:
 - U3: EN (pin 5) is flagged no-connect; confirm a floating EN is allowed, otherwise tie it to VIN.
 - U3: R6 = 100k and R7 = 13.7k give about 4.95 V assuming a 0.596 V reference; verify against the datasheet.
 
-The TPS7A8101 LDO in LDO_3V3.kicad_sch is supplied by the +5V, 2A rail. Its +3V3 output supplies the STM32 digital power pins, associated decoupling, programming-header supply, and the FB2 input feeding the separate +3.3VA analog rail. The two buck outputs are separate nets.
+The TPS7A8101 LDO in LDO_3V3.kicad_sch is supplied by the +5V_SYS rail. Its +3V3 output supplies the STM32 digital power pins, associated decoupling, programming-header supply, and the FB2 input feeding the separate +3.3VA analog rail. The two buck outputs are separate nets.
 
 The LDO uses U4, R8/R9 and C24-C27. R8 = 35.7k / R9 = 11.5k (E96) set VOUT = 0.8 x (1 + 35.7/11.5) = 3.284 V. The former VDD power symbols use +3V3 to connect these loads to the regulator. The 1 A rating is combined rail capacity, not measured MCU current consumption. Full-load dissipation is approximately 1.7 W at 5 V input; PCB thermal copper and vias remain to be designed.
 

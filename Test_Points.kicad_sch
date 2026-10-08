@@ -592,7 +592,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "J5: one 2.54 mm header for every rail, ordered by voltage\n 1 GND\n 2 +3V3\n 3 +3.3VA (MCU analog)\n 4 +5V, 2A\n 5 +5V, 6A AUX\n 6 +12V (after F1)"
+	(text "J5: one 2.54 mm header for every rail, ordered by voltage\n 1 GND\n 2 +3V3\n 3 +3.3VA (MCU analog)\n 4 +5V_SYS\n 5 +5V_AUX\n 6 +12V (after F1)"
 		(exclude_from_sim no)
 		(at 38.1 76.2 0)
 		(effects
@@ -603,7 +603,7 @@
 		)
 		(uuid "21d578ab-dae0-4f10-bae6-e9d00c4a4715")
 	)
-	(text "TP3: GND loop for the scope ground clip.\n+5V, 6A PI is on TP1 (Pi 5 Interface sheet),\nused in the Pi bring-up check."
+	(text "TP3: GND loop for the scope ground clip.\n+5V_PI is on TP1 (Pi 5 Interface sheet),\nused in the Pi bring-up check."
 		(exclude_from_sim no)
 		(at 100.33 67.056 0)
 		(effects
@@ -685,7 +685,7 @@
 		)
 		(uuid "fb30cbc7-c210-44d1-acc3-aa70b2e9dd07")
 	)
-	(global_label "+5V, 6A AUX"
+	(global_label "+5V_AUX"
 		(shape passive)
 		(at 63.5 68.58 0)
 		(fields_autoplaced yes)
@@ -731,7 +731,7 @@
 			)
 		)
 	)
-	(global_label "+5V, 2A"
+	(global_label "+5V_SYS"
 		(shape passive)
 		(at 63.5 66.04 0)
 		(fields_autoplaced yes)
@@ -1053,7 +1053,7 @@
 				)
 			)
 		)
-		(property "Description" "Power test header, 2.54 mm male 1x06: 1 = GND, 2 = +3V3, 3 = +3.3VA, 4 = +5V, 2A, 5 = +5V, 6A AUX, 6 = +12V (after F1). Rails ordered by voltage with GND at pin 1 and +12V at pin 6."
+		(property "Description" "Power test header, 2.54 mm male 1x06: 1 = GND, 2 = +3V3, 3 = +3.3VA, 4 = +5V_SYS, 5 = +5V_AUX, 6 = +12V (after F1). Rails ordered by voltage with GND at pin 1 and +12V at pin 6."
 			(at 50.8 63.5 0)
 			(hide yes)
 			(show_name no)

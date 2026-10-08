@@ -1061,7 +1061,7 @@
 		)
 		(uuid "d11d4de4-ad57-4728-91e6-e410ca3df342")
 	)
-	(text "Pi 5 power: +5V, 6A PI -> F2 isolation fuse -> J14 USB-C pigtail"
+	(text "Pi 5 power: +5V_PI -> F2 isolation fuse -> J14 USB-C pigtail"
 		(exclude_from_sim no)
 		(at 49.53 111.76 0)
 		(effects
@@ -1732,7 +1732,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "+5V, 6A PI"
+		(property "Value" "+5V_PI"
 			(at 69.85 128.27 0)
 			(hide yes)
 			(show_name no)

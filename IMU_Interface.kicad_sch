@@ -870,6 +870,17 @@
 		)
 		(uuid "5d694c26-bf8e-4ed8-9be5-d6298fd8f3d8")
 	)
+	(text "Series protection\nR34/R35 100R on INT/RST (near U1)"
+		(exclude_from_sim no)
+		(at 116.84 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c858f1fe-0a2e-4620-a31c-475443fb50ab")
+	)
 	(wire
 		(pts
 			(xy 59.69 111.76) (xy 62.23 111.76)
@@ -902,6 +913,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 71.12) (xy 124.46 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b12d075-a3eb-4c6f-aa16-167d91207522")
+	)
+	(wire
+		(pts
 			(xy 41.91 67.31) (xy 54.61 67.31)
 		)
 		(stroke
@@ -912,6 +933,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 63.5) (xy 124.46 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48c09c6f-f7d6-4361-ac8f-c221251ef322")
+	)
+	(wire
+		(pts
 			(xy 80.01 114.3) (xy 82.55 114.3)
 		)
 		(stroke
@@ -919,6 +950,26 @@
 			(type default)
 		)
 		(uuid "6f05a821-76fe-4197-a343-26a90d707fdb")
+	)
+	(wire
+		(pts
+			(xy 132.08 63.5) (xy 139.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b2582e8-9d17-4fd7-bce0-9cad4225beef")
+	)
+	(wire
+		(pts
+			(xy 132.08 71.12) (xy 139.7 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98b28a60-3d21-454f-b6e3-d9b3e18d5da8")
 	)
 	(wire
 		(pts
@@ -969,6 +1020,36 @@
 			(type default)
 		)
 		(uuid "ef559eeb-5916-44c7-8560-36bffd6fe463")
+	)
+	(label "IMU_RST_CONN"
+		(at 49.53 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ec15c03-2585-4e7d-9012-cb2d3f0c6107")
+	)
+	(label "IMU_INT_CONN"
+		(at 119.38 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aba8d347-c08c-4a06-9c02-06b7148c6979")
+	)
+	(label "IMU_RST_CONN"
+		(at 119.38 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e4468903-2f9b-4eb8-9dd7-a5f7fc523fa4")
 	)
 	(label "IMU_INT_CONN"
 		(at 49.53 82.55 0)
@@ -1026,6 +1107,29 @@
 			)
 		)
 	)
+	(global_label "IMU_INT"
+		(shape bidirectional)
+		(at 139.7 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7cf59130-8781-4481-a5e8-304409158c97")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.7 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape bidirectional)
 		(at 41.91 62.23 180)
@@ -1048,16 +1152,6 @@
 				)
 			)
 		)
-	)
-	(label "IMU_RST_CONN"
-		(at 49.53 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6ec15c03-2585-4e7d-9012-cb2d3f0c6107")
 	)
 	(global_label "IMU_SDA"
 		(shape bidirectional)
@@ -1124,6 +1218,108 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "IMU_RST"
+		(shape bidirectional)
+		(at 139.7 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff727cd4-badf-4446-934c-c88b2e59c9b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.7 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 128.27 71.12 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "12aee982-843a-4a66-876b-c52717486075")
+		(property "Reference" "R35"
+			(at 128.27 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 128.27 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 128.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100R series resistor on IMU_RST (J12 pin 2): limits ESD/miswire current into the STM32. Place near U1."
+			(at 128.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50e0c10e-4bd4-48cf-b5ec-ec804a14262d")
+		)
+		(pin "2"
+			(uuid "7da5a7b9-3ebe-48d9-af69-b54ee3af205b")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/b545aee1-32b7-415d-95c5-89c338cb4a13"
+					(reference "R35")
+					(unit 1)
 				)
 			)
 		)
@@ -1557,6 +1753,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 128.27 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "89ef19e8-8ea7-4bae-9e7e-6187a5d11dd2")
+		(property "Reference" "R34"
+			(at 128.27 60.96 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 128.27 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 128.27 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100R series resistor on IMU_INT (J12 pin 1): limits ESD/miswire current into the STM32. Place near U1."
+			(at 128.27 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "80946cf1-310a-43b5-8b13-d1e23a2e033e")
+		)
+		(pin "2"
+			(uuid "a5bbf91f-42b6-493c-982f-386f632153fc")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/b545aee1-32b7-415d-95c5-89c338cb4a13"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 39.37 82.55 0)
 		(unit 1)
@@ -1711,280 +1986,5 @@
 				)
 			)
 		)
-	)
-	(label "IMU_INT_CONN"
-		(at 119.38 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "aba8d347-c08c-4a06-9c02-06b7148c6979")
-	)
-	(wire
-		(pts
-			(xy 119.38 63.5) (xy 124.46 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48c09c6f-f7d6-4361-ac8f-c221251ef322")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 128.27 63.5 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "89ef19e8-8ea7-4bae-9e7e-6187a5d11dd2")
-		(property "Reference" "R34"
-			(at 128.27 60.96 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 128.27 66.04 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 128.27 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100R series resistor on IMU_INT (J12 pin 1): limits ESD/miswire current into the STM32. Place near U1."
-			(at 128.27 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "80946cf1-310a-43b5-8b13-d1e23a2e033e")
-		)
-		(pin "2"
-			(uuid "a5bbf91f-42b6-493c-982f-386f632153fc")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/b545aee1-32b7-415d-95c5-89c338cb4a13"
-					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 132.08 63.5) (xy 139.7 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b2582e8-9d17-4fd7-bce0-9cad4225beef")
-	)
-	(global_label "IMU_INT"
-		(shape bidirectional)
-		(at 139.7 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7cf59130-8781-4481-a5e8-304409158c97")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.7 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(label "IMU_RST_CONN"
-		(at 119.38 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e4468903-2f9b-4eb8-9dd7-a5f7fc523fa4")
-	)
-	(wire
-		(pts
-			(xy 119.38 71.12) (xy 124.46 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b12d075-a3eb-4c6f-aa16-167d91207522")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 128.27 71.12 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "12aee982-843a-4a66-876b-c52717486075")
-		(property "Reference" "R35"
-			(at 128.27 68.58 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 128.27 73.66 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 128.27 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100R series resistor on IMU_RST (J12 pin 2): limits ESD/miswire current into the STM32. Place near U1."
-			(at 128.27 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "50e0c10e-4bd4-48cf-b5ec-ec804a14262d")
-		)
-		(pin "2"
-			(uuid "7da5a7b9-3ebe-48d9-af69-b54ee3af205b")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/b545aee1-32b7-415d-95c5-89c338cb4a13"
-					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 132.08 71.12) (xy 139.7 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98b28a60-3d21-454f-b6e3-d9b3e18d5da8")
-	)
-	(global_label "IMU_RST"
-		(shape bidirectional)
-		(at 139.7 71.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ff727cd4-badf-4446-934c-c88b2e59c9b9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.7 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(text "Series protection\nR34/R35 100R on INT/RST (near U1)"
-		(exclude_from_sim no)
-		(at 116.84 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "c858f1fe-0a2e-4620-a31c-475443fb50ab")
 	)
 )
