@@ -549,7 +549,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VOUT nominal = 0.8 x (1 + 35.7k / 11.5k) = 3.284 V (E96 values)\n1 A is the TOTAL output budget for STM32 + IMU + other 3.3 V loads."
+	(text "VOUT nominal = 0.8 x (1 + 35.7k / 11.5k) = 3.284 V (E96 values)\n1 A is the TOTAL output budget for the STM32 and other 3.3 V loads."
 		(exclude_from_sim no)
 		(at 60.96 144.78 0)
 		(effects
@@ -582,7 +582,7 @@
 		)
 		(uuid "6c7f0dad-6869-46a1-9177-0a1e54dd68af")
 	)
-	(text "5 V motor / encoder supply branches BEFORE this sheet.\nAdafruit BNO085 breakout: 3.3 V rail to VIN; 3Vo is an output, leave separate.\nBare BNO085: connect 3.3 V to VDD and VDDIO with its specified decoupling."
+	(text "5 V motor / encoder supply branches BEFORE this sheet."
 		(exclude_from_sim no)
 		(at 60.96 179.07 0)
 		(effects

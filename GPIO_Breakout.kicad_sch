@@ -3073,7 +3073,7 @@
 			)
 		)
 	)
-	(global_label "IMU_SCL"
+	(global_label "PB6"
 		(shape bidirectional)
 		(at 111.76 71.12 0)
 		(fields_autoplaced yes)
@@ -3372,7 +3372,7 @@
 			)
 		)
 	)
-	(global_label "IMU_SDA"
+	(global_label "PB7"
 		(shape bidirectional)
 		(at 111.76 73.66 0)
 		(fields_autoplaced yes)
@@ -3556,7 +3556,7 @@
 			)
 		)
 	)
-	(global_label "IMU_INT"
+	(global_label "PC4"
 		(shape bidirectional)
 		(at 111.76 121.92 0)
 		(fields_autoplaced yes)
@@ -3602,7 +3602,7 @@
 			)
 		)
 	)
-	(global_label "LED_IMU"
+	(global_label "PB13"
 		(shape bidirectional)
 		(at 111.76 88.9 0)
 		(fields_autoplaced yes)
@@ -3648,7 +3648,7 @@
 			)
 		)
 	)
-	(global_label "IMU_RST"
+	(global_label "PC5"
 		(shape bidirectional)
 		(at 111.76 124.46 0)
 		(fields_autoplaced yes)
@@ -4205,7 +4205,7 @@
 				)
 			)
 		)
-		(property "Description" "Male 2.54 mm pin header, 1x15 vertical: pins 1-14 = PB1, MOTOR2_DIR (PB2), PB4, PB5, IMU_SCL (PB6), IMU_SDA (PB7), PB8, PB9, PB10, PB11, LED_PI_LINK (PB12), LED_IMU (PB13), LED_MOTOR (PB14), PB15; pin 15 = GND"
+		(property "Description" "Male 2.54 mm pin header, 1x15 vertical: pins 1-14 = PB1, MOTOR2_DIR (PB2), PB4, PB5, PB6, PB7, PB8, PB9, PB10, PB11, LED_PI_LINK (PB12), PB13, LED_MOTOR (PB14), PB15; pin 15 = GND"
 			(at 101.6 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -4323,7 +4323,7 @@
 				)
 			)
 		)
-		(property "Description" "Male 2.54 mm pin header, 1x18 vertical: pins 1-17 = PC0, PC1, PC2, PC3, IMU_INT (PC4), IMU_RST (PC5), PC6, PC7, PC8, PC9, PC10, PC11, PC12, USER_BTN, OSC32_IN, OSC32_OUT, PD2; pin 18 = GND"
+		(property "Description" "Male 2.54 mm pin header, 1x18 vertical: pins 1-17 = PC0, PC1, PC2, PC3, PC4, PC5, PC6, PC7, PC8, PC9, PC10, PC11, PC12, USER_BTN, OSC32_IN, OSC32_OUT, PD2; pin 18 = GND"
 			(at 101.6 132.08 0)
 			(hide yes)
 			(show_name no)
