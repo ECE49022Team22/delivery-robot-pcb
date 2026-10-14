@@ -8,7 +8,7 @@ This repository is the shared workspace for the board schematic, PCB layout, pro
 
 The current schematic includes an STM32F091RC microcontroller core, programming/debug and UART headers, reset and boot circuitry, clock and decoupling components, test points, and power conversion from 12 V to 5 V and 3.3 V.
 
-Motor-driver and IMU interfaces are part of the planned system and still need to be completed and reviewed in the board design.
+The IMU (BNO085) is not on this board; it is wired to the robot off-board.
 
 ## Getting started
 
@@ -31,10 +31,9 @@ Custom symbol and footprint libraries are included and registered in the project
 | LDO_3V3.kicad_sch | Hierarchical 3.3 V power supply sheet |
 | Pi5_Interface.kicad_sch | Raspberry Pi 5 UART (J13, R12/R13 100R) and fused power output (F2, J14) |
 | GPIO_Breakout.kicad_sch | 2.54 mm headers J8-J10 for all spare STM32 pins (global labels) |
-| Power_Indicators.kicad_sch | Green power LED per rail (+12V, +5V_PI, +5V_AUX, +5V_SYS, +3V3) and yellow STM32 debug LEDs (PA5, PB12-PB14) |
+| Power_Indicators.kicad_sch | Green power LED per rail (+12V, +5V_PI, +5V_AUX, +5V_SYS, +3V3) and yellow STM32 debug LEDs (PA5, PB12, PB14) |
 | Motor_Control.kicad_sch | MDD20A driver terminals (J6, J16) and encoder terminals (J7, J15) for two motors, 100R series resistors, USBLC6-4SC6 ESD arrays on J6 (U6) and J7 (U7), STM32 pin table |
 | Test_Points.kicad_sch | Power test points: J5 1x06 2.54 mm header (GND, +3V3, +3.3VA, +5V_SYS, +5V_AUX, +12V) and TP3 scope GND loop |
-| IMU_Interface.kicad_sch | Off-board BNO085: J11 STEMMA QT I2C, J12 INT/RST with 100R series resistors, DNP I2C pull-ups |
 | delivery_robot_1.pdf | Plot of all schematic sheets, regenerated automatically on every schematic commit |
 | tools/hooks/ | Git hooks (pre-commit regenerates the schematic PDF) |
 | libs/ | Project libraries: custom buck converter symbols/footprints, and project_symbols.kicad_sym (STM32F091RCTx and Crystal_GND24 frozen at the versions this design uses) |

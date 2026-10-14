@@ -9292,17 +9292,6 @@
 		)
 		(uuid "2520379d-5a6e-4b62-aaec-0ef4bdff102c")
 	)
-	(text "J11 I2C: SDA PB7, SCL PB6 (I2C1)\nJ12: INT PC4, RST PC5 (via R34/R35)\nGlobal labels - no sheet pins"
-		(exclude_from_sim no)
-		(at 339.09 194.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "4704a73e-6e7b-4d0c-8355-273385f0392d")
-	)
 	(text "Jumper open = run from flash \nJumper fitted + reset = ROM bootloader "
 		(exclude_from_sim no)
 		(at 85.852 58.674 0)
@@ -11607,7 +11596,7 @@
 			)
 		)
 	)
-	(global_label "LED_IMU"
+	(global_label "PB13"
 		(shape bidirectional)
 		(at 218.44 198.12 0)
 		(fields_autoplaced yes)
@@ -11978,7 +11967,7 @@
 			)
 		)
 	)
-	(global_label "IMU_SDA"
+	(global_label "PB7"
 		(shape bidirectional)
 		(at 218.44 182.88 0)
 		(fields_autoplaced yes)
@@ -12093,7 +12082,7 @@
 			)
 		)
 	)
-	(global_label "IMU_INT"
+	(global_label "PC4"
 		(shape bidirectional)
 		(at 175.26 152.4 180)
 		(fields_autoplaced yes)
@@ -12162,7 +12151,7 @@
 			)
 		)
 	)
-	(global_label "IMU_RST"
+	(global_label "PC5"
 		(shape bidirectional)
 		(at 175.26 154.94 180)
 		(fields_autoplaced yes)
@@ -12278,7 +12267,7 @@
 			)
 		)
 	)
-	(global_label "IMU_SCL"
+	(global_label "PB6"
 		(shape bidirectional)
 		(at 218.44 180.34 0)
 		(fields_autoplaced yes)
@@ -17919,51 +17908,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 339.09 170.18)
-		(size 38.1 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "b545aee1-32b7-415d-95c5-89c338cb4a13")
-		(property "Sheetname" "IMU Interface"
-			(at 339.09 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "IMU_Interface.kicad_sch"
-			(at 339.09 191.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(page "11")
 				)
 			)
 		)
