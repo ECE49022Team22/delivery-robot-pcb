@@ -9281,7 +9281,7 @@
 		)
 		(uuid "affb78a0-cc0c-4fbd-8647-acfa93626a0d")
 	)
-	(text "J13 Pi link, 6-pin JST-XH: UART (R12/R13 1k), GND, Pi 3V3 sense,\nSTM32 reset (Q2) and BOOT0 for reflashing over USART2\nJ14 Pi power (+5V_PI direct, no fuse)"
+	(text "J13 Pi link, 6-pin JST-XH: UART (R12/R13 1k), GND, Pi 3V3 (enables AUX),\nSTM32 reset (Q2) and BOOT0 for reflashing over USART2\nJ14 Pi power (+5V_PI direct, no fuse)"
 		(exclude_from_sim no)
 		(at 276.86 189.23 0)
 		(effects
@@ -11903,7 +11903,7 @@
 			)
 		)
 	)
-	(global_label "PI_3V3_SENSE"
+	(global_label "PA1"
 		(shape bidirectional)
 		(at 218.44 124.46 0)
 		(fields_autoplaced yes)
