@@ -13,12 +13,15 @@
     {
       "role": "inserted replaceable fuse",
       "manufacturer": "Littelfuse",
-      "mpn": "029707.5L",
+      "mpn": "0297010.L",
       "quantity": 1,
       "datasheet": "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1"
     }
   ],
-  "maximum_estimated_normal_input_current_A": 4.357298474945534,
+  "maximum_estimated_normal_input_current_A": 4.5,
   "efficiency_assumption": 0.85,
-  "selection_status": "candidate; verify inrush, thermal conditions, conductor coordination and prospective fault current before production"
+  "selection_status": "candidate; verify inrush, thermal conditions, conductor coordination and prospective fault current before production",
+  "worst_case_input_current_with_servo_stall_A": 8.4,
+  "harness_fuse_A": 15,
+  "updated": "2026-10-15: 10 A insert; AUX ports and latch-servo feed added to +12V"
 }
