@@ -461,7 +461,7 @@
 		)
 		(uuid "5a0e79d4-18e0-4377-9d90-68ba7d8d9e06")
 	)
-	(text "+5V_AUX comes from U5 (TPSM63606, 6 A), which is enabled when the Pi 5 is up (AUX_EN, see Buck 5V AUX).\nEach port has its own PTC so a pinched or shorted peripheral cable only drops that port.\nConnectors: JST XH 2.5 mm side-entry, latching, 3 A per contact. Pin 1 = +5 V, pin 2 = GND.\nPTC hold is 1.5 A on every port (trip about 3 A) so one part covers all four; bursts of 2 A for\nmilliseconds (Notecard modem) do not trip it. Check each peripheral's peak current before power-up.\nLayout: ports on one board edge next to U5; PTCs at the connectors; +5V_AUX on a pour."
+	(text "+5V_AUX comes from U5 (TPSM63606, 6 A), which is enabled when the Pi 5 is up (AUX_EN, see Buck 5V AUX).\nEach port has its own PTC so a pinched or shorted peripheral cable only drops that port.\nConnectors: JST XH 2.5 mm top-entry (plug in from above), keyed, 3 A per contact.\nUse pre-made 2-pin XH cables; solder or splice the free end at each peripheral. Pin 1 = +5 V, pin 2 = GND.\nPTC hold is 1.5 A on every port (trip about 3 A) so one part covers all four; bursts of 2 A for\nmilliseconds (Notecard modem) do not trip it. Check each peripheral's peak current before power-up.\nLayout: ports on one board edge next to U5; PTCs at the connectors; +5V_AUX on a pour."
 		(exclude_from_sim no)
 		(at 25.4 147.32 0)
 		(effects
@@ -797,7 +797,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 104.14 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -819,7 +819,7 @@
 				)
 			)
 		)
-		(property "Description" "5 V output to GNSS receiver. JST XH side-entry: 1 = +5 V (AUX3_5V), 2 = GND. Mates with XHP-2 housing."
+		(property "Description" "5 V output to GNSS receiver. JST XH top-entry (plugs in from above): 1 = +5 V (AUX3_5V), 2 = GND. Use a pre-made 2-pin XH cable."
 			(at 104.14 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -841,7 +841,7 @@
 				)
 			)
 		)
-		(property "MPN" "S2B-XH-A(LF)(SN)"
+		(property "MPN" "B2B-XH-A(LF)(SN)"
 			(at 104.14 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -852,7 +852,7 @@
 				)
 			)
 		)
-		(property "Mating" "XHP-2 housing + 2x SXH-001T-P0.6 crimp (AWG 28-22)"
+		(property "Mating" "Pre-made 2-pin JST XH cable (XHP-2 housing); no crimping needed"
 			(at 104.14 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1522,7 +1522,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 104.14 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -1544,7 +1544,7 @@
 				)
 			)
 		)
-		(property "Description" "5 V output to BNO085 IMU board (has its own 3.3 V regulator). JST XH side-entry: 1 = +5 V (AUX4_5V), 2 = GND. Mates with XHP-2 housing."
+		(property "Description" "5 V output to BNO085 IMU board (has its own 3.3 V regulator). JST XH top-entry (plugs in from above): 1 = +5 V (AUX4_5V), 2 = GND. Use a pre-made 2-pin XH cable."
 			(at 104.14 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -1566,7 +1566,7 @@
 				)
 			)
 		)
-		(property "MPN" "S2B-XH-A(LF)(SN)"
+		(property "MPN" "B2B-XH-A(LF)(SN)"
 			(at 104.14 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -1577,7 +1577,7 @@
 				)
 			)
 		)
-		(property "Mating" "XHP-2 housing + 2x SXH-001T-P0.6 crimp (AWG 28-22)"
+		(property "Mating" "Pre-made 2-pin JST XH cable (XHP-2 housing); no crimping needed"
 			(at 104.14 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -1636,7 +1636,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 104.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1658,7 +1658,7 @@
 				)
 			)
 		)
-		(property "Description" "5 V output to Blues Notecard (cellular bursts up to about 2 A). JST XH side-entry: 1 = +5 V (AUX1_5V), 2 = GND. Mates with XHP-2 housing."
+		(property "Description" "5 V output to Blues Notecard (cellular bursts up to about 2 A). JST XH top-entry (plugs in from above): 1 = +5 V (AUX1_5V), 2 = GND. Use a pre-made 2-pin XH cable."
 			(at 104.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1680,7 +1680,7 @@
 				)
 			)
 		)
-		(property "MPN" "S2B-XH-A(LF)(SN)"
+		(property "MPN" "B2B-XH-A(LF)(SN)"
 			(at 104.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1691,7 +1691,7 @@
 				)
 			)
 		)
-		(property "Mating" "XHP-2 housing + 2x SXH-001T-P0.6 crimp (AWG 28-22)"
+		(property "Mating" "Pre-made 2-pin JST XH cable (XHP-2 housing); no crimping needed"
 			(at 104.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1851,7 +1851,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 104.14 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1873,7 +1873,7 @@
 				)
 			)
 		)
-		(property "Description" "5 V output to LiDAR (motor start-up current about 1 A). JST XH side-entry: 1 = +5 V (AUX2_5V), 2 = GND. Mates with XHP-2 housing."
+		(property "Description" "5 V output to LiDAR (motor start-up current about 1 A). JST XH top-entry (plugs in from above): 1 = +5 V (AUX2_5V), 2 = GND. Use a pre-made 2-pin XH cable."
 			(at 104.14 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1895,7 +1895,7 @@
 				)
 			)
 		)
-		(property "MPN" "S2B-XH-A(LF)(SN)"
+		(property "MPN" "B2B-XH-A(LF)(SN)"
 			(at 104.14 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1906,7 +1906,7 @@
 				)
 			)
 		)
-		(property "Mating" "XHP-2 housing + 2x SXH-001T-P0.6 crimp (AWG 28-22)"
+		(property "Mating" "Pre-made 2-pin JST XH cable (XHP-2 housing); no crimping needed"
 			(at 104.14 73.66 0)
 			(hide yes)
 			(show_name no)

@@ -9,11 +9,11 @@ This branch implements the decisions from the 2026-10-15 design review. ERC is c
 | Input (new sheet *Input Protection*) | Q1 SQJ409EP reverse-battery P-FET after F1, D12 12 V gate clamp, R36 gate pull-down. D13 SMBJ16A TVS on +12V. C36 now on +12V after Q1. | A harness crimped backwards at the battery lugs would have reverse-biased C36 and both bucks. The TPS54202 abs max is 30 V; D13 clamps to about 26 V. |
 | Input | F1 7.5 A -> 10 A (0297010.L); battery harness fuse 15 A. Nets named VBAT_IN (J2-F1) and VBAT_FUSED (F1-Q1). | The new AUX ports and servo feed raise worst-case input to about 8.4 A. See [fuse-selection.md](fuse-selection.md). |
 | Battery sense | R37 100k / R38 22.1k / C37 100 nF -> PA0 (ADC_IN0). | Firmware can read battery voltage: VBAT = V(PA0) x 5.525. |
-| AUX (new sheet *AUX Outputs*) | Four 2-pin JST XH ports J18-J21 (Notecard, LiDAR, GNSS, IMU), one 1.5 A PTC each. | +5V_AUX had no outputs. One port's short trips only that port. |
+| AUX (new sheet *AUX Outputs*) | Four 2-pin top-entry JST XH ports J18-J21 (Notecard, LiDAR, GNSS, IMU), one 1.5 A PTC each. Cables plug in from above; use pre-made 2-pin XH cables (no crimping). | +5V_AUX had no outputs. One port's short trips only that port. |
 | AUX enable | U5 EN = AUX_EN: Pi 3V3 through D15, 100k pull-down R43, 1 nF C40, force-on jumper J22. | AUX peripherals run only while the Pi is up; J22 for bench work. |
-| Pi link | J13 is now a 6-pin JST XH: TXD, RXD, GND, Pi 3V3 (sense), PI_RESET (Q2 -> NRST), PI_BOOT0 (R47 1k -> BOOT0). R12/R13 100R -> 1k. TP2 removed (it duplicated TP1 once F2 was gone). | The Pi can reset and reflash the STM32 (stm32flash over USART2, a ROM-bootloader port on F09x). With 1k, an unpowered Pi or STM32 sees at most a few mA injected (PA2/PA3 are TTa, 5 mA max). |
+| Pi link | J13 is now a 6-pin JST XH: TXD, RXD, GND, Pi 3V3 (enables AUX), PI_RESET (Q2 -> NRST), PI_BOOT0 (R47 1k -> BOOT0). R12/R13 100R -> 1k. TP2 removed (it duplicated TP1 once F2 was gone). | The Pi can reset and reflash the STM32 (stm32flash over USART2, a ROM-bootloader port on F09x). With 1k, an unpowered Pi or STM32 sees at most a few mA injected (PA2/PA3 are TTa, 5 mA max). |
 | Servo (new sheet *Servo Interface*) | J17 3-pin terminal: GND, VBAT_SERVO (through F3, a 5 A SMD fuse), SERVO_SIG. U8 SN74LVC1T45 translates PB10 (3.3 V) to the 5 V servo bus; PB11 = direction. 10k pull-ups as in Hiwonder's reference, D14 ESD. | Hiwonder HTS-30HS: 9-12.6 V, 3.2 A stall, half-duplex UART at 115200 baud on a 5 V bus. A full battery (14.6 V) exceeds 12.6 V, so an external buck set to 11.1-12 V is required. |
-| Encoders | U9/U10 74LVC2G17 buffers on +3V3 between the encoder lines and the MCU. Series resistors 100R -> 1k with 1 nF (1 us filter). DNP 4.7k pull-ups (fit only if the encoders prove open-collector). F8/F9 0.2 A PTC + 1 uF on each encoder supply. J7/J15 pin order is now 5V, GND, A, B, matching the encoder plug. | +3V3 used to come up 80 ms after +5V_SYS, leaving 5 V encoder signals on unpowered MCU pins (ST allows 3.6 V). A shorted encoder cable no longer drops +5V_SYS. |
+| Encoders | U9/U10 74LVC2G17 buffers on +3V3 between the encoder lines and the MCU. Series resistors 100R -> 1k with 1 nF (1 us filter). F8/F9 0.2 A PTC + 1 uF on each encoder supply. J7/J15 pin order is now 5V, GND, A, B, matching the encoder plug. | +3V3 used to come up 80 ms after +5V_SYS, leaving 5 V encoder signals on unpowered MCU pins (ST allows 3.6 V). A shorted encoder cable no longer drops +5V_SYS. |
 | LDO | C26/C27 470 nF -> 10 nF. | Start-up 80 ms -> about 1.7 ms. |
 | Motor driver | R52/R53 10k pull-downs on both PWM lines; F10/F11 PTC in series with J6/J16 pin 3 (driver signal ground). | The MDD20A brakes on PWM low, so a resetting MCU always means brake. The PTC opens if motor current tries to return through the board. |
 | ESD | Spare USBLC6 channels now cover J16 (U6, at J6) and J15 (U7, at J7). | Motor 2 had no ESD protection. |
@@ -30,7 +30,6 @@ This branch implements the decisions from the 2026-10-15 design review. ERC is c
 | Pin | Net | Use |
 |---|---|---|
 | PA0 | VBAT_SENSE | ADC_IN0. VBAT = V x 5.525. |
-| PA1 | PI_3V3_SENSE | Input. High = Pi is powered. |
 | PB10 | SERVO_TX | USART3_TX (AF4), single-wire half-duplex (HDSEL), **open-drain** (R39 pull-up). Discard your own echoed bytes. |
 | PB11 | SERVO_DIR | Output. High before sending, low as soon as TC sets. Pulled low (receive) at reset. |
 | PA15, PB3, PA8, PA9 | ENC1_A/B, ENC2_A/B | Now driven by the 3.3 V buffers. Do not enable internal pull-ups. |
@@ -40,7 +39,9 @@ Pi side: J13 pins 1-6 go to Pi header pins 8 (TXD), 10 (RXD), 6 (GND), 1 (3V3), 
 
 ## Layout state and what is left
 
-The 55 new parts are **parked to the right of the board** in nine labeled groups (titles on the User.Comments layer say where each group belongs), ready for manual placement. Nothing of Venya's routing or placement (LEDs, R12/R13, R26-R33, U6/U7, TP3) was touched. Changes to existing items on the board:
+Removed after review (2026-10-15): the DNP encoder pull-ups (R48-R51) and the Pi-alive sense (R44/R45; PA1 is a spare pin again).
+
+The 49 new parts are **parked to the right of the board** in nine labeled groups (titles on the User.Comments layer say where each group belongs), ready for manual placement. Nothing of Venya's routing or placement (LEDs, R12/R13, R26-R33, U6/U7, TP3) was touched. Changes to existing items on the board:
 
 | Item | Change | Why |
 |---|---|---|
@@ -67,7 +68,7 @@ Still to do, in suggested order:
 3. Reverse the bench supply briefly (current-limited): nothing should draw current.
 4. Program over SWD (J1). Then test Pi reflash over J13.
 5. Scope +5V_SYS and +3V3 together at power-on: +3V3 should follow within about 2 ms.
-6. Scope encoder A/B at the connector with no pull-ups. Fit R48-R51 only if the outputs are open-collector.
+6. Scope encoder A/B at the connector. If the outputs are open-collector, bodge 4.7k pull-ups from A/B to ENCn_5V.
 7. With the MDD20A powered, measure the open-circuit voltage on its PWM/DIR inputs (MCU side is 3.3 V).
 8. Load-test J14 at 5 A, then connect the Pi. On the Pi, set `usb_max_current_enable=1` in config.txt and `PSU_MAX_CURRENT=5000` in the EEPROM.
 9. Servo: set the external buck to 11.1-12 V before connecting the HTS-30HS.
@@ -89,6 +90,6 @@ Still to do, in suggested order:
 | Q2 | DMN63D8L-7 (switches fully from a 3.3 V gate) |
 | D15 | BAT54WS-E3-18 |
 | D14 | D5V0L1B2WS-7 |
-| J13 | S6B-XH-A(LF)(SN) + XHP-6 + SXH-001T-P0.6 |
-| J18-J21 | S2B-XH-A(LF)(SN) + XHP-2 + SXH-001T-P0.6 |
+| J13 | S6B-XH-A(LF)(SN); use a pre-made 6-pin XH cable (or XHP-6 + SXH-001T-P0.6 if you crimp) |
+| J18-J21 | B2B-XH-A(LF)(SN) top-entry; pre-made 2-pin XH cables |
 | Capacitors | C0603C104K5RACTU (100 nF), GRM1885C1H102JA01D (1 nF), GRM188R72A103KA01D (10 nF), C1608X7R1C105K080AC (1 uF) |

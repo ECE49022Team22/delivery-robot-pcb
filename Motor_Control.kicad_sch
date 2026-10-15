@@ -2476,7 +2476,7 @@
 		)
 		(uuid "02ea85cf-fc6e-4c18-b3a9-907729968da2")
 	)
-	(text "Encoder supply, encoder pull-ups (DNP), motor-driver line protection"
+	(text "Encoder supply and motor-driver line protection\n(If the am-3651 outputs turn out to be open-collector, bodge 4.7k from each A/B line to its ENCn_5V.)"
 		(exclude_from_sim no)
 		(at 289.56 144.78 0)
 		(effects
@@ -2620,16 +2620,6 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 154.94) (xy 384.81 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "111ae3c5-7cc8-4147-9a44-1ad43a50295d")
-	)
-	(wire
-		(pts
 			(xy 144.78 73.66) (xy 139.7 73.66)
 		)
 		(stroke
@@ -2657,16 +2647,6 @@
 			(type default)
 		)
 		(uuid "15ac707d-c8db-485a-b8ad-c4afc4534365")
-	)
-	(wire
-		(pts
-			(xy 379.73 177.8) (xy 384.81 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1988c413-ba6e-46b4-9f36-70686bb93e8c")
 	)
 	(wire
 		(pts
@@ -2830,16 +2810,6 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 170.18) (xy 367.03 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5af29df3-f839-447c-a298-7d9383b6f976")
-	)
-	(wire
-		(pts
 			(xy 134.62 99.06) (xy 144.78 99.06)
 		)
 		(stroke
@@ -2857,16 +2827,6 @@
 			(type default)
 		)
 		(uuid "5d9a7958-af16-4a1c-8b80-73141da68904")
-	)
-	(wire
-		(pts
-			(xy 372.11 154.94) (xy 367.03 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dc73434-db82-4cff-a5c9-f84fe5eff6f2")
 	)
 	(wire
 		(pts
@@ -2947,16 +2907,6 @@
 			(type default)
 		)
 		(uuid "875351ce-5a2b-41d8-84dc-7ea369e669f2")
-	)
-	(wire
-		(pts
-			(xy 379.73 162.56) (xy 384.81 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89fcea64-d887-44c9-aaa6-b43d39051fba")
 	)
 	(wire
 		(pts
@@ -3170,16 +3120,6 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 177.8) (xy 367.03 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b61e8c97-a60a-47e7-959e-c22a280eedb2")
-	)
-	(wire
-		(pts
 			(xy 45.72 88.9) (xy 54.61 88.9)
 		)
 		(stroke
@@ -3227,16 +3167,6 @@
 			(type default)
 		)
 		(uuid "d57d3602-ce8d-4266-91cb-4a7fb7b2590d")
-	)
-	(wire
-		(pts
-			(xy 379.73 170.18) (xy 384.81 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d595b47a-3366-4d1c-993b-7aea62e09f45")
 	)
 	(wire
 		(pts
@@ -3297,16 +3227,6 @@
 			(type default)
 		)
 		(uuid "e6e6ba0d-e48e-4488-b42c-fa74db9a5f4a")
-	)
-	(wire
-		(pts
-			(xy 372.11 162.56) (xy 367.03 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e70ff104-b769-4a72-9a9c-33166f42ec44")
 	)
 	(wire
 		(pts
@@ -3418,16 +3338,6 @@
 		)
 		(uuid "fda074b6-7009-4462-91c0-857d2dbbbdef")
 	)
-	(label "ENC1_5V"
-		(at 367.03 154.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "001093a3-1ab9-43b1-94e4-d9bd3201ca96")
-	)
 	(label "MOTOR2_DIR_CONN"
 		(at 223.52 68.58 180)
 		(effects
@@ -3528,16 +3438,6 @@
 		)
 		(uuid "42f9867e-0064-4407-9588-a7e90793f1a9")
 	)
-	(label "ENC2_5V"
-		(at 367.03 177.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4335335a-b950-4666-98b3-ae7103b46b5d")
-	)
 	(label "ENC2_A_CONN"
 		(at 69.85 96.52 0)
 		(effects
@@ -3557,26 +3457,6 @@
 			(justify right bottom)
 		)
 		(uuid "4ace70ef-c340-429b-bb50-7ac9cc8081a4")
-	)
-	(label "ENC2_B_CONN"
-		(at 384.81 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fb25f07-94f0-4a40-84a3-1d51e2e8ac9e")
-	)
-	(label "ENC1_B_CONN"
-		(at 384.81 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "51ff8caa-f93f-431e-97ed-b85a3ee3ed13")
 	)
 	(label "MOTOR2_PWM_CONN"
 		(at 69.85 81.28 0)
@@ -3648,26 +3528,6 @@
 		)
 		(uuid "67a3283c-5fff-4a0a-8735-575790bc776d")
 	)
-	(label "ENC2_5V"
-		(at 367.03 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6c621dc4-1f04-4199-aa14-1688926b2cee")
-	)
-	(label "ENC2_A_CONN"
-		(at 384.81 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "763dc79e-ff75-4294-8d35-ce119e44f9bb")
-	)
 	(label "M1_DRV_GND"
 		(at 134.62 55.88 180)
 		(effects
@@ -3677,16 +3537,6 @@
 			(justify right bottom)
 		)
 		(uuid "79aa5241-ffb6-4745-a49e-e27a2cc8f0bb")
-	)
-	(label "ENC1_A_CONN"
-		(at 384.81 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7b38b71d-6970-4c9c-8ffd-779953a6fbab")
 	)
 	(label "MOTOR1_DIR_CONN"
 		(at 223.52 63.5 180)
@@ -3897,16 +3747,6 @@
 			(justify right bottom)
 		)
 		(uuid "f032cfb6-008c-456b-bd69-64d55c53102b")
-	)
-	(label "ENC1_5V"
-		(at 367.03 162.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f38e9fed-08d1-41b7-bbad-61efd3c15340")
 	)
 	(label "ENC2_B_F"
 		(at 45.72 104.14 180)
@@ -4313,85 +4153,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
 					(reference "#PWR0198")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 375.92 162.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "0f721214-ad5e-4da2-8eb9-2e7f9c125e3c")
-		(property "Reference" "R49"
-			(at 375.92 160.02 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 375.92 165.1 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 375.92 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 375.92 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Optional pull-up on ENC1_B_CONN to the encoder supply. Do not fit unless a scope shows the am-3651 outputs are open-collector (they are unmeasured)."
-			(at 375.92 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "058e2d74-9b1e-4995-8cc8-3c7d472040d7")
-		)
-		(pin "2"
-			(uuid "52e10861-e159-4068-8c31-6288cb8a05a3")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -8682,85 +8443,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 375.92 177.8 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "cd0db92f-9184-4d54-bcb6-ad2c85ff5db5")
-		(property "Reference" "R51"
-			(at 375.92 175.26 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 375.92 180.34 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 375.92 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 375.92 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Optional pull-up on ENC2_B_CONN to the encoder supply. Do not fit unless a scope shows the am-3651 outputs are open-collector (they are unmeasured)."
-			(at 375.92 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4eb03070-531c-4a69-898a-dac61d2687ee")
-		)
-		(pin "2"
-			(uuid "8a9ec44c-4325-4779-9021-4a6e264900d9")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "R51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xGxx:74LVC2G17")
 		(at 330.2 55.88 0)
 		(unit 1)
@@ -8868,85 +8550,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
 					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 375.92 170.18 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "d45b8d64-61a8-4ac3-a678-102c114bdbab")
-		(property "Reference" "R50"
-			(at 375.92 167.64 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 375.92 172.72 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 375.92 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 375.92 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Optional pull-up on ENC2_A_CONN to the encoder supply. Do not fit unless a scope shows the am-3651 outputs are open-collector (they are unmeasured)."
-			(at 375.92 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "21ea09b0-a9ad-4942-9284-773a80fbe8ed")
-		)
-		(pin "2"
-			(uuid "f61e9348-d00d-4fcc-ab68-e0b331743af4")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -9208,85 +8811,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
 					(reference "C45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 375.92 154.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "e2ad0255-a8bd-4f55-b7ec-6d59c5a82470")
-		(property "Reference" "R48"
-			(at 375.92 152.4 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 375.92 157.48 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 375.92 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 375.92 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Optional pull-up on ENC1_A_CONN to the encoder supply. Do not fit unless a scope shows the am-3651 outputs are open-collector (they are unmeasured)."
-			(at 375.92 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d924c440-4b15-4bd9-a33b-e2015eee043a")
-		)
-		(pin "2"
-			(uuid "2739557d-349b-491c-b603-cbf37588e937")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "R48")
 					(unit 1)
 				)
 			)

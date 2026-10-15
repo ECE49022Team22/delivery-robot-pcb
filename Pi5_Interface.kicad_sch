@@ -1675,7 +1675,7 @@
 		)
 		(uuid "ec193a06-11ca-405a-81f2-2e5d6594350f")
 	)
-	(text "Pi-controlled functions (J13 4 <- Pi 3V3 pin 1, 5 <- GPIO23 pin 16, 6 <- GPIO24 pin 18)\nAUX_EN: the +5V_AUX buck (U5) runs only while the Pi's 3V3 is up.\nPI_3V3_SENSE -> PA1: firmware can tell whether the Pi is alive.\nPI_RESET + PI_BOOT0 -> reflash the STM32 from the Pi over USART2 (AN2606:\nPA2/PA3 is a bootloader port on STM32F09x). Sequence: BOOT0 high, pulse reset,\nrun stm32flash at 115200 8E1, then BOOT0 low and reset.\nAt Pi boot GPIO23/24 default to pull-down inputs, so the STM32 runs normally."
+	(text "Pi-controlled functions (J13 4 <- Pi 3V3 pin 1, 5 <- GPIO23 pin 16, 6 <- GPIO24 pin 18)\nAUX_EN: the +5V_AUX buck (U5) runs only while the Pi's 3V3 is up.\nPI_RESET + PI_BOOT0 -> reflash the STM32 from the Pi over USART2 (AN2606:\nPA2/PA3 is a bootloader port on STM32F09x). Sequence: BOOT0 high, pulse reset,\nrun stm32flash at 115200 8E1, then BOOT0 low and reset.\nAt Pi boot GPIO23/24 default to pull-down inputs, so the STM32 runs normally."
 		(exclude_from_sim no)
 		(at 137.16 139.7 0)
 		(effects
@@ -1691,12 +1691,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0fa8cede-25c3-48f0-b36c-fda7dffacc35")
-	)
-	(junction
-		(at 154.94 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2627afa7-9714-4458-9c6b-e2f2736410fa")
 	)
 	(junction
 		(at 144.78 104.14)
@@ -1723,16 +1717,6 @@
 			(type default)
 		)
 		(uuid "07b69fbd-31ec-4e16-bf9f-a691234ce7c0")
-	)
-	(wire
-		(pts
-			(xy 139.7 76.2) (xy 143.51 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "080be5f3-d976-4bfa-8b5e-0e31e1688406")
 	)
 	(wire
 		(pts
@@ -1813,16 +1797,6 @@
 			(type default)
 		)
 		(uuid "5b5036aa-bf1e-4515-9e0a-d14d55eaead5")
-	)
-	(wire
-		(pts
-			(xy 151.13 76.2) (xy 162.56 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6153d76f-0976-4f98-bd5a-177595f7bfd0")
 	)
 	(wire
 		(pts
@@ -1936,16 +1910,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 76.2) (xy 154.94 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c39d2f8c-661f-42fb-9a4e-1d727128a32e")
-	)
-	(wire
-		(pts
 			(xy 97.79 127) (xy 97.79 129.54)
 		)
 		(stroke
@@ -1983,16 +1947,6 @@
 			(type default)
 		)
 		(uuid "e9323d20-b38d-4150-8c89-25d2c3285782")
-	)
-	(wire
-		(pts
-			(xy 154.94 85.09) (xy 154.94 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eebf7519-4231-4a45-91c8-87acfee5bfdb")
 	)
 	(label "PI_BOOT0"
 		(at 73.66 85.09 180)
@@ -2043,16 +1997,6 @@
 			(justify right bottom)
 		)
 		(uuid "4f422b13-bc7b-4ff7-b80d-c5b0473e9851")
-	)
-	(label "PI_3V3"
-		(at 139.7 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6086a3e1-b47b-40dd-88c9-758b224dd8f9")
 	)
 	(label "PI_TXD"
 		(at 92.71 54.61 0)
@@ -2163,29 +2107,6 @@
 		(uuid "dcc4214b-dc64-4cab-b842-1af732e60936")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 165.1 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "PI_3V3_SENSE"
-		(shape output)
-		(at 162.56 76.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f79de655-e00a-44c7-9920-0f3520577ad4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.56 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2380,87 +2301,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
 					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 154.94 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2d176f5c-6efb-4e5d-840a-cd49bbfa19a8")
-		(property "Reference" "R45"
-			(at 157.48 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 157.48 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 154.94 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Pull-down on PI_3V3_SENSE: reads low when the Pi is off or J13 is unplugged."
-			(at 154.94 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13feaaf4-6ead-4a78-aa77-e4f63b6c0da4")
-		)
-		(pin "2"
-			(uuid "43285984-4ac8-408e-8109-7eec2b6e1013")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
-					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -2808,83 +2648,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 154.94 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a30e18fe-9ac7-42c4-ba93-f5fa0e44aa24")
-		(property "Reference" "#PWR0161"
-			(at 154.94 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 154.94 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8f9ee6ae-fa70-4f40-89df-824a53aabbc1")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
-					(reference "#PWR0161")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 69.85 124.46 0)
 		(unit 1)
@@ -3058,85 +2821,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
 					(reference "R47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 147.32 76.2 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b4c77baf-871b-468e-9bc7-0bb81714078a")
-		(property "Reference" "R44"
-			(at 147.32 72.39 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 147.32 80.01 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 147.32 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Series 10k from Pi 3V3 to PA1 (Pi-alive sense): keeps current into PA1 tiny when the STM32 is unpowered."
-			(at 147.32 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4de79316-f48a-4d99-b7bb-c83238753ebf")
-		)
-		(pin "2"
-			(uuid "1d922339-7633-441b-a102-330f7e8019f6")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
-					(reference "R44")
 					(unit 1)
 				)
 			)
