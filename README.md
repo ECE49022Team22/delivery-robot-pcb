@@ -57,7 +57,7 @@ Component-selection rationale is in [docs/passive-selection-review.md](docs/pass
 
 ## Design status
 
-Schematic: ERC is clean (0 errors, 0 warnings). PCB: every part is placed on the 100 x 100 mm, 4-layer board with an In1 GND plane; routing has started (crystal, NRST, 3.3 V rails) and the rest is unrouted. DRC shows no clearance or parity errors, only silkscreen text-size warnings. See [docs/design-review-2026-10-15.md](docs/design-review-2026-10-15.md) for the layout to-do list.
+Schematic: ERC is clean (0 errors, 0 warnings). PCB: 100 x 100 mm, 4 layers with an In1 GND plane. The original parts are placed; the 55 parts added in the 2026-10-15 review are parked beside the board, grouped, for manual placement; routing has started (crystal, NRST, 3.3 V rails) and the rest is unrouted. DRC shows no clearance or parity errors, only silkscreen text-size warnings. See [docs/design-review-2026-10-15.md](docs/design-review-2026-10-15.md) for the layout to-do list.
 
 The saved ERC report and netlist (system-ERC-report.txt, system-netlist.xml) are from October 5, 2026 and are out of date; validation/verify_integration.py checks against that older connectivity.
 
