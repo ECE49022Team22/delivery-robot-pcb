@@ -40,18 +40,19 @@ Pi side: J13 pins 1-6 go to Pi header pins 8 (TXD), 10 (RXD), 6 (GND), 1 (3V3), 
 
 ## Layout state and what is left
 
-All parts are placed on top of Venya's 9823d47 layout. New parts sit next to the circuit they serve, and none of Venya's routing or latest placement (LEDs, R12/R13, R26-R33, U6/U7, TP3) was touched. Changes to existing items:
+The 55 new parts are **parked to the right of the board** in nine labeled groups (titles on the User.Comments layer say where each group belongs), ready for manual placement. Nothing of Venya's routing or placement (LEDs, R12/R13, R26-R33, U6/U7, TP3) was touched. Changes to existing items on the board:
 
 | Item | Change | Why |
 |---|---|---|
-| C36 | Down next to the U2/U5 input caps | Q1, D12, R36 and D13 take its old spot right after F1 |
-| J8-J10 | Up 12 mm | Frees the bottom-left edge for the AUX ports |
+| C36 | Down next to the U2/U5 input caps | Frees the spot right after F1 for Q1, D12, R36 and D13 |
+| J8-J10 | Up 12 mm | Frees the bottom-left edge for the AUX ports J18-J21 |
 | J13 | Same slot | New 6-pin XH footprint |
-| J17 (new) | Top edge between J1 and J4 | The only free edge; U8 and its parts sit in the middle of the board |
 | LEDs D3-D11 | References back to the schematic names; the rail names (3V3, 12V, AUX, SYS, HB, PI, MOT) stay as silkscreen text in the same spot | Board references must match the schematic for parity and assembly |
 
+Placement suggestions: J17 fits on the top edge between J1 and J4 (the right edge is now blocked by the PI LED); keep F3 and D14 at J17 and U8 near PB10/PB11; put U9/U10 and their 1 nF caps between R28/R29 (R32/R33) and the MCU; C49 goes right at U3's VIN/GND pins, between U3 and C14.
+
 Still to do, in suggested order:
-1. Route the input chain on wide pours, top and In2 together: J2 -> F1 -> Q1 tab -> +12V. Put D13's GND pad on short, wide copper with several vias.
+1. Place the parked parts (see the group titles), then route the input chain on wide pours, top and In2 together: J2 -> F1 -> Q1 tab -> +12V. Put D13's GND pad on short, wide copper with several vias.
 2. Route +12V to U2/U5 inputs, U3 (C49 first, then C14), and F3 (servo feed, about 3 A).
 3. Route the +5V_PI path U2 -> J14 as a top-layer pour with a via array, rated for 5 A on 1 oz. In2 inner copper is only 0.5 oz at OSH Park and JLC. Do the same for +5V_AUX from U5 to the PTCs and ports.
 4. U3: put a GND via right at C49's ground pad, next to U3 pin 1's vias.
