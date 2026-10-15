@@ -876,7 +876,7 @@
 		)
 		(uuid "d2e7d729-ee13-4ca4-95d0-a871554cbf8c")
 	)
-	(text "J13 1 <- Pi GPIO14 TXD (header pin 8)\nJ13 2 -> Pi GPIO15 RXD (header pin 10)\nJ13 3 = GND (Pi header pin 6); 3.3 V logic\nR12/R13 near U1 (no ESD array fitted)"
+	(text "J13 1 <- Pi GPIO14 TXD\nJ13 2 -> Pi GPIO15 RXD\nJ13 3 = GND (Pi header pin 6); 3.3 V logic\nR12/R13 near U1 (no ESD array fitted)"
 		(exclude_from_sim no)
 		(at 53.09 90.93 0)
 		(effects
