@@ -9281,7 +9281,7 @@
 		)
 		(uuid "affb78a0-cc0c-4fbd-8647-acfa93626a0d")
 	)
-	(text "J13 Pi UART (R12/R13 100R)\nJ14 Pi power via F2 isolation fuse"
+	(text "J13 Pi link, 6-pin JST-XH: UART (R12/R13 1k), GND, Pi 3V3 sense,\nSTM32 reset (Q2) and BOOT0 for reflashing over USART2\nJ14 Pi power (+5V_PI direct, no fuse)"
 		(exclude_from_sim no)
 		(at 276.86 189.23 0)
 		(effects
@@ -9302,6 +9302,17 @@
 			(justify left top)
 		)
 		(uuid "4a3c20b9-3e22-4b8a-a4eb-d856651983d3")
+	)
+	(text "J17 latch servo: fused VBAT, U8 half-duplex UART (PB10/PB11)"
+		(exclude_from_sim no)
+		(at 330.2 224.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "6b7d8916-2e28-43fb-878e-7d026edfd690")
 	)
 	(text "M1: PWM PA6, DIR PB0, ENC PA15/PB3 (TIM3/TIM2)\nM2: PWM PA7, DIR PB2, ENC PA8/PA9 (TIM3/TIM1)"
 		(exclude_from_sim no)
@@ -9324,6 +9335,17 @@
 			(justify left top)
 		)
 		(uuid "834bda2e-89a1-4d0c-9721-672a6383fc5a")
+	)
+	(text "J18-J21: four 5 V peripheral ports, one PTC each"
+		(exclude_from_sim no)
+		(at 330.2 196.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "955ebfff-faad-4f4a-b6ca-3cb166917002")
 	)
 	(text "3.3 V / 1 A LDO - U4\nSTM32 VDD and analog filter input supplied from +3V3"
 		(exclude_from_sim no)
@@ -9358,6 +9380,17 @@
 		)
 		(uuid "d87ec159-f8dc-447e-913a-70bdf79e5669")
 	)
+	(text "Q1 reverse-battery P-FET, D13 TVS, VBAT_SENSE (PA0)"
+		(exclude_from_sim no)
+		(at 330.2 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e7fb91d4-dd79-49ad-b637-874144f40058")
+	)
 	(text "these two caps for VDDA pin 13"
 		(exclude_from_sim no)
 		(at 125.476 39.624 0)
@@ -9369,7 +9402,7 @@
 		)
 		(uuid "f1dcdc11-494e-4c12-aa50-b389516c0ea0")
 	)
-	(text "Input protection (J2 battery)\nReverse polarity: no P-FET - relies on the keyed XT30 (J2).\nWhy: the XT30 housing cannot be mated reversed, and this avoids\nan extra series part (and its heat) in the 4-8 A input path.\nNot covered: a harness crimped backwards at the battery M8 lugs.\nMitigation: meter-check harness polarity (+ to J2 pin 2) before\nfirst power-up and after any harness rework.\nC36: 220 uF 35 V bulk on +12V near J2."
+	(text "Input protection (J2 battery) - see the Input Protection sheet\nJ2 XT30 -> VBAT_IN -> F1 10 A MINI fuse -> VBAT_FUSED -> Q1 reverse-battery P-FET\n-> +12V (D13 SMBJ16A TVS, C36 bulk, battery sense on PA0).\nC36 is on +12V after Q1, so it is never reverse-biased.\nBattery harness fuse at the M8 lugs: 15 A."
 		(exclude_from_sim no)
 		(at 72.39 146.05 0)
 		(effects
@@ -9391,7 +9424,7 @@
 		)
 		(uuid "fc1ac21c-1125-4637-812e-b3a31e2f16fa")
 	)
-	(text "12 V to 5 V / 6 A buck - U2 (TPSM63606)\nOutput is the +5V_PI net (feeds the Pi via F2/J14)"
+	(text "12 V to 5 V / 6 A buck - U2 (TPSM63606)\nOutput is the +5V_PI net (feeds the Pi via J14)"
 		(exclude_from_sim no)
 		(at 38.1 279.4 0)
 		(effects
@@ -9437,12 +9470,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3840af6b-a961-4f8d-a5e4-580b476ffac2")
-	)
-	(junction
-		(at 55.88 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b606799-9b67-42a5-8709-809d3c740db0")
 	)
 	(junction
 		(at 39.37 36.83)
@@ -10668,6 +10695,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 161.29) (xy 52.07 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be233f9b-6ae9-4a14-836d-25b641863826")
+	)
+	(wire
+		(pts
 			(xy 180.34 177.8) (xy 175.26 177.8)
 		)
 		(stroke
@@ -10815,16 +10852,6 @@
 			(type default)
 		)
 		(uuid "db57e04e-ebec-48d5-9963-c9fc5b446715")
-	)
-	(wire
-		(pts
-			(xy 55.88 161.29) (xy 59.69 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dcaa6cca-64d8-4fd6-b84e-00a527a6f77e")
 	)
 	(wire
 		(pts
@@ -11342,7 +11369,7 @@
 			)
 		)
 	)
-	(global_label "PA0"
+	(global_label "VBAT_SENSE"
 		(shape bidirectional)
 		(at 218.44 121.92 0)
 		(fields_autoplaced yes)
@@ -11448,6 +11475,29 @@
 		(uuid "5252b28a-83c0-4763-b173-9d570f55cb48")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 200.66 53.34 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBAT_IN"
+		(shape passive)
+		(at 40.64 161.29 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "55547cd3-45bb-48c1-9ec4-7daf073d56c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11807,7 +11857,7 @@
 			)
 		)
 	)
-	(global_label "PB11"
+	(global_label "SERVO_DIR"
 		(shape bidirectional)
 		(at 218.44 193.04 0)
 		(fields_autoplaced yes)
@@ -11853,7 +11903,7 @@
 			)
 		)
 	)
-	(global_label "PA1"
+	(global_label "PI_3V3_SENSE"
 		(shape bidirectional)
 		(at 218.44 124.46 0)
 		(fields_autoplaced yes)
@@ -11866,6 +11916,29 @@
 		(uuid "86fc530a-81c8-4bd5-8752-5f7774081930")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 218.44 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VBAT_FUSED"
+		(shape output)
+		(at 52.07 156.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "899aa411-b484-48f8-bdd3-a7531325c496")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 52.07 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12823,7 +12896,7 @@
 			)
 		)
 	)
-	(global_label "PB10"
+	(global_label "SERVO_TX"
 		(shape bidirectional)
 		(at 218.44 190.5 0)
 		(fields_autoplaced yes)
@@ -13593,7 +13666,7 @@
 				)
 			)
 		)
-		(property "Value" "7.5A / 32VDC"
+		(property "Value" "10A / 32VDC"
 			(at 44.45 157.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13625,7 +13698,7 @@
 				)
 			)
 		)
-		(property "Description" "Replaceable MINI fuse assembly: Keystone 3568 holder and Littelfuse 029707.5L fuse"
+		(property "Description" "Replaceable MINI fuse assembly: Keystone 3568 holder and Littelfuse 0297010 10 A fuse. Protects the board wiring; the battery harness fuse is 15 A."
 			(at 44.45 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -13658,7 +13731,7 @@
 				)
 			)
 		)
-		(property "Specification" "MINI holder with 7.5A / 32VDC fuse; 1000A DC interrupt rating belongs to fuse"
+		(property "Specification" "MINI holder with 10A / 32VDC fuse; 1000A DC interrupt rating belongs to fuse"
 			(at 44.45 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -13680,7 +13753,7 @@
 				)
 			)
 		)
-		(property "FuseMPN" "029707.5L"
+		(property "FuseMPN" "0297010.L"
 			(at 44.45 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -13702,7 +13775,7 @@
 				)
 			)
 		)
-		(property "AssemblyBOM" "1x Keystone 3568 holder + 1x Littelfuse 029707.5L fuse; order both"
+		(property "AssemblyBOM" "1x Keystone 3568 holder + 1x Littelfuse 0297010.L fuse; order both"
 			(at 44.45 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -16136,7 +16209,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b62c940a-3649-467a-b69b-18e08eb62bfb")
 		(property "Reference" "Y3"
@@ -16248,7 +16321,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 52.07 161.29 0)
+		(at 59.69 161.29 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -16805,7 +16878,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d98620fc-c7f5-4023-95bb-b9f13530970a")
 		(property "Reference" "C5"
@@ -17073,7 +17146,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f003013a-d8ee-437c-8213-5882a97809de")
 		(property "Reference" "C6"
@@ -17443,6 +17516,96 @@
 		)
 	)
 	(sheet
+		(at 330.2 152.4)
+		(size 50.8 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2c4ae942-eeec-4756-aa7d-d62d8df925d0")
+		(property "Sheetname" "Input Protection"
+			(at 330.2 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Input_Protection.kicad_sch"
+			(at 330.2 165.735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 330.2 208.28)
+		(size 50.8 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3deff92a-3282-4127-a85b-862503b0ac70")
+		(property "Sheetname" "Servo Interface"
+			(at 330.2 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Servo_Interface.kicad_sch"
+			(at 330.2 221.615 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 38.1 177.8)
 		(size 66.04 38.1)
 		(exclude_from_sim no)
@@ -17663,6 +17826,51 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 330.2 180.34)
+		(size 50.8 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "80940c08-ec01-42de-8d4e-35d986791918")
+		(property "Sheetname" "AUX Outputs"
+			(at 330.2 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "AUX_Outputs.kicad_sch"
+			(at 330.2 193.675 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(page "12")
 				)
 			)
 		)

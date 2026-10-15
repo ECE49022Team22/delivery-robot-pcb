@@ -63,7 +63,7 @@
           "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 2,
+          "pad_connection": 3,
           "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -540,7 +540,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.3,
+        "clearance": 0.2,
         "name": "HighCurrent",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
@@ -582,7 +582,7 @@
       },
       {
         "netclass": "Power",
-        "pattern": "+5V_LOGIC"
+        "pattern": "+5V_SYS"
       },
       {
         "netclass": "Power",
@@ -595,6 +595,26 @@
       {
         "netclass": "Power",
         "pattern": "GND"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "VBAT_IN"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "VBAT_FUSED"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "*VBAT_SERVO"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*/AUX?_5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*/ENC?_5V"
       }
     ]
   },
@@ -781,6 +801,18 @@
     [
       "9305f25b-bf2a-4152-80b2-35e00eebe697",
       "Test Points"
+    ],
+    [
+      "2c4ae942-eeec-4756-aa7d-d62d8df925d0",
+      "Input Protection"
+    ],
+    [
+      "80940c08-ec01-42de-8d4e-35d986791918",
+      "AUX Outputs"
+    ],
+    [
+      "3deff92a-3282-4127-a85b-862503b0ac70",
+      "Servo Interface"
     ]
   ],
   "text_variables": {},

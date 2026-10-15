@@ -599,6 +599,446 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x06"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x06"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x06_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -729,6 +1169,321 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:2N7002"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "2N7002"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "N-Channel Switching MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "2N7002_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381) (xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2N7002_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -887,7 +1642,7 @@
 		)
 		(uuid "89fb007c-a8eb-4e8e-99cc-4643e6d017b4")
 	)
-	(text "Raspberry Pi 5 UART (USART2, PA2 TX / PA3 RX)"
+	(text "Raspberry Pi 5 link (USART2, PA2 TX / PA3 RX), Pi 3V3 sense, STM32 reset and BOOT0"
 		(exclude_from_sim no)
 		(at 48.26 44.45 0)
 		(effects
@@ -898,7 +1653,7 @@
 		)
 		(uuid "8fd6df59-fc95-4110-84de-b8bc968f8d06")
 	)
-	(text "Bring-up: F2 out, check TP1; fit F2, load-test J14;\nthen connect the Pi. 5-6 A path"
+	(text "Bring-up: leave J14 unwired, check TP1; load-test J14;\nthen connect the Pi. 5-6 A path"
 		(exclude_from_sim no)
 		(at 49.53 135.89 0)
 		(effects
@@ -909,7 +1664,7 @@
 		)
 		(uuid "d11d4de4-ad57-4728-91e6-e410ca3df342")
 	)
-	(text "Pi 5 power: +5V_PI -> F2 isolation fuse -> J14 USB-C pigtail"
+	(text "Pi 5 power: +5V_PI -> J14 USB-C pigtail (no fuse: U2's current limit and hiccup protect it)"
 		(exclude_from_sim no)
 		(at 49.53 111.76 0)
 		(effects
@@ -920,6 +1675,17 @@
 		)
 		(uuid "ec193a06-11ca-405a-81f2-2e5d6594350f")
 	)
+	(text "Pi-controlled functions (J13 4 <- Pi 3V3 pin 1, 5 <- GPIO23 pin 16, 6 <- GPIO24 pin 18)\nAUX_EN: the +5V_AUX buck (U5) runs only while the Pi's 3V3 is up.\nPI_3V3_SENSE -> PA1: firmware can tell whether the Pi is alive.\nPI_RESET + PI_BOOT0 -> reflash the STM32 from the Pi over USART2 (AN2606:\nPA2/PA3 is a bootloader port on STM32F09x). Sequence: BOOT0 high, pulse reset,\nrun stm32flash at 115200 8E1, then BOOT0 low and reset.\nAt Pi boot GPIO23/24 default to pull-down inputs, so the STM32 runs normally."
+		(exclude_from_sim no)
+		(at 137.16 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f3c96de3-7230-415b-ae69-4d801602c3de")
+	)
 	(junction
 		(at 69.85 124.46)
 		(diameter 0)
@@ -927,10 +1693,16 @@
 		(uuid "0fa8cede-25c3-48f0-b36c-fda7dffacc35")
 	)
 	(junction
-		(at 92.71 124.46)
+		(at 154.94 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cf85cda7-ff92-494a-8785-cd339c96a3c2")
+		(uuid "2627afa7-9714-4458-9c6b-e2f2736410fa")
+	)
+	(junction
+		(at 144.78 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb6f9b9b-8778-4887-acf0-c74edfd3eee3")
 	)
 	(wire
 		(pts
@@ -951,6 +1723,26 @@
 			(type default)
 		)
 		(uuid "07b69fbd-31ec-4e16-bf9f-a691234ce7c0")
+	)
+	(wire
+		(pts
+			(xy 139.7 76.2) (xy 143.51 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "080be5f3-d976-4bfa-8b5e-0e31e1688406")
+	)
+	(wire
+		(pts
+			(xy 153.67 58.42) (xy 162.56 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08434824-d059-4e5c-90da-d512f2df3b46")
 	)
 	(wire
 		(pts
@@ -980,7 +1772,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "25586543-9a44-4c71-b026-d7edff424541")
+		(uuid "348e1b4d-9cb4-4e4d-8814-054bfe5b554a")
 	)
 	(wire
 		(pts
@@ -1004,16 +1796,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 77.47) (xy 81.28 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54234c46-96bb-4a00-89c9-78b901f6bf85")
-	)
-	(wire
-		(pts
 			(xy 92.71 124.46) (xy 102.87 124.46)
 		)
 		(stroke
@@ -1021,6 +1803,56 @@
 			(type default)
 		)
 		(uuid "5a224d74-6585-4a60-9924-bd0e1a197867")
+	)
+	(wire
+		(pts
+			(xy 144.78 113.03) (xy 144.78 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b5036aa-bf1e-4515-9e0a-d14d55eaead5")
+	)
+	(wire
+		(pts
+			(xy 151.13 76.2) (xy 162.56 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6153d76f-0976-4f98-bd5a-177595f7bfd0")
+	)
+	(wire
+		(pts
+			(xy 139.7 129.54) (xy 143.51 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6246e41a-1b16-40d3-b806-48db6630b7cb")
+	)
+	(wire
+		(pts
+			(xy 86.36 85.09) (xy 73.66 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b0ad5f5-5989-41ab-a6d9-f4989077de28")
+	)
+	(wire
+		(pts
+			(xy 139.7 58.42) (xy 146.05 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f2ca038-07b5-4c9c-9edd-3f88a9bfd0b0")
 	)
 	(wire
 		(pts
@@ -1054,6 +1886,66 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 82.55) (xy 73.66 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1b74da1-e05c-42dc-a74b-480ba8685789")
+	)
+	(wire
+		(pts
+			(xy 139.7 104.14) (xy 149.86 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2e326d2-675e-46a8-8313-0e80102886b9")
+	)
+	(wire
+		(pts
+			(xy 144.78 104.14) (xy 144.78 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a877a1be-e456-4066-8d98-af4747fbb233")
+	)
+	(wire
+		(pts
+			(xy 151.13 129.54) (xy 162.56 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b35b3bc3-d30e-46ab-bd5e-97e6132ae488")
+	)
+	(wire
+		(pts
+			(xy 86.36 80.01) (xy 73.66 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c297c7da-aaf5-4dff-8383-8cbbba39260e")
+	)
+	(wire
+		(pts
+			(xy 154.94 76.2) (xy 154.94 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c39d2f8c-661f-42fb-9a4e-1d727128a32e")
+	)
+	(wire
+		(pts
 			(xy 97.79 127) (xy 97.79 129.54)
 		)
 		(stroke
@@ -1061,6 +1953,76 @@
 			(type default)
 		)
 		(uuid "c449c9b1-f9cf-47d5-aba9-2516a0a6dc6a")
+	)
+	(wire
+		(pts
+			(xy 157.48 99.06) (xy 157.48 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8e8cfe4-af8e-4237-a161-7779fb63a6b3")
+	)
+	(wire
+		(pts
+			(xy 157.48 109.22) (xy 157.48 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df0a5eb8-0093-41da-be16-8d615b28a58b")
+	)
+	(wire
+		(pts
+			(xy 157.48 96.52) (xy 165.1 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9323d20-b38d-4150-8c89-25d2c3285782")
+	)
+	(wire
+		(pts
+			(xy 154.94 85.09) (xy 154.94 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eebf7519-4231-4a45-91c8-87acfee5bfdb")
+	)
+	(label "PI_BOOT0"
+		(at 73.66 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "004ec90b-aac8-45ad-b132-ac2ac37e225f")
+	)
+	(label "PI_3V3"
+		(at 73.66 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "00dfe9ee-7971-4e69-a01c-67e9b92663c2")
+	)
+	(label "PI_BOOT0"
+		(at 139.7 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e04091a-be44-458b-844b-b02a33ac8500")
 	)
 	(label "PI_RXD"
 		(at 73.66 74.93 180)
@@ -1071,6 +2033,26 @@
 			(justify right bottom)
 		)
 		(uuid "3921b77b-7f8d-460e-af2e-5d90e7e4faee")
+	)
+	(label "PI_3V3"
+		(at 139.7 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4f422b13-bc7b-4ff7-b80d-c5b0473e9851")
+	)
+	(label "PI_3V3"
+		(at 139.7 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6086a3e1-b47b-40dd-88c9-758b224dd8f9")
 	)
 	(label "PI_TXD"
 		(at 92.71 54.61 0)
@@ -1092,6 +2074,16 @@
 		)
 		(uuid "e5f81bf0-c644-44d8-86a5-42719115ac4c")
 	)
+	(label "PI_RESET"
+		(at 73.66 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ef59b6f9-8e11-4ba1-aa84-34254bcc5c8a")
+	)
 	(label "PI_RXD"
 		(at 92.71 62.23 0)
 		(effects
@@ -1101,6 +2093,108 @@
 			(justify left bottom)
 		)
 		(uuid "f62f821d-c787-4c8c-ac9f-34c296a971bc")
+	)
+	(label "PI_RESET"
+		(at 139.7 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbfedb86-3c93-4e80-aaa4-3ed25808579e")
+	)
+	(global_label "BOOT"
+		(shape output)
+		(at 162.56 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2155ae76-4bb8-4692-b694-e0022acfb591")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "AUX_EN"
+		(shape output)
+		(at 162.56 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "abaed096-577f-45f7-97a8-e27dbee12570")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.56 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "NRST"
+		(shape output)
+		(at 165.1 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dcc4214b-dc64-4cab-b842-1af732e60936")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "PI_3V3_SENSE"
+		(shape output)
+		(at 162.56 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f79de655-e00a-44c7-9920-0f3520577ad4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.56 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(hierarchical_label "VIN_5V"
 		(shape input)
@@ -1136,106 +2230,6 @@
 		(uuid "ee151df2-49e0-4e4f-a00b-4291d3e8e095")
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 92.71 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "04a30563-a8d4-425b-af23-369a5e047d95")
-		(property "Reference" "TP2"
-			(at 95.25 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PI_5V"
-			(at 92.71 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
-			(at 92.71 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=1309"
-			(at 92.71 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Pi 5 supply after F2"
-			(at 92.71 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Keystone Electronics"
-			(at 92.71 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "5000 (red miniature test loop)"
-			(at 92.71 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4a3ee558-abf8-487e-97ba-adf57bfca921")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 81.28 62.23 90)
 		(unit 1)
@@ -1256,7 +2250,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 81.28 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1288,7 +2282,7 @@
 				)
 			)
 		)
-		(property "Description" "Series 100R on UART TX (PA2 USART2_TX -> Pi RXD). Place near U1."
+		(property "Description" "Series 1k on UART TX (PA2 USART2_TX -> Pi RXD). Limits injection into PA2/PA3 (TTa, 5 mA max) if either side is unpowered, and stops the STM32 back-powering the Pi. Place near U1."
 			(at 81.28 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -1392,6 +2386,505 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 154.94 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d176f5c-6efb-4e5d-840a-cd49bbfa19a8")
+		(property "Reference" "R45"
+			(at 157.48 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 157.48 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pull-down on PI_3V3_SENSE: reads low when the Pi is off or J13 is unplugged."
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13feaaf4-6ead-4a78-aa77-e4f63b6c0da4")
+		)
+		(pin "2"
+			(uuid "43285984-4ac8-408e-8109-7eec2b6e1013")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2f79515b-5b59-4b4c-abe1-dba1100046ef")
+		(property "Reference" "#PWR0163"
+			(at 157.48 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1fe5997f-9f2f-4d30-8cd3-58d9dc5f7c2c")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "#PWR0163")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 154.94 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44ad96f0-f4ff-4b38-8d10-5115132ba76e")
+		(property "Reference" "Q2"
+			(at 160.02 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN63D8L"
+			(at 160.02 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 154.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN63D8L.pdf"
+			(at 154.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lets the Pi reset the STM32: PI_RESET high pulls NRST low (open drain, so SW1 and the SWD probe still work). R46 keeps it off when the Pi is off or unplugged."
+			(at 154.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 154.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DMN63D8L-7"
+			(at 154.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1edc994-93c5-4fac-853a-272a4e698f3a")
+		)
+		(pin "2"
+			(uuid "ec72e76b-d632-43b6-88af-c96cc9f2aac1")
+		)
+		(pin "3"
+			(uuid "5d1b6d46-6f62-44f7-9239-2aec71595f3b")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 144.78 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "613e291a-b72f-44f1-a568-a663a762c9fc")
+		(property "Reference" "R46"
+			(at 142.24 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 142.24 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 144.78 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Q2 gate pull-down."
+			(at 144.78 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3addef0-1775-4837-93d5-00a44c5c3768")
+		)
+		(pin "2"
+			(uuid "af069820-8979-43e2-be93-4da4183648f2")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 77.47 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6c821d06-45cc-4ef9-ac02-7944aeb15782")
+		(property "Reference" "#PWR0160"
+			(at 81.28 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 77.47 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4d0662b1-3f1d-4bd4-b230-1595e3bf9af6")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "#PWR0160")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 154.94 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a30e18fe-9ac7-42c4-ba93-f5fa0e44aa24")
+		(property "Reference" "#PWR0161"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f9ee6ae-fa70-4f40-89df-824a53aabbc1")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "#PWR0161")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 69.85 124.46 0)
 		(unit 1)
@@ -1446,7 +2939,7 @@
 				)
 			)
 		)
-		(property "Description" "6 A buck output before F2: check voltage here with the F2 fuse removed"
+		(property "Description" "+5V_PI test point at the U2 output: check the voltage here before wiring the Pi to J14."
 			(at 69.85 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -1486,6 +2979,342 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
 					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 147.32 129.54 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b4361c5f-dfdc-4654-b5ef-a1c832418dcd")
+		(property "Reference" "R47"
+			(at 147.32 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 147.32 133.35 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 147.32 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pi drives BOOT0 through 1k: overrides the R1 10k pull-down when high, and limits current if J4 is fitted at the same time."
+			(at 147.32 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44b4bdae-8803-4201-9230-c7df6e3a3b9f")
+		)
+		(pin "2"
+			(uuid "2a97319d-1675-4b49-ae7c-6a5f6089835a")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 147.32 76.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b4c77baf-871b-468e-9bc7-0bb81714078a")
+		(property "Reference" "R44"
+			(at 147.32 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 147.32 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 147.32 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Series 10k from Pi 3V3 to PA1 (Pi-alive sense): keeps current into PA1 tiny when the STM32 is unpowered."
+			(at 147.32 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4de79316-f48a-4d99-b7bb-c83238753ebf")
+		)
+		(pin "2"
+			(uuid "1d922339-7633-441b-a102-330f7e8019f6")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 149.86 58.42 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b66a45a6-9938-4c96-9a35-0dfd45eb96bc")
+		(property "Reference" "D15"
+			(at 149.86 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT54WS"
+			(at 149.86 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/86465/bat54ws.pdf"
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pi 3V3 drives U5 EN (AUX_EN) through this Schottky, so the AUX force-on jumper (J22) can never push +3V3 back into the Pi when it is off."
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT54WS-E3-18"
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc144897-8cd9-43e0-b68a-871b0ee4f532")
+		)
+		(pin "2"
+			(uuid "3e124a9b-a9b6-4db7-9fa2-34cc33faa0df")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.78 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c65f0074-13b9-464a-bb2b-a1c3bfb7317f")
+		(property "Reference" "#PWR0162"
+			(at 144.78 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3def25d3-fd80-4690-8b92-2d73548ff46c")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
+					(reference "#PWR0162")
 					(unit 1)
 				)
 			)
@@ -1604,8 +3433,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 91.44 74.93 0)
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 91.44 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1615,27 +3444,29 @@
 		(dnp no)
 		(uuid "f85f3c29-c994-43be-9195-4e0866488204")
 		(property "Reference" "J13"
-			(at 91.44 68.58 0)
+			(at 93.98 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Pi 5 UART"
-			(at 91.44 81.28 0)
+		(property "Value" "Pi 5 link"
+			(at 93.98 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal"
-			(at 91.44 74.93 0)
+		(property "Footprint" "Connector_JST:JST_XH_S6B-XH-A_1x06_P2.50mm_Horizontal"
+			(at 91.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1645,8 +3476,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-3-1715035"
-			(at 91.44 74.93 0)
+		(property "Datasheet" ""
+			(at 91.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1656,8 +3487,8 @@
 				)
 			)
 		)
-		(property "Description" "UART to Raspberry Pi 5 GPIO header: 1 = PI_TXD from Pi GPIO14 TXD (pin 8) to STM32 RX; 2 = PI_RXD to Pi GPIO15 RXD (pin 10) from STM32 TX; 3 = GND (Pi pin 6). 3.3 V logic."
-			(at 91.44 74.93 0)
+		(property "Description" "Link to the Raspberry Pi 5 GPIO header, JST XH 2.5 mm side-entry (XHP-6 housing): 1 = PI_TXD from Pi GPIO14 TXD (pin 8); 2 = PI_RXD to Pi GPIO15 RXD (pin 10); 3 = GND (pin 6); 4 = PI_3V3 from Pi 3V3 (pin 1), sense only; 5 = PI_RESET from Pi GPIO23 (pin 16), high resets the STM32; 6 = PI_BOOT0 from Pi GPIO24 (pin 18), high selects the ROM bootloader. 3.3 V logic."
+			(at 91.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1667,8 +3498,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Phoenix Contact"
-			(at 91.44 74.93 0)
+		(property "Manufacturer" "JST"
+			(at 91.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1678,8 +3509,8 @@
 				)
 			)
 		)
-		(property "MPN" "1715035 (MKDS 1,5/3, 5.0 mm pitch)"
-			(at 91.44 74.93 0)
+		(property "MPN" "S6B-XH-A(LF)(SN)"
+			(at 91.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1689,8 +3520,8 @@
 				)
 			)
 		)
-		(property "Rating" "17.5 A / 250 V (IEC), 26-14 AWG; used for 3.3 V UART signals"
-			(at 91.44 74.93 0)
+		(property "Mating" "XHP-6 housing + 6x SXH-001T-P0.6 crimp (AWG 28-22)"
+			(at 91.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1701,13 +3532,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "ef6ed0dc-228b-4dee-b4e9-78d7c34239f2")
+			(uuid "e457dd56-fcdb-41ee-8de9-5327e5fe3048")
 		)
 		(pin "2"
-			(uuid "16db040c-f63e-41aa-8ca2-dbf5be6ec4ee")
+			(uuid "3df6a5f5-ec36-48ce-aa34-139a5352e6fd")
 		)
 		(pin "3"
-			(uuid "9cc40a22-fb33-443b-81c9-c7d93227425e")
+			(uuid "24e4e781-6f5c-4c30-8da0-44168c0a58d8")
+		)
+		(pin "4"
+			(uuid "616d9725-2787-4a26-b7a3-29401f937e53")
+		)
+		(pin "5"
+			(uuid "44344f7f-7dcc-4266-8bbf-67f8e984ddfb")
+		)
+		(pin "6"
+			(uuid "3b6e53d5-2164-4ec9-a367-aba7c3258cc1")
 		)
 		(instances
 			(project "delivery_robot_1"
@@ -1739,7 +3579,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 81.28 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1771,7 +3611,7 @@
 				)
 			)
 		)
-		(property "Description" "Series 100R on UART RX (Pi TXD -> PA3 USART2_RX). Place near U1."
+		(property "Description" "Series 1k on UART RX (Pi TXD -> PA3 USART2_RX). Limits injection into PA3 (TTa, 5 mA max) when the Pi is powered and the STM32 is not. Place near U1."
 			(at 81.28 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -1792,83 +3632,6 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 81.28 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ffd93fbe-2202-43ed-9fa6-0f4cb870cf00")
-		(property "Reference" "#PWR074"
-			(at 81.28 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 81.28 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 81.28 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e1cd5f6d-20a2-4117-b307-777b3602bbc0")
-		)
-		(instances
-			(project "delivery_robot_1"
-				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/c056b61f-6369-4e88-a9e3-647282746e13"
-					(reference "#PWR074")
 					(unit 1)
 				)
 			)
