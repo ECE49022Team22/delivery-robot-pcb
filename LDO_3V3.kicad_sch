@@ -571,7 +571,7 @@
 		)
 		(uuid "6079f8a0-fee3-40e8-97c4-9b0e0acd7a4e")
 	)
-	(text "C2: require >= 4.7uF EFFECTIVE capacitance; selected part modeled at 8.8uF.\nEN tied to IN. C3 sets noise reduction / soft start; C4 bypasses R1."
+	(text "C25: require >= 4.7 uF EFFECTIVE capacitance; selected part modeled at 8.8 uF.\nEN tied to IN. C26 (NR) and C27 (bypass across R8) are 10 nF: start-up about 1.7 ms\n(TI tests the part with CNR = 10 nF, CBYPASS = 0). 470 nF gave 80 ms, during which\n5 V encoder and servo signals could reach MCU pins while VDD was still 0."
 		(exclude_from_sim no)
 		(at 60.96 156.21 0)
 		(effects
@@ -593,7 +593,7 @@
 		)
 		(uuid "772dc22b-ec44-4913-9a25-3bc7d65de495")
 	)
-	(text "Layout: capacitors close to U1; EP pad 9 to GND copper and thermal vias.\nHeat at 1 A: about 1.7 W at 5 V input; verify junction temperature on final PCB."
+	(text "Layout: capacitors close to U4; EP pad 9 to GND copper and thermal vias.\nHeat: the real 3.3 V load is about 150 mA, about 0.25 W at 5 V input\n(1.7 W only at the full 1 A rating)."
 		(exclude_from_sim no)
 		(at 60.96 167.64 0)
 		(effects
@@ -1352,7 +1352,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF / 16V X7R"
+		(property "Value" "10nF / 100V X7R"
 			(at 100.33 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1374,7 +1374,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C474KA88-01A.pdf"
+		(property "Datasheet" ""
 			(at 96.52 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -1385,7 +1385,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TPS7A8101 noise-reduction (NR pin) capacitor, 10 nF: start-up = 170,000 x C26 = 1.7 ms (datasheet eq. 1), so +3V3 follows +5V_SYS closely. 470 nF gave 80 ms."
 			(at 96.52 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1395,7 +1395,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R71C474KA88D"
+		(property "MPN" "GRM188R72A103KA01D"
 			(at 96.52 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -1749,7 +1749,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF / 16V X7R"
+		(property "Value" "10nF / 100V X7R"
 			(at 194.31 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1771,7 +1771,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C474KA88-01A.pdf"
+		(property "Datasheet" ""
 			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1782,7 +1782,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TPS7A8101 bypass across R8 (CBYPASS) capacitor, 10 nF: start-up = 170,000 x C26 = 1.7 ms (datasheet eq. 1), so +3V3 follows +5V_SYS closely. 470 nF gave 80 ms."
 			(at 190.5 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1792,7 +1792,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R71C474KA88D"
+		(property "MPN" "GRM188R72A103KA01D"
 			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)

@@ -838,10 +838,22 @@
 		(uuid "68cd2b53-7893-4a75-8c2d-443f5ae5bbcf")
 	)
 	(junction
+		(at 111.76 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "739f0af1-91c4-45ff-885c-cde61511f99b")
+	)
+	(junction
 		(at 167.64 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8644766a-83e5-440a-b1e6-1a81e6f431ea")
+	)
+	(junction
+		(at 111.76 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f223c9a-ff66-474b-8084-1c48c5ba98b1")
 	)
 	(junction
 		(at 193.04 91.44)
@@ -1057,6 +1069,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 82.55) (xy 111.76 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf38c355-aa81-4813-bc1e-be608599e6b3")
+	)
+	(wire
+		(pts
 			(xy 156.21 82.55) (xy 153.67 82.55)
 		)
 		(stroke
@@ -1084,6 +1106,16 @@
 			(type default)
 		)
 		(uuid "cfcda21b-43a0-423e-be59-26d788f07191")
+	)
+	(wire
+		(pts
+			(xy 111.76 92.71) (xy 111.76 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea660e0e-7694-43a5-bbe3-a3b87da17767")
 	)
 	(wire
 		(pts
@@ -1147,6 +1179,109 @@
 			(justify left)
 		)
 		(uuid "671dec19-c678-4bd7-bb5a-b56fbe7573e9")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 111.76 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4324b931-3016-4674-ad2b-405e2ce28598")
+		(property "Reference" "C49"
+			(at 114.3 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF / 50V X7R"
+			(at 114.3 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 111.76 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "High-frequency input cap for U3, right at VIN (pin 3) and GND (pin 1). C14 (2220) is the bulk part; this small one keeps the switching loop short (TI SLVSD26C 7.2.3.1 and 7.4.1)."
+			(at 111.76 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 111.76 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 111.76 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f7b59f8-1cc7-4be3-9965-e146a00377d3")
+		)
+		(pin "2"
+			(uuid "d978322a-91ba-4c90-97b8-1a984ef9de32")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/45fd30b8-e3d0-4ad8-a19a-9569735f4754"
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")

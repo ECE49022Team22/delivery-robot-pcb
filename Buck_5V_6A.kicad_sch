@@ -1500,7 +1500,7 @@
 				)
 			)
 		)
-		(property "Value" "PTPSM63606RDLR"
+		(property "Value" "TPSM63606RDLR"
 			(at 137.16 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1556,7 +1556,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPSM63606RDLR (schematic symbol: PTPSM63606RDLR)"
+		(property "MPN" "TPSM63606RDLR"
 			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -1589,7 +1589,7 @@
 				)
 			)
 		)
-		(property "Design Notes" "VOUT = VREF x (1 + R4/R5) with FB divider R4 41.2k / R5 10k (VOUT = 5.12 V for the Pi 5), C10 feed-forward; RT = R2 12.1k; EN tied to VIN; RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC needs 1 uF to AGND per datasheet - CHECK C9 placement (currently on VLDOIN/VOUT, VCC flagged NC)"
+		(property "Design Notes" "VOUT = VREF x (1 + R4/R5) with FB divider R4 41.2k / R5 10k (VOUT = 5.12 V for the Pi 5), C10 feed-forward; RT = R2 12.1k; EN tied to VIN; RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC has an internal 1 uF and must not be loaded (SLVSGB4B pin table), so it is left NC; C9 is the VLDOIN capacitor"
 			(at 115.57 86.36 0)
 			(hide yes)
 			(show_name no)

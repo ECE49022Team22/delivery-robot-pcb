@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "d443c409-21ea-432a-9ff9-94c720536c14")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "Motor control - MDD20A driver and encoders")
 		(date "2026-10-08")
@@ -11,6 +11,288 @@
 		(company "Senior Design")
 	)
 	(lib_symbols
+		(symbol "74xGxx:74LVC2G17"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -1.27 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74LVC2G17"
+				(at 2.54 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Dual Buffer, Schmitt Triggered, Low-Voltage CMOS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Dual Buffer Schmitt LVC CMOS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SG-* SOT*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "74LVC2G17_1_1"
+				(polyline
+					(pts
+						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 1.27) (xy -2.54 1.27) (xy -2.54 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 0 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LVC2G17_2_1"
+				(polyline
+					(pts
+						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 1.27) (xy -2.54 1.27) (xy -2.54 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 0 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LVC2G17_3_0"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74LVC2G17_3_1"
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Screw_Terminal_01x03"
 			(pin_names
 				(offset 1.016)
@@ -719,6 +1001,171 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Polyfuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 2.54)
+					(end 0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -1983,6 +2430,18 @@
 		(uuid "9b2edf66-5388-4713-b36c-d5d0a68ae56c")
 	)
 	(rectangle
+		(start 287.02 40.64)
+		(end 411.48 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a4586ca5-e205-43d1-9a5f-6bdf14057c93")
+	)
+	(rectangle
 		(start 109.22 40.64)
 		(end 185.42 134.62)
 		(stroke
@@ -1994,7 +2453,19 @@
 		)
 		(uuid "fb3ec6ba-f096-4e80-a276-f1b3d27d6e93")
 	)
-	(text "ESD arrays - J6 and J7 only"
+	(rectangle
+		(start 287.02 142.24)
+		(end 411.48 236.22)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fdaaeddc-44b3-4786-a6e5-22eb811aed90")
+	)
+	(text "ESD arrays - U6: J6 + J16, U7: J7 + J15"
 		(exclude_from_sim no)
 		(at 193.04 43.18 0)
 		(effects
@@ -2005,7 +2476,18 @@
 		)
 		(uuid "02ea85cf-fc6e-4c18-b3a9-907729968da2")
 	)
-	(text "Motor control - Cytron MDD20A dual-channel driver + two 37D encoder motors"
+	(text "Encoder supply, encoder pull-ups (DNP), motor-driver line protection"
+		(exclude_from_sim no)
+		(at 289.56 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2b2bd673-297f-4876-8adf-ab23f05d7035")
+	)
+	(text "Motor control - Cytron MDD20A dual-channel driver + two AndyMark PG27 motors with am-3651 encoders"
 		(exclude_from_sim no)
 		(at 25.4 27.94 0)
 		(effects
@@ -2027,7 +2509,7 @@
 		)
 		(uuid "4b505d90-f563-42c4-a374-2b010a228e66")
 	)
-	(text "STM32F091 PIN ASSIGNMENT          series R    connector\n  MOTOR1_PWM  PA6   TIM3_CH1    R26 100R    J6 pin 1 -> MDD20A PWM1\n  MOTOR1_DIR  PB0   GPIO        R27 100R    J6 pin 2 -> MDD20A DIR1\n  ENC1_A      PA15  TIM2_CH1    R28 100R    J7 pin 2 <- encoder A (yellow)\n  ENC1_B      PB3   TIM2_CH2    R29 100R    J7 pin 3 <- encoder B (white)\n  MOTOR2_PWM  PA7   TIM3_CH2    R30 100R    J16 pin 1 -> MDD20A PWM2\n  MOTOR2_DIR  PB2   GPIO        R31 100R    J16 pin 2 -> MDD20A DIR2\n  ENC2_A      PA8   TIM1_CH1    R32 100R    J15 pin 2 <- encoder A (yellow)\n  ENC2_B      PA9   TIM1_CH2    R33 100R    J15 pin 3 <- encoder B (white)\nTimers: TIM3 = both PWMs (<= 20 kHz for MDD20A); TIM2 = encoder 1, TIM1 = encoder 2.\nESD: USBLC6-4SC6 arrays on motor 1 only - U6 on J6 PWM/DIR (VBUS +3V3), U7 on J7 encoder A/B (VBUS +5V_SYS). Encoders powered from +5V_SYS;\nA/B pins must be 5 V tolerant (FT). Battery and motor leads wire directly to the MDD20A."
+	(text "STM32F091 PIN ASSIGNMENT          series R    connector\n  MOTOR1_PWM  PA6   TIM3_CH1    R26 100R    J6 pin 1 -> MDD20A PWM1 (R52 10k pull-down)\n  MOTOR1_DIR  PB0   GPIO        R27 100R    J6 pin 2 -> MDD20A DIR1\n  ENC1_A      PA15  TIM2_CH1    U9 <- R28 1k    J7 pin 3 <- encoder A\n  ENC1_B      PB3   TIM2_CH2    U9 <- R29 1k    J7 pin 4 <- encoder B\n  MOTOR2_PWM  PA7   TIM3_CH2    R30 100R    J16 pin 1 -> MDD20A PWM2 (R53 10k pull-down)\n  MOTOR2_DIR  PB2   GPIO        R31 100R    J16 pin 2 -> MDD20A DIR2\n  ENC2_A      PA8   TIM1_CH1    U10 <- R32 1k   J15 pin 3 <- encoder A\n  ENC2_B      PA9   TIM1_CH2    U10 <- R33 1k   J15 pin 4 <- encoder B\nTimers: TIM3 = both PWMs (<= 20 kHz for MDD20A); TIM2 = encoder 1, TIM1 = encoder 2.\nEncoders: 5 V parts. The +3V3 rail comes up after +5V_SYS, and ST allows only 3.6 V on any pin while VDD = 0 (AN4899),\nso A/B go through U9/U10 (74LVC2G17 on +3V3) instead of straight to the MCU. Never enable internal pull-ups on these pins.\nPWM pull-downs: MDD20A brakes on PWM low, so a resetting MCU always means 'brake'.\nJ6/J16 pin 3 is a signal reference only (through F10/F11). Battery and motor leads wire directly to the MDD20A."
 		(exclude_from_sim no)
 		(at 25.4 142.24 0)
 		(effects
@@ -2038,7 +2520,7 @@
 		)
 		(uuid "5a527e6e-bb4b-498d-aafe-d4bb1770db03")
 	)
-	(text "Series 100R (MCU side)"
+	(text "Series resistors (MCU side): 100R driver lines, 1k encoder lines"
 		(exclude_from_sim no)
 		(at 27.94 43.18 0)
 		(effects
@@ -2049,21 +2531,52 @@
 		)
 		(uuid "d24a1b42-39bf-43ff-b986-c30ce9e8769b")
 	)
-	(no_connect
-		(at 228.6 109.22)
-		(uuid "1d4a0455-6b05-4ca5-84c0-00e0248fe9bb")
+	(text "Encoder input buffers - 74LVC2G17 on +3V3 (inputs tolerate 5.5 V, even unpowered)"
+		(exclude_from_sim no)
+		(at 289.56 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ea7fa3b6-9e6a-4d52-82b1-ef4fec10d179")
 	)
-	(no_connect
-		(at 228.6 106.68)
-		(uuid "7b02bba7-9659-457b-9767-e62466381316")
+	(junction
+		(at 304.8 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0251adf5-22d9-4d87-bd97-1c5d3504273d")
 	)
-	(no_connect
-		(at 228.6 68.58)
-		(uuid "8ecc55fd-1802-4456-a66f-b017c05ca0cb")
+	(junction
+		(at 304.8 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fd9f562-81c6-4958-93b0-72359c4251ac")
 	)
-	(no_connect
-		(at 228.6 66.04)
-		(uuid "f79c4630-8819-447f-a733-f0f39e1e6636")
+	(junction
+		(at 313.69 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64cb023a-08fb-4109-84a7-31dd2ae4e57c")
+	)
+	(junction
+		(at 304.8 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8cc23762-25d1-4a5a-a976-c08152f691b1")
+	)
+	(junction
+		(at 313.69 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "966cb092-7839-4175-9426-ce9a7aced7ef")
+	)
+	(junction
+		(at 304.8 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7fd7c66-ba80-443d-8661-0a4ea6ce745b")
 	)
 	(wire
 		(pts
@@ -2077,6 +2590,86 @@
 	)
 	(wire
 		(pts
+			(xy 386.08 208.28) (xy 386.08 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0590e689-35e9-4a81-8924-5329c0fa2400")
+	)
+	(wire
+		(pts
+			(xy 228.6 109.22) (xy 223.52 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "085d2b17-5fc2-4db5-98eb-cbfccaaa48f5")
+	)
+	(wire
+		(pts
+			(xy 297.18 96.52) (xy 314.96 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c3ced1b-6003-4767-8b40-229e645343d7")
+	)
+	(wire
+		(pts
+			(xy 379.73 154.94) (xy 384.81 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "111ae3c5-7cc8-4147-9a44-1ad43a50295d")
+	)
+	(wire
+		(pts
+			(xy 144.78 73.66) (xy 139.7 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1359e9d9-04a6-4615-934b-1422e440f2e1")
+	)
+	(wire
+		(pts
+			(xy 144.78 121.92) (xy 134.62 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "148b2bbb-1840-4842-9d54-25b78773298d")
+	)
+	(wire
+		(pts
+			(xy 294.64 175.26) (xy 300.99 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15ac707d-c8db-485a-b8ad-c4afc4534365")
+	)
+	(wire
+		(pts
+			(xy 379.73 177.8) (xy 384.81 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1988c413-ba6e-46b4-9f36-70686bb93e8c")
+	)
+	(wire
+		(pts
 			(xy 236.22 96.52) (xy 246.38 96.52)
 		)
 		(stroke
@@ -2084,6 +2677,56 @@
 			(type default)
 		)
 		(uuid "1e42c5b7-c67f-4d78-9bd5-7a897c906f52")
+	)
+	(wire
+		(pts
+			(xy 309.88 208.28) (xy 309.88 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21b999dd-db4d-4572-a60e-db3e0e99204d")
+	)
+	(wire
+		(pts
+			(xy 144.78 76.2) (xy 134.62 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "225cd2ac-0056-4057-b9a9-c84876d77e97")
+	)
+	(wire
+		(pts
+			(xy 144.78 101.6) (xy 134.62 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28194132-1b8c-4169-888e-4b3eaa6dece7")
+	)
+	(wire
+		(pts
+			(xy 381 55.88) (xy 381 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b34a4fa-8c1b-4620-ad75-efe4c1254d26")
+	)
+	(wire
+		(pts
+			(xy 360.68 208.28) (xy 360.68 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c21cdf7-7e26-4937-8aa8-a8bffb6fc4f4")
 	)
 	(wire
 		(pts
@@ -2097,6 +2740,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 68.58) (xy 223.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3583bea9-1d2a-48e8-85d1-929df259e290")
+	)
+	(wire
+		(pts
 			(xy 62.23 73.66) (xy 69.85 73.66)
 		)
 		(stroke
@@ -2107,53 +2760,43 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 121.92) (xy 144.78 121.92)
+			(xy 342.9 114.3) (xy 350.52 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3d381f77-2dce-45c7-8a91-41698183128c")
+		(uuid "39c3815e-e425-4ce1-a699-05298f15c8c9")
 	)
 	(wire
 		(pts
-			(xy 134.62 73.66) (xy 144.78 73.66)
+			(xy 304.8 81.28) (xy 304.8 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "42f240ed-becc-42f7-9c4d-9bd57d983d35")
+		(uuid "3b47b684-cb2a-419c-9354-9e715c83cd07")
 	)
 	(wire
 		(pts
-			(xy 144.78 55.88) (xy 139.7 55.88)
+			(xy 228.6 106.68) (xy 223.52 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d638157-aa9f-4f7b-975f-6bc96202557e")
+		(uuid "4b3676ae-c79a-4ab8-8f41-b537fd9b52ab")
 	)
 	(wire
 		(pts
-			(xy 144.78 101.6) (xy 139.7 101.6)
+			(xy 297.18 73.66) (xy 314.96 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52d15d44-61d9-470d-8a39-dbc9b8797fd3")
-	)
-	(wire
-		(pts
-			(xy 139.7 71.12) (xy 139.7 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5396a735-9491-4576-89b7-82ea39413841")
+		(uuid "4df8615f-6e37-455f-8971-320ae73df7ec")
 	)
 	(wire
 		(pts
@@ -2167,13 +2810,33 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 101.6) (xy 139.7 104.14)
+			(xy 294.64 157.48) (xy 300.99 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55fdf98e-d949-45e8-b98d-5b3dbd294950")
+		(uuid "586f9ba4-460c-42c0-8ba6-9b213fc6e899")
+	)
+	(wire
+		(pts
+			(xy 304.8 104.14) (xy 304.8 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "591b9e23-b338-4e4d-b0ae-d40b60efc84e")
+	)
+	(wire
+		(pts
+			(xy 372.11 170.18) (xy 367.03 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af29df3-f839-447c-a298-7d9383b6f976")
 	)
 	(wire
 		(pts
@@ -2187,13 +2850,23 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 116.84) (xy 139.7 114.3)
+			(xy 342.9 73.66) (xy 350.52 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5e804502-7a0f-45ae-a60b-34e0e7a4d3fe")
+		(uuid "5d9a7958-af16-4a1c-8b80-73141da68904")
+	)
+	(wire
+		(pts
+			(xy 372.11 154.94) (xy 367.03 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dc73434-db82-4cff-a5c9-f84fe5eff6f2")
 	)
 	(wire
 		(pts
@@ -2207,6 +2880,36 @@
 	)
 	(wire
 		(pts
+			(xy 353.06 200.66) (xy 360.68 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6249c56e-a5a1-45af-b92d-329e450ff0b9")
+	)
+	(wire
+		(pts
+			(xy 335.28 208.28) (xy 335.28 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65534dcb-b4f4-4f7c-bb81-f16420aea244")
+	)
+	(wire
+		(pts
+			(xy 294.64 157.48) (xy 294.64 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f569955-6d24-446a-98c2-fa8b3c317a05")
+	)
+	(wire
+		(pts
 			(xy 62.23 81.28) (xy 69.85 81.28)
 		)
 		(stroke
@@ -2217,13 +2920,63 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 78.74) (xy 139.7 81.28)
+			(xy 302.26 200.66) (xy 309.88 200.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a027436-b573-4812-a9e5-beb7571556a8")
+		(uuid "76865b7f-4378-4d96-a8ec-d918c9ff2139")
+	)
+	(wire
+		(pts
+			(xy 144.78 71.12) (xy 134.62 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82987e90-a641-424b-9a11-0d48d0eea4dc")
+	)
+	(wire
+		(pts
+			(xy 381 53.34) (xy 393.7 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "875351ce-5a2b-41d8-84dc-7ea369e669f2")
+	)
+	(wire
+		(pts
+			(xy 379.73 162.56) (xy 384.81 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89fcea64-d887-44c9-aaa6-b43d39051fba")
+	)
+	(wire
+		(pts
+			(xy 144.78 119.38) (xy 139.7 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b902919-7afe-40c8-9797-222d558a49be")
+	)
+	(wire
+		(pts
+			(xy 342.9 55.88) (xy 350.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bd21790-882d-493a-90a3-7905a12c4cca")
 	)
 	(wire
 		(pts
@@ -2237,6 +2990,56 @@
 	)
 	(wire
 		(pts
+			(xy 393.7 99.06) (xy 393.7 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9050cb9e-c0a7-4416-8aa7-b5232ff3e4a9")
+	)
+	(wire
+		(pts
+			(xy 342.9 96.52) (xy 350.52 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "911cb6d5-28b4-4aed-9f17-1a5da45e116f")
+	)
+	(wire
+		(pts
+			(xy 297.18 55.88) (xy 314.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91eda65b-a7de-4460-815c-caa4e9363c4f")
+	)
+	(wire
+		(pts
+			(xy 393.7 60.96) (xy 393.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92577673-2259-4af5-9a08-2420313f0f7f")
+	)
+	(wire
+		(pts
+			(xy 304.8 63.5) (xy 304.8 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "950893ee-170d-4a72-913c-bd303868e5a0")
+	)
+	(wire
+		(pts
 			(xy 45.72 58.42) (xy 54.61 58.42)
 		)
 		(stroke
@@ -2244,6 +3047,16 @@
 			(type default)
 		)
 		(uuid "988af23a-0546-4d03-b212-48271cb06bee")
+	)
+	(wire
+		(pts
+			(xy 313.69 165.1) (xy 313.69 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a3bd770-5ed6-42ec-abc5-b8c43a8ec57a")
 	)
 	(wire
 		(pts
@@ -2267,6 +3080,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 124.46) (xy 134.62 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6d2f49b-d893-4bb9-b2a6-b4e1826331e6")
+	)
+	(wire
+		(pts
 			(xy 134.62 53.34) (xy 144.78 53.34)
 		)
 		(stroke
@@ -2274,6 +3097,16 @@
 			(type default)
 		)
 		(uuid "a7760a98-c3fd-4cea-9ae4-afa510b76862")
+	)
+	(wire
+		(pts
+			(xy 381 114.3) (xy 381 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8db1505-c256-47c8-af85-26dceabd541d")
 	)
 	(wire
 		(pts
@@ -2287,6 +3120,16 @@
 	)
 	(wire
 		(pts
+			(xy 313.69 182.88) (xy 313.69 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2f66a6-ab2d-4b32-ae67-dacc3d3a6f00")
+	)
+	(wire
+		(pts
 			(xy 45.72 50.8) (xy 54.61 50.8)
 		)
 		(stroke
@@ -2297,13 +3140,43 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 124.46) (xy 139.7 124.46)
+			(xy 294.64 175.26) (xy 294.64 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "afc964f6-0012-48aa-a452-f854bc268f13")
+		(uuid "ad1ca576-b23f-45d3-af4b-3975aee62f00")
+	)
+	(wire
+		(pts
+			(xy 297.18 114.3) (xy 314.96 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af3d90a6-b0a5-4d63-8873-84e95a8643e5")
+	)
+	(wire
+		(pts
+			(xy 144.78 55.88) (xy 134.62 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4cbac8a-a023-4d02-80b1-dbf1a6f8ed74")
+	)
+	(wire
+		(pts
+			(xy 372.11 177.8) (xy 367.03 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b61e8c97-a60a-47e7-959e-c22a280eedb2")
 	)
 	(wire
 		(pts
@@ -2327,13 +3200,43 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 76.2) (xy 144.78 76.2)
+			(xy 327.66 200.66) (xy 335.28 200.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3ee9055-42f4-40fd-a8cf-307770f5b75c")
+		(uuid "be9d5f23-5311-49b3-b524-8c536a1356d3")
+	)
+	(wire
+		(pts
+			(xy 308.61 175.26) (xy 321.31 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c59e58b4-5816-4cc6-aa91-22fe76c20941")
+	)
+	(wire
+		(pts
+			(xy 144.78 78.74) (xy 134.62 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d57d3602-ce8d-4266-91cb-4a7fb7b2590d")
+	)
+	(wire
+		(pts
+			(xy 379.73 170.18) (xy 384.81 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d595b47a-3366-4d1c-993b-7aea62e09f45")
 	)
 	(wire
 		(pts
@@ -2357,6 +3260,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 200.66) (xy 386.08 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da308519-3201-42be-b090-4e1eb885ac0c")
+	)
+	(wire
+		(pts
 			(xy 228.6 101.6) (xy 223.52 101.6)
 		)
 		(stroke
@@ -2367,43 +3280,43 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 119.38) (xy 144.78 119.38)
+			(xy 304.8 121.92) (xy 304.8 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db982769-e13a-4bea-a345-f63602eae791")
+		(uuid "e40ccc10-6195-49ee-8bea-d7fe995cf04e")
 	)
 	(wire
 		(pts
-			(xy 139.7 55.88) (xy 139.7 58.42)
+			(xy 228.6 66.04) (xy 223.52 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ded44a00-73b5-40c3-b0b9-1cb43a318671")
+		(uuid "e6e6ba0d-e48e-4488-b42c-fa74db9a5f4a")
 	)
 	(wire
 		(pts
-			(xy 144.78 71.12) (xy 139.7 71.12)
+			(xy 372.11 162.56) (xy 367.03 162.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6c34176-772c-42f0-b54d-99b83d87e784")
+		(uuid "e70ff104-b769-4a72-9a9c-33166f42ec44")
 	)
 	(wire
 		(pts
-			(xy 144.78 78.74) (xy 139.7 78.74)
+			(xy 381 91.44) (xy 393.7 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e721f73e-37af-46f7-b005-eeec8eb22374")
+		(uuid "eadc208b-7ab8-43d9-ace7-a7c1823a616b")
 	)
 	(wire
 		(pts
@@ -2417,13 +3330,23 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 124.46) (xy 139.7 127)
+			(xy 308.61 157.48) (xy 321.31 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f196b868-5666-445f-a219-4fb64d54f579")
+		(uuid "f31235be-3f23-4d98-afaa-7cbc3b58be41")
+	)
+	(wire
+		(pts
+			(xy 381 76.2) (xy 381 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f32f946c-e4f3-4a0f-8332-0dc66d304306")
 	)
 	(wire
 		(pts
@@ -2457,13 +3380,13 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 116.84) (xy 139.7 116.84)
+			(xy 381 93.98) (xy 381 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f9b3b158-a1aa-48ae-a572-83e7d7767208")
+		(uuid "f8bd2071-ddbf-4700-95ae-1f2afe83446d")
 	)
 	(wire
 		(pts
@@ -2477,6 +3400,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 116.84) (xy 134.62 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd51b984-5ec7-43df-8298-7a9ba9ba7060")
+	)
+	(wire
+		(pts
 			(xy 45.72 81.28) (xy 54.61 81.28)
 		)
 		(stroke
@@ -2485,15 +3418,85 @@
 		)
 		(uuid "fda074b6-7009-4462-91c0-857d2dbbbdef")
 	)
-	(label "ENC2_B_CONN"
-		(at 134.62 121.92 180)
+	(label "ENC1_5V"
+		(at 367.03 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "0f841ace-93b6-44a2-8693-f760395a3512")
+		(uuid "001093a3-1ab9-43b1-94e4-d9bd3201ca96")
+	)
+	(label "MOTOR2_DIR_CONN"
+		(at 223.52 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "03b2b653-b766-4a54-8044-df9b0cc42f2b")
+	)
+	(label "ENC2_5V"
+		(at 134.62 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0d8f995a-82aa-42fe-95d1-e4effd218495")
+	)
+	(label "ENC1_5V"
+		(at 134.62 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1492a327-3f6f-4828-aed5-b6237dd80944")
+	)
+	(label "ENC1_5V"
+		(at 321.31 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "163bc623-c511-4ac7-8a75-999f0ffea252")
+	)
+	(label "ENC2_A_CONN"
+		(at 223.52 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "19e0be6d-0f32-4ac5-adb8-7ca6fb0b27bb")
+	)
+	(label "ENC2_B_CONN"
+		(at 223.52 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3585f0bf-5a59-44d9-ac80-b631550f80af")
+	)
+	(label "ENC2_5V"
+		(at 321.31 175.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ca41d6e-59a1-496b-8eea-9a489c756346")
 	)
 	(label "ENC1_B_CONN"
 		(at 69.85 73.66 0)
@@ -2515,6 +3518,26 @@
 		)
 		(uuid "3e653804-bdbe-4859-8371-f85ffd571cfb")
 	)
+	(label "MOTOR2_PWM_CONN"
+		(at 327.66 200.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "42f9867e-0064-4407-9588-a7e90793f1a9")
+	)
+	(label "ENC2_5V"
+		(at 367.03 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4335335a-b950-4666-98b3-ae7103b46b5d")
+	)
 	(label "ENC2_A_CONN"
 		(at 69.85 96.52 0)
 		(effects
@@ -2525,15 +3548,35 @@
 		)
 		(uuid "460297a9-86f7-4e98-abbf-914a36ecacd3")
 	)
-	(label "ENC1_B_CONN"
-		(at 134.62 76.2 180)
+	(label "ENC2_A_CONN"
+		(at 134.62 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "52ac1517-c02b-4cb3-83ed-6b56ea52c54c")
+		(uuid "4ace70ef-c340-429b-bb50-7ac9cc8081a4")
+	)
+	(label "ENC2_B_CONN"
+		(at 384.81 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fb25f07-94f0-4a40-84a3-1d51e2e8ac9e")
+	)
+	(label "ENC1_B_CONN"
+		(at 384.81 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51ff8caa-f93f-431e-97ed-b85a3ee3ed13")
 	)
 	(label "MOTOR2_PWM_CONN"
 		(at 69.85 81.28 0)
@@ -2555,6 +3598,16 @@
 		)
 		(uuid "57dbcd78-0b39-422b-a18d-e2b9ab283790")
 	)
+	(label "ENC2_B_F"
+		(at 297.18 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5e439524-db42-4a45-8eb4-2aaf24b99384")
+	)
 	(label "MOTOR2_DIR_CONN"
 		(at 134.62 99.06 180)
 		(effects
@@ -2565,25 +3618,75 @@
 		)
 		(uuid "6001a53d-f767-4b22-bb62-890a6199bd4d")
 	)
-	(label "ENC1_A_CONN"
-		(at 134.62 73.66 180)
+	(label "ENC1_B_F"
+		(at 297.18 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "77fbe1ce-857e-4e14-a555-8021963012ea")
+		(uuid "613e6e1d-bec3-4f41-8d3b-c2e8dfc37f05")
+	)
+	(label "ENC1_B_F"
+		(at 45.72 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64f4be4e-cf2b-4328-9f85-1a1a27965d73")
+	)
+	(label "ENC1_A_CONN"
+		(at 134.62 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "67a3283c-5fff-4a0a-8735-575790bc776d")
+	)
+	(label "ENC2_5V"
+		(at 367.03 170.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6c621dc4-1f04-4199-aa14-1688926b2cee")
 	)
 	(label "ENC2_A_CONN"
-		(at 134.62 119.38 180)
+		(at 384.81 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "763dc79e-ff75-4294-8d35-ce119e44f9bb")
+	)
+	(label "M1_DRV_GND"
+		(at 134.62 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "78718807-edff-4c69-b8c6-b779ed1bd607")
+		(uuid "79aa5241-ffb6-4745-a49e-e27a2cc8f0bb")
+	)
+	(label "ENC1_A_CONN"
+		(at 384.81 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b38b71d-6970-4c9c-8ffd-779953a6fbab")
 	)
 	(label "MOTOR1_DIR_CONN"
 		(at 223.52 63.5 180)
@@ -2595,6 +3698,36 @@
 		)
 		(uuid "88e01b7e-729b-40b4-b865-2bd346c16b44")
 	)
+	(label "MOTOR1_PWM_CONN"
+		(at 302.26 200.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8f83982e-ce35-429a-a11d-d902341ee1f6")
+	)
+	(label "ENC2_A_F"
+		(at 297.18 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9583a38f-0df1-4930-902a-905649f7b02f")
+	)
+	(label "M1_DRV_GND"
+		(at 353.06 200.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9ebed9c5-ac82-40ec-9fb0-02b55535f571")
+	)
 	(label "ENC1_B_CONN"
 		(at 223.52 104.14 180)
 		(effects
@@ -2604,6 +3737,16 @@
 			(justify right bottom)
 		)
 		(uuid "a3de82b1-f272-446f-b1d8-3f9f6dcca851")
+	)
+	(label "M2_DRV_GND"
+		(at 378.46 200.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a3fa67e2-a65a-45ac-b23a-2ec30eb169c5")
 	)
 	(label "MOTOR1_PWM_CONN"
 		(at 69.85 50.8 0)
@@ -2635,6 +3778,16 @@
 		)
 		(uuid "b1d7462c-10ec-4444-9813-5977a13a2197")
 	)
+	(label "ENC1_B_CONN"
+		(at 134.62 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bc7284a5-549c-4aa5-bf50-cbf7ff6702a0")
+	)
 	(label "MOTOR2_DIR_CONN"
 		(at 69.85 88.9 0)
 		(effects
@@ -2644,6 +3797,16 @@
 			(justify left bottom)
 		)
 		(uuid "bccb77e2-7132-4c0c-bce0-9113142012c6")
+	)
+	(label "ENC1_A_F"
+		(at 45.72 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd5bce17-b428-4c56-bf2d-dac52868b909")
 	)
 	(label "ENC1_A_CONN"
 		(at 69.85 66.04 0)
@@ -2655,6 +3818,16 @@
 		)
 		(uuid "bf9b0d46-f942-49da-a388-f4bbb14cd67b")
 	)
+	(label "ENC2_A_F"
+		(at 45.72 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c0579d86-1f54-4e5c-b458-b7ba94b12d05")
+	)
 	(label "MOTOR1_PWM_CONN"
 		(at 223.52 60.96 180)
 		(effects
@@ -2664,6 +3837,16 @@
 			(justify right bottom)
 		)
 		(uuid "c171362d-5f2f-4766-a414-2fe105da707f")
+	)
+	(label "ENC2_B_CONN"
+		(at 134.62 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c3a9cf97-feaf-4548-9dc7-b92c80ddba36")
 	)
 	(label "ENC1_A_CONN"
 		(at 223.52 101.6 180)
@@ -2676,6 +3859,36 @@
 		(uuid "c45af47d-6a04-4ef0-b88f-8d6ffcde5ae0")
 	)
 	(label "MOTOR2_PWM_CONN"
+		(at 223.52 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d4066447-cfbd-4001-b2f5-034c48403d9f")
+	)
+	(label "ENC1_A_F"
+		(at 297.18 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "da4939e0-4c46-4aaa-87ab-5c5ca32ad395")
+	)
+	(label "M2_DRV_GND"
+		(at 134.62 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "de3aa8fd-e384-4230-a58c-a2700085f28a")
+	)
+	(label "MOTOR2_PWM_CONN"
 		(at 134.62 96.52 180)
 		(effects
 			(font
@@ -2685,16 +3898,36 @@
 		)
 		(uuid "f032cfb6-008c-456b-bd69-64d55c53102b")
 	)
-	(hierarchical_label "ENC2_A"
-		(shape output)
-		(at 45.72 96.52 180)
+	(label "ENC1_5V"
+		(at 367.03 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify right bottom)
 		)
-		(uuid "0bba39e1-42e2-4507-be6a-0064465a766b")
+		(uuid "f38e9fed-08d1-41b7-bbad-61efd3c15340")
+	)
+	(label "ENC2_B_F"
+		(at 45.72 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f889e411-e157-485b-8d04-f0b86b15ff59")
+	)
+	(hierarchical_label "ENC2_B"
+		(shape output)
+		(at 350.52 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "163d12e0-92ec-42f1-bab0-b5d8128466de")
 	)
 	(hierarchical_label "MOTOR2_PWM"
 		(shape input)
@@ -2707,27 +3940,27 @@
 		)
 		(uuid "45bbd3fd-ad44-4551-abff-8d509c0f9c55")
 	)
-	(hierarchical_label "ENC1_A"
+	(hierarchical_label "ENC2_A"
 		(shape output)
-		(at 45.72 66.04 180)
+		(at 350.52 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "6134a354-0b18-4cf2-bae6-40eac9d850ee")
+		(uuid "4bd1bfd0-8170-4f05-bdcd-d74844742144")
 	)
-	(hierarchical_label "ENC2_B"
+	(hierarchical_label "ENC1_B"
 		(shape output)
-		(at 45.72 104.14 180)
+		(at 350.52 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "67b556d4-9d39-4606-b592-845bb88d3883")
+		(uuid "83bd372d-7a40-457e-9599-e7414c55255b")
 	)
 	(hierarchical_label "MOTOR1_DIR"
 		(shape input)
@@ -2740,16 +3973,16 @@
 		)
 		(uuid "a4660cc2-7ab4-4a6e-9a4e-2efb6a198eeb")
 	)
-	(hierarchical_label "ENC1_B"
+	(hierarchical_label "ENC1_A"
 		(shape output)
-		(at 45.72 73.66 180)
+		(at 350.52 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "b64c3985-c328-48bc-aae6-fb8afe4c2cd8")
+		(uuid "b15d6f2e-cec7-4965-929c-c44b72b2effd")
 	)
 	(hierarchical_label "MOTOR1_PWM"
 		(shape input)
@@ -2772,6 +4005,397 @@
 			(justify right)
 		)
 		(uuid "efde4d9b-96fd-439b-a4c6-71bd98d0fa76")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 386.08 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0179db47-91d7-40de-bd1c-d915ff01776f")
+		(property "Reference" "#PWR0199"
+			(at 386.08 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 386.08 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 386.08 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 386.08 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 386.08 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f9cb72a-5a6d-4af1-9533-cd913893abf1")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0199")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 309.88 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "01b5abe4-b060-4f5b-b365-8fa4d4f72ebe")
+		(property "Reference" "R52"
+			(at 312.42 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 312.42 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 309.88 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pull-down on MOTOR1_PWM_CONN: the MDD20A brakes when PWM is low, so a floating PWM line (MCU in reset, bootloader, blank flash, or Pi holding reset) means motors brake."
+			(at 309.88 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d9e3714-ecd2-46a0-946c-cf310dc8fafd")
+		)
+		(pin "2"
+			(uuid "ea849daa-6219-4513-9b72-5424dda60597")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 335.28 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0730efa7-ec12-41d9-855d-f3da9c83f263")
+		(property "Reference" "#PWR0197"
+			(at 335.28 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 335.28 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 335.28 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "625471a7-57f6-4029-a61f-f05a7ad82fb6")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0197")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 360.68 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0eccb0c9-b3db-4be7-a478-b0826841707d")
+		(property "Reference" "#PWR0198"
+			(at 360.68 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 360.68 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 360.68 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 360.68 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 360.68 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8eb1bdac-6297-47a7-b1ca-4845bc9f4606")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0198")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.92 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "0f721214-ad5e-4da2-8eb9-2e7f9c125e3c")
+		(property "Reference" "R49"
+			(at 375.92 160.02 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 375.92 165.1 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 375.92 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 375.92 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Optional pull-up on ENC1_B_CONN to the encoder supply. Do not fit unless a scope shows the am-3651 outputs are open-collector (they are unmeasured)."
+			(at 375.92 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "058e2d74-9b1e-4995-8cc8-3c7d472040d7")
+		)
+		(pin "2"
+			(uuid "52e10861-e159-4068-8c31-6288cb8a05a3")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -2905,7 +4529,7 @@
 				)
 			)
 		)
-		(property "Description" "ST USBLC6-4SC6 4-line ESD array (SOT-23-6, ~3.5 pF, hand-solderable). VBUS tied to the rail the protected lines swing to, with 100 nF to GND at the pin. Place at the connector with short VBUS/GND paths. Protects J6 (motor 1 PWM and DIR, 3.3 V signals, VBUS = +3V3). I/O3-4 unused."
+		(property "Description" "ST USBLC6-4SC6 4-line ESD array (SOT-23-6). VBUS = +3V3 with 100 nF (C34). Protects both motor-driver connectors: I/O1-2 = J6 PWM1/DIR1, I/O3-4 = J16 PWM2/DIR2. Place between J6 and J16."
 			(at 236.22 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3043,6 +4667,122 @@
 		)
 	)
 	(symbol
+		(lib_id "74xGxx:74LVC2G17")
+		(at 381 104.14 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1795c01a-45c1-472f-afc9-b658d8e5238c")
+		(property "Reference" "U10"
+			(at 383.54 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LVC2G17"
+			(at 383.54 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 381 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"
+			(at 381 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 381 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 381 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC2G17DBVR"
+			(at 381 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b0e4267e-af11-4dc4-ba83-6eeb036c49e9")
+		)
+		(pin "5"
+			(uuid "a8667e20-051d-4beb-86d8-e5ccd5ec58ff")
+		)
+		(pin "1"
+			(uuid "5cccb0e2-b0ab-4234-be1f-5b7d329845ac")
+		)
+		(pin "6"
+			(uuid "ee1a7ca4-9125-4c67-a532-e1821c794139")
+		)
+		(pin "3"
+			(uuid "3fcd1b9e-66b9-4c43-89ae-d67a8e174a53")
+		)
+		(pin "4"
+			(uuid "c8334ba7-ffb8-42a0-b7b3-bc6738a32087")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "U10")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
 		(at 149.86 73.66 0)
 		(unit 1)
@@ -3096,7 +4836,7 @@
 				)
 			)
 		)
-		(property "Description" "Motor 1 (37D) Hall encoder: 1 = Vcc +5V_SYS (blue), 2 = A (yellow, PA15 TIM2_CH1), 3 = B (white, PB3 TIM2_CH2), 4 = GND (green)"
+		(property "Description" "Motor 1 encoder (AndyMark am-3651, 5 V, 7 PPR at the motor; cable am-2993): 1 = +5 V (ENC1_5V, PTC-protected, red), 2 = GND (black), 3 = A, 4 = B (yellow / green: confirm which is A before wiring). Same order as the encoder's JST-XH plug."
 			(at 149.86 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3163,7 +4903,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 58.42 0)
+		(at 309.88 210.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3171,9 +4911,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "18535e05-bd8a-4aa5-acff-77236c537aa5")
-		(property "Reference" "#PWR091"
-			(at 139.7 66.04 0)
+		(uuid "17fef69d-c11e-42b1-914c-ef558754eab8")
+		(property "Reference" "#PWR0196"
+			(at 309.88 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3184,7 +4924,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 62.23 0)
+			(at 309.88 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3194,7 +4934,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 58.42 0)
+			(at 309.88 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3204,8 +4944,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 139.7 58.42 0)
+		(property "Datasheet" "~"
+			(at 309.88 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3216,7 +4956,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 58.42 0)
+			(at 309.88 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3227,12 +4967,673 @@
 			)
 		)
 		(pin "1"
-			(uuid "290a6443-8544-472d-99fe-490c9b62ceae")
+			(uuid "e7393fcf-b58a-475a-a480-09c686b90800")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR091")
+					(reference "#PWR0196")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 73.66 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1818cba9-1ebe-4db4-84bd-ba05b89a8a2a")
+		(property "Reference" "#PWR0180"
+			(at 139.7 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3cc41bfc-6846-4182-a7d1-4263279b96cf")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0180")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC2G17")
+		(at 330.2 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ba5c80c-8e28-4089-ae35-5ea60bb0d584")
+		(property "Reference" "U10"
+			(at 327.66 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC2G17"
+			(at 332.74 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 330.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"
+			(at 330.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual Schmitt-trigger buffer for the encoder A/B lines. Powered from +3V3, so the STM32 never sees more than 3.3 V; inputs are 5.5 V tolerant with Ioff, so a live encoder cannot back-power or overstress anything before +3V3 is up."
+			(at 330.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 330.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC2G17DBVR"
+			(at 330.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e77fcc65-7111-4523-bfb2-739ba042f84a")
+		)
+		(pin "6"
+			(uuid "fbe930b3-45a2-417c-9e57-32157b5f2c14")
+		)
+		(pin "3"
+			(uuid "794c23cd-5f50-4a36-a7ad-921baea6a15a")
+		)
+		(pin "4"
+			(uuid "f779bdb4-2ccc-489f-8a0b-1e6624ed33d5")
+		)
+		(pin "2"
+			(uuid "fc25542e-e414-4ff5-bd39-af6c8031f320")
+		)
+		(pin "5"
+			(uuid "e8b5a426-caf4-4e32-9795-9f6c62e3a659")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 304.8 157.48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "20f4d2f5-e0d0-4b16-b65d-9213d51c7cc9")
+		(property "Reference" "F8"
+			(at 304.8 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.2A hold"
+			(at 304.8 161.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 304.8 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/mf-nsmf.pdf"
+			(at 304.8 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resettable fuse on the encoder supply (ENC1_5V): a pinched encoder cable trips this instead of pulling down +5V_SYS (which also feeds the 3.3 V LDO and the MCU)."
+			(at 304.8 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 304.8 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MF-NSMF020X-2"
+			(at 304.8 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4c355d1-6834-45ef-839a-4c2db53d45e1")
+		)
+		(pin "2"
+			(uuid "f03ee288-fe68-4c17-8ed5-8f96e5d5be1b")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "F8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC2G17")
+		(at 330.2 73.66 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "20ff688d-9cc2-48e4-8373-ca38177e9600")
+		(property "Reference" "U9"
+			(at 327.66 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC2G17"
+			(at 332.74 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 330.2 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"
+			(at 330.2 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual Schmitt-trigger buffer for the encoder A/B lines. Powered from +3V3, so the STM32 never sees more than 3.3 V; inputs are 5.5 V tolerant with Ioff, so a live encoder cannot back-power or overstress anything before +3V3 is up."
+			(at 330.2 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 330.2 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC2G17DBVR"
+			(at 330.2 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "2e1220a4-2e2f-4887-9833-4c063bd65cc9")
+		)
+		(pin "4"
+			(uuid "3c3e1a06-a705-4380-8030-1a84fc465d6f")
+		)
+		(pin "1"
+			(uuid "36a22bc1-0f73-471a-931b-ebafbba52b3c")
+		)
+		(pin "6"
+			(uuid "d51fdb36-df08-4ac6-96ee-e071124957e7")
+		)
+		(pin "2"
+			(uuid "f89ba148-27af-464b-9ba8-8988d59364fc")
+		)
+		(pin "5"
+			(uuid "9facbb17-233d-44e8-ad58-0dc8b0954f93")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "U9")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 294.64 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "27c838c6-603e-4493-a68c-57c0817bb1dd")
+		(property "Reference" "#PWR0192"
+			(at 294.64 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_SYS"
+			(at 294.64 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 294.64 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 294.64 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 294.64 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c29d843-3b8b-40f5-8b41-ffa4dc54682a")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0192")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 393.7 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a0da10e-1127-4367-8d52-02fdce4077a7")
+		(property "Reference" "C41"
+			(at 396.24 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF / 50V X7R"
+			(at 396.24 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 393.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 393.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U9 decoupling, at the VCC pin."
+			(at 393.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 393.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 393.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4ddb319b-8bc6-4c85-9c9f-903ffd33d745")
+		)
+		(pin "2"
+			(uuid "3c6a5b0c-b43e-471f-adbd-4037e35aa35a")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 119.38 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2ee97782-6311-4ac2-b275-dc553f4a123e")
+		(property "Reference" "#PWR0181"
+			(at 139.7 123.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 119.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "90efb32f-5955-4f79-ab4b-51cb163da2af")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0181")
 					(unit 1)
 				)
 			)
@@ -3293,7 +5694,7 @@
 				)
 			)
 		)
-		(property "Description" "ST USBLC6-4SC6 4-line ESD array (SOT-23-6, ~3.5 pF, hand-solderable). VBUS tied to the rail the protected lines swing to, with 100 nF to GND at the pin. Place at the connector with short VBUS/GND paths. Protects J7 (encoder 1 A/B, 5 V signals, VBUS = +5V_SYS, the encoder supply). I/O3-4 unused."
+		(property "Description" "ST USBLC6-4SC6 4-line ESD array (SOT-23-6). VBUS = +5V_SYS with 100 nF (C35). Protects both encoder connectors: I/O1-2 = J7 A/B, I/O3-4 = J15 A/B. Place between J7 and J15."
 			(at 236.22 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -3455,7 +5856,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 58.42 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3487,7 +5888,7 @@
 				)
 			)
 		)
-		(property "Description" "100R series resistor on ENC1_A (J7 pin 2): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+		(property "Description" "1k series resistor on ENC1_A: with the 1 nF at the buffer input forms a 1 us RC filter, and limits ESD / miswire current. Place near the buffer."
 			(at 58.42 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -3593,6 +5994,164 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 304.8 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44de47a1-767f-4482-8a4a-d984e8c2d204")
+		(property "Reference" "#PWR0184"
+			(at 304.8 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 304.8 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 304.8 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8cffa414-a8c2-4c1c-84e4-5738d41fce42")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0184")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 335.28 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "462d9a00-b1c0-434f-91df-cd7e3d04feea")
+		(property "Reference" "R53"
+			(at 337.82 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 337.82 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 335.28 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pull-down on MOTOR2_PWM_CONN: the MDD20A brakes when PWM is low, so a floating PWM line (MCU in reset, bootloader, blank flash, or Pi holding reset) means motors brake."
+			(at 335.28 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c14a4f2e-1093-42dc-b047-395b95ccef7a")
+		)
+		(pin "2"
+			(uuid "6f2e34d0-7c36-47a6-bba8-c3cfbdebb549")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
 		(at 149.86 53.34 0)
 		(unit 1)
@@ -3646,7 +6205,7 @@
 				)
 			)
 		)
-		(property "Description" "Motor 1 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM1 speed (PA6, TIM3_CH1, max 20 kHz), 2 = DIR1 direction (PB0), 3 = GND. MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
+		(property "Description" "Motor 1 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM1 speed (PA6, TIM3_CH1, max 20 kHz), 2 = DIR1 direction (PB0), 3 = GND through PTC F10 (signal reference only; the motor current must return on the MDD20A's own battery leads). MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
 			(at 149.86 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3762,7 +6321,7 @@
 				)
 			)
 		)
-		(property "Description" "Motor 2 (37D) Hall encoder: 1 = Vcc +5V_SYS (blue), 2 = A (yellow, PA8 TIM1_CH1), 3 = B (white, PA9 TIM1_CH2), 4 = GND (green)"
+		(property "Description" "Motor 2 encoder (AndyMark am-3651, 5 V, 7 PPR at the motor; cable am-2993): 1 = +5 V (ENC2_5V, PTC-protected, red), 2 = GND (black), 3 = A, 4 = B (yellow / green: confirm which is A before wiring). Same order as the encoder's JST-XH plug."
 			(at 149.86 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -3907,8 +6466,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 139.7 114.3 0)
+		(lib_id "power:GND")
+		(at 313.69 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3916,9 +6475,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "59ae96fd-15c0-4153-8df3-f91fdfad81a1")
-		(property "Reference" "#PWR095"
-			(at 139.7 106.68 0)
+		(uuid "567d8e1a-67d0-47ae-83c3-9e49fa1beeee")
+		(property "Reference" "#PWR0195"
+			(at 313.69 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3928,8 +6487,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V_SYS"
-			(at 139.7 110.49 0)
+		(property "Value" "GND"
+			(at 313.69 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3939,7 +6498,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 114.3 0)
+			(at 313.69 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3949,8 +6508,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 139.7 114.3 0)
+		(property "Datasheet" "~"
+			(at 313.69 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3961,7 +6520,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 114.3 0)
+			(at 313.69 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3972,12 +6531,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "40a70324-d492-4979-897e-2f4c4b6aef97")
+			(uuid "76d219f7-dbdb-48fd-b4ff-9b0863bdac66")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR095")
+					(reference "#PWR0195")
 					(unit 1)
 				)
 			)
@@ -4037,7 +6596,7 @@
 				)
 			)
 		)
-		(property "Description" "Motor 2 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM2 speed (PA7, TIM3_CH2, max 20 kHz), 2 = DIR2 direction (PB2), 3 = GND. MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
+		(property "Description" "Motor 2 driver control to Cytron MDD20A (20 A, 6-30 V, 2-channel): 1 = PWM2 speed (PA7, TIM3_CH2, max 20 kHz), 2 = DIR2 direction (PB2), 3 = GND through PTC F11 (signal reference only; the motor current must return on the MDD20A's own battery leads). MDD20A logic: low <= 0.8 V, high >= 1.5 V, so 3.3 V drive is fine. Datasheet: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf"
 			(at 149.86 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4094,6 +6653,83 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
 					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 294.64 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "67f6a7df-a9cc-4eba-82e1-6b5491e72c85")
+		(property "Reference" "#PWR0194"
+			(at 294.64 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_SYS"
+			(at 294.64 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 294.64 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 294.64 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 294.64 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24167fc0-f0d0-4fec-b99a-008f6a749e24")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0194")
 					(unit 1)
 				)
 			)
@@ -4179,8 +6815,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 139.7 104.14 0)
+		(lib_id "Device:C")
+		(at 304.8 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4188,9 +6824,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "81a2ed45-544e-4392-be89-641e8fe829ef")
-		(property "Reference" "#PWR094"
-			(at 139.7 111.76 0)
+		(uuid "70216c79-6bb4-428f-a2f6-c0bdd1b615da")
+		(property "Reference" "C46"
+			(at 307.34 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF / 50V C0G"
+			(at 307.34 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 304.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4200,18 +6858,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 139.7 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 104.14 0)
+		(property "Datasheet" "~"
+			(at 304.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4221,8 +6869,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 139.7 104.14 0)
+		(property "Description" "RC filter cap on ENC2_B (with the 1k series resistor: 1 us). Place at the buffer input."
+			(at 304.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4232,8 +6880,19 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 139.7 104.14 0)
+		(property "Manufacturer" "Murata"
+			(at 304.8 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM1885C1H102JA01D"
+			(at 304.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4244,12 +6903,553 @@
 			)
 		)
 		(pin "1"
-			(uuid "76696160-0ffb-4a2c-b05f-0e6618c09dbd")
+			(uuid "89853ec9-9436-4fa2-bff0-d823b6e4e388")
+		)
+		(pin "2"
+			(uuid "539f5031-dca5-472b-83e2-a95715e921b9")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR094")
+					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 381 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "71497e41-ea4d-4b70-8399-4cd3a5f7a167")
+		(property "Reference" "#PWR0187"
+			(at 381 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 381 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 381 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2e11e37-f96e-42cb-ad2b-9f8c892c7cb1")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0187")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 304.8 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7668bee4-cbc6-4b4c-85f4-7584becac9ca")
+		(property "Reference" "#PWR0183"
+			(at 304.8 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 304.8 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 304.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4674c1f4-7e5b-40bc-b7e0-f8ae21a47033")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0183")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 304.8 175.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c1bc874-48ae-4eca-aeb7-a0489da1d714")
+		(property "Reference" "F9"
+			(at 304.8 171.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.2A hold"
+			(at 304.8 179.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 304.8 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/mf-nsmf.pdf"
+			(at 304.8 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resettable fuse on the encoder supply (ENC2_5V): a pinched encoder cable trips this instead of pulling down +5V_SYS (which also feeds the 3.3 V LDO and the MCU)."
+			(at 304.8 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 304.8 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MF-NSMF020X-2"
+			(at 304.8 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d663a66b-8eae-4d0d-8a74-f1ec3c7406ee")
+		)
+		(pin "2"
+			(uuid "35c36249-9315-4da7-a0fc-98d740514720")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "F9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 381 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c918bc8-0c6f-480f-a776-2f91c0960ca1")
+		(property "Reference" "#PWR0186"
+			(at 381 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 381 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 381 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "db794a81-960b-41da-b867-a9228fa39f01")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0186")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 393.7 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e5eb528-efee-4c80-a1d0-f0a27fdaecf9")
+		(property "Reference" "C42"
+			(at 396.24 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF / 50V X7R"
+			(at 396.24 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 393.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 393.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U10 decoupling, at the VCC pin."
+			(at 393.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 393.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 393.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b565aecf-123f-40fb-a2b5-90f76d66c58d")
+		)
+		(pin "2"
+			(uuid "4909ebb3-ebf0-4a8c-9dc8-425c099a5328")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 313.69 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "82639f6c-f04f-48d0-9120-0154c0aad779")
+		(property "Reference" "C47"
+			(at 316.23 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF / 16V X7R"
+			(at 316.23 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 313.69 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Local decoupling for the ENC1_5V encoder supply, at the connector."
+			(at 313.69 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 313.69 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1608X7R1C105K080AC"
+			(at 313.69 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af810865-831c-44c1-af9d-a0bb23bf1dd7")
+		)
+		(pin "2"
+			(uuid "689c30c5-1729-49b1-85e1-50ed0c61d596")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -4276,7 +7476,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 58.42 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4308,7 +7508,7 @@
 				)
 			)
 		)
-		(property "Description" "100R series resistor on ENC1_B (J7 pin 3): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+		(property "Description" "1k series resistor on ENC1_B: with the 1 nF at the buffer input forms a 1 us RC filter, and limits ESD / miswire current. Place near the buffer."
 			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4412,8 +7612,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 139.7 127 0)
+		(lib_id "Device:C")
+		(at 304.8 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4421,9 +7621,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9266f5f6-fcf6-4565-a356-6226d9cb0aa6")
-		(property "Reference" "#PWR096"
-			(at 139.7 134.62 0)
+		(uuid "89deb0ff-fa81-43d5-a590-88efd2157804")
+		(property "Reference" "C44"
+			(at 307.34 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF / 50V C0G"
+			(at 307.34 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 304.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4433,18 +7655,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 139.7 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 127 0)
+		(property "Datasheet" "~"
+			(at 304.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4454,8 +7666,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 139.7 127 0)
+		(property "Description" "RC filter cap on ENC1_B (with the 1k series resistor: 1 us). Place at the buffer input."
+			(at 304.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4465,8 +7677,19 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 139.7 127 0)
+		(property "Manufacturer" "Murata"
+			(at 304.8 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM1885C1H102JA01D"
+			(at 304.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4477,13 +7700,232 @@
 			)
 		)
 		(pin "1"
-			(uuid "094d7595-65ee-44db-8344-5859e8b6a41d")
+			(uuid "7322ed2f-8067-4ae1-8d70-80d6821f4fa8")
+		)
+		(pin "2"
+			(uuid "0c37f61b-f236-43f9-9d54-ff1a48bd3a6b")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR096")
+					(reference "C44")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 313.69 179.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8a083b22-d5ad-4100-8b27-32036f4dee4e")
+		(property "Reference" "C48"
+			(at 316.23 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF / 16V X7R"
+			(at 316.23 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 313.69 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Local decoupling for the ENC2_5V encoder supply, at the connector."
+			(at 313.69 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 313.69 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1608X7R1C105K080AC"
+			(at 313.69 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96998403-c07c-40a3-9ad5-8a95898ef53d")
+		)
+		(pin "2"
+			(uuid "1b35ef45-86b3-44fc-8c2b-a19279065012")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC2G17")
+		(at 330.2 114.3 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90f48fd4-cd9a-445b-9046-fb48a3dcb1b8")
+		(property "Reference" "U10"
+			(at 327.66 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC2G17"
+			(at 332.74 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 330.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"
+			(at 330.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual Schmitt-trigger buffer for the encoder A/B lines. Powered from +3V3, so the STM32 never sees more than 3.3 V; inputs are 5.5 V tolerant with Ioff, so a live encoder cannot back-power or overstress anything before +3V3 is up."
+			(at 330.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 330.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC2G17DBVR"
+			(at 330.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "633b6d1d-d849-4bbe-b191-7c7161ea99d7")
+		)
+		(pin "4"
+			(uuid "99b70612-ca10-40a0-9306-2c90e6d1fea1")
+		)
+		(pin "1"
+			(uuid "70fccf37-e9c5-4e06-a337-cb36c832c47a")
+		)
+		(pin "6"
+			(uuid "38206fca-7b5f-4444-bc43-b7bd693bafce")
+		)
+		(pin "2"
+			(uuid "89058fc7-f7e1-4c32-9dc3-c699eb667660")
+		)
+		(pin "5"
+			(uuid "6083a323-08c7-4750-837b-7f178366533f")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "U10")
+					(unit 2)
 				)
 			)
 		)
@@ -4509,7 +7951,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 58.42 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4541,7 +7983,7 @@
 				)
 			)
 		)
-		(property "Description" "100R series resistor on ENC2_B (J15 pin 3): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+		(property "Description" "1k series resistor on ENC2_B: with the 1 nF at the buffer input forms a 1 us RC filter, and limits ESD / miswire current. Place near the buffer."
 			(at 58.42 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -4588,7 +8030,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 58.42 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4620,7 +8062,7 @@
 				)
 			)
 		)
-		(property "Description" "100R series resistor on ENC2_A (J15 pin 2): limits ESD/miswire current into the STM32 and damps ringing on the cable. Place near U1."
+		(property "Description" "1k series resistor on ENC2_A: with the 1 nF at the buffer input forms a 1 us RC filter, and limits ESD / miswire current. Place near the buffer."
 			(at 58.42 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -4725,6 +8167,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 393.7 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a501fa3a-a72e-4f59-8964-af746c9c2c5f")
+		(property "Reference" "#PWR0188"
+			(at 393.7 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 393.7 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 393.7 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 393.7 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 393.7 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60dc3d30-4c01-4fa4-9577-cfa9a869f29a")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0188")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 236.22 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -4795,6 +8314,109 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
 					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 386.08 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b57eda63-cc01-4492-86eb-dd484392cee9")
+		(property "Reference" "F11"
+			(at 388.62 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.2A hold"
+			(at 388.62 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 386.08 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/mf-nsmf.pdf"
+			(at 386.08 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTC in the MDD20A signal-ground return (M2_DRV_GND). Normally carries mA; if the driver's battery-negative lead loosens, motor current would try to return through the board and this opens instead of the GND trace."
+			(at 386.08 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 386.08 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MF-NSMF020X-2"
+			(at 386.08 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06f8784a-3204-428d-aeb1-10c11f9606dd")
+		)
+		(pin "2"
+			(uuid "ac0c8fee-088f-491c-b2fd-493c9898e60d")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "F11")
 					(unit 1)
 				)
 			)
@@ -4874,6 +8496,534 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
 					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 313.69 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c309c5ca-a54c-4349-a01c-a2e036939d21")
+		(property "Reference" "#PWR0193"
+			(at 313.69 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 313.69 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 313.69 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 313.69 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d8fd7db-e814-452f-ab19-3b9134a8b843")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0193")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 360.68 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c6bb113a-42ca-45f4-bc7c-f56e2e2f5e36")
+		(property "Reference" "F10"
+			(at 363.22 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.2A hold"
+			(at 363.22 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 360.68 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/mf-nsmf.pdf"
+			(at 360.68 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTC in the MDD20A signal-ground return (M1_DRV_GND). Normally carries mA; if the driver's battery-negative lead loosens, motor current would try to return through the board and this opens instead of the GND trace."
+			(at 360.68 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 360.68 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MF-NSMF020X-2"
+			(at 360.68 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b90aea2-8b40-4438-b276-bbe7c6b4177e")
+		)
+		(pin "2"
+			(uuid "247bf239-997d-43af-ac61-bc1acea24042")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "F10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.92 177.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "cd0db92f-9184-4d54-bcb6-ad2c85ff5db5")
+		(property "Reference" "R51"
+			(at 375.92 175.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 375.92 180.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 375.92 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 375.92 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Optional pull-up on ENC2_B_CONN to the encoder supply. Do not fit unless a scope shows the am-3651 outputs are open-collector (they are unmeasured)."
+			(at 375.92 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4eb03070-531c-4a69-898a-dac61d2687ee")
+		)
+		(pin "2"
+			(uuid "8a9ec44c-4325-4779-9021-4a6e264900d9")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC2G17")
+		(at 330.2 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d3d6356c-4352-45ea-b4a7-ca1ac17f8d82")
+		(property "Reference" "U9"
+			(at 327.66 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC2G17"
+			(at 332.74 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 330.2 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"
+			(at 330.2 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual Schmitt-trigger buffer for the encoder A/B lines. Powered from +3V3, so the STM32 never sees more than 3.3 V; inputs are 5.5 V tolerant with Ioff, so a live encoder cannot back-power or overstress anything before +3V3 is up."
+			(at 330.2 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 330.2 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC2G17DBVR"
+			(at 330.2 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "37cf9ecd-0954-4264-b266-12037c30afbf")
+		)
+		(pin "6"
+			(uuid "102e1010-4238-4755-924e-3b479a922ffe")
+		)
+		(pin "3"
+			(uuid "1fb21c32-b2a4-4c3c-87e6-58bd8035be7f")
+		)
+		(pin "4"
+			(uuid "afe5dab9-09d7-4a95-80c2-ab19f4e749f8")
+		)
+		(pin "2"
+			(uuid "c7522be8-ab02-4f40-b66c-9faa1fa18cb6")
+		)
+		(pin "5"
+			(uuid "8509744a-de11-46ac-88b8-b529668abd6b")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.92 170.18 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "d45b8d64-61a8-4ac3-a678-102c114bdbab")
+		(property "Reference" "R50"
+			(at 375.92 167.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 375.92 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 375.92 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 375.92 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Optional pull-up on ENC2_A_CONN to the encoder supply. Do not fit unless a scope shows the am-3651 outputs are open-collector (they are unmeasured)."
+			(at 375.92 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21ea09b0-a9ad-4942-9284-773a80fbe8ed")
+		)
+		(pin "2"
+			(uuid "f61e9348-d00d-4fcc-ab68-e0b331743af4")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 304.8 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d76bb536-924e-483b-8447-c930e2e40f9e")
+		(property "Reference" "#PWR0182"
+			(at 304.8 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 304.8 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 304.8 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a72dcfe-d62c-4fd1-b129-5f40566f4b19")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0182")
 					(unit 1)
 				)
 			)
@@ -4961,8 +9111,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 139.7 81.28 0)
+		(lib_id "Device:C")
+		(at 304.8 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4970,9 +9120,191 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d947abb8-43e3-4159-b140-75673dccf7d7")
-		(property "Reference" "#PWR093"
-			(at 139.7 88.9 0)
+		(uuid "dbcceb27-1bfd-47c2-b57f-0d441f2f6e1e")
+		(property "Reference" "C45"
+			(at 307.34 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF / 50V C0G"
+			(at 307.34 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 304.8 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RC filter cap on ENC2_A (with the 1k series resistor: 1 us). Place at the buffer input."
+			(at 304.8 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 304.8 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM1885C1H102JA01D"
+			(at 304.8 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab54ed48-49ab-48f3-9729-6591513b80e0")
+		)
+		(pin "2"
+			(uuid "48c736fc-c38c-48ad-aff7-9a6e0b1fd4fd")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "C45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.92 154.94 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "e2ad0255-a8bd-4f55-b7ec-6d59c5a82470")
+		(property "Reference" "R48"
+			(at 375.92 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 375.92 157.48 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 375.92 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 375.92 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Optional pull-up on ENC1_A_CONN to the encoder supply. Do not fit unless a scope shows the am-3651 outputs are open-collector (they are unmeasured)."
+			(at 375.92 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d924c440-4b15-4bd9-a33b-e2015eee043a")
+		)
+		(pin "2"
+			(uuid "2739557d-349b-491c-b603-cbf37588e937")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 393.7 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e32c1f5f-2c68-45bd-bd5d-98cdb5dd566d")
+		(property "Reference" "#PWR0191"
+			(at 393.7 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4983,7 +9315,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 85.09 0)
+			(at 393.7 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4993,7 +9325,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 81.28 0)
+			(at 393.7 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5003,8 +9335,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 139.7 81.28 0)
+		(property "Datasheet" "~"
+			(at 393.7 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5015,7 +9347,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 81.28 0)
+			(at 393.7 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5026,20 +9358,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "923ffb37-1b72-4e2c-9ccc-9dcfd7930b76")
+			(uuid "d1c98cfc-9d5c-43c4-9e77-e95cb62310a6")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR093")
+					(reference "#PWR0191")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 139.7 68.58 0)
+		(lib_id "Device:C")
+		(at 304.8 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5047,9 +9379,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f121d999-9285-4ed8-a55f-6c9b03ce1177")
-		(property "Reference" "#PWR092"
-			(at 139.7 60.96 0)
+		(uuid "e4090783-ed77-46a8-8f90-eec19870860f")
+		(property "Reference" "C43"
+			(at 307.34 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF / 50V C0G"
+			(at 307.34 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 304.8 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5059,18 +9413,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V_SYS"
-			(at 139.7 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 68.58 0)
+		(property "Datasheet" "~"
+			(at 304.8 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5080,8 +9424,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 139.7 68.58 0)
+		(property "Description" "RC filter cap on ENC1_A (with the 1k series resistor: 1 us). Place at the buffer input."
+			(at 304.8 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5091,8 +9435,19 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 139.7 68.58 0)
+		(property "Manufacturer" "Murata"
+			(at 304.8 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM1885C1H102JA01D"
+			(at 304.8 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5103,12 +9458,208 @@
 			)
 		)
 		(pin "1"
-			(uuid "9031b2bb-f2ad-4041-9482-8c9ad9cf9b46")
+			(uuid "bf986272-36d4-4554-9915-b5d093560cbb")
+		)
+		(pin "2"
+			(uuid "7f952f22-b196-483f-b1c1-0d7bb27243b9")
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
-					(reference "#PWR092")
+					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC2G17")
+		(at 381 66.04 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e41bc52a-637d-4304-ab2e-8d6e6b7cf403")
+		(property "Reference" "U9"
+			(at 383.54 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LVC2G17"
+			(at 383.54 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 381 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"
+			(at 381 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 381 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 381 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC2G17DBVR"
+			(at 381 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "58e092fa-dedb-45c2-a5ea-79070ed13aa6")
+		)
+		(pin "5"
+			(uuid "54598ee4-3402-4854-b1df-334a76798dac")
+		)
+		(pin "1"
+			(uuid "56ff4ccf-b063-4f21-8d5b-900112a8afbf")
+		)
+		(pin "6"
+			(uuid "1773314c-f7a3-47b2-8aeb-efa48390ecb4")
+		)
+		(pin "3"
+			(uuid "74a44eb8-101a-418f-b363-ae44019594d4")
+		)
+		(pin "4"
+			(uuid "38b3f0a2-e757-470e-80ca-31fadbb09289")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "U9")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 381 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ef28b3fd-b60c-4f9b-b412-8d026cd05a02")
+		(property "Reference" "#PWR0189"
+			(at 381 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 381 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 381 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b7501a0-0357-4dc9-a59b-34efc847e412")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0189")
 					(unit 1)
 				)
 			)
@@ -5186,6 +9737,160 @@
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
 					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 304.8 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fc0b3488-b71d-4cc2-a93c-9871f644d5ef")
+		(property "Reference" "#PWR0185"
+			(at 304.8 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 304.8 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 304.8 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86b1b3a9-35ce-42fd-bf1d-5634b1576fe8")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0185")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 381 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ffc5d1dc-4497-43b6-b541-f2bca961e211")
+		(property "Reference" "#PWR0190"
+			(at 381 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 381 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 381 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f33a6eff-df7f-48a0-8b62-9687fbc2a11e")
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/99151f47-1745-4fb4-8589-dc344779a195"
+					(reference "#PWR0190")
 					(unit 1)
 				)
 			)
