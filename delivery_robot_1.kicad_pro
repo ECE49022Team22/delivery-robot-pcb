@@ -78,23 +78,7 @@
       ],
       "drc_exclusions": [
         [
-          "via_dangling|173950000|95250000|5e15e47f-e2a9-43f3-86f4-ba59549985a2|00000000-0000-0000-0000-000000000000",
-          "Intentional test via (15 mil, untented) - checklist 2g/2j"
-        ],
-        [
           "via_dangling|109900000|108700000|4aa421cc-3d57-4830-9eee-9c4f67ae581f|00000000-0000-0000-0000-000000000000",
-          "Intentional test via (15 mil, untented) - checklist 2g/2j"
-        ],
-        [
-          "via_dangling|151850000|85450000|b9570e52-4557-4b06-be47-0d492c0b4c92|00000000-0000-0000-0000-000000000000",
-          "Intentional test via (15 mil, untented) - checklist 2g/2j"
-        ],
-        [
-          "via_dangling|164300000|98650000|ca424ccb-4f72-4247-9ff4-402f82e8b76f|00000000-0000-0000-0000-000000000000",
-          "Intentional test via (15 mil, untented) - checklist 2g/2j"
-        ],
-        [
-          "via_dangling|140000000|98800000|69097bfc-ee7c-48aa-adcf-1751f20c74af|00000000-0000-0000-0000-000000000000",
           "Intentional test via (15 mil, untented) - checklist 2g/2j"
         ],
         [
@@ -102,15 +86,31 @@
           "Intentional test via (15 mil, untented) - checklist 2g/2j"
         ],
         [
+          "via_dangling|140000000|98800000|69097bfc-ee7c-48aa-adcf-1751f20c74af|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|151850000|85450000|b9570e52-4557-4b06-be47-0d492c0b4c92|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
           "via_dangling|158950000|135150000|669bb758-b284-46e8-b074-f57766d919df|00000000-0000-0000-0000-000000000000",
           "Intentional test via (15 mil, untented) - checklist 2g/2j"
         ],
         [
-          "via_dangling|177600000|74400000|7cc5d14f-a9f9-4190-812b-a3492b11549a|00000000-0000-0000-0000-000000000000",
+          "via_dangling|164300000|98650000|ca424ccb-4f72-4247-9ff4-402f82e8b76f|00000000-0000-0000-0000-000000000000",
           "Intentional test via (15 mil, untented) - checklist 2g/2j"
         ],
         [
           "via_dangling|171300000|102700000|a698b12e-7c49-43b2-8bb3-f90d1e1b4f76|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|173950000|95250000|5e15e47f-e2a9-43f3-86f4-ba59549985a2|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|177600000|74400000|7cc5d14f-a9f9-4190-812b-a3492b11549a|00000000-0000-0000-0000-000000000000",
           "Intentional test via (15 mil, untented) - checklist 2g/2j"
         ]
       ],
