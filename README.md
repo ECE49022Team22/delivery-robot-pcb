@@ -30,7 +30,7 @@ Custom symbol and footprint libraries are included and registered in the project
 | Buck_5V_6A_AUX.kicad_sch | Second 12 V to 5 V, 6 A buck sheet (TPSM63606), +5V_AUX rail |
 | LDO_3V3.kicad_sch | Hierarchical 3.3 V power supply sheet |
 | Pi5_Interface.kicad_sch | Raspberry Pi 5 link J13 (6-pin JST XH: UART via R12/R13 1k, GND, Pi 3V3 for the AUX enable, STM32 reset Q2, BOOT0) and Pi power output J14 |
-| GPIO_Breakout.kicad_sch | 2.54 mm headers J8-J10 with every port A/B/C/D pin in port order, used or not (global labels) |
+| GPIO_Breakout.kicad_sch | 2x8 2.54 mm expansion header J8 with spare MCU pins only: 1 +3V3, 2/16 GND, ADC (PC0/PA1/PA4), SPI2 (PB13 SCK, PC2 MISO, PB15 MOSI, PB9 CS), PWM (PC6/PC7), USART3 (PC10/PC11), I2C1 (PB6/PB7). Unused MCU pins are no-connect. |
 | Power_Indicators.kicad_sch | Green power LED per rail (+12V, +5V_PI, +5V_AUX, +5V_SYS, +3V3) and yellow STM32 debug LEDs (PA5, PB12, PB14) |
 | Motor_Control.kicad_sch | MDD20A driver terminals (J6, J16) and encoder terminals (J7, J15) for two motors, PWM pull-downs, PTC on each driver ground, encoder buffers U9/U10 (74LVC2G17) with 1k + 1 nF filters, PTC-protected encoder supplies, USBLC6-4SC6 ESD arrays U6 (J6 + J16) and U7 (J7 + J15), STM32 pin table |
 | Test_Points.kicad_sch | Power test points: J5 1x06 2.54 mm header (+12V, GND, +5V_AUX, +5V_SYS, +3V3, +3.3VA) and TP3 scope GND loop |

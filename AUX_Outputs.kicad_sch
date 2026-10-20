@@ -808,7 +808,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
 			(at 104.14 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1533,7 +1533,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
 			(at 104.14 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -1647,7 +1647,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
 			(at 104.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1862,7 +1862,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
 			(at 104.14 73.66 0)
 			(hide yes)
 			(show_name no)

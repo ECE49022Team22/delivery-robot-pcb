@@ -76,7 +76,44 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "via_dangling|173950000|95250000|5e15e47f-e2a9-43f3-86f4-ba59549985a2|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|109900000|108700000|4aa421cc-3d57-4830-9eee-9c4f67ae581f|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|151850000|85450000|b9570e52-4557-4b06-be47-0d492c0b4c92|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|164300000|98650000|ca424ccb-4f72-4247-9ff4-402f82e8b76f|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|140000000|98800000|69097bfc-ee7c-48aa-adcf-1751f20c74af|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|123600000|70000000|2ec44827-3e7e-4631-bd58-f7415d1ebaba|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|158950000|135150000|669bb758-b284-46e8-b074-f57766d919df|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|177600000|74400000|7cc5d14f-a9f9-4190-812b-a3492b11549a|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ],
+        [
+          "via_dangling|171300000|102700000|a698b12e-7c49-43b2-8bb3-f90d1e1b4f76|00000000-0000-0000-0000-000000000000",
+          "Intentional test via (15 mil, untented) - checklist 2g/2j"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -560,6 +597,25 @@
         "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Signal",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 10,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -615,6 +671,154 @@
       {
         "netclass": "Power",
         "pattern": "*/ENC?_5V"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PC0"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PA1"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PA4"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PC2"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PB13"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PB15"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PC6"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PC7"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PC10"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PC11"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PB6"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PB7"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "PB9"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "ENC?_A"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "ENC?_B"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/ENC?_?_F"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/ENC?_?_CONN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "MOTOR?_PWM"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "MOTOR?_DIR"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/MOTOR?_*_CONN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "LED_*"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D*-A)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/PI_TXD"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/PI_RXD"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/PI_RESET"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/PI_BOOT0"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/PI_3V3"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "USART2_*"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "SERVO_TX"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "SERVO_DIR"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/SERVO_BUS"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "*/SERVO_SIG"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "AUX_EN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "BOOT"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "NRST"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "SWDIO"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "SWCLK"
       }
     ]
   },

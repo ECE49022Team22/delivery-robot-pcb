@@ -1356,7 +1356,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 96.52 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -1367,7 +1367,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.futureelectronics.com/p/semiconductors--optoelectronics--leds/ltst-c190kgkt-lite-on-6605018"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C170KGKT/386777"
 			(at 96.52 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -1400,7 +1400,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C190KGKT"
+		(property "MPN" "LTST-C170KGKT"
 			(at 96.52 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -1536,7 +1536,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 185.42 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1547,7 +1547,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_SMD-yellow_C125095.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810231512_Lite-On-LTST-C170KSKT_C125091.pdf"
 			(at 185.42 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1580,7 +1580,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C190KSKT"
+		(property "MPN" "LTST-C170KSKT"
 			(at 185.42 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1716,7 +1716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 185.42 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1727,7 +1727,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_SMD-yellow_C125095.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810231512_Lite-On-LTST-C170KSKT_C125091.pdf"
 			(at 185.42 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1760,7 +1760,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C190KSKT"
+		(property "MPN" "LTST-C170KSKT"
 			(at 185.42 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1817,7 +1817,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 96.52 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1828,7 +1828,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.futureelectronics.com/p/semiconductors--optoelectronics--leds/ltst-c190kgkt-lite-on-6605018"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C170KGKT/386777"
 			(at 96.52 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1861,7 +1861,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C190KGKT"
+		(property "MPN" "LTST-C170KGKT"
 			(at 96.52 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2228,7 +2228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 96.52 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2239,7 +2239,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.futureelectronics.com/p/semiconductors--optoelectronics--leds/ltst-c190kgkt-lite-on-6605018"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C170KGKT/386777"
 			(at 96.52 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2272,7 +2272,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C190KGKT"
+		(property "MPN" "LTST-C170KGKT"
 			(at 96.52 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2483,7 +2483,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 96.52 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2494,7 +2494,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.futureelectronics.com/p/semiconductors--optoelectronics--leds/ltst-c190kgkt-lite-on-6605018"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C170KGKT/386777"
 			(at 96.52 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2527,7 +2527,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C190KGKT"
+		(property "MPN" "LTST-C170KGKT"
 			(at 96.52 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2740,7 +2740,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2751,7 +2751,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_SMD-yellow_C125095.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810231512_Lite-On-LTST-C170KSKT_C125091.pdf"
 			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2784,7 +2784,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C190KSKT"
+		(property "MPN" "LTST-C170KSKT"
 			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2920,7 +2920,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 96.52 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -2931,7 +2931,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.futureelectronics.com/p/semiconductors--optoelectronics--leds/ltst-c190kgkt-lite-on-6605018"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C170KGKT/386777"
 			(at 96.52 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -2964,7 +2964,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C190KGKT"
+		(property "MPN" "LTST-C170KGKT"
 			(at 96.52 88.9 0)
 			(hide yes)
 			(show_name no)

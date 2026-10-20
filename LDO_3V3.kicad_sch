@@ -1363,7 +1363,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 96.52 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -1374,7 +1374,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM21BR72A103KA01%23"
 			(at 96.52 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -1395,7 +1395,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R72A103KA01D"
+		(property "MPN" "GRM21BR72A103KA01L"
 			(at 96.52 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -1476,7 +1476,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1A106K125AC"
 			(at 210.82 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -1658,7 +1658,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 76.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1669,7 +1669,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf"
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM21BR71C105KA01%23"
 			(at 76.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1690,7 +1690,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R71C105KA12D"
+		(property "MPN" "GRM21BR71C105KA01L"
 			(at 76.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1760,7 +1760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1771,7 +1771,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM21BR72A103KA01%23"
 			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1792,7 +1792,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R72A103KA01D"
+		(property "MPN" "GRM21BR72A103KA01L"
 			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)

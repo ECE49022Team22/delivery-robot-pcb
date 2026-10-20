@@ -1,0 +1,9 @@
+(version 1)
+
+# J7/J15 are side-entry JST XH connectors that intentionally overhang the right board edge
+# so the plug latch is reachable; their silkscreen body outline is clipped by the edge on purpose.
+# Only silk-vs-board-edge is relaxed; silk overlaps on these parts are still checked.
+(rule "Encoder connector overhang silk"
+	(constraint silk_clearance (min 0mm))
+	(condition "(A.Layer == 'Edge.Cuts' || B.Layer == 'Edge.Cuts') && (A.memberOfFootprint('J7') || A.memberOfFootprint('J15') || B.memberOfFootprint('J7') || B.memberOfFootprint('J15'))")
+	(severity ignore))

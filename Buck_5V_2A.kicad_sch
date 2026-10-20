@@ -1213,7 +1213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 111.76 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1224,7 +1224,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 111.76 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1257,7 +1257,7 @@
 				)
 			)
 		)
-		(property "MPN" "C0603C104K5RACTU"
+		(property "MPN" "C0805C104K5RACTU"
 			(at 111.76 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1317,7 +1317,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 182.58 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1328,7 +1328,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H680JA01-01A.pdf"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1350,7 +1350,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "KEMET"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1361,7 +1361,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM1885C1H680JA01D"
+		(property "MPN" "C0805C680J5GACTU"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1996,7 +1996,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 167.64 80.31 0)
 			(hide yes)
 			(show_name no)
@@ -2007,7 +2007,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 163.83 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2029,7 +2029,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TDK"
+		(property "Manufacturer" "KEMET"
 			(at 163.83 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2040,7 +2040,7 @@
 				)
 			)
 		)
-		(property "MPN" "C1608X7R1H104K080AA"
+		(property "MPN" "C0805C104K5RACTU"
 			(at 163.83 81.28 0)
 			(hide yes)
 			(show_name no)

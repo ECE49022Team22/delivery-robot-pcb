@@ -2316,7 +2316,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 106.68 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2327,7 +2327,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 106.68 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2360,7 +2360,7 @@
 				)
 			)
 		)
-		(property "MPN" "C0603C104K5RACTU"
+		(property "MPN" "C0805C104K5RACTU"
 			(at 106.68 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2634,7 +2634,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-terminal-block-mkds-15-3-1715035"
 			(at 213.36 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3041,7 +3041,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 127 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3052,7 +3052,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 127 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3085,7 +3085,7 @@
 				)
 			)
 		)
-		(property "MPN" "C0603C104K5RACTU"
+		(property "MPN" "C0805C104K5RACTU"
 			(at 127 87.63 0)
 			(hide yes)
 			(show_name no)
