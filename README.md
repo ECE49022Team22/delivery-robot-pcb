@@ -25,9 +25,9 @@ Custom symbol and footprint libraries are included and registered in the project
 | --- | --- |
 | delivery_robot_1.kicad_pro | Active KiCad project settings |
 | delivery_robot_1.kicad_sch | Main board schematic |
-| Buck_5V_2A.kicad_sch | Hierarchical 12 V to 5 V, 2 A buck sheet (TPS54202) |
-| Buck_5V_6A.kicad_sch | Hierarchical 12 V to 5 V, 6 A buck sheet (TPSM63606), feeds the Pi 5 |
-| Buck_5V_6A_AUX.kicad_sch | Second 12 V to 5 V, 6 A buck sheet (TPSM63606), +5V_AUX rail |
+| Buck_5V_2A.kicad_sch | Hierarchical 12 V to 5 V, 2 A buck sheet (TPS54202H, U3) |
+| Buck_5V_6A.kicad_sch | Hierarchical 12 V to 5 V, 6 A buck sheet (TPS56637, U2), feeds the Pi 5 |
+| Buck_5V_6A_AUX.kicad_sch | Second 12 V to 5 V, 6 A buck sheet (TPS56637, U5), +5V_AUX rail |
 | LDO_3V3.kicad_sch | Hierarchical 3.3 V power supply sheet |
 | Pi5_Interface.kicad_sch | Raspberry Pi 5 link J13 (6-pin JST XH: UART via R12/R13 1k, GND, Pi 3V3 for the AUX enable, STM32 reset Q2, BOOT0) and Pi power output J14 |
 | GPIO_Breakout.kicad_sch | 2x8 2.54 mm expansion header J8 with spare MCU pins only: 1 +3V3, 2/16 GND, ADC (PC0/PA1/PA4), SPI2 (PB13 SCK, PC2 MISO, PB15 MOSI, PB9 CS), PWM (PC6/PC7), USART3 (PC10/PC11), I2C1 (PB6/PB7, now a shared bus with on-board 4.7k pull-ups R56/R57 and the INA228 U13 at 0x40). Unused MCU pins are no-connect. |

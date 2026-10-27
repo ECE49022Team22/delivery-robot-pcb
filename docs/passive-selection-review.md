@@ -1,5 +1,7 @@
 # Capacitor and inductor selections
 
+> Superseded for the buck converters (U2, U3, U5 and their capacitors/inductors) on 2026-10-27; see [design-change-2026-10-27-regulators.md](design-change-2026-10-27-regulators.md). The LDO selections below still apply.
+
 Selected on 2026-10-05 for the existing 5 V buck rails and 3.3 V LDO. The user supplied a 10.8-14.6 V normal battery range for the 4S LiFePO4 pack. This range is user-provided, not independently verified from a battery manufacturer datasheet. Motor transients are not bounded by the charge voltage. These selections establish component packages and purchasing candidates; they do not constitute a completed transient, loop-stability, thermal, or input-protection validation.
 
 The resistor-only 0805 requirement is preserved. Capacitor values and wiring are unchanged. L1 changes from 10 uH to 15 uH for ripple-current margin. Schematic fields contain Manufacturer, MPN, Datasheet and (for root-sheet parts) Specification. `passive-selections.json` records the selections in machine-readable form.
