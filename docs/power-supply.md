@@ -11,7 +11,7 @@ The power supply is split into hierarchical sheets. The root schematic keeps the
 | Buck_5V_6A_AUX.kicad_sch | Buck 5V AUX | TPSM63606RDLR (U5) | +12V | +5V_AUX |
 | LDO_3V3.kicad_sch | LDO Power | TPS7A8101DRBR (U4) | +5V_SYS | +3V3 |
 
-Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The buck outputs are separate nets and must not be tied together. +5V_PI feeds the off-board Raspberry Pi 5 directly through J14 (no fuse: U2's cycle-by-cycle current limit and hiccup mode protect the pigtail). +5V_AUX comes from a second, independent copy of the 6 A buck (U5, C28-C33, R14-R16) and feeds four peripheral ports (Notecard, LiDAR, GNSS, IMU) on the AUX Outputs sheet, each through its own 1.5 A PTC. U5 is enabled by AUX_EN: the Pi's 3V3 through D15, with a 100k pull-down (R43) and a bench force-on jumper (J22).
+Each buck sheet has hierarchical labels VIN_12V (input), GND and VOUT_5V (output). The buck outputs are separate nets and must not be tied together. +5V_PI feeds the off-board Raspberry Pi 5 directly through J14 (no fuse: U2's cycle-by-cycle current limit and hiccup mode protect the pigtail). +5V_AUX comes from a second, independent copy of the 6 A buck (U5, C28-C33, R14-R16) and feeds four peripheral ports (Notecard, LiDAR, GNSS, IMU) on the AUX Outputs sheet, each through its own 1.5 A PTC, plus the payload-compartment interior light (J24, through PTC F12 on the Interior Light sheet). The design load is 3.0 A (2.5 A for the ports, 0.5 A for the light, capped in firmware) on the 6 A module. U5 is enabled by AUX_EN: the Pi's 3V3 through D15, with a 100k pull-down (R43) and a bench force-on jumper (J22).
 
 ## Battery input (J2)
 
@@ -19,12 +19,15 @@ The board is powered from a DJLBERMPW 12V 50Ah LiFePO4 battery (12.8 V nominal, 
 
 `battery M8 terminals -> M8 ring lugs -> inline fuse at the battery -> 16 AWG pair -> AMASS XT30U-F plug -> J2`
 
+Negative side (added 2026-10-27): `battery - -> 50 A / 75 mV shunt -> common ground lug -> (J2 pin 1 lead, MDD20A VB-, charger -)`
+
 | Item | Part | Notes |
 | --- | --- | --- |
 | J2 (PCB) | AMASS XT30PW-M, right-angle PCB male | Footprint `Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal`. Rated 15 A continuous, 30 A short-term, 500 V. Keyed housing prevents reversed mating. |
 | Harness plug | AMASS XT30U-F | Female on the battery side so no exposed live contacts when unplugged. |
 | Battery lugs | M8 (5/16 in) ring terminals for 16 AWG | Crimp and heat-shrink. |
 | Harness fuse | Inline fuse close to the battery + terminal | Protects the harness; F1 on the PCB only protects downstream of J2. 15 A, above F1 (10 A). |
+| Current shunt | 50 A / 75 mV (1.5 mOhm, class 0.5) in the battery - lead | Off-board, read by U13 (INA228) through J23. Everything that returns to battery - must go through it. See [design-change-2026-10-27.md](design-change-2026-10-27.md). |
 
 J2 pin 2 (the pad marked + on the footprint silkscreen) is battery + to F1; pin 1 (marked -) is GND. Confirm the polarity of the assembled XT30U-F harness against the board silkscreen with a meter before first power-up.
 
@@ -32,9 +35,11 @@ J2 pin 2 (the pad marked + on the footprint silkscreen) is battery + to F1; pin 
 
 **Input bulk capacitance.** C36, a 220 uF / 35 V low-ESR aluminium electrolytic (Panasonic EEU-FR1V221, 8 x 11.5 mm radial), sits on +12V after Q1, next to the U2/U5 input capacitors, so it is never reverse-biased. It supplies load steps and damps the harness inductance together with the buck input ceramics.
 
-**Battery sense.** R37 100k / R38 22.1k (1 %) and C37 100 nF divide +12V into VBAT_SENSE on PA0 (ADC_IN0): VBAT = V(PA0) x 5.525, so 14.6 V reads 2.64 V.
+**Battery sense.** R37 100k / R38 22.1k (1 %) and C37 100 nF divide +12V into VBAT_SENSE on PA0 (ADC_IN0): VBAT = V(PA0) x 5.525, so 14.6 V reads 2.64 V. U13 (INA228, Battery Monitor sheet) also reads +12V on its VBUS pin, which gives a second voltage reading over I2C.
 
-J2 carries the board electronics and the latch-servo feed (about 8.3 A worst case with the servo stalled; see [fuse-selection.md](fuse-selection.md)). The MDD20A motor driver connects to the battery through its own wiring and protection, not through J2.
+**Battery current.** The shunt sits in the battery negative lead, between battery - and the robot's common ground lug, where the J2 pin 1 lead, the MDD20A VB- lead and the charger - all land. Two Kelvin sense wires run from the shunt's sense screws to J23. U13 measures the shunt voltage, so motor current never flows through the board (requirement 2.13). Because the shunt is on the low side, the sense wires sit within about 0.1 V of GND, so a chafed sense wire cannot short the battery. Board GND sits up to about 60 mV above the shunt because of harness drop. That puts IN- at about -135 mV at 50 A, inside the INA228's -0.3 V common-mode limit.
+
+J2 carries the board electronics and the latch-servo feed (about 8.4 A worst case with the servo stalled and the interior light off by interlock; see [fuse-selection.md](fuse-selection.md)). The MDD20A motor driver connects to the battery through its own wiring and protection, not through J2.
 
 ## Regulator notes
 

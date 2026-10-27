@@ -23,14 +23,17 @@ Estimated input current at the 10.8 V minimum normal battery voltage, 85 % combi
 |---|---|---|
 | Raspberry Pi 5 at 5 A (+5V_PI) | 25.5 W | 2.78 A |
 | +5V_AUX peripherals, 2.5 A design value | 12.5 W | 1.36 A |
+| +5V_AUX interior light, 0.5 A (firmware cap; added 2026-10-27) | 2.5 W | about 0.27 A |
 | +5V_SYS (MCU, LDO, encoders, logic, LEDs), 0.5 A | 2.5 W | 0.27 A |
-| Board total, servo idle | | about 4.5 A |
+| Board total, servo idle | | about 4.7 A |
 | Latch servo stalled (3.2 A at 12 V through an external buck) | 38.4 W | 3.95 A |
-| Worst case, servo stalled | | about 8.4 A |
+| Worst case, servo stalled (light off by interlock) | | about 8.4 A |
 
-[Littelfuse MINI 32 V datasheet, revised 2024-09-27](https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1), page 3, gives typical allowed currents with a 20 % temperature margin: the 10 A fuse allows 9.2 A at 20 C, 8.6 A at 40 C and 8.0 A at 60 C. The normal 4.5 A load has plenty of margin. The 8.4 A stalled-servo case is close to the 40 C limit but brief (the latch stalls only at its end stop), so 10 A is the right size; 7.5 A (6.0 A at 40 C) would nuisance-blow. Use the actual temperature near the fuse, including enclosure and converter heating.
+[Littelfuse MINI 32 V datasheet, revised 2024-09-27](https://www.littelfuse.com/assetdocs/littelfuse-datasheet-297-mini32v?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1), page 3, gives typical allowed currents with a 20 % temperature margin: the 10 A fuse allows 9.2 A at 20 C, 8.6 A at 40 C and 8.0 A at 60 C. The normal 4.7 A load has plenty of margin. The 8.4 A stalled-servo case is close to the 40 C limit but brief (the latch stalls only at its end stop), so 10 A is the right size; 7.5 A (6.0 A at 40 C) would nuisance-blow. Use the actual temperature near the fuse, including enclosure and converter heating.
 
-The same datasheet, pages 1-2, specifies **32 VDC** operation and **1000 A interruption at 32 VDC**, exceeding the 14.6 V normal battery maximum. The 10 A insert has 7.42 milliohm typical cold resistance, giving approximately 0.15 W cold-element loss at 4.5 A, excluding holder contact loss and hot-resistance increase. [Keystone's 3568 product specification](https://www.keyelco.com/product.cfm/product_id/306) lists a 30 A holder and explicitly names Littelfuse 297/997 compatibility. Holder current capability therefore exceeds the selected fuse and expected continuous current. The holder's current rating does not establish the fuse assembly's fault-interruption capacity.
+**Interior light interlock (2026-10-27).** The stalled-servo worst case stays at about 8.4 A only because firmware turns the interior light off whenever the latch servo moves. The latch only moves with the lid closed (requirement 12.9), so the interlock only shortens the S17.2 off-delay. Without it, the worst case is about 8.7 A (4.68 A + 3.95 A), above the 10 A fuse's 8.6 A allowance at 40 C. F1 stays 10 A; keep the interlock in firmware.
+
+The same datasheet, pages 1-2, specifies **32 VDC** operation and **1000 A interruption at 32 VDC**, exceeding the 14.6 V normal battery maximum. The 10 A insert has 7.42 milliohm typical cold resistance, giving approximately 0.16 W cold-element loss at 4.7 A, excluding holder contact loss and hot-resistance increase. [Keystone's 3568 product specification](https://www.keyelco.com/product.cfm/product_id/306) lists a 30 A holder and explicitly names Littelfuse 297/997 compatibility. Holder current capability therefore exceeds the selected fuse and expected continuous current. The holder's current rating does not establish the fuse assembly's fault-interruption capacity.
 
 The fuse remains a **protection candidate pending coordination with the final conductors and source**. Battery BMS limits of 50 A continuous and 150 A briefly do not bound prospective short-circuit current. Confirm the battery/source and wiring cannot deliver a fault exceeding the fuse's 1000 A DC interrupt rating, or select protection with sufficient interruption capacity. The seller battery PDF does not provide the needed short-circuit/clearing specification.
 
@@ -62,6 +65,7 @@ KiCad export verifies that only F1's purchasing fields/value/footprint changed a
 | Harness | Inline fuse at the battery + lug | 15 A | Battery cable up to J2 |
 | F3 | Littelfuse 0451005.MRL (NANO2, SMD) | 5 A very fast, 125 V | Latch-servo battery feed (J17 pin 2). No SMD PTC exists at >= 3.5 A hold and >= 24 V, so this is replaceable, not resettable. Servo stall draws about 3 A here. |
 | F4-F7 | Littelfuse 1812L150/16DR (1812 PTC) | 1.5 A hold, 2.8 A trip, 16 V | One per +5V_AUX port (J18-J21) |
+| F12 | Littelfuse 1812L150/16DR (1812 PTC) | 1.5 A hold, 2.8 A trip, 16 V | Interior light supply (J24 pin 1, LIGHT_5V), added 2026-10-27. The strip is capped at 0.5 A in firmware. |
 | F8, F9 | Bourns MF-NSMF020X-2 (1206 PTC) | 0.2 A hold, 30 V | Encoder 5 V feeds (J7/J15 pin 1) |
 | F10, F11 | Bourns MF-NSMF020X-2 (1206 PTC) | 0.2 A hold, 30 V | MDD20A signal-ground returns (J6/J16 pin 3). Opens if the driver's battery-negative lead loosens and motor current tries to return through the board. |
 

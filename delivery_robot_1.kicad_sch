@@ -9281,6 +9281,17 @@
 		)
 		(uuid "affb78a0-cc0c-4fbd-8647-acfa93626a0d")
 	)
+	(text "J24 WS2812B light (S17.2), F12 from +5V_AUX\nU14 5 V data buffer from PB5 (SPI1_MOSI)"
+		(exclude_from_sim no)
+		(at 261.62 245.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "01d4d60e-a83f-400b-afce-2a2010085839")
+	)
 	(text "J13 Pi link, 6-pin JST-XH: UART (R12/R13 1k), GND, Pi 3V3 (enables AUX),\nSTM32 reset (Q2) and BOOT0 for reflashing over USART2\nJ14 Pi power (+5V_PI direct, no fuse)"
 		(exclude_from_sim no)
 		(at 276.86 189.23 0)
@@ -9368,6 +9379,17 @@
 			(justify left top)
 		)
 		(uuid "c5a29a81-b54d-459b-8a6f-543db355178a")
+	)
+	(text "J23 off-board shunt sense, U13 INA228\nI2C1 PB6/PB7 at 0x40, ALERT -> PB4"
+		(exclude_from_sim no)
+		(at 261.62 219.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d4f37dbe-d684-4d7b-88f3-0b9793f41489")
 	)
 	(text "Mounting holes - 4x M3, 3.2 mm non-plated (NPTH), no copper, no net.\nPlace one per board corner; not in the BOM (no part to buy)."
 		(exclude_from_sim no)
@@ -9610,36 +9632,8 @@
 		(uuid "ffc026e0-da21-46a4-af93-d0ce3b00a184")
 	)
 	(no_connect
-		(at 106.68 96.52)
-		(uuid "6b065024-2dab-4610-8a73-ab043859488d")
-	)
-	(no_connect
-		(at 180.34 175.26)
-		(uuid "556474ca-208a-473a-8f20-797ac778205b")
-	)
-	(no_connect
-		(at 180.34 172.72)
-		(uuid "fec8d9ed-8a08-473a-a26b-8be496e1a75e")
-	)
-	(no_connect
-		(at 213.36 149.86)
-		(uuid "87e1d7b8-f1e9-4f57-af69-bf87775cc27d")
-	)
-	(no_connect
-		(at 180.34 177.8)
-		(uuid "414bc02d-3daf-4f9f-bc70-57a42b1f5a71")
-	)
-	(no_connect
-		(at 180.34 144.78)
-		(uuid "4751ff9a-16fb-424b-96e9-4ec85e9162d6")
-	)
-	(no_connect
-		(at 180.34 149.86)
-		(uuid "b52412c4-108e-43c4-9927-28546f0a81c3")
-	)
-	(no_connect
-		(at 180.34 180.34)
-		(uuid "eea43ab2-b152-40d9-b56a-81e085db36a0")
+		(at 180.34 165.1)
+		(uuid "0049fdcc-8b98-4993-a890-bf7c27c70a45")
 	)
 	(no_connect
 		(at 180.34 152.4)
@@ -9650,40 +9644,60 @@
 		(uuid "2c4b808c-dc7e-49d5-acf7-868639d6d289")
 	)
 	(no_connect
-		(at 180.34 162.56)
-		(uuid "7cb764f5-e1a5-4e33-abf3-32b152d3915c")
-	)
-	(no_connect
-		(at 213.36 147.32)
-		(uuid "aa5603a0-2620-42a1-95d1-c9dd8e5dda96")
-	)
-	(no_connect
-		(at 213.36 152.4)
-		(uuid "5f5a19fe-742a-4d46-a555-050eebbb50d1")
-	)
-	(no_connect
-		(at 213.36 177.8)
-		(uuid "21e7ed4e-acf6-48d5-838b-59861bd60644")
-	)
-	(no_connect
-		(at 180.34 165.1)
-		(uuid "0049fdcc-8b98-4993-a890-bf7c27c70a45")
-	)
-	(no_connect
-		(at 213.36 185.42)
-		(uuid "fa7f0322-9a24-4338-974b-9fdce65b3a4a")
+		(at 180.34 177.8)
+		(uuid "414bc02d-3daf-4f9f-bc70-57a42b1f5a71")
 	)
 	(no_connect
 		(at 180.34 137.16)
 		(uuid "41809822-07d5-47cb-9830-58430d0cdd23")
 	)
 	(no_connect
+		(at 180.34 144.78)
+		(uuid "4751ff9a-16fb-424b-96e9-4ec85e9162d6")
+	)
+	(no_connect
+		(at 180.34 175.26)
+		(uuid "556474ca-208a-473a-8f20-797ac778205b")
+	)
+	(no_connect
+		(at 213.36 152.4)
+		(uuid "5f5a19fe-742a-4d46-a555-050eebbb50d1")
+	)
+	(no_connect
+		(at 106.68 96.52)
+		(uuid "6b065024-2dab-4610-8a73-ab043859488d")
+	)
+	(no_connect
+		(at 180.34 162.56)
+		(uuid "7cb764f5-e1a5-4e33-abf3-32b152d3915c")
+	)
+	(no_connect
+		(at 213.36 149.86)
+		(uuid "87e1d7b8-f1e9-4f57-af69-bf87775cc27d")
+	)
+	(no_connect
+		(at 213.36 147.32)
+		(uuid "aa5603a0-2620-42a1-95d1-c9dd8e5dda96")
+	)
+	(no_connect
+		(at 180.34 149.86)
+		(uuid "b52412c4-108e-43c4-9927-28546f0a81c3")
+	)
+	(no_connect
 		(at 213.36 167.64)
 		(uuid "b8485531-0a72-4508-9eaa-010a8e4fca41")
 	)
 	(no_connect
-		(at 213.36 175.26)
-		(uuid "026dd161-19ff-4fed-b26c-40ccdf8c587b")
+		(at 180.34 180.34)
+		(uuid "eea43ab2-b152-40d9-b56a-81e085db36a0")
+	)
+	(no_connect
+		(at 213.36 185.42)
+		(uuid "fa7f0322-9a24-4338-974b-9fdce65b3a4a")
+	)
+	(no_connect
+		(at 180.34 172.72)
+		(uuid "fec8d9ed-8a08-473a-a26b-8be496e1a75e")
 	)
 	(wire
 		(pts
@@ -10477,6 +10491,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 177.8) (xy 218.44 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5c5e127-4e64-40d9-804b-0e2f7c02d4d5")
+	)
+	(wire
+		(pts
 			(xy 213.36 154.94) (xy 218.44 154.94)
 		)
 		(stroke
@@ -10814,6 +10838,16 @@
 			(type default)
 		)
 		(uuid "e75ff23e-a2f0-4e07-a15f-e44e87746220")
+	)
+	(wire
+		(pts
+			(xy 213.36 175.26) (xy 218.44 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9efac4a-69f9-4cb9-9b88-c0be0a28017f")
 	)
 	(wire
 		(pts
@@ -11657,6 +11691,29 @@
 			)
 		)
 	)
+	(global_label "BATT_ALERT"
+		(shape input)
+		(at 218.44 175.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "84117f18-f255-414e-9693-1bd63b9a6903")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "ENC2_B"
 		(shape bidirectional)
 		(at 218.44 144.78 0)
@@ -11883,6 +11940,29 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "LIGHT_DATA"
+		(shape output)
+		(at 218.44 177.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9dcb2d8e-abb8-4056-9dc6-eb2a71308f1e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -14710,6 +14790,81 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 388.62 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90f288f3-3d5b-43e6-9138-5bbd0abdaa7b")
+		(property "Reference" "H5"
+			(at 392.43 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 392.43 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 388.62 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 388.62 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M3 mounting hole, 3.2 mm non-plated (NPTH, no copper ring), no net. Place one near each board corner."
+			(at 388.62 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 90.17 49.53 0)
 		(unit 1)
@@ -17061,6 +17216,51 @@
 		)
 	)
 	(sheet
+		(at 261.62 203.2)
+		(size 50.8 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3592f3aa-becc-443b-ac83-e8e5fe3dc413")
+		(property "Sheetname" "Battery Monitor"
+			(at 261.62 201.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Battery_Monitor.kicad_sch"
+			(at 261.62 216.535 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 330.2 208.28)
 		(size 50.8 12.7)
 		(exclude_from_sim no)
@@ -17785,85 +17985,54 @@
 			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 388.62 127 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+	(sheet
+		(at 261.62 228.6)
+		(size 50.8 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(uuid "90f288f3-3d5b-43e6-9138-5bbd0abdaa7b")
-		(property "Reference" "H5"
-			(at 392.43 125.73 0)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f119a4a9-33bc-4e0a-b45c-9a111513a14f")
+		(property "Sheetname" "Interior Light"
+			(at 261.62 227.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "M3"
-			(at 392.43 128.27 0)
+		(property "Sheetfile" "Interior_Light.kicad_sch"
+			(at 261.62 241.935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 388.62 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 388.62 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "M3 mounting hole, 3.2 mm non-plated (NPTH, no copper ring), no net. Place one near each board corner."
-			(at 388.62 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify left top)
 			)
 		)
 		(instances
 			(project "delivery_robot_1"
 				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4"
-					(reference "H5")
-					(unit 1)
+					(page "15")
 				)
 			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
 		)
 	)
 )
