@@ -673,6 +673,10 @@
         "pattern": "*/ENC?_5V"
       },
       {
+        "netclass": "Power",
+        "pattern": "*/LIGHT_5V"
+      },
+      {
         "netclass": "Signal",
         "pattern": "PC0"
       },
