@@ -1723,7 +1723,7 @@
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)) (justify left))
 		)
-		(property "Value" "73.2k"
+		(property "Value" "75k"
 			(at 167.64 116.84 0)
 			
 			(show_name no)
@@ -1758,14 +1758,14 @@
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)) (justify left))
 		)
-		(property "MPN" "RC0805FR-0773K2L"
+		(property "MPN" "RC0805FR-0775KL"
 			(at 163.83 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)) (justify left))
 		)
-		(property "Specification" "73.2k 1% (Rfbt)"
+		(property "Specification" "75k 1% (Rfbt), sets +5V_PI to 5.10 V"
 			(at 163.83 120.65 0)
 			(hide yes)
 			(show_name no)

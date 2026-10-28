@@ -6,7 +6,7 @@ The TPSM63606 modules (U2 Pi 5 V, U5 AUX 5 V) and the TPS54202DDCR (U3, +5V_SYS)
 
 | Rail | Converter | Inductor | Input caps | Output cap | Feedback |
 | --- | --- | --- | --- | --- | --- |
-| +5V_PI (U2), 6 A | TPS56637RPAR | Wurth 74439387033, 3.3 uH, 6.4 mOhm, 18.2 A (L2) | 2x 10 uF 25 V X7R 1206 GRM31CR71E106KA12L (C7, C8) + 100 nF (C9) | 47 uF 16 V 1210 GRM32ER61C476KE15L (C11) | 73.2k / 10k (R4, R5), 20k + 100 pF feed-forward (R2, C10), 100k PG pull-up (R61), 100 nF boot (C12) |
+| +5V_PI (U2), 6 A | TPS56637RPAR | Wurth 74439387033, 3.3 uH, 6.4 mOhm, 18.2 A (L2) | 2x 10 uF 25 V X7R 1206 GRM31CR71E106KA12L (C7, C8) + 100 nF (C9) | 47 uF 16 V 1210 GRM32ER61C476KE15L (C11) | 75k / 10k (R4, R5; 5.10 V, see below), 20k + 100 pF feed-forward (R2, C10), 100k PG pull-up (R61), 100 nF boot (C12) |
 | +5V_AUX (U5), 6 A | TPS56637RPAR | Wurth 74439387033 (L3) | C28, C29 + C30 | C32 | R15, R16, R14, C31, R62, boot C33 |
 | +5V_SYS (U3), 2 A | TPS54202HDDCR | TDK VLS6045EX-100M, 10 uH, 47 mOhm, 3.4 A (L1) | 22 uF 25 V 1210 GRM32ER61E226KE15L (C14) + 100 nF (C49) | 47 uF 16 V 1210 GRM32ER61C476KE15L (C17) | 100k / 13.7k (R6, R7), 68 pF (C16), 442k EN pull-up (R63), 100 nF boot (C15) |
 
@@ -17,6 +17,7 @@ DigiKey stock on 2026-10-27: TPS56637RPAR 14,313; TPS54202HDDCR 34,376; 74439387
 - WEBENCH's inductors (Coilcraft XAL7070, NIC NPI105C) are not sold by DigiKey. The 6 A designs use the Wurth part from WEBENCH's alternate list. The 2 A design uses the TDK VLS6045EX-100M (entered as a custom part with its L/DCR/IDC) because the Bourns SRN8040 alternate did not fit the U3 area. Both were re-simulated.
 - WEBENCH's 0201/0402/0603 resistors and small capacitors are 0805 (same values) for the team's 0805 rule. The 2 A input cap is a 1210 of the same value because the WEBENCH 1206 part was out of stock.
 - U3's TPS54202H needs the EN pull-up (WEBENCH's Ren); the old TPS54202 floated EN.
+- 2026-10-28: R4 (U2 top feedback resistor) is 75k (Yageo RC0805FR-0775KL) instead of WEBENCH's 73.2k. VOUT = 0.6 V x (1 + 75/10) = 5.10 V, so the Pi rail matches the original design's 5.1 V target and keeps margin for harness drop at 5 A. U5 keeps 73.2k (4.99 V). The feed-forward network (R2 20k + C10 100 pF) is unchanged; TI's 5 V table uses the same values.
 
 ## Simulations (WEBENCH load transient)
 

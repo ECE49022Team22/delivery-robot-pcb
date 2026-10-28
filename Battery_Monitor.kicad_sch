@@ -5,7 +5,7 @@
 	(uuid "cc2e4583-9b5a-4d6a-84b2-9d7592d2407b")
 	(paper "A4")
 	(title_block
-		(title "Battery current monitor (INA228, off-board shunt)")
+		(title "Battery current monitor (INA237, off-board shunt)")
 		(date "2026-10-27")
 		(rev "1.0")
 		(company "Senior Design")
@@ -1045,7 +1045,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Battery current monitor - INA228 on an off-board 50 A / 75 mV shunt"
+	(text "Battery current monitor - INA237 on an off-board 50 A / 75 mV shunt"
 		(exclude_from_sim no)
 		(at 25.4 25.4 0)
 		(effects
@@ -1056,7 +1056,7 @@
 		)
 		(uuid "27cefbe4-e06a-45ab-9ccc-03ae3f0406ec")
 	)
-	(text "U13 (INA228) measures battery current on an OFF-BOARD 50 A / 75 mV shunt (1.5 mOhm, class 0.5) in the battery NEGATIVE lead.\nMotor current never flows through this board (2.13). Shunt lugs: battery - on one side; the robot's common ground lug\n(J2 pin 1 harness lead, MDD20A VB-, charger -) on the other. Everything that returns to battery - must pass through the shunt.\nJ23: twisted 22-24 AWG Kelvin pair from the shunt's small sense screws, routed away from the motor leads.\nPin 1 = LOAD (ground-lug side) -> IN+, pin 2 = BATT (battery - side) -> IN-. Positive current = discharge.\nLow side: the sense wires sit within about 0.1 V of GND, so a chafed sense wire cannot short the battery.\nRange: board GND sits up to ~60 mV above the shunt, so IN- is about -135 mV at 50 A (limit -0.3 V).\nFull scale (ADCRANGE = 0) is +/-163.84 mV = +/-109 A. R54/R55 10 ohm + C52: input filter and dV/dt protection (SLYS021A 8.1.4).\nNo ground connection at the inputs: IN+ must NOT tie to board GND on the board.\nVBUS reads +12V (after Q1, so never reversed; D13 limits it to 26 V, 85 V rating). I2C1 on PB6/PB7, address 0x40 (A0 = A1 = GND).\nALERT is open-drain, active low -> PB4 (EXTI4). Firmware: SHUNT_CAL = 13107.2e6 x 250e-6 x 0.0015 = 4915 (CURRENT_LSB = 250 uA).\nLayout: U13, R54, R55, C52 next to J23 on an edge away from U2/U5 and L1; INA_INP/INA_INN as a tight pair, no vias, no GND pour."
+	(text "U13 (INA237) measures battery current on an OFF-BOARD 50 A / 75 mV shunt (1.5 mOhm, class 0.5) in the battery NEGATIVE lead.\nMotor current never flows through this board (2.13). Shunt lugs: battery - on one side; the robot's common ground lug\n(J2 pin 1 harness lead, MDD20A VB-, charger -) on the other. Everything that returns to battery - must pass through the shunt.\nJ23: twisted 22-24 AWG Kelvin pair from the shunt's small sense screws, routed away from the motor leads.\nPin 1 = LOAD (ground-lug side) -> IN+, pin 2 = BATT (battery - side) -> IN-. Positive current = discharge.\nLow side: the sense wires sit within about 0.1 V of GND, so a chafed sense wire cannot short the battery.\nRange: board GND sits up to ~60 mV above the shunt, so IN- is about -135 mV at 50 A (limit -0.3 V).\nFull scale (ADCRANGE = 0) is +/-163.84 mV = +/-109 A. R54/R55 10 ohm + C52: input filter and dV/dt protection (SBOSA20A).\nNo ground connection at the inputs: IN+ must NOT tie to board GND on the board.\nVBUS reads +12V (after Q1, so never reversed; D13 limits it to 26 V, 85 V rating). I2C1 on PB6/PB7, address 0x40 (A0 = A1 = GND).\nALERT is open-drain, active low -> PB4 (EXTI4). Firmware: SHUNT_CAL = 819.2e6 x 4e-3 x 0.0015 = 4915 (CURRENT_LSB = 4 mA); no CHARGE register, integrate current in firmware.\nLayout: U13, R54, R55, C52 next to J23 on an edge away from U2/U5 and L1; INA_INP/INA_INN as a tight pair, no vias, no GND pour."
 		(exclude_from_sim no)
 		(at 25.4 33.02 0)
 		(effects
@@ -1636,7 +1636,7 @@
 				)
 			)
 		)
-		(property "Description" "INA228 ALERT pull-up (open-drain, active low) on BATT_ALERT / PB4."
+		(property "Description" "INA237 ALERT pull-up (open-drain, active low) on BATT_ALERT / PB4."
 			(at 182.88 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -1850,7 +1850,7 @@
 				)
 			)
 		)
-		(property "Description" "INA228 IN- series filter / dV/dt protection (TI SLYS021A 8.1.4). Place at U13."
+		(property "Description" "INA237 IN- series filter / dV/dt protection (TI SBOSA20A). Place at U13."
 			(at 116.84 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -1931,7 +1931,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA228AIDGSR"
+		(property "Value" "INA237AIDGSR"
 			(at 148.59 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1953,7 +1953,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina228.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina237.pdf"
 			(at 152.4 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1964,7 +1964,7 @@
 				)
 			)
 		)
-		(property "Description" "20-bit power/energy/charge monitor, I2C, 85 V, -0.3 V common mode. Low-side on the off-board battery shunt; address 0x40. DGS (VSSOP-10) package; KiCad TSSOP-10_3x3mm_P0.5mm is the TI DGS outline."
+		(property "Description" "16-bit current/voltage/power monitor, I2C, 85 V, -0.3 V common mode (same pinout as INA228; uses the INA228 symbol). Low-side on the off-board battery shunt; address 0x40. Charge is integrated in firmware. DGS (VSSOP-10) package; KiCad TSSOP-10_3x3mm_P0.5mm is the TI DGS outline."
 			(at 152.4 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1986,7 +1986,7 @@
 				)
 			)
 		)
-		(property "MPN" "INA228AIDGSR"
+		(property "MPN" "INA237AIDGSR"
 			(at 152.4 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2702,7 +2702,7 @@
 				)
 			)
 		)
-		(property "Description" "INA228 IN+ series filter / dV/dt protection (TI SLYS021A 8.1.4). Place at U13."
+		(property "Description" "INA237 IN+ series filter / dV/dt protection (TI SBOSA20A). Place at U13."
 			(at 116.84 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -3072,7 +3072,7 @@
 				)
 			)
 		)
-		(property "Description" "Differential filter across INA228 IN+/IN- (with R54/R55, about 80 kHz). No ground connection."
+		(property "Description" "Differential filter across INA237 IN+/IN- (with R54/R55, about 80 kHz). No ground connection."
 			(at 132.08 102.87 0)
 			(hide yes)
 			(show_name no)

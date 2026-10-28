@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/home/mgagv/Documents/senior_design/delivery-robot-pcb/delivery_robot_1.kicad_sch</source>
-    <date>2026-10-27T13:41:57</date>
-    <tool>Eeschema 10.0.4-10.0.4~ubuntu25.10.1</tool>
+    <source>/u/Documents/Code/sd/delivery-robot-pcb/delivery_robot_1.kicad_sch</source>
+    <date>2026-10-28T19:03:01</date>
+    <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Delivery Robot Main Board</title>
@@ -47,7 +47,7 @@
         <rev>1.0</rev>
         <date>2026-10-06</date>
         <source>Buck_5V_6A.kicad_sch</source>
-        <comment number="1" value="12 V to 5 V buck, TPSM63606 (U2), 6 A rail"/>
+        <comment number="1" value="TPS56637 (U2) 12 V to 5 V 6 A, values from TI WEBENCH (EN floating = enabled)"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -65,7 +65,7 @@
         <rev>1.0</rev>
         <date>2026-10-06</date>
         <source>Buck_5V_2A.kicad_sch</source>
-        <comment number="1" value="12 V to 5 V buck, TPS54202 (U3), 2 A rail"/>
+        <comment number="1" value="TPS54202H (U3) 12 V to 5 V 2 A, values from TI WEBENCH (Ren enables EN)"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -83,7 +83,7 @@
         <rev>1.0</rev>
         <date>2026-10-06</date>
         <source>Buck_5V_6A_AUX.kicad_sch</source>
-        <comment number="1" value="12 V to 5 V buck, TPSM63606 (U5), 6 A rail"/>
+        <comment number="1" value="TPS56637 (U5) 12 V to 5 V 6 A AUX, values from TI WEBENCH; EN = AUX_EN"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -240,7 +240,7 @@
     </sheet>
     <sheet number="14" name="/Battery Monitor/" tstamps="/3592f3aa-becc-443b-ac83-e8e5fe3dc413/">
       <title_block>
-        <title>Battery current monitor (INA228, off-board shunt)</title>
+        <title>Battery current monitor (INA237, off-board shunt)</title>
         <company>Senior Design</company>
         <rev>1.0</rev>
         <date>2026-10-27</date>
@@ -1284,21 +1284,21 @@
     </comp>
     <comp ref="C7">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf</datasheet>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71E106KA12-01.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71H106KA12L</field>
-        <field name="Specification">10uF / 50V X7R</field>
-        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf</field>
+        <field name="MPN">GRM31CR71E106KA12L</field>
+        <field name="Specification">10uF / 25V X7R 1206 (Cin)</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71E106KA12-01.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
-      <property name="Specification" value="10uF / 50V X7R"/>
+      <property name="MPN" value="GRM31CR71E106KA12L"/>
+      <property name="Specification" value="10uF / 25V X7R 1206 (Cin)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1316,21 +1316,21 @@
     </comp>
     <comp ref="C8">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf</datasheet>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71E106KA12-01.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71H106KA12L</field>
-        <field name="Specification">10uF / 50V X7R</field>
-        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf</field>
+        <field name="MPN">GRM31CR71E106KA12L</field>
+        <field name="Specification">10uF / 25V X7R 1206 (Cin)</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71E106KA12-01.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
-      <property name="Specification" value="10uF / 50V X7R"/>
+      <property name="MPN" value="GRM31CR71E106KA12L"/>
+      <property name="Specification" value="10uF / 25V X7R 1206 (Cin)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1347,22 +1347,22 @@
       </units>
     </comp>
     <comp ref="C9">
-      <value>1uF</value>
+      <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
-      <datasheet>https://www.murata.com/en-us/products/productdetail?partno=GRM21BR71C105KA01%23</datasheet>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM21BR71C105KA01L</field>
-        <field name="Specification">1uF / 16V X7R</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="MPN">C0805C104K5RACTU</field>
+        <field name="Specification">100nF / 50V X7R (Cinx)</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet">https://www.murata.com/en-us/products/productdetail?partno=GRM21BR71C105KA01%23</field>
+        <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM21BR71C105KA01L"/>
-      <property name="Specification" value="1uF / 16V X7R"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="MPN" value="C0805C104K5RACTU"/>
+      <property name="Specification" value="100nF / 50V X7R (Cinx)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1379,22 +1379,22 @@
       </units>
     </comp>
     <comp ref="C10">
-      <value>8.2pF</value>
+      <value>100pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">KEMET</field>
-        <field name="MPN">C0805C829C5GACTU</field>
-        <field name="Specification">8.2pF / 50V C0G</field>
+        <field name="MPN">C0805C101J5GACTU</field>
+        <field name="Specification">100pF / 50V C0G (Cff)</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="KEMET"/>
-      <property name="MPN" value="C0805C829C5GACTU"/>
-      <property name="Specification" value="8.2pF / 50V C0G"/>
+      <property name="MPN" value="C0805C101J5GACTU"/>
+      <property name="Specification" value="100pF / 50V C0G (Cff)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1412,21 +1412,21 @@
     </comp>
     <comp ref="C11">
       <value>47uF</value>
-      <footprint>project_footprints:C_Murata_GRM32ER71A476ME15</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</datasheet>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71A476ME15L</field>
-        <field name="Specification">47uF / 10V X7R</field>
-        <field name="Footprint">project_footprints:C_Murata_GRM32ER71A476ME15</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</field>
+        <field name="MPN">GRM32ER61C476KE15L</field>
+        <field name="Specification">47uF / 16V X5R 1210 (Cout)</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71A476ME15L"/>
-      <property name="Specification" value="47uF / 10V X7R"/>
+      <property name="MPN" value="GRM32ER61C476KE15L"/>
+      <property name="Specification" value="47uF / 16V X5R 1210 (Cout)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1443,22 +1443,22 @@
       </units>
     </comp>
     <comp ref="C12">
-      <value>47uF</value>
-      <footprint>project_footprints:C_Murata_GRM32ER71A476ME15</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</datasheet>
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71A476ME15L</field>
-        <field name="Specification">47uF / 10V X7R</field>
-        <field name="Footprint">project_footprints:C_Murata_GRM32ER71A476ME15</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="MPN">C0805C104K5RACTU</field>
+        <field name="Specification">100nF / 50V X7R (Cboot)</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71A476ME15L"/>
-      <property name="Specification" value="47uF / 10V X7R"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="MPN" value="C0805C104K5RACTU"/>
+      <property name="Specification" value="100nF / 50V X7R (Cboot)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1474,16 +1474,55 @@
         </unit>
       </units>
     </comp>
+    <comp ref="L2">
+      <value>3.3uH</value>
+      <footprint>project_footprints:L_Wuerth_WE-XHMI-7070</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/74439387033.pdf</datasheet>
+      <description>Inductor</description>
+      <fields>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="MPN">74439387033</field>
+        <field name="Specification">3.3uH 6.4mOhm 18.2A WE-XHMI 7070</field>
+        <field name="Footprint">project_footprints:L_Wuerth_WE-XHMI-7070</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/74439387033.pdf</field>
+        <field name="Description">Inductor</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="MPN" value="74439387033"/>
+      <property name="Specification" value="3.3uH 6.4mOhm 18.2A WE-XHMI 7070"/>
+      <property name="Sheetname" value="Buck 5V PI"/>
+      <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/Buck 5V PI/" tstamps="/6703cd4e-ae4e-4732-91ad-54a19544ca3e/"/>
+      <tstamps>9b15c86a-dd17-4bb5-b670-68a2895035ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="R2">
-      <value>12.1k</value>
+      <value>20k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="MPN">ERJ-6ENF2002V</field>
+        <field name="Specification">20k 1% (Rff)</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="MPN" value="ERJ-6ENF2002V"/>
+      <property name="Specification" value="20k 1% (Rff)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1500,15 +1539,22 @@
       </units>
     </comp>
     <comp ref="R4">
-      <value>41.2k / 1%</value>
+      <value>75k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-0775KL</field>
+        <field name="Specification">75k 1% (Rfbt), sets +5V_PI to 5.10 V</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-0775KL"/>
+      <property name="Specification" value="75k 1% (Rfbt), sets +5V_PI to 5.10 V"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1525,15 +1571,22 @@
       </units>
     </comp>
     <comp ref="R5">
-      <value>10kOhms</value>
+      <value>10k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-0710KL</field>
+        <field name="Specification">10k 1% (Rfbb)</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-0710KL"/>
+      <property name="Specification" value="10k 1% (Rfbb)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1549,79 +1602,93 @@
         </unit>
       </units>
     </comp>
-    <comp ref="U2">
-      <value>TPSM63606RDLR</value>
-      <footprint>project_footprints:RDL0020A-MFG</footprint>
-      <datasheet>https://www.ti.com/lit/gpn/tpsm63606</datasheet>
-      <description>36 V, 6 A synchronous step-down power module with integrated inductor, Enhanced HotRod QFN-20 (5.0 x 5.5 x 4 mm)</description>
+    <comp ref="R61">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
+      <description>Resistor</description>
       <fields>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">TPSM63606RDLR</field>
-        <field name="Product Page">https://www.ti.com/product/TPSM63606</field>
-        <field name="Key Specs">VIN 3-36 V; VOUT 1-16 V adjustable; IOUT max 6 A; fsw 200 kHz-2.2 MHz set by RT; current-mode, spread spectrum; peak efficiency &gt;95%; Tj -40 to 125 C</field>
-        <field name="Design Notes">VOUT = VREF x (1 + R4/R5) with FB divider R4 41.2k / R5 10k (VOUT = 5.12 V for the Pi 5), C10 feed-forward; RT = R2 12.1k; EN tied to VIN; RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC has an internal 1 uF and must not be loaded (SLVSGB4B pin table), so it is left NC; C9 is the VLDOIN capacitor</field>
-        <field name="Used In">Sheet Buck_5V_6A: 12 V in, +5V_PI net out</field>
-        <field name="Footprint">project_footprints:RDL0020A-MFG</field>
-        <field name="Datasheet">https://www.ti.com/lit/gpn/tpsm63606</field>
-        <field name="Description">36 V, 6 A synchronous step-down power module with integrated inductor, Enhanced HotRod QFN-20 (5.0 x 5.5 x 4 mm)</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-07100KL</field>
+        <field name="Specification">100k 1% (Rpg)</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
+        <field name="Description">Resistor</field>
       </fields>
-      <libsource lib="TPSM63606RDLR" part="PTPSM63606RDLR" description=""/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="TPSM63606RDLR"/>
-      <property name="Product Page" value="https://www.ti.com/product/TPSM63606"/>
-      <property name="Key Specs" value="VIN 3-36 V; VOUT 1-16 V adjustable; IOUT max 6 A; fsw 200 kHz-2.2 MHz set by RT; current-mode, spread spectrum; peak efficiency &gt;95%; Tj -40 to 125 C"/>
-      <property name="Design Notes" value="VOUT = VREF x (1 + R4/R5) with FB divider R4 41.2k / R5 10k (VOUT = 5.12 V for the Pi 5), C10 feed-forward; RT = R2 12.1k; EN tied to VIN; RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC has an internal 1 uF and must not be loaded (SLVSGB4B pin table), so it is left NC; C9 is the VLDOIN capacitor"/>
-      <property name="Used In" value="Sheet Buck_5V_6A: 12 V in, +5V_PI net out"/>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-07100KL"/>
+      <property name="Specification" value="100k 1% (Rpg)"/>
       <property name="Sheetname" value="Buck 5V PI"/>
       <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
-      <property name="ki_keywords" value="PTPSM63606RDLR"/>
-      <property name="ki_fp_filters" value="RDL0020A-MFG"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Buck 5V PI/" tstamps="/6703cd4e-ae4e-4732-91ad-54a19544ca3e/"/>
+      <tstamps>f8b41322-b210-46ef-a97a-bf87eb50a728</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TPS56637RPAR</value>
+      <footprint>project_footprints:TI_RPA0010A_VQFN-HR-10_3x3mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps56637.pdf</datasheet>
+      <description>4.5-V to 28-V input, 6-A synchronous buck converter</description>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS56637RPAR</field>
+        <field name="Specification">6 A buck, 557 kHz, MODE=GND (Eco-mode)</field>
+        <field name="Footprint">project_footprints:TI_RPA0010A_VQFN-HR-10_3x3mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps56637.pdf</field>
+        <field name="Description">4.5-V to 28-V input, 6-A synchronous buck converter</field>
+      </fields>
+      <libsource lib="TPS56637RPAR" part="TPS56637RPAR" description="4.5-V to 28-V input, 6-A synchronous buck converter, VQFN-HR-10 (RPA)"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="TPS56637RPAR"/>
+      <property name="Specification" value="6 A buck, 557 kHz, MODE=GND (Eco-mode)"/>
+      <property name="Sheetname" value="Buck 5V PI"/>
+      <property name="Sheetfile" value="Buck_5V_6A.kicad_sch"/>
       <sheetpath names="/Buck 5V PI/" tstamps="/6703cd4e-ae4e-4732-91ad-54a19544ca3e/"/>
       <tstamps>64bf58f9-a57a-4278-bd2c-82eb9b2a7875</tstamps>
       <units>
         <unit name="A">
           <pins>
-            <pin num="1"/>
-            <pin num="16"/>
-            <pin num="14"/>
-            <pin num="5"/>
-            <pin num="13"/>
-            <pin num="7"/>
-            <pin num="12"/>
-            <pin num="15"/>
             <pin num="8"/>
-            <pin num="9"/>
+            <pin num="1"/>
             <pin num="10"/>
+            <pin num="5"/>
+            <pin num="9"/>
             <pin num="3"/>
+            <pin num="7"/>
+            <pin num="6"/>
             <pin num="4"/>
             <pin num="2"/>
-            <pin num="6"/>
-            <pin num="11"/>
-            <pin num="17"/>
-            <pin num="18"/>
-            <pin num="19"/>
-            <pin num="20"/>
           </pins>
         </unit>
       </units>
     </comp>
     <comp ref="C14">
       <value>22uF</value>
-      <footprint>project_footprints:C_TDK_C5750X7R1H226M250KB</footprint>
-      <datasheet>https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C5750X7R1H226M250KB</datasheet>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61E226KE15-01.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Manufacturer">TDK</field>
-        <field name="MPN">C5750X7R1H226M250KB</field>
-        <field name="Specification">22uF / 50V X7R</field>
-        <field name="Footprint">project_footprints:C_TDK_C5750X7R1H226M250KB</field>
-        <field name="Datasheet">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C5750X7R1H226M250KB</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="MPN">GRM32ER61E226KE15L</field>
+        <field name="Specification">22uF / 25V X5R 1210 (Cin)</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61E226KE15-01.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Manufacturer" value="TDK"/>
-      <property name="MPN" value="C5750X7R1H226M250KB"/>
-      <property name="Specification" value="22uF / 50V X7R"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="MPN" value="GRM32ER61E226KE15L"/>
+      <property name="Specification" value="22uF / 25V X5R 1210 (Cin)"/>
       <property name="Sheetname" value="Buck 5V SYS"/>
       <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1645,7 +1712,7 @@
       <fields>
         <field name="Manufacturer">KEMET</field>
         <field name="MPN">C0805C104K5RACTU</field>
-        <field name="Specification">100nF / 50V X7R</field>
+        <field name="Specification">100nF / 50V X7R (Cboot)</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
@@ -1653,7 +1720,7 @@
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="KEMET"/>
       <property name="MPN" value="C0805C104K5RACTU"/>
-      <property name="Specification" value="100nF / 50V X7R"/>
+      <property name="Specification" value="100nF / 50V X7R (Cboot)"/>
       <property name="Sheetname" value="Buck 5V SYS"/>
       <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1677,7 +1744,7 @@
       <fields>
         <field name="Manufacturer">KEMET</field>
         <field name="MPN">C0805C680J5GACTU</field>
-        <field name="Specification">68pF / 50V C0G</field>
+        <field name="Specification">68pF / 50V C0G (Cff)</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
@@ -1685,7 +1752,7 @@
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="KEMET"/>
       <property name="MPN" value="C0805C680J5GACTU"/>
-      <property name="Specification" value="68pF / 50V C0G"/>
+      <property name="Specification" value="68pF / 50V C0G (Cff)"/>
       <property name="Sheetname" value="Buck 5V SYS"/>
       <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1703,21 +1770,21 @@
     </comp>
     <comp ref="C17">
       <value>47uF</value>
-      <footprint>project_footprints:C_Murata_GRM32ER71A476ME15</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</datasheet>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71A476ME15L</field>
-        <field name="Specification">47uF / 10V X7R</field>
-        <field name="Footprint">project_footprints:C_Murata_GRM32ER71A476ME15</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</field>
+        <field name="MPN">GRM32ER61C476KE15L</field>
+        <field name="Specification">47uF / 16V X5R 1210 (Cout)</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71A476ME15L"/>
-      <property name="Specification" value="47uF / 10V X7R"/>
+      <property name="MPN" value="GRM32ER61C476KE15L"/>
+      <property name="Specification" value="47uF / 16V X5R 1210 (Cout)"/>
       <property name="Sheetname" value="Buck 5V SYS"/>
       <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1764,22 +1831,22 @@
       </units>
     </comp>
     <comp ref="L1">
-      <value>15uH</value>
-      <footprint>Inductor_SMD:L_Coilcraft_XAL6060-XXX</footprint>
-      <datasheet>https://www.coilcraft.com/getmedia/ea51f14b-7f32-4dc6-8dfe-d4b70549040f/xal60xx.pdf</datasheet>
+      <value>10uH</value>
+      <footprint>Inductor_SMD:L_TDK_VLS6045EX_VLS6045AF</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vls6045ex_en.pdf</datasheet>
       <description>Inductor</description>
       <fields>
-        <field name="Manufacturer">Coilcraft</field>
-        <field name="MPN">XAL6060-153MEC</field>
-        <field name="Specification">15uH / 20%</field>
-        <field name="Footprint">Inductor_SMD:L_Coilcraft_XAL6060-XXX</field>
-        <field name="Datasheet">https://www.coilcraft.com/getmedia/ea51f14b-7f32-4dc6-8dfe-d4b70549040f/xal60xx.pdf</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">VLS6045EX-100M</field>
+        <field name="Specification">10uH 47mOhm 3.4A VLS6045EX 6x6</field>
+        <field name="Footprint">Inductor_SMD:L_TDK_VLS6045EX_VLS6045AF</field>
+        <field name="Datasheet">https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vls6045ex_en.pdf</field>
         <field name="Description">Inductor</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
-      <property name="Manufacturer" value="Coilcraft"/>
-      <property name="MPN" value="XAL6060-153MEC"/>
-      <property name="Specification" value="15uH / 20%"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="MPN" value="VLS6045EX-100M"/>
+      <property name="Specification" value="10uH 47mOhm 3.4A VLS6045EX 6x6"/>
       <property name="Sheetname" value="Buck 5V SYS"/>
       <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -1796,15 +1863,22 @@
       </units>
     </comp>
     <comp ref="R6">
-      <value>100kOhms</value>
+      <value>100k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-07100KL</field>
+        <field name="Specification">100k 1% (Rfbt)</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-07100KL"/>
+      <property name="Specification" value="100k 1% (Rfbt)"/>
       <property name="Sheetname" value="Buck 5V SYS"/>
       <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1821,15 +1895,22 @@
       </units>
     </comp>
     <comp ref="R7">
-      <value>13.7kOhms</value>
+      <value>13.7k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-0713K7L</field>
+        <field name="Specification">13.7k 1% (Rfbb)</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-0713K7L"/>
+      <property name="Specification" value="13.7k 1% (Rfbb)"/>
       <property name="Sheetname" value="Buck 5V SYS"/>
       <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1845,45 +1926,55 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R63">
+      <value>442k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-07442KL</field>
+        <field name="Specification">442k 1% (Ren, VIN to EN)</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-07442KL"/>
+      <property name="Specification" value="442k 1% (Ren, VIN to EN)"/>
+      <property name="Sheetname" value="Buck 5V SYS"/>
+      <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Buck 5V SYS/" tstamps="/45fd30b8-e3d0-4ad8-a19a-9569735f4754/"/>
+      <tstamps>5a06d1d5-fd72-4b4d-a65a-e0fbc9259c18</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="U3">
-      <value>TPS54202DDCR</value>
+      <value>TPS54202HDDCR</value>
       <footprint>project_footprints:SOT95P280X110-6N</footprint>
-      <datasheet>https://www.ti.com/lit/gpn/tps54202</datasheet>
-      <description>4.5-28 V input, 2 A synchronous step-down converter with Eco-mode, 500 kHz, SOT-23-THN (DDC) 6-pin</description>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps54202h.pdf</datasheet>
+      <description>4.5-V to 28-V input, 2-A synchronous buck converter (EN pulled down internally)</description>
       <fields>
         <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">TPS54202DDCR</field>
-        <field name="Product Page">https://www.ti.com/product/TPS54202</field>
-        <field name="Key Specs">VIN 4.5-28 V; VOUT 0.6-26 V adjustable; IOUT max 2 A; fixed 500 kHz with spread spectrum; 148 mOhm / 78 mOhm integrated FETs; 5 ms soft start; Eco-mode pulse skip; hiccup overcurrent protection; Tj -40 to 125 C; 3 uA shutdown, 45 uA quiescent</field>
-        <field name="Design Notes">Feedback divider R6 100k / R7 13.7k sets about 4.95 V assuming VREF 0.596 V (verify in datasheet), C16 68 pF feed-forward across R6; L1 15 uH; C15 100 nF bootstrap BOOT-SW; C14 22 uF input, C17 47 uF output; EN pin currently flagged no-connect - confirm datasheet allows floating EN, otherwise tie to VIN</field>
-        <field name="Used In">Sheet Buck_5V_2A: 12 V in, +5V_SYS net out (feeds LDO sheet)</field>
-        <field name="MF">Texas Instruments</field>
-        <field name="Description_1">4.5V to 28V Input, 2A Output, EMI Friendly Synchronous Step-Down Converter</field>
-        <field name="Package">SOT-23-THN-6 Texas Instruments</field>
-        <field name="Price">None</field>
-        <field name="SnapEDA_Link">https://www.snapeda.com/parts/TPS54202DDCR/Texas+Instruments/view-part/?ref=snap</field>
-        <field name="MP">TPS54202DDCR</field>
-        <field name="Availability">In Stock</field>
-        <field name="Check_prices">https://www.snapeda.com/parts/TPS54202DDCR/Texas+Instruments/view-part/?ref=eda</field>
+        <field name="MPN">TPS54202HDDCR</field>
+        <field name="Specification">2 A buck, 500 kHz</field>
         <field name="Footprint">project_footprints:SOT95P280X110-6N</field>
-        <field name="Datasheet">https://www.ti.com/lit/gpn/tps54202</field>
-        <field name="Description">4.5-28 V input, 2 A synchronous step-down converter with Eco-mode, 500 kHz, SOT-23-THN (DDC) 6-pin</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps54202h.pdf</field>
+        <field name="Description">4.5-V to 28-V input, 2-A synchronous buck converter (EN pulled down internally)</field>
       </fields>
       <libsource lib="TPS54202DDCR" part="TPS54202DDCR" description=""/>
       <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="TPS54202DDCR"/>
-      <property name="Product Page" value="https://www.ti.com/product/TPS54202"/>
-      <property name="Key Specs" value="VIN 4.5-28 V; VOUT 0.6-26 V adjustable; IOUT max 2 A; fixed 500 kHz with spread spectrum; 148 mOhm / 78 mOhm integrated FETs; 5 ms soft start; Eco-mode pulse skip; hiccup overcurrent protection; Tj -40 to 125 C; 3 uA shutdown, 45 uA quiescent"/>
-      <property name="Design Notes" value="Feedback divider R6 100k / R7 13.7k sets about 4.95 V assuming VREF 0.596 V (verify in datasheet), C16 68 pF feed-forward across R6; L1 15 uH; C15 100 nF bootstrap BOOT-SW; C14 22 uF input, C17 47 uF output; EN pin currently flagged no-connect - confirm datasheet allows floating EN, otherwise tie to VIN"/>
-      <property name="Used In" value="Sheet Buck_5V_2A: 12 V in, +5V_SYS net out (feeds LDO sheet)"/>
-      <property name="MF" value="Texas Instruments"/>
-      <property name="Description_1" value="4.5V to 28V Input, 2A Output, EMI Friendly Synchronous Step-Down Converter"/>
-      <property name="Package" value="SOT-23-THN-6 Texas Instruments"/>
-      <property name="Price" value="None"/>
-      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/TPS54202DDCR/Texas+Instruments/view-part/?ref=snap"/>
-      <property name="MP" value="TPS54202DDCR"/>
-      <property name="Availability" value="In Stock"/>
-      <property name="Check_prices" value="https://www.snapeda.com/parts/TPS54202DDCR/Texas+Instruments/view-part/?ref=eda"/>
+      <property name="MPN" value="TPS54202HDDCR"/>
+      <property name="Specification" value="2 A buck, 500 kHz"/>
       <property name="Sheetname" value="Buck 5V SYS"/>
       <property name="Sheetfile" value="Buck_5V_2A.kicad_sch"/>
       <sheetpath names="/Buck 5V SYS/" tstamps="/45fd30b8-e3d0-4ad8-a19a-9569735f4754/"/>
@@ -1903,21 +1994,21 @@
     </comp>
     <comp ref="C28">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf</datasheet>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71E106KA12-01.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71H106KA12L</field>
-        <field name="Specification">10uF / 50V X7R</field>
-        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf</field>
+        <field name="MPN">GRM31CR71E106KA12L</field>
+        <field name="Specification">10uF / 25V X7R 1206 (Cin)</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71E106KA12-01.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
-      <property name="Specification" value="10uF / 50V X7R"/>
+      <property name="MPN" value="GRM31CR71E106KA12L"/>
+      <property name="Specification" value="10uF / 25V X7R 1206 (Cin)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1935,21 +2026,21 @@
     </comp>
     <comp ref="C29">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf</datasheet>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71E106KA12-01.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71H106KA12L</field>
-        <field name="Specification">10uF / 50V X7R</field>
-        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H106KA12-04A.pdf</field>
+        <field name="MPN">GRM31CR71E106KA12L</field>
+        <field name="Specification">10uF / 25V X7R 1206 (Cin)</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71E106KA12-01.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
-      <property name="Specification" value="10uF / 50V X7R"/>
+      <property name="MPN" value="GRM31CR71E106KA12L"/>
+      <property name="Specification" value="10uF / 25V X7R 1206 (Cin)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1966,22 +2057,22 @@
       </units>
     </comp>
     <comp ref="C30">
-      <value>1uF</value>
+      <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
-      <datasheet>https://www.murata.com/en-us/products/productdetail?partno=GRM21BR71C105KA01%23</datasheet>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM21BR71C105KA01L</field>
-        <field name="Specification">1uF / 16V X7R</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="MPN">C0805C104K5RACTU</field>
+        <field name="Specification">100nF / 50V X7R (Cinx)</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet">https://www.murata.com/en-us/products/productdetail?partno=GRM21BR71C105KA01%23</field>
+        <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM21BR71C105KA01L"/>
-      <property name="Specification" value="1uF / 16V X7R"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="MPN" value="C0805C104K5RACTU"/>
+      <property name="Specification" value="100nF / 50V X7R (Cinx)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1998,22 +2089,22 @@
       </units>
     </comp>
     <comp ref="C31">
-      <value>8.2pF</value>
+      <value>100pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">KEMET</field>
-        <field name="MPN">C0805C829C5GACTU</field>
-        <field name="Specification">8.2pF / 50V C0G</field>
+        <field name="MPN">C0805C101J5GACTU</field>
+        <field name="Specification">100pF / 50V C0G (Cff)</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="KEMET"/>
-      <property name="MPN" value="C0805C829C5GACTU"/>
-      <property name="Specification" value="8.2pF / 50V C0G"/>
+      <property name="MPN" value="C0805C101J5GACTU"/>
+      <property name="Specification" value="100pF / 50V C0G (Cff)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2031,21 +2122,21 @@
     </comp>
     <comp ref="C32">
       <value>47uF</value>
-      <footprint>project_footprints:C_Murata_GRM32ER71A476ME15</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</datasheet>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71A476ME15L</field>
-        <field name="Specification">47uF / 10V X7R</field>
-        <field name="Footprint">project_footprints:C_Murata_GRM32ER71A476ME15</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</field>
+        <field name="MPN">GRM32ER61C476KE15L</field>
+        <field name="Specification">47uF / 16V X5R 1210 (Cout)</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71A476ME15L"/>
-      <property name="Specification" value="47uF / 10V X7R"/>
+      <property name="MPN" value="GRM32ER61C476KE15L"/>
+      <property name="Specification" value="47uF / 16V X5R 1210 (Cout)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2062,22 +2153,22 @@
       </units>
     </comp>
     <comp ref="C33">
-      <value>47uF</value>
-      <footprint>project_footprints:C_Murata_GRM32ER71A476ME15</footprint>
-      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</datasheet>
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Manufacturer">Murata</field>
-        <field name="MPN">GRM32ER71A476ME15L</field>
-        <field name="Specification">47uF / 10V X7R</field>
-        <field name="Footprint">project_footprints:C_Murata_GRM32ER71A476ME15</field>
-        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71A476ME15-04CA.pdf</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="MPN">C0805C104K5RACTU</field>
+        <field name="Specification">100nF / 50V X7R (Cboot)</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Manufacturer" value="Murata"/>
-      <property name="MPN" value="GRM32ER71A476ME15L"/>
-      <property name="Specification" value="47uF / 10V X7R"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="MPN" value="C0805C104K5RACTU"/>
+      <property name="Specification" value="100nF / 50V X7R (Cboot)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2148,16 +2239,55 @@
         </unit>
       </units>
     </comp>
+    <comp ref="L3">
+      <value>3.3uH</value>
+      <footprint>project_footprints:L_Wuerth_WE-XHMI-7070</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/74439387033.pdf</datasheet>
+      <description>Inductor</description>
+      <fields>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="MPN">74439387033</field>
+        <field name="Specification">3.3uH 6.4mOhm 18.2A WE-XHMI 7070</field>
+        <field name="Footprint">project_footprints:L_Wuerth_WE-XHMI-7070</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/74439387033.pdf</field>
+        <field name="Description">Inductor</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="MPN" value="74439387033"/>
+      <property name="Specification" value="3.3uH 6.4mOhm 18.2A WE-XHMI 7070"/>
+      <property name="Sheetname" value="Buck 5V AUX"/>
+      <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/Buck 5V AUX/" tstamps="/472ee453-7701-4e13-8d8d-09d254496392/"/>
+      <tstamps>348fb0ed-5d98-45b7-9bbc-2d01660409d9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="R14">
-      <value>12.1k</value>
+      <value>20k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="MPN">ERJ-6ENF2002V</field>
+        <field name="Specification">20k 1% (Rff)</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="MPN" value="ERJ-6ENF2002V"/>
+      <property name="Specification" value="20k 1% (Rff)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2174,15 +2304,22 @@
       </units>
     </comp>
     <comp ref="R15">
-      <value>40.2k / 1%</value>
+      <value>73.2k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-0773K2L</field>
+        <field name="Specification">73.2k 1% (Rfbt)</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-0773K2L"/>
+      <property name="Specification" value="73.2k 1% (Rfbt)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2199,15 +2336,22 @@
       </units>
     </comp>
     <comp ref="R16">
-      <value>10kOhms</value>
+      <value>10k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-0710KL</field>
+        <field name="Specification">10k 1% (Rfbb)</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-0710KL"/>
+      <property name="Specification" value="10k 1% (Rfbb)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2249,58 +2393,72 @@
         </unit>
       </units>
     </comp>
-    <comp ref="U5">
-      <value>TPSM63606RDLR</value>
-      <footprint>project_footprints:RDL0020A-MFG</footprint>
-      <datasheet>https://www.ti.com/lit/gpn/tpsm63606</datasheet>
-      <description>36 V, 6 A synchronous step-down power module with integrated inductor, Enhanced HotRod QFN-20 (5.0 x 5.5 x 4 mm)</description>
+    <comp ref="R62">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
+      <description>Resistor</description>
       <fields>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">TPSM63606RDLR</field>
-        <field name="Product Page">https://www.ti.com/product/TPSM63606</field>
-        <field name="Key Specs">VIN 3-36 V; VOUT 1-16 V adjustable; IOUT max 6 A; fsw 200 kHz-2.2 MHz set by RT; current-mode, spread spectrum; peak efficiency &gt;95%; Tj -40 to 125 C</field>
-        <field name="Design Notes">VOUT = VREF x (1 + R15/R16) with FB divider R15 40.2k / R16 10k (VOUT = 5.02 V), C31 feed-forward; RT = R14 12.1k; EN = AUX_EN (Pi 3V3 through D15, 100k pull-down R43, force-on jumper J22); RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC has an internal 1 uF and must not be loaded (SLVSGB4B pin table), so it is left NC; C30 is the VLDOIN capacitor</field>
-        <field name="Used In">Sheet Buck_5V_6A_AUX: 12 V in, +5V_AUX net out</field>
-        <field name="Footprint">project_footprints:RDL0020A-MFG</field>
-        <field name="Datasheet">https://www.ti.com/lit/gpn/tpsm63606</field>
-        <field name="Description">36 V, 6 A synchronous step-down power module with integrated inductor, Enhanced HotRod QFN-20 (5.0 x 5.5 x 4 mm)</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0805FR-07100KL</field>
+        <field name="Specification">100k 1% (Rpg)</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
+        <field name="Description">Resistor</field>
       </fields>
-      <libsource lib="TPSM63606RDLR" part="PTPSM63606RDLR" description=""/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="TPSM63606RDLR"/>
-      <property name="Product Page" value="https://www.ti.com/product/TPSM63606"/>
-      <property name="Key Specs" value="VIN 3-36 V; VOUT 1-16 V adjustable; IOUT max 6 A; fsw 200 kHz-2.2 MHz set by RT; current-mode, spread spectrum; peak efficiency &gt;95%; Tj -40 to 125 C"/>
-      <property name="Design Notes" value="VOUT = VREF x (1 + R15/R16) with FB divider R15 40.2k / R16 10k (VOUT = 5.02 V), C31 feed-forward; RT = R14 12.1k; EN = AUX_EN (Pi 3V3 through D15, 100k pull-down R43, force-on jumper J22); RBOOT shorted to CBOOT; SW pin left NC; PG open-drain, unused; VLDOIN tied to VOUT; VCC has an internal 1 uF and must not be loaded (SLVSGB4B pin table), so it is left NC; C30 is the VLDOIN capacitor"/>
-      <property name="Used In" value="Sheet Buck_5V_6A_AUX: 12 V in, +5V_AUX net out"/>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0805FR-07100KL"/>
+      <property name="Specification" value="100k 1% (Rpg)"/>
       <property name="Sheetname" value="Buck 5V AUX"/>
       <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
-      <property name="ki_keywords" value="PTPSM63606RDLR"/>
-      <property name="ki_fp_filters" value="RDL0020A-MFG"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Buck 5V AUX/" tstamps="/472ee453-7701-4e13-8d8d-09d254496392/"/>
+      <tstamps>c9e642c6-4ff1-4fab-99df-9f40546a5684</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>TPS56637RPAR</value>
+      <footprint>project_footprints:TI_RPA0010A_VQFN-HR-10_3x3mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps56637.pdf</datasheet>
+      <description>4.5-V to 28-V input, 6-A synchronous buck converter</description>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS56637RPAR</field>
+        <field name="Specification">6 A buck, 557 kHz, MODE=GND (Eco-mode)</field>
+        <field name="Footprint">project_footprints:TI_RPA0010A_VQFN-HR-10_3x3mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps56637.pdf</field>
+        <field name="Description">4.5-V to 28-V input, 6-A synchronous buck converter</field>
+      </fields>
+      <libsource lib="TPS56637RPAR" part="TPS56637RPAR" description="4.5-V to 28-V input, 6-A synchronous buck converter, VQFN-HR-10 (RPA)"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="TPS56637RPAR"/>
+      <property name="Specification" value="6 A buck, 557 kHz, MODE=GND (Eco-mode)"/>
+      <property name="Sheetname" value="Buck 5V AUX"/>
+      <property name="Sheetfile" value="Buck_5V_6A_AUX.kicad_sch"/>
       <sheetpath names="/Buck 5V AUX/" tstamps="/472ee453-7701-4e13-8d8d-09d254496392/"/>
       <tstamps>431b8012-3901-40c5-8a8f-21ec5fe63e74</tstamps>
       <units>
         <unit name="A">
           <pins>
-            <pin num="1"/>
-            <pin num="16"/>
-            <pin num="14"/>
-            <pin num="5"/>
-            <pin num="13"/>
-            <pin num="7"/>
-            <pin num="12"/>
-            <pin num="15"/>
             <pin num="8"/>
-            <pin num="9"/>
+            <pin num="1"/>
             <pin num="10"/>
+            <pin num="5"/>
+            <pin num="9"/>
             <pin num="3"/>
+            <pin num="7"/>
+            <pin num="6"/>
             <pin num="4"/>
             <pin num="2"/>
-            <pin num="6"/>
-            <pin num="11"/>
-            <pin num="17"/>
-            <pin num="18"/>
-            <pin num="19"/>
-            <pin num="20"/>
           </pins>
         </unit>
       </units>
@@ -4938,13 +5096,13 @@
       <value>100nF / 50V X7R</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</datasheet>
-      <description>Differential filter across INA228 IN+/IN- (with R54/R55, about 80 kHz). No ground connection.</description>
+      <description>Differential filter across INA237 IN+/IN- (with R54/R55, about 80 kHz). No ground connection.</description>
       <fields>
         <field name="Manufacturer">KEMET</field>
         <field name="MPN">C0805C104K5RACTU</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf</field>
-        <field name="Description">Differential filter across INA228 IN+/IN- (with R54/R55, about 80 kHz). No ground connection.</field>
+        <field name="Description">Differential filter across INA237 IN+/IN- (with R54/R55, about 80 kHz). No ground connection.</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="KEMET"/>
@@ -5028,14 +5186,14 @@
       <value>10 / 1%</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
-      <description>INA228 IN+ series filter / dV/dt protection (TI SLYS021A 8.1.4). Place at U13.</description>
+      <description>INA237 IN+ series filter / dV/dt protection (TI SBOSA20A). Place at U13.</description>
       <fields>
         <field name="Manufacturer">Yageo</field>
         <field name="MPN">RC0805FR-0710RL</field>
         <field name="Tolerance">1%</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
-        <field name="Description">INA228 IN+ series filter / dV/dt protection (TI SLYS021A 8.1.4). Place at U13.</field>
+        <field name="Description">INA237 IN+ series filter / dV/dt protection (TI SBOSA20A). Place at U13.</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Manufacturer" value="Yageo"/>
@@ -5060,14 +5218,14 @@
       <value>10 / 1%</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
-      <description>INA228 IN- series filter / dV/dt protection (TI SLYS021A 8.1.4). Place at U13.</description>
+      <description>INA237 IN- series filter / dV/dt protection (TI SBOSA20A). Place at U13.</description>
       <fields>
         <field name="Manufacturer">Yageo</field>
         <field name="MPN">RC0805FR-0710RL</field>
         <field name="Tolerance">1%</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
-        <field name="Description">INA228 IN- series filter / dV/dt protection (TI SLYS021A 8.1.4). Place at U13.</field>
+        <field name="Description">INA237 IN- series filter / dV/dt protection (TI SBOSA20A). Place at U13.</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Manufacturer" value="Yageo"/>
@@ -5156,14 +5314,14 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</datasheet>
-      <description>INA228 ALERT pull-up (open-drain, active low) on BATT_ALERT / PB4.</description>
+      <description>INA237 ALERT pull-up (open-drain, active low) on BATT_ALERT / PB4.</description>
       <fields>
         <field name="Manufacturer">Yageo</field>
         <field name="MPN">RC0805FR-0710KL</field>
         <field name="Tolerance">1%</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf</field>
-        <field name="Description">INA228 ALERT pull-up (open-drain, active low) on BATT_ALERT / PB4.</field>
+        <field name="Description">INA237 ALERT pull-up (open-drain, active low) on BATT_ALERT / PB4.</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Manufacturer" value="Yageo"/>
@@ -5185,20 +5343,20 @@
       </units>
     </comp>
     <comp ref="U13">
-      <value>INA228AIDGSR</value>
+      <value>INA237AIDGSR</value>
       <footprint>Package_SO:TSSOP-10_3x3mm_P0.5mm</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/ina228.pdf</datasheet>
-      <description>20-bit power/energy/charge monitor, I2C, 85 V, -0.3 V common mode. Low-side on the off-board battery shunt; address 0x40. DGS (VSSOP-10) package; KiCad TSSOP-10_3x3mm_P0.5mm is the TI DGS outline.</description>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina237.pdf</datasheet>
+      <description>16-bit current/voltage/power monitor, I2C, 85 V, -0.3 V common mode (same pinout as INA228; uses the INA228 symbol). Low-side on the off-board battery shunt; address 0x40. Charge is integrated in firmware. DGS (VSSOP-10) package; KiCad TSSOP-10_3x3mm_P0.5mm is the TI DGS outline.</description>
       <fields>
         <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">INA228AIDGSR</field>
+        <field name="MPN">INA237AIDGSR</field>
         <field name="Footprint">Package_SO:TSSOP-10_3x3mm_P0.5mm</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina228.pdf</field>
-        <field name="Description">20-bit power/energy/charge monitor, I2C, 85 V, -0.3 V common mode. Low-side on the off-board battery shunt; address 0x40. DGS (VSSOP-10) package; KiCad TSSOP-10_3x3mm_P0.5mm is the TI DGS outline.</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina237.pdf</field>
+        <field name="Description">16-bit current/voltage/power monitor, I2C, 85 V, -0.3 V common mode (same pinout as INA228; uses the INA228 symbol). Low-side on the off-board battery shunt; address 0x40. Charge is integrated in firmware. DGS (VSSOP-10) package; KiCad TSSOP-10_3x3mm_P0.5mm is the TI DGS outline.</field>
       </fields>
       <libsource lib="Sensor_Energy" part="INA228" description="High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-85V) with I2C, SMBus-, and PMBus-Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"/>
       <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="INA228AIDGSR"/>
+      <property name="MPN" value="INA237AIDGSR"/>
       <property name="Sheetname" value="Battery Monitor"/>
       <property name="Sheetfile" value="Battery_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="ADC I2C 20-Bit Oversampling Current Shunt"/>
@@ -6096,39 +6254,29 @@
         <pin num="6" name="BOOT" type="output"/>
       </pins>
     </libpart>
-    <libpart lib="TPSM63606RDLR" part="PTPSM63606RDLR">
-      <docs>https://www.ti.com/lit/gpn/tpsm63606</docs>
-      <footprints>
-        <fp>RDL0020A-MFG</fp>
-      </footprints>
+    <libpart lib="TPS56637RPAR" part="TPS56637RPAR">
+      <description>4.5-V to 28-V input, 6-A synchronous buck converter, VQFN-HR-10 (RPA)</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps56637.pdf</docs>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">PTPSM63606RDLR</field>
-        <field name="Footprint">project_footprints:RDL0020A-MFG</field>
-        <field name="Datasheet">https://www.ti.com/lit/gpn/tpsm63606</field>
-        <field name="Description"/>
+        <field name="Value">TPS56637RPAR</field>
+        <field name="Footprint">project_footprints:TI_RPA0010A_VQFN-HR-10_3x3mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps56637.pdf</field>
+        <field name="Description">4.5-V to 28-V input, 6-A synchronous buck converter, VQFN-HR-10 (RPA)</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS56637RPAR</field>
       </fields>
       <pins>
-        <pin num="1" name="VIN" type="power_in"/>
-        <pin num="2" name="SW" type="passive"/>
-        <pin num="3" name="CBOOT" type="passive"/>
-        <pin num="4" name="RBOOT" type="passive"/>
-        <pin num="5" name="VLDOIN" type="power_in"/>
-        <pin num="6" name="AGND" type="power_in"/>
-        <pin num="7" name="VCC" type="power_out"/>
-        <pin num="8" name="VOUT" type="power_out"/>
-        <pin num="9" name="VOUT" type="passive"/>
-        <pin num="10" name="FB" type="input"/>
-        <pin num="11" name="AGND" type="power_in"/>
-        <pin num="12" name="RT" type="passive"/>
-        <pin num="13" name="PG" type="open_collector"/>
-        <pin num="14" name="EN_SYNC" type="input"/>
-        <pin num="15" name="NC" type="no_connect"/>
-        <pin num="16" name="VIN" type="power_in"/>
-        <pin num="17" name="PGND" type="power_in"/>
-        <pin num="18" name="PGND" type="power_in"/>
-        <pin num="19" name="PGND" type="power_in"/>
-        <pin num="20" name="PGND" type="power_in"/>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="FB" type="input"/>
+        <pin num="3" name="AGND" type="power_in"/>
+        <pin num="4" name="PG" type="open_collector"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="SW" type="power_out"/>
+        <pin num="7" name="BOOT" type="input"/>
+        <pin num="8" name="VIN" type="power_in"/>
+        <pin num="9" name="PGND" type="power_in"/>
+        <pin num="10" name="MODE" type="input"/>
       </pins>
     </libpart>
     <libpart lib="Transistor_FET" part="2N7002">
@@ -6308,8 +6456,8 @@
     <library logical="TPS54202DDCR">
       <uri>${KIPRJMOD}/libs/TPS54202DDCR.kicad_sym</uri>
     </library>
-    <library logical="TPSM63606RDLR">
-      <uri>${KIPRJMOD}/libs/TPSM63606RDLR.kicad_sym</uri>
+    <library logical="TPS56637RPAR">
+      <uri>${KIPRJMOD}/libs/TPS56637RPAR.kicad_sym</uri>
     </library>
     <library logical="Transistor_FET">
       <uri>${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym</uri>
@@ -6370,10 +6518,7 @@
       <node ref="U9" pin="5" pinfunction="VCC_5" pintype="power_in"/>
     </net>
     <net code="3" name="+5V_AUX" class="HighCurrent,Default">
-      <node ref="C30" pin="1" pintype="passive"/>
-      <node ref="C31" pin="1" pintype="passive"/>
       <node ref="C32" pin="1" pintype="passive"/>
-      <node ref="C33" pin="1" pintype="passive"/>
       <node ref="C54" pin="1" pintype="passive"/>
       <node ref="F12" pin="1" pintype="passive"/>
       <node ref="F4" pin="1" pintype="passive"/>
@@ -6381,25 +6526,22 @@
       <node ref="F6" pin="1" pintype="passive"/>
       <node ref="F7" pin="1" pintype="passive"/>
       <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="L3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
       <node ref="R15" pin="1" pintype="passive"/>
       <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R62" pin="1" pintype="passive"/>
       <node ref="U14" pin="5" pinfunction="VCC_5" pintype="power_in"/>
-      <node ref="U5" pin="5" pinfunction="VLDOIN_5" pintype="power_in"/>
-      <node ref="U5" pin="8" pinfunction="VOUT_8" pintype="power_out"/>
-      <node ref="U5" pin="9" pinfunction="VOUT_9" pintype="passive"/>
     </net>
     <net code="4" name="+5V_PI" class="HighCurrent,Default">
-      <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pintype="passive"/>
-      <node ref="C12" pin="1" pintype="passive"/>
-      <node ref="C9" pin="1" pintype="passive"/>
       <node ref="J14" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R61" pin="1" pintype="passive"/>
       <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="U2" pin="5" pinfunction="VLDOIN_5" pintype="power_in"/>
-      <node ref="U2" pin="8" pinfunction="VOUT_8" pintype="power_out"/>
-      <node ref="U2" pin="9" pinfunction="VOUT_9" pintype="passive"/>
     </net>
     <net code="5" name="+5V_SYS" class="Power,Default">
       <node ref="C16" pin="1" pintype="passive"/>
@@ -6411,7 +6553,7 @@
       <node ref="F8" pin="1" pintype="passive"/>
       <node ref="F9" pin="1" pintype="passive"/>
       <node ref="J5" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
-      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R20" pin="1" pintype="passive"/>
       <node ref="R41" pin="1" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
@@ -6426,10 +6568,12 @@
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="C28" pin="1" pintype="passive"/>
       <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="C30" pin="1" pintype="passive"/>
       <node ref="C36" pin="1" pintype="passive"/>
       <node ref="C49" pin="1" pintype="passive"/>
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
       <node ref="D12" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="D13" pin="1" pinfunction="A1_1" pintype="passive"/>
       <node ref="F3" pin="1" pintype="passive"/>
@@ -6439,13 +6583,11 @@
       <node ref="Q1" pin="3" pinfunction="S_3" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
       <node ref="R37" pin="1" pintype="passive"/>
+      <node ref="R63" pin="1" pintype="passive"/>
       <node ref="U13" pin="8" pinfunction="Vbus_8" pintype="input"/>
-      <node ref="U2" pin="1" pinfunction="VIN_1" pintype="power_in"/>
-      <node ref="U2" pin="14" pinfunction="EN_SYNC_14" pintype="input"/>
-      <node ref="U2" pin="16" pinfunction="VIN_16" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="VIN_8" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="VIN_3" pintype="input"/>
-      <node ref="U5" pin="1" pinfunction="VIN_1" pintype="power_in"/>
-      <node ref="U5" pin="16" pinfunction="VIN_16" pintype="power_in"/>
+      <node ref="U5" pin="8" pinfunction="VIN_8" pintype="power_in"/>
     </net>
     <net code="7" name="/AUX Outputs/AUX1_5V" class="Power,Default">
       <node ref="F4" pin="2" pintype="passive"/>
@@ -6481,187 +6623,251 @@
       <node ref="J23" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R54" pin="1" pintype="passive"/>
     </net>
-    <net code="15" name="/Input Protection/Q1_GATE" class="Default">
+    <net code="15" name="/Buck 5V AUX/BST" class="Default">
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="BOOT_7" pintype="input"/>
+    </net>
+    <net code="16" name="/Buck 5V AUX/FB" class="Default">
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="FB_2" pintype="input"/>
+    </net>
+    <net code="17" name="/Buck 5V AUX/FF" class="Default">
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="/Buck 5V AUX/PG" class="Default">
+      <node ref="R62" pin="2" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="PG_4" pintype="open_collector"/>
+    </net>
+    <net code="19" name="/Buck 5V AUX/SW" class="Default">
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="L3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="SW_6" pintype="power_out"/>
+    </net>
+    <net code="20" name="/Buck 5V PI/BST" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="BOOT_7" pintype="input"/>
+    </net>
+    <net code="21" name="/Buck 5V PI/FB" class="Default">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="FB_2" pintype="input"/>
+    </net>
+    <net code="22" name="/Buck 5V PI/FF" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="/Buck 5V PI/PG" class="Default">
+      <node ref="R61" pin="2" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="PG_4" pintype="open_collector"/>
+    </net>
+    <net code="24" name="/Buck 5V PI/SW" class="Default">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="SW_6" pintype="power_out"/>
+    </net>
+    <net code="25" name="/Buck 5V SYS/BST" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="BOOT_6" pintype="output"/>
+    </net>
+    <net code="26" name="/Buck 5V SYS/EN" class="Default">
+      <node ref="R63" pin="2" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="EN_5" pintype="input"/>
+    </net>
+    <net code="27" name="/Buck 5V SYS/FB" class="Default">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="FB_4" pintype="input"/>
+    </net>
+    <net code="28" name="/Buck 5V SYS/SW" class="Default">
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="SW_2" pintype="output"/>
+    </net>
+    <net code="29" name="/Input Protection/Q1_GATE" class="Default">
       <node ref="D12" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="Q1" pin="4" pinfunction="G_4" pintype="input"/>
       <node ref="R36" pin="1" pintype="passive"/>
     </net>
-    <net code="16" name="/Interior Light/LIGHT_5V" class="Power,Default">
+    <net code="30" name="/Interior Light/LIGHT_5V" class="Power,Default">
       <node ref="C55" pin="1" pintype="passive"/>
       <node ref="C56" pin="1" pintype="passive"/>
       <node ref="F12" pin="2" pintype="passive"/>
       <node ref="J24" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
     </net>
-    <net code="17" name="/Interior Light/LIGHT_DIN" class="Default">
+    <net code="31" name="/Interior Light/LIGHT_DIN" class="Default">
       <node ref="D16" pin="2" pinfunction="A2_2" pintype="passive"/>
       <node ref="J24" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="R60" pin="2" pintype="passive"/>
     </net>
-    <net code="18" name="/Interior Light/LIGHT_DIN_BUF" class="Default">
+    <net code="32" name="/Interior Light/LIGHT_DIN_BUF" class="Default">
       <node ref="R60" pin="1" pintype="passive"/>
       <node ref="U14" pin="4" pinfunction="Y_4" pintype="output"/>
     </net>
-    <net code="19" name="/Motor Control/ENC1_5V" class="Power,Default">
+    <net code="33" name="/Motor Control/ENC1_5V" class="Power,Default">
       <node ref="C47" pin="1" pintype="passive"/>
       <node ref="F8" pin="2" pintype="passive"/>
       <node ref="J7" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
     </net>
-    <net code="20" name="/Motor Control/ENC1_A_CONN" class="Signal">
+    <net code="34" name="/Motor Control/ENC1_A_CONN" class="Signal">
       <node ref="J7" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R28" pin="2" pintype="passive"/>
       <node ref="U7" pin="1" pinfunction="I/O1_1" pintype="passive"/>
       <node ref="U7" pin="6" pinfunction="I/O1_6" pintype="passive"/>
     </net>
-    <net code="21" name="/Motor Control/ENC1_A_F" class="Signal">
+    <net code="35" name="/Motor Control/ENC1_A_F" class="Signal">
       <node ref="C43" pin="1" pintype="passive"/>
       <node ref="R28" pin="1" pintype="passive"/>
       <node ref="U9" pin="1" pintype="input"/>
     </net>
-    <net code="22" name="/Motor Control/ENC1_B_CONN" class="Signal">
+    <net code="36" name="/Motor Control/ENC1_B_CONN" class="Signal">
       <node ref="J7" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="R29" pin="2" pintype="passive"/>
       <node ref="U7" pin="3" pinfunction="I/O2_3" pintype="passive"/>
       <node ref="U7" pin="4" pinfunction="I/O2_4" pintype="passive"/>
     </net>
-    <net code="23" name="/Motor Control/ENC1_B_F" class="Signal">
+    <net code="37" name="/Motor Control/ENC1_B_F" class="Signal">
       <node ref="C44" pin="1" pintype="passive"/>
       <node ref="R29" pin="1" pintype="passive"/>
       <node ref="U9" pin="3" pintype="input"/>
     </net>
-    <net code="24" name="/Motor Control/ENC2_5V" class="Power,Default">
+    <net code="38" name="/Motor Control/ENC2_5V" class="Power,Default">
       <node ref="C48" pin="1" pintype="passive"/>
       <node ref="F9" pin="2" pintype="passive"/>
       <node ref="J15" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
     </net>
-    <net code="25" name="/Motor Control/ENC2_A_CONN" class="Signal">
+    <net code="39" name="/Motor Control/ENC2_A_CONN" class="Signal">
       <node ref="J15" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R32" pin="2" pintype="passive"/>
       <node ref="U12" pin="1" pinfunction="I/O1_1" pintype="passive"/>
       <node ref="U12" pin="6" pinfunction="I/O1_6" pintype="passive"/>
     </net>
-    <net code="26" name="/Motor Control/ENC2_A_F" class="Signal">
+    <net code="40" name="/Motor Control/ENC2_A_F" class="Signal">
       <node ref="C45" pin="1" pintype="passive"/>
       <node ref="R32" pin="1" pintype="passive"/>
       <node ref="U10" pin="1" pintype="input"/>
     </net>
-    <net code="27" name="/Motor Control/ENC2_B_CONN" class="Signal">
+    <net code="41" name="/Motor Control/ENC2_B_CONN" class="Signal">
       <node ref="J15" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="R33" pin="2" pintype="passive"/>
       <node ref="U12" pin="3" pinfunction="I/O2_3" pintype="passive"/>
       <node ref="U12" pin="4" pinfunction="I/O2_4" pintype="passive"/>
     </net>
-    <net code="28" name="/Motor Control/ENC2_B_F" class="Signal">
+    <net code="42" name="/Motor Control/ENC2_B_F" class="Signal">
       <node ref="C46" pin="1" pintype="passive"/>
       <node ref="R33" pin="1" pintype="passive"/>
       <node ref="U10" pin="3" pintype="input"/>
     </net>
-    <net code="29" name="/Motor Control/M1_DRV_GND" class="Default">
+    <net code="43" name="/Motor Control/M1_DRV_GND" class="Default">
       <node ref="F10" pin="1" pintype="passive"/>
       <node ref="J6" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
     </net>
-    <net code="30" name="/Motor Control/M2_DRV_GND" class="Default">
+    <net code="44" name="/Motor Control/M2_DRV_GND" class="Default">
       <node ref="F11" pin="1" pintype="passive"/>
       <node ref="J16" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
     </net>
-    <net code="31" name="/Motor Control/MOTOR1_DIR_CONN" class="Signal">
+    <net code="45" name="/Motor Control/MOTOR1_DIR_CONN" class="Signal">
       <node ref="J6" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="R27" pin="2" pintype="passive"/>
       <node ref="U6" pin="3" pinfunction="I/O2_3" pintype="passive"/>
       <node ref="U6" pin="4" pinfunction="I/O2_4" pintype="passive"/>
     </net>
-    <net code="32" name="/Motor Control/MOTOR1_PWM_CONN" class="Signal">
+    <net code="46" name="/Motor Control/MOTOR1_PWM_CONN" class="Signal">
       <node ref="J6" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R26" pin="2" pintype="passive"/>
       <node ref="R52" pin="1" pintype="passive"/>
       <node ref="U6" pin="1" pinfunction="I/O1_1" pintype="passive"/>
       <node ref="U6" pin="6" pinfunction="I/O1_6" pintype="passive"/>
     </net>
-    <net code="33" name="/Motor Control/MOTOR2_DIR_CONN" class="Signal">
+    <net code="47" name="/Motor Control/MOTOR2_DIR_CONN" class="Signal">
       <node ref="J16" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="R31" pin="2" pintype="passive"/>
       <node ref="U11" pin="3" pinfunction="I/O2_3" pintype="passive"/>
       <node ref="U11" pin="4" pinfunction="I/O2_4" pintype="passive"/>
     </net>
-    <net code="34" name="/Motor Control/MOTOR2_PWM_CONN" class="Signal">
+    <net code="48" name="/Motor Control/MOTOR2_PWM_CONN" class="Signal">
       <node ref="J16" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R30" pin="2" pintype="passive"/>
       <node ref="R53" pin="1" pintype="passive"/>
       <node ref="U11" pin="1" pinfunction="I/O1_1" pintype="passive"/>
       <node ref="U11" pin="6" pinfunction="I/O1_6" pintype="passive"/>
     </net>
-    <net code="35" name="/Pi 5 Interface/PI_3V3" class="Signal">
+    <net code="49" name="/Pi 5 Interface/PI_3V3" class="Signal">
       <node ref="D15" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="J13" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
     </net>
-    <net code="36" name="/Pi 5 Interface/PI_BOOT0" class="Signal">
+    <net code="50" name="/Pi 5 Interface/PI_BOOT0" class="Signal">
       <node ref="J13" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
       <node ref="R47" pin="1" pintype="passive"/>
     </net>
-    <net code="37" name="/Pi 5 Interface/PI_RESET" class="Signal">
+    <net code="51" name="/Pi 5 Interface/PI_RESET" class="Signal">
       <node ref="J13" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
       <node ref="Q2" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R46" pin="1" pintype="passive"/>
     </net>
-    <net code="38" name="/Pi 5 Interface/PI_RXD" class="Signal">
+    <net code="52" name="/Pi 5 Interface/PI_RXD" class="Signal">
       <node ref="J13" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
     </net>
-    <net code="39" name="/Pi 5 Interface/PI_TXD" class="Signal">
+    <net code="53" name="/Pi 5 Interface/PI_TXD" class="Signal">
       <node ref="J13" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
     </net>
-    <net code="40" name="/Servo Interface/SERVO_BUS" class="Signal">
+    <net code="54" name="/Servo Interface/SERVO_BUS" class="Signal">
       <node ref="R41" pin="2" pintype="passive"/>
       <node ref="R42" pin="1" pintype="passive"/>
       <node ref="U8" pin="4" pinfunction="B_4" pintype="bidirectional"/>
     </net>
-    <net code="41" name="/Servo Interface/SERVO_SIG" class="Signal">
+    <net code="55" name="/Servo Interface/SERVO_SIG" class="Signal">
       <node ref="D14" pin="2" pinfunction="A2_2" pintype="passive"/>
       <node ref="J17" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R42" pin="2" pintype="passive"/>
     </net>
-    <net code="42" name="/Servo Interface/VBAT_SERVO" class="HighCurrent,Default">
+    <net code="56" name="/Servo Interface/VBAT_SERVO" class="HighCurrent,Default">
       <node ref="F3" pin="2" pintype="passive"/>
       <node ref="J17" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
     </net>
-    <net code="43" name="AUX_EN" class="Signal">
+    <net code="57" name="AUX_EN" class="Signal">
       <node ref="C40" pin="1" pintype="passive"/>
       <node ref="D15" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="J22" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="R43" pin="1" pintype="passive"/>
-      <node ref="U5" pin="14" pinfunction="EN_SYNC_14" pintype="input"/>
+      <node ref="U5" pin="1" pinfunction="EN_1" pintype="input"/>
     </net>
-    <net code="44" name="BATT_ALERT" class="Default">
+    <net code="58" name="BATT_ALERT" class="Default">
       <node ref="R58" pin="2" pintype="passive"/>
       <node ref="U1" pin="56" pinfunction="PB4_56" pintype="bidirectional"/>
       <node ref="U13" pin="3" pinfunction="~{Alert}_3" pintype="open_collector"/>
     </net>
-    <net code="45" name="BOOT" class="Signal">
+    <net code="59" name="BOOT" class="Signal">
       <node ref="J4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R47" pin="2" pintype="passive"/>
       <node ref="U1" pin="60" pinfunction="PF11_60" pintype="bidirectional"/>
     </net>
-    <net code="46" name="ENC1_A" class="Signal">
+    <net code="60" name="ENC1_A" class="Signal">
       <node ref="U1" pin="50" pinfunction="PA15_50" pintype="bidirectional"/>
       <node ref="U9" pin="6" pintype="output"/>
     </net>
-    <net code="47" name="ENC1_B" class="Signal">
+    <net code="61" name="ENC1_B" class="Signal">
       <node ref="U1" pin="55" pinfunction="PB3_55" pintype="bidirectional"/>
       <node ref="U9" pin="4" pintype="output"/>
     </net>
-    <net code="48" name="ENC2_A" class="Signal">
+    <net code="62" name="ENC2_A" class="Signal">
       <node ref="U1" pin="41" pinfunction="PA8_41" pintype="bidirectional"/>
       <node ref="U10" pin="6" pintype="output"/>
     </net>
-    <net code="49" name="ENC2_B" class="Signal">
+    <net code="63" name="ENC2_B" class="Signal">
       <node ref="U1" pin="42" pinfunction="PA9_42" pintype="bidirectional"/>
       <node ref="U10" pin="4" pintype="output"/>
     </net>
-    <net code="50" name="GND" class="Power,Default">
+    <net code="64" name="GND" class="Power,Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
-      <node ref="C12" pin="2" pintype="passive"/>
       <node ref="C13" pin="2" pintype="passive"/>
       <node ref="C14" pin="2" pintype="passive"/>
       <node ref="C17" pin="2" pintype="passive"/>
@@ -6679,7 +6885,6 @@
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C30" pin="2" pintype="passive"/>
       <node ref="C32" pin="2" pintype="passive"/>
-      <node ref="C33" pin="2" pintype="passive"/>
       <node ref="C34" pin="2" pintype="passive"/>
       <node ref="C35" pin="2" pintype="passive"/>
       <node ref="C36" pin="2" pintype="passive"/>
@@ -6738,9 +6943,7 @@
       <node ref="J8" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="Q2" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
-      <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R16" pin="2" pintype="passive"/>
-      <node ref="R2" pin="2" pintype="passive"/>
       <node ref="R36" pin="2" pintype="passive"/>
       <node ref="R38" pin="2" pintype="passive"/>
       <node ref="R40" pin="2" pintype="passive"/>
@@ -6767,21 +6970,15 @@
       <node ref="U13" pin="7" pinfunction="GND_7" pintype="power_in"/>
       <node ref="U14" pin="1" pinfunction="~{OE}_1" pintype="input"/>
       <node ref="U14" pin="3" pinfunction="GND_3" pintype="power_in"/>
-      <node ref="U2" pin="11" pinfunction="AGND_11" pintype="power_in"/>
-      <node ref="U2" pin="17" pinfunction="PGND_17" pintype="power_in"/>
-      <node ref="U2" pin="18" pinfunction="PGND_18" pintype="power_in"/>
-      <node ref="U2" pin="19" pinfunction="PGND_19" pintype="power_in"/>
-      <node ref="U2" pin="20" pinfunction="PGND_20" pintype="power_in"/>
-      <node ref="U2" pin="6" pinfunction="AGND_6" pintype="power_in"/>
+      <node ref="U2" pin="10" pinfunction="MODE_10" pintype="input"/>
+      <node ref="U2" pin="3" pinfunction="AGND_3" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="PGND_9" pintype="power_in"/>
       <node ref="U3" pin="1" pinfunction="GND_1" pintype="power_in"/>
       <node ref="U4" pin="4" pinfunction="GND_4" pintype="power_in"/>
       <node ref="U4" pin="9" pinfunction="EP_9" pintype="passive"/>
-      <node ref="U5" pin="11" pinfunction="AGND_11" pintype="power_in"/>
-      <node ref="U5" pin="17" pinfunction="PGND_17" pintype="power_in"/>
-      <node ref="U5" pin="18" pinfunction="PGND_18" pintype="power_in"/>
-      <node ref="U5" pin="19" pinfunction="PGND_19" pintype="power_in"/>
-      <node ref="U5" pin="20" pinfunction="PGND_20" pintype="power_in"/>
-      <node ref="U5" pin="6" pinfunction="AGND_6" pintype="power_in"/>
+      <node ref="U5" pin="10" pinfunction="MODE_10" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="AGND_3" pintype="power_in"/>
+      <node ref="U5" pin="9" pinfunction="PGND_9" pintype="power_in"/>
       <node ref="U6" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="U7" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="U8" pin="2" pinfunction="GND_2" pintype="power_in"/>
@@ -6789,40 +6986,40 @@
       <node ref="Y3" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="Y3" pin="4" pinfunction="4_4" pintype="passive"/>
     </net>
-    <net code="51" name="LED_MOTOR" class="Signal">
+    <net code="65" name="LED_MOTOR" class="Signal">
       <node ref="R24" pin="1" pintype="passive"/>
       <node ref="U1" pin="35" pinfunction="PB14_35" pintype="bidirectional"/>
     </net>
-    <net code="52" name="LED_PI_LINK" class="Signal">
+    <net code="66" name="LED_PI_LINK" class="Signal">
       <node ref="R22" pin="1" pintype="passive"/>
       <node ref="U1" pin="33" pinfunction="PB12_33" pintype="bidirectional"/>
     </net>
-    <net code="53" name="LED_USER" class="Signal">
+    <net code="67" name="LED_USER" class="Signal">
       <node ref="R21" pin="1" pintype="passive"/>
       <node ref="U1" pin="21" pinfunction="PA5_21" pintype="bidirectional"/>
     </net>
-    <net code="54" name="LIGHT_DATA" class="Default">
+    <net code="68" name="LIGHT_DATA" class="Default">
       <node ref="R59" pin="1" pintype="passive"/>
       <node ref="U1" pin="57" pinfunction="PB5_57" pintype="bidirectional"/>
       <node ref="U14" pin="2" pinfunction="A_2" pintype="input"/>
     </net>
-    <net code="55" name="MOTOR1_DIR" class="Signal">
+    <net code="69" name="MOTOR1_DIR" class="Signal">
       <node ref="R27" pin="1" pintype="passive"/>
       <node ref="U1" pin="26" pinfunction="PB0_26" pintype="bidirectional"/>
     </net>
-    <net code="56" name="MOTOR1_PWM" class="Signal">
+    <net code="70" name="MOTOR1_PWM" class="Signal">
       <node ref="R26" pin="1" pintype="passive"/>
       <node ref="U1" pin="22" pinfunction="PA6_22" pintype="bidirectional"/>
     </net>
-    <net code="57" name="MOTOR2_DIR" class="Signal">
+    <net code="71" name="MOTOR2_DIR" class="Signal">
       <node ref="R31" pin="1" pintype="passive"/>
       <node ref="U1" pin="28" pinfunction="PB2_28" pintype="bidirectional"/>
     </net>
-    <net code="58" name="MOTOR2_PWM" class="Signal">
+    <net code="72" name="MOTOR2_PWM" class="Signal">
       <node ref="R30" pin="1" pintype="passive"/>
       <node ref="U1" pin="23" pinfunction="PA7_23" pintype="bidirectional"/>
     </net>
-    <net code="59" name="NRST" class="Signal">
+    <net code="73" name="NRST" class="Signal">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="J1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
       <node ref="Q2" pin="3" pinfunction="D_3" pintype="passive"/>
@@ -6830,274 +7027,213 @@
       <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="NRST_7" pintype="input"/>
     </net>
-    <net code="60" name="Net-(D3-A)" class="Signal">
+    <net code="74" name="Net-(D3-A)" class="Signal">
       <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
     </net>
-    <net code="61" name="Net-(D4-A)" class="Signal">
+    <net code="75" name="Net-(D4-A)" class="Signal">
       <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R17" pin="2" pintype="passive"/>
     </net>
-    <net code="62" name="Net-(D5-A)" class="Signal">
+    <net code="76" name="Net-(D5-A)" class="Signal">
       <node ref="D5" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
     </net>
-    <net code="63" name="Net-(D6-A)" class="Signal">
+    <net code="77" name="Net-(D6-A)" class="Signal">
       <node ref="D6" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R19" pin="2" pintype="passive"/>
     </net>
-    <net code="64" name="Net-(D7-A)" class="Signal">
+    <net code="78" name="Net-(D7-A)" class="Signal">
       <node ref="D7" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R20" pin="2" pintype="passive"/>
     </net>
-    <net code="65" name="Net-(D8-A)" class="Signal">
+    <net code="79" name="Net-(D8-A)" class="Signal">
       <node ref="D8" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R21" pin="2" pintype="passive"/>
     </net>
-    <net code="66" name="Net-(D9-A)" class="Signal">
+    <net code="80" name="Net-(D9-A)" class="Signal">
       <node ref="D9" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R22" pin="2" pintype="passive"/>
     </net>
-    <net code="67" name="Net-(D11-A)" class="Signal">
+    <net code="81" name="Net-(D11-A)" class="Signal">
       <node ref="D11" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R24" pin="2" pintype="passive"/>
     </net>
-    <net code="68" name="Net-(U2-CBOOT)" class="Default">
-      <node ref="U2" pin="3" pinfunction="CBOOT_3" pintype="passive"/>
-      <node ref="U2" pin="4" pinfunction="RBOOT_4" pintype="passive"/>
-    </net>
-    <net code="69" name="Net-(U2-FB)" class="Default">
-      <node ref="C10" pin="2" pintype="passive"/>
-      <node ref="R4" pin="2" pintype="passive"/>
-      <node ref="R5" pin="1" pintype="passive"/>
-      <node ref="U2" pin="10" pinfunction="FB_10" pintype="input"/>
-    </net>
-    <net code="70" name="Net-(U2-RT)" class="Default">
-      <node ref="R2" pin="1" pintype="passive"/>
-      <node ref="U2" pin="12" pinfunction="RT_12" pintype="passive"/>
-    </net>
-    <net code="71" name="Net-(U3-BOOT)" class="Default">
-      <node ref="C15" pin="1" pintype="passive"/>
-      <node ref="U3" pin="6" pinfunction="BOOT_6" pintype="output"/>
-    </net>
-    <net code="72" name="Net-(U3-FB)" class="Default">
-      <node ref="C16" pin="2" pintype="passive"/>
-      <node ref="R6" pin="2" pintype="passive"/>
-      <node ref="R7" pin="1" pintype="passive"/>
-      <node ref="U3" pin="4" pinfunction="FB_4" pintype="input"/>
-    </net>
-    <net code="73" name="Net-(U3-SW)" class="Default">
-      <node ref="C15" pin="2" pintype="passive"/>
-      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="U3" pin="2" pinfunction="SW_2" pintype="output"/>
-    </net>
-    <net code="74" name="Net-(U4-FB)" class="Default">
+    <net code="82" name="Net-(U4-FB)" class="Default">
       <node ref="C27" pin="2" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U4" pin="3" pinfunction="FB_3" pintype="input"/>
     </net>
-    <net code="75" name="Net-(U4-NR)" class="Default">
+    <net code="83" name="Net-(U4-NR)" class="Default">
       <node ref="C26" pin="1" pintype="passive"/>
       <node ref="U4" pin="6" pinfunction="NR_6" pintype="passive"/>
     </net>
-    <net code="76" name="Net-(U5-CBOOT)" class="Default">
-      <node ref="U5" pin="3" pinfunction="CBOOT_3" pintype="passive"/>
-      <node ref="U5" pin="4" pinfunction="RBOOT_4" pintype="passive"/>
-    </net>
-    <net code="77" name="Net-(U5-FB)" class="Default">
-      <node ref="C31" pin="2" pintype="passive"/>
-      <node ref="R15" pin="2" pintype="passive"/>
-      <node ref="R16" pin="1" pintype="passive"/>
-      <node ref="U5" pin="10" pinfunction="FB_10" pintype="input"/>
-    </net>
-    <net code="78" name="Net-(U5-RT)" class="Default">
-      <node ref="R14" pin="1" pintype="passive"/>
-      <node ref="U5" pin="12" pinfunction="RT_12" pintype="passive"/>
-    </net>
-    <net code="79" name="OSC_IN" class="Default">
+    <net code="84" name="OSC_IN" class="Default">
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="PF0_5" pintype="bidirectional"/>
       <node ref="Y3" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="80" name="OSC_OUT" class="Default">
+    <net code="85" name="OSC_OUT" class="Default">
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="PF1_6" pintype="bidirectional"/>
       <node ref="Y3" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="81" name="PA1" class="Signal">
+    <net code="86" name="PA1" class="Signal">
       <node ref="J8" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="U1" pin="15" pinfunction="PA1_15" pintype="bidirectional"/>
     </net>
-    <net code="82" name="PA4" class="Signal">
+    <net code="87" name="PA4" class="Signal">
       <node ref="J8" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
       <node ref="U1" pin="20" pinfunction="PA4_20" pintype="bidirectional"/>
     </net>
-    <net code="83" name="PB6" class="Signal">
+    <net code="88" name="PB6" class="Signal">
       <node ref="J8" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
       <node ref="R56" pin="2" pintype="passive"/>
       <node ref="U1" pin="58" pinfunction="PB6_58" pintype="bidirectional"/>
       <node ref="U13" pin="5" pinfunction="SCL_5" pintype="input"/>
     </net>
-    <net code="84" name="PB7" class="Signal">
+    <net code="89" name="PB7" class="Signal">
       <node ref="J8" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
       <node ref="R57" pin="2" pintype="passive"/>
       <node ref="U1" pin="59" pinfunction="PB7_59" pintype="bidirectional"/>
       <node ref="U13" pin="4" pinfunction="SDA_4" pintype="bidirectional"/>
     </net>
-    <net code="85" name="PB9" class="Signal">
+    <net code="90" name="PB9" class="Signal">
       <node ref="J8" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
       <node ref="U1" pin="62" pinfunction="PB9_62" pintype="bidirectional"/>
     </net>
-    <net code="86" name="PB13" class="Signal">
+    <net code="91" name="PB13" class="Signal">
       <node ref="J8" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
       <node ref="U1" pin="34" pinfunction="PB13_34" pintype="bidirectional"/>
     </net>
-    <net code="87" name="PB15" class="Signal">
+    <net code="92" name="PB15" class="Signal">
       <node ref="J8" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
       <node ref="U1" pin="36" pinfunction="PB15_36" pintype="bidirectional"/>
     </net>
-    <net code="88" name="PC0" class="Signal">
+    <net code="93" name="PC0" class="Signal">
       <node ref="J8" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="PC0_8" pintype="bidirectional"/>
     </net>
-    <net code="89" name="PC2" class="Signal">
+    <net code="94" name="PC2" class="Signal">
       <node ref="J8" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
       <node ref="U1" pin="10" pinfunction="PC2_10" pintype="bidirectional"/>
     </net>
-    <net code="90" name="PC6" class="Signal">
+    <net code="95" name="PC6" class="Signal">
       <node ref="J8" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
       <node ref="U1" pin="37" pinfunction="PC6_37" pintype="bidirectional"/>
     </net>
-    <net code="91" name="PC7" class="Signal">
+    <net code="96" name="PC7" class="Signal">
       <node ref="J8" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
       <node ref="U1" pin="38" pinfunction="PC7_38" pintype="bidirectional"/>
     </net>
-    <net code="92" name="PC10" class="Signal">
+    <net code="97" name="PC10" class="Signal">
       <node ref="J8" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
       <node ref="U1" pin="51" pinfunction="PC10_51" pintype="bidirectional"/>
     </net>
-    <net code="93" name="PC11" class="Signal">
+    <net code="98" name="PC11" class="Signal">
       <node ref="J8" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
       <node ref="U1" pin="52" pinfunction="PC11_52" pintype="bidirectional"/>
     </net>
-    <net code="94" name="SERVO_DIR" class="Signal">
+    <net code="99" name="SERVO_DIR" class="Signal">
       <node ref="R40" pin="1" pintype="passive"/>
       <node ref="U1" pin="30" pinfunction="PB11_30" pintype="bidirectional"/>
       <node ref="U8" pin="5" pinfunction="DIR_5" pintype="input"/>
     </net>
-    <net code="95" name="SERVO_TX" class="Signal">
+    <net code="100" name="SERVO_TX" class="Signal">
       <node ref="R39" pin="2" pintype="passive"/>
       <node ref="U1" pin="29" pinfunction="PB10_29" pintype="bidirectional"/>
       <node ref="U8" pin="3" pinfunction="A_3" pintype="bidirectional"/>
     </net>
-    <net code="96" name="SWCLK" class="Signal">
+    <net code="101" name="SWCLK" class="Signal">
       <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="U1" pin="49" pinfunction="PA14_49" pintype="bidirectional"/>
     </net>
-    <net code="97" name="SWDIO" class="Signal">
+    <net code="102" name="SWDIO" class="Signal">
       <node ref="J1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="U1" pin="46" pinfunction="PA13_46" pintype="bidirectional"/>
     </net>
-    <net code="98" name="USART2_RX" class="Signal">
+    <net code="103" name="USART2_RX" class="Signal">
       <node ref="R13" pin="1" pintype="passive"/>
       <node ref="U1" pin="17" pinfunction="PA3_17" pintype="bidirectional"/>
     </net>
-    <net code="99" name="USART2_TX" class="Signal">
+    <net code="104" name="USART2_TX" class="Signal">
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="U1" pin="16" pinfunction="PA2_16" pintype="bidirectional"/>
     </net>
-    <net code="100" name="VBAT_FUSED" class="HighCurrent,Default">
+    <net code="105" name="VBAT_FUSED" class="HighCurrent,Default">
       <node ref="F1" pin="1" pintype="passive"/>
       <node ref="Q1" pin="5" pinfunction="D_5" pintype="passive"/>
     </net>
-    <net code="101" name="VBAT_IN" class="HighCurrent,Default">
+    <net code="106" name="VBAT_IN" class="HighCurrent,Default">
       <node ref="F1" pin="2" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
     </net>
-    <net code="102" name="VBAT_SENSE" class="Default">
+    <net code="107" name="VBAT_SENSE" class="Default">
       <node ref="C37" pin="1" pintype="passive"/>
       <node ref="R37" pin="2" pintype="passive"/>
       <node ref="R38" pin="1" pintype="passive"/>
       <node ref="U1" pin="14" pinfunction="PA0_14" pintype="bidirectional"/>
     </net>
-    <net code="103" name="unconnected-(J1-Pin_6-Pad6)" class="Default">
+    <net code="108" name="unconnected-(J1-Pin_6-Pad6)" class="Default">
       <node ref="J1" pin="6" pinfunction="Pin_6_6" pintype="passive+no_connect"/>
     </net>
-    <net code="104" name="unconnected-(U1-PA10-Pad43)" class="Default">
+    <net code="109" name="unconnected-(U1-PA10-Pad43)" class="Default">
       <node ref="U1" pin="43" pinfunction="PA10_43" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="105" name="unconnected-(U1-PA11-Pad44)" class="Default">
+    <net code="110" name="unconnected-(U1-PA11-Pad44)" class="Default">
       <node ref="U1" pin="44" pinfunction="PA11_44" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="106" name="unconnected-(U1-PA12-Pad45)" class="Default">
+    <net code="111" name="unconnected-(U1-PA12-Pad45)" class="Default">
       <node ref="U1" pin="45" pinfunction="PA12_45" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="107" name="unconnected-(U1-PB1-Pad27)" class="Default">
+    <net code="112" name="unconnected-(U1-PB1-Pad27)" class="Default">
       <node ref="U1" pin="27" pinfunction="PB1_27" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="108" name="unconnected-(U1-PB8-Pad61)" class="Default">
+    <net code="113" name="unconnected-(U1-PB8-Pad61)" class="Default">
       <node ref="U1" pin="61" pinfunction="PB8_61" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="109" name="unconnected-(U1-PC1-Pad9)" class="Default">
+    <net code="114" name="unconnected-(U1-PC1-Pad9)" class="Default">
       <node ref="U1" pin="9" pinfunction="PC1_9" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="110" name="unconnected-(U1-PC3-Pad11)" class="Default">
+    <net code="115" name="unconnected-(U1-PC3-Pad11)" class="Default">
       <node ref="U1" pin="11" pinfunction="PC3_11" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="111" name="unconnected-(U1-PC4-Pad24)" class="Default">
+    <net code="116" name="unconnected-(U1-PC4-Pad24)" class="Default">
       <node ref="U1" pin="24" pinfunction="PC4_24" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="112" name="unconnected-(U1-PC5-Pad25)" class="Default">
+    <net code="117" name="unconnected-(U1-PC5-Pad25)" class="Default">
       <node ref="U1" pin="25" pinfunction="PC5_25" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="113" name="unconnected-(U1-PC8-Pad39)" class="Default">
+    <net code="118" name="unconnected-(U1-PC8-Pad39)" class="Default">
       <node ref="U1" pin="39" pinfunction="PC8_39" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="114" name="unconnected-(U1-PC9-Pad40)" class="Default">
+    <net code="119" name="unconnected-(U1-PC9-Pad40)" class="Default">
       <node ref="U1" pin="40" pinfunction="PC9_40" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="115" name="unconnected-(U1-PC12-Pad53)" class="Default">
+    <net code="120" name="unconnected-(U1-PC12-Pad53)" class="Default">
       <node ref="U1" pin="53" pinfunction="PC12_53" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="116" name="unconnected-(U1-PC13-Pad2)" class="Default">
+    <net code="121" name="unconnected-(U1-PC13-Pad2)" class="Default">
       <node ref="U1" pin="2" pinfunction="PC13_2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="117" name="unconnected-(U1-PC14-Pad3)" class="Default">
+    <net code="122" name="unconnected-(U1-PC14-Pad3)" class="Default">
       <node ref="U1" pin="3" pinfunction="PC14_3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="118" name="unconnected-(U1-PC15-Pad4)" class="Default">
+    <net code="123" name="unconnected-(U1-PC15-Pad4)" class="Default">
       <node ref="U1" pin="4" pinfunction="PC15_4" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="119" name="unconnected-(U1-PD2-Pad54)" class="Default">
+    <net code="124" name="unconnected-(U1-PD2-Pad54)" class="Default">
       <node ref="U1" pin="54" pinfunction="PD2_54" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="120" name="unconnected-(U2-NC-Pad15)" class="Default">
-      <node ref="U2" pin="15" pinfunction="NC_15" pintype="no_connect"/>
+    <net code="125" name="unconnected-(U2-EN-Pad1)" class="Default">
+      <node ref="U2" pin="1" pinfunction="EN_1" pintype="input+no_connect"/>
     </net>
-    <net code="121" name="unconnected-(U2-PG-Pad13)" class="Default">
-      <node ref="U2" pin="13" pinfunction="PG_13" pintype="open_collector+no_connect"/>
+    <net code="126" name="unconnected-(U2-NC-Pad5)" class="Default">
+      <node ref="U2" pin="5" pinfunction="NC_5" pintype="no_connect"/>
     </net>
-    <net code="122" name="unconnected-(U2-SW-Pad2)" class="Default">
-      <node ref="U2" pin="2" pinfunction="SW_2" pintype="passive+no_connect"/>
-    </net>
-    <net code="123" name="unconnected-(U2-VCC-Pad7)" class="Default">
-      <node ref="U2" pin="7" pinfunction="VCC_7" pintype="power_out+no_connect"/>
-    </net>
-    <net code="124" name="unconnected-(U3-EN-Pad5)" class="Default">
-      <node ref="U3" pin="5" pinfunction="EN_5" pintype="input+no_connect"/>
-    </net>
-    <net code="125" name="unconnected-(U5-NC-Pad15)" class="Default">
-      <node ref="U5" pin="15" pinfunction="NC_15" pintype="no_connect"/>
-    </net>
-    <net code="126" name="unconnected-(U5-PG-Pad13)" class="Default">
-      <node ref="U5" pin="13" pinfunction="PG_13" pintype="open_collector+no_connect"/>
-    </net>
-    <net code="127" name="unconnected-(U5-SW-Pad2)" class="Default">
-      <node ref="U5" pin="2" pinfunction="SW_2" pintype="passive+no_connect"/>
-    </net>
-    <net code="128" name="unconnected-(U5-VCC-Pad7)" class="Default">
-      <node ref="U5" pin="7" pinfunction="VCC_7" pintype="power_out+no_connect"/>
+    <net code="127" name="unconnected-(U5-NC-Pad5)" class="Default">
+      <node ref="U5" pin="5" pinfunction="NC_5" pintype="no_connect"/>
     </net>
   </nets>
 </export>
