@@ -1,6 +1,6 @@
 # Design change, 2026-10-27: battery current monitor and interior light
 
-Branch `feat/battery-monitor-interior-light`. This is a schematic and docs change only. The PCB file is unchanged. The 18 new parts still need "Update PCB from Schematic", placement and routing (see the [layout to-do](#layout-to-do) below). ERC is clean (0 errors, 0 warnings).
+Branch `feat/battery-monitor-interior-light` (merged into main as c6b7dc3). The branch itself changed only the schematic and docs. The 18 new parts were placed and routed on main afterwards; see [Layout](#layout). ERC is clean (0 errors, 0 warnings).
 
 Two new hierarchical sheets, both connected through global labels and power symbols like *AUX Outputs* and *Servo Interface*:
 
@@ -143,13 +143,18 @@ Both sheets sit on the root sheet, right of U1 and below *Pi 5 Interface*. U1 pi
 
 **Firmware interlock.** The light is off whenever the latch servo moves. The latch only moves with the lid closed (12.9), so this only shortens the S17.2 off-delay. It keeps the worst-case input current at the 8.4 A already analysed; without it the worst case is about 8.7 A (see [fuse-selection.md](fuse-selection.md)).
 
-## Layout to-do
+## Layout
 
-This is for the person doing placement, not part of this change.
+The original placement notes asked for U13 and its filter next to J23, J24 on the payload-facing edge, and R56/R57 near U1. The layout as built (2026-10-27):
 
-- **U13 and its filter:** place U13, R54, R55 and C52 next to J23, on a board edge away from U2/U5 and L1. Route INA_INP/INA_INN as a tight pair with no vias, and do not touch them with any GND pour connection. Add the silkscreen text "SHUNT SENSE: LOAD / BATT" at J23.
-- **Light circuit:** put U14, R60, D16, C55, C56 and F12 at J24. Place J24 on the edge facing the payload compartment.
-- **I2C pull-ups:** put R56 and R57 near U1 pins 58/59.
+- **J23 (shunt sense)** sits on the left edge at the battery input, next to J2, so the Kelvin sense wires stay short and run beside the battery harness. Silkscreen: "BATT" at pin 2, "LOAD" at pin 1, "SHUNT SENSE" below.
+- **U13 and its filter** sit below J8, not at J23. There was no room for them in the J2/F1/Q1 corner. R54, R55 and C52 are at U13's IN+/IN- pins, so the filter is at the input as the INA228 datasheet recommends. INA_INP/INA_INN are short and have no vias.
+- **SH_LOAD/SH_BATT** run from J23 to R54/R55 as a parallel pair, 0.15 mm wide. They are mostly on B.Cu and have one via each. They are tracks, so no GND pour connects to them. The pair keeps clear of J13's GND pad so its thermal spokes stay intact. They carry only the shunt voltage (microamps), so trace resistance does not affect the reading.
+- **I2C pull-ups R56/R57** (and the ALERT pull-up R58) are in a row next to U13, not at U1. PB6/PB7 run from there to J8 and U1. On a bus this short (a few cm), where the pull-ups sit makes no difference.
+- **Light circuit:** J24 is on the lower part of the left edge, with F12, C55, C56, D16, R60 and U14 beside it. +5V_AUX comes up from the In2 plane at F12 and C54. Whether that edge faces the payload compartment depends on the enclosure, so check it at assembly.
+- **U1 PB4/PB5 (BATT_ALERT, LIGHT_DATA)** leave the top edge of U1 on short stubs and run to R58 and R59.
+
+DRC: 0 violations, 0 unconnected, schematic parity 0 (the 9 excluded test vias are unchanged).
 
 ## Verification
 

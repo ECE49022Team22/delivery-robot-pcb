@@ -61,7 +61,7 @@ Component-selection rationale is in [docs/passive-selection-review.md](docs/pass
 
 Schematic: ERC is clean (0 errors, 0 warnings). PCB: 100 x 100 mm, 4 layers with an In1 GND plane. The board was fully routed as of commit 789cabe (2026-10-26), including outer-layer GND pours with stitching vias and widened high-current paths.
 
-The `feat/battery-monitor-interior-light` branch (2026-10-27) adds 18 schematic parts: U13, U14, J23, J24, F12, D16, R54-R60 and C52-C56. They are in the schematic only. They still need "Update PCB from Schematic", placement and routing; see the layout to-do in [docs/design-change-2026-10-27.md](docs/design-change-2026-10-27.md).
+The `feat/battery-monitor-interior-light` branch (2026-10-27) added 18 parts: U13, U14, J23, J24, F12, D16, R54-R60 and C52-C56. They are placed and routed. DRC is clean, with 0 unconnected and 0 schematic parity issues. Layout notes are in [docs/design-change-2026-10-27.md](docs/design-change-2026-10-27.md#layout).
 
 The saved ERC report and netlist (system-ERC-report.txt, system-netlist.xml) were regenerated on 2026-10-27 for that branch. validation/verify_2026_10_27.py checks the branch against the netlist of its parent commit. validation/verify_integration.py checks against the older October 5 connectivity.
 
