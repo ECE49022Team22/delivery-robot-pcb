@@ -2,11 +2,13 @@
 
 Branch `feat/battery-monitor-interior-light` (merged into main as c6b7dc3). The branch itself changed only the schematic and docs. The 18 new parts were placed and routed on main afterwards; see [Layout](#layout). ERC is clean (0 errors, 0 warnings).
 
+**Update 2026-10-28: U13 is now an INA237AIDGSR, not an INA228AIDGSR.** The INA228 was out of stock at TI, LCSC and Mouser (next Mouser stock May 2027), and the INA238 was out too. The INA237 has the same VSSOP-10 (DGS) pinout, the same -0.3 V to 85 V common-mode range, the same 0x40 address with A0 = A1 = GND and the same +/-163.84 mV shunt range, and Mouser stocked 11,540. U13 keeps the `Sensor_Energy:INA228` symbol (identical pins) with the INA237 value and MPN, so there is no connectivity or layout change. Differences: a 16-bit ADC instead of 20-bit, and no ENERGY or CHARGE registers, so firmware integrates current into charge. The sections below are updated for the INA237.
+
 Two new hierarchical sheets, both connected through global labels and power symbols like *AUX Outputs* and *Servo Interface*:
 
 | Sheet file | Sheet name | What it adds |
 |---|---|---|
-| Battery_Monitor.kicad_sch | Battery Monitor | U13 INA228 on an off-board shunt: battery current, voltage and charge over I2C1 |
+| Battery_Monitor.kicad_sch | Battery Monitor | U13 INA237 on an off-board shunt: battery current and voltage over I2C1 (charge counted in firmware) |
 | Interior_Light.kicad_sch | Interior Light | J24 port for a WS2812B strip in the payload compartment, with U14 buffering the data to 5 V (S17.2) |
 
 Battery *voltage* sensing on PA0 (R37/R38/C37, requirement 1.7) is unchanged.
@@ -20,22 +22,22 @@ Battery *voltage* sensing on PA0 (R37/R38/C37, requirement 1.7) is unchanged.
 - A 50 A / 75 mV shunt (1.5 mOhm, class 0.5) sits in the battery **negative** lead. One side goes to the battery - terminal. The other side is the robot's common ground lug, where the Control Board harness GND (the J2 pin 1 lead), the MDD20A VB- lead and the charger - all land.
 - Two Kelvin sense wires run from the shunt's sense screws to J23.
 - The shunt is on the low side, so the sense wires sit within about 0.1 V of ground. A chafed sense wire then can't short the battery.
-- U13 (INA228) measures the shunt voltage over I2C1 and accumulates charge in hardware.
-- **Range check.** Harness drop puts board GND up to about 60 mV above the shunt. That leaves IN- at about -135 mV at 50 A, inside the INA228's -0.3 V common-mode limit. Full scale (ADCRANGE = 0) is +/-163.84 mV, about +/-109 A.
-- **Accuracy budget.** INA228 gain error is 0.05 % max and offset is about 1 uV (0.7 mA referred to the shunt), so the shunt sets the accuracy. Its 0.5 % tolerance is calibrated out. Its temperature drift is not, so check the shunt's tempco and self-heating against the +/-1 % target. R54 + R55 (20 Ohm) against the INA228's 92 kOhm differential input impedance adds about 0.02 % gain error, which the calibration also removes.
+- U13 (INA237) measures the shunt voltage and reports current and bus voltage over I2C1. It has no charge register, so firmware integrates the current into charge.
+- **Range check.** Harness drop puts board GND up to about 60 mV above the shunt. That leaves IN- at about -135 mV at 50 A, inside the INA237's -0.3 V common-mode limit. Full scale (ADCRANGE = 0) is +/-163.84 mV, about +/-109 A.
+- **Accuracy budget.** INA237 gain error is 0.3 % max, which the one-point calibration removes. Its offset is 50 uV max, which is 33 mA referred to the 1.5 mOhm shunt, inside the +/-0.05 A term; a zero-current reading at power-up can trim it further. One ADC LSB is 5 uV (3.3 mA). The shunt's 0.5 % tolerance is also calibrated out. Its temperature drift is not, so check the shunt's tempco and self-heating against the +/-1 % target. R54 + R55 (20 Ohm) against the INA237's 92 kOhm differential input impedance adds about 0.02 % gain error, which the calibration also removes.
 
 ### Datasheet checks
 
-- **INA228 pinout** (TI SLYS021A, table 5-1): 1 A1, 2 A0, 3 ALERT (open-drain, active low), 4 SDA, 5 SCL, 6 VS, 7 GND, 8 VBUS, 9 IN-, 10 IN+. The KiCad `Sensor_Energy:INA228` symbol (an alias of INA226) matches pin for pin, so no project symbol was needed. For low-side sensing the datasheet puts IN+ on the load side of the shunt and IN- on the ground side; J23 is wired that way. A0 = A1 = GND gives address 0x40 (1000000b).
-- **Input filter.** Section 8.1.4 recommends at most 100 Ohm per input with 0.1-1 uF, and says 10 Ohm in each input protects against dV/dt failure up to the 40 V differential rating. R54/R55 10 Ohm + C52 100 nF follow that (about 80 kHz).
-- **Power sequencing.** The input common-mode range is independent of VS (section 7.3.1), so the sense inputs may see voltage while +3V3 is down.
-- **Footprint.** KiCad 10 has no `Package_SO:VSSOP-10_3x3mm_P0.5mm`. U13 uses `Package_SO:TSSOP-10_3x3mm_P0.5mm`, which is drawn from TI's DGS outline (MPDS035) and is the INA228 symbol's default. It fits INA228AIDGSR (VSSOP-10, DGS).
+- **INA237 pinout** (TI SBOSA20A, table 5-1): 1 A1, 2 A0, 3 ALERT (open-drain, active low), 4 SDA, 5 SCL, 6 VS, 7 GND, 8 VBUS, 9 IN-, 10 IN+. This is the same pinout as the INA228, so U13 keeps the KiCad `Sensor_Energy:INA228` symbol (an alias of INA226) and no project symbol was needed. For low-side sensing the datasheet puts IN+ on the load side of the shunt and IN- on the ground side; J23 is wired that way. A0 = A1 = GND gives address 0x40 (1000000b).
+- **Input filter.** The datasheet recommends at most 100 Ohm per input with 0.1-1 uF, and says 10 Ohm in each input protects against dV/dt failure. R54/R55 10 Ohm + C52 100 nF follow that (about 80 kHz).
+- **Power sequencing.** The input common-mode range is independent of VS (section 7.3.1), and the inputs withstand 0-85 V whether or not the device is powered, so the sense inputs may see voltage while +3V3 is down.
+- **Footprint.** KiCad 10 has no `Package_SO:VSSOP-10_3x3mm_P0.5mm`. U13 uses `Package_SO:TSSOP-10_3x3mm_P0.5mm`, which is drawn from TI's DGS outline (MPDS035) and is the INA228 symbol's default. It fits INA237AIDGSR (VSSOP-10, DGS).
 
 ### Parts
 
 | Ref | Part | Value / MPN | Footprint |
 |---|---|---|---|
-| U13 | TI INA228 | INA228AIDGSR | Package_SO:TSSOP-10_3x3mm_P0.5mm (TI DGS) |
+| U13 | TI INA237 | INA237AIDGSR | Package_SO:TSSOP-10_3x3mm_P0.5mm (TI DGS) |
 | J23 | Shunt sense terminal, 2-pin, 2.54 mm | Phoenix Contact 1725656 (MPT 0,5/2-2,54) | TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal |
 | R54, R55 | Input filter resistors | 10 Ohm 1 %, Yageo RC0805FR-0710RL | 0805 |
 | C52 | Differential filter across IN+ / IN- | 100 nF 50 V X7R, KEMET C0805C104K5RACTU | 0805 |
@@ -127,11 +129,11 @@ Both sheets sit on the root sheet, right of U1 and below *Pi 5 Interface*. U1 pi
 
 **Off-board, for the light.** Put a 470-1000 uF / 10 V electrolytic across the strip's power at the strip end.
 
-**Firmware, INA228.**
+**Firmware, INA237.**
 
-- Set ADCRANGE = 0 (+/-163.84 mV).
-- SHUNT_CAL = 13107.2e6 x CURRENT_LSB x 0.0015, with CURRENT_LSB = 250 uA. That gives 4915.2, so write 4915. The current register then reaches 131 A, above the 109 A ADC full scale.
-- Read the CHARGE register for coulomb counting. One LSB is 250 uC, so 50 Ah is about 7.2e8 counts, well inside the 40-bit register.
+- Set ADCRANGE = 0 (+/-163.84 mV, 5 uV per LSB).
+- SHUNT_CAL = 819.2e6 x CURRENT_LSB x 0.0015, with CURRENT_LSB = 4 mA (at least 109 A / 2^15 = 3.3 mA). That gives 4915.2, so write 4915. The 16-bit current register then reaches +/-131 A, above the 109 A ADC full scale.
+- There is no CHARGE register. Integrate CURRENT x elapsed time in firmware on every reading, and reset the count when the battery is full. For tighter integration, set CNVR in DIAG_ALRT so ALERT (PB4) pulses on each completed conversion, and accumulate in the EXTI4 handler.
 - Positive current = discharge.
 - Choose ADC_CONFIG so an averaged result is ready well within 100 ms, for the 10 Hz report.
 
@@ -148,7 +150,7 @@ Both sheets sit on the root sheet, right of U1 and below *Pi 5 Interface*. U1 pi
 The original placement notes asked for U13 and its filter next to J23, J24 on the payload-facing edge, and R56/R57 near U1. The layout as built (2026-10-27):
 
 - **J23 (shunt sense)** sits on the left edge at the battery input, next to J2, so the Kelvin sense wires stay short and run beside the battery harness. Silkscreen: "BATT" at pin 2, "LOAD" at pin 1, "SHUNT SENSE" below.
-- **U13 and its filter** sit below J8, not at J23. There was no room for them in the J2/F1/Q1 corner. R54, R55 and C52 are at U13's IN+/IN- pins, so the filter is at the input as the INA228 datasheet recommends. INA_INP/INA_INN are short and have no vias.
+- **U13 and its filter** sit below J8, not at J23. There was no room for them in the J2/F1/Q1 corner. R54, R55 and C52 are at U13's IN+/IN- pins, so the filter is at the input as the INA237 datasheet recommends. INA_INP/INA_INN are short and have no vias.
 - **SH_LOAD/SH_BATT** run from J23 to R54/R55 as a parallel pair, 0.15 mm wide. They are mostly on B.Cu and have one via each. They are tracks, so no GND pour connects to them. The pair keeps clear of J13's GND pad so its thermal spokes stay intact. They carry only the shunt voltage (microamps), so trace resistance does not affect the reading.
 - **I2C pull-ups R56/R57** (and the ALERT pull-up R58) are in a row next to U13, not at U1. PB6/PB7 run from there to J8 and U1. On a bus this short (a few cm), where the pull-ups sit makes no difference.
 - **Light circuit:** J24 is on the lower part of the left edge, with F12, C55, C56, D16, R60 and U14 beside it. +5V_AUX comes up from the In2 plane at F12 and C54. Whether that edge faces the payload compartment depends on the enclosure, so check it at assembly.

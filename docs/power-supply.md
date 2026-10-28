@@ -27,7 +27,7 @@ Negative side (added 2026-10-27): `battery - -> 50 A / 75 mV shunt -> common gro
 | Harness plug | AMASS XT30U-F | Female on the battery side so no exposed live contacts when unplugged. |
 | Battery lugs | M8 (5/16 in) ring terminals for 16 AWG | Crimp and heat-shrink. |
 | Harness fuse | Inline fuse close to the battery + terminal | Protects the harness; F1 on the PCB only protects downstream of J2. 15 A, above F1 (10 A). |
-| Current shunt | 50 A / 75 mV (1.5 mOhm, class 0.5) in the battery - lead | Off-board, read by U13 (INA228) through J23. Everything that returns to battery - must go through it. See [design-change-2026-10-27.md](design-change-2026-10-27.md). |
+| Current shunt | 50 A / 75 mV (1.5 mOhm, class 0.5) in the battery - lead | Off-board, read by U13 (INA237) through J23. Everything that returns to battery - must go through it. See [design-change-2026-10-27.md](design-change-2026-10-27.md). |
 
 J2 pin 2 (the pad marked + on the footprint silkscreen) is battery + to F1; pin 1 (marked -) is GND. Confirm the polarity of the assembled XT30U-F harness against the board silkscreen with a meter before first power-up.
 
@@ -35,9 +35,9 @@ J2 pin 2 (the pad marked + on the footprint silkscreen) is battery + to F1; pin 
 
 **Input bulk capacitance.** C36, a 220 uF / 35 V low-ESR aluminium electrolytic (Panasonic EEU-FR1V221, 8 x 11.5 mm radial), sits on +12V after Q1, next to the U2/U5 input capacitors, so it is never reverse-biased. It supplies load steps and damps the harness inductance together with the buck input ceramics.
 
-**Battery sense.** R37 100k / R38 22.1k (1 %) and C37 100 nF divide +12V into VBAT_SENSE on PA0 (ADC_IN0): VBAT = V(PA0) x 5.525, so 14.6 V reads 2.64 V. U13 (INA228, Battery Monitor sheet) also reads +12V on its VBUS pin, which gives a second voltage reading over I2C.
+**Battery sense.** R37 100k / R38 22.1k (1 %) and C37 100 nF divide +12V into VBAT_SENSE on PA0 (ADC_IN0): VBAT = V(PA0) x 5.525, so 14.6 V reads 2.64 V. U13 (INA237, Battery Monitor sheet) also reads +12V on its VBUS pin, which gives a second voltage reading over I2C.
 
-**Battery current.** The shunt sits in the battery negative lead, between battery - and the robot's common ground lug, where the J2 pin 1 lead, the MDD20A VB- lead and the charger - all land. Two Kelvin sense wires run from the shunt's sense screws to J23. U13 measures the shunt voltage, so motor current never flows through the board (requirement 2.13). Because the shunt is on the low side, the sense wires sit within about 0.1 V of GND, so a chafed sense wire cannot short the battery. Board GND sits up to about 60 mV above the shunt because of harness drop. That puts IN- at about -135 mV at 50 A, inside the INA228's -0.3 V common-mode limit.
+**Battery current.** The shunt sits in the battery negative lead, between battery - and the robot's common ground lug, where the J2 pin 1 lead, the MDD20A VB- lead and the charger - all land. Two Kelvin sense wires run from the shunt's sense screws to J23. U13 measures the shunt voltage, so motor current never flows through the board (requirement 2.13). Because the shunt is on the low side, the sense wires sit within about 0.1 V of GND, so a chafed sense wire cannot short the battery. Board GND sits up to about 60 mV above the shunt because of harness drop. That puts IN- at about -135 mV at 50 A, inside the INA237's -0.3 V common-mode limit.
 
 J2 carries the board electronics and the latch-servo feed (about 8.4 A worst case with the servo stalled and the interior light off by interlock; see [fuse-selection.md](fuse-selection.md)). The MDD20A motor driver connects to the battery through its own wiring and protection, not through J2.
 
@@ -45,7 +45,7 @@ J2 carries the board electronics and the latch-servo feed (about 8.4 A worst cas
 
 The original TPSM63606 modules and TPS54202 went out of stock on 2026-10-27 and were replaced with in-stock TI parts. Values come from TI WEBENCH designs at 10-15 V in, 5 V out. See [design-change-2026-10-27-regulators.md](design-change-2026-10-27-regulators.md) for the part list, simulations and layout.
 
-- U2/U5 (TPS56637, 6 A, 557 kHz): R4/R15 = 73.2k and R5/R16 = 10k set 4.99 V with the 0.6 V reference. R2/R14 (20k) + C10/C31 (100 pF) are the feed-forward network across the top resistor. MODE is tied to GND (Eco-mode at light load). U2's EN floats (internal pull-up = enabled); U5's EN is AUX_EN (EN abs max 6 V, driven from 3.3 V). PG has a 100k pull-up to the rail (R61/R62) but is not used elsewhere.
+- U2/U5 (TPS56637, 6 A, 557 kHz): with the 0.6 V reference, R4 = 75k / R5 = 10k set the Pi rail (+5V_PI) to 5.10 V, and R15 = 73.2k / R16 = 10k set +5V_AUX to 4.99 V. R4 was raised from the WEBENCH 73.2k on 2026-10-28 so the Pi sees about 5.1 V, as with the original design's 5.12 V, leaving room for harness drop at 5 A. R2/R14 (20k) + C10/C31 (100 pF) are the feed-forward network across the top resistor. MODE is tied to GND (Eco-mode at light load). U2's EN floats (internal pull-up = enabled); U5's EN is AUX_EN (EN abs max 6 V, driven from 3.3 V). PG has a 100k pull-up to the rail (R61/R62) but is not used elsewhere.
 - U3 (TPS54202H, 2 A, 500 kHz): EN is pulled down internally on the H version, so R63 (442k) pulls it up to VIN. R6 = 100k and R7 = 13.7k give 4.946 V with the 0.596 V reference; C16 = 68 pF feed-forward. C49 (100 nF) is the input bypass right at U3's VIN/GND pins; C14 (22 uF) is the bulk input cap.
 
 The TPS7A8101 LDO in LDO_3V3.kicad_sch is supplied by the +5V_SYS rail. Its +3V3 output supplies the STM32 digital power pins, associated decoupling, programming-header supply, and the FB2 input feeding the separate +3.3VA analog rail. The two buck outputs are separate nets.

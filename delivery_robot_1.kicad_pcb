@@ -3408,7 +3408,7 @@
 				)
 			)
 		)
-		(property "Description" "INA228 IN+ series filter / dV/dt protection (TI SLYS021A 8.1.4). Place at U13."
+		(property "Description" "INA237 IN+ series filter / dV/dt protection (TI SBOSA20A). Place at U13."
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7260,7 +7260,7 @@
 				)
 			)
 		)
-		(property "Value" "73.2k"
+		(property "Value" "75k"
 			(at 0 1.65 180)
 			(layer "F.Fab")
 			(uuid "354587af-340b-47bd-bcb6-5960146260e6")
@@ -7317,7 +7317,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-0773K2L"
+		(property "MPN" "RC0805FR-0775KL"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7329,7 +7329,7 @@
 				)
 			)
 		)
-		(property "Specification" "73.2k 1% (Rfbt)"
+		(property "Specification" "75k 1% (Rfbt), sets +5V_PI to 5.10 V"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -8951,7 +8951,7 @@
 				)
 			)
 		)
-		(property "Description" "Differential filter across INA228 IN+/IN- (with R54/R55, about 80 kHz). No ground connection."
+		(property "Description" "Differential filter across INA237 IN+/IN- (with R54/R55, about 80 kHz). No ground connection."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13954,7 +13954,7 @@
 				)
 			)
 		)
-		(property "Description" "INA228 IN- series filter / dV/dt protection (TI SLYS021A 8.1.4). Place at U13."
+		(property "Description" "INA237 IN- series filter / dV/dt protection (TI SBOSA20A). Place at U13."
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -36227,7 +36227,7 @@
 				)
 			)
 		)
-		(property "Description" "INA228 ALERT pull-up (open-drain, active low) on BATT_ALERT / PB4."
+		(property "Description" "INA237 ALERT pull-up (open-drain, active low) on BATT_ALERT / PB4."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -36946,7 +36946,7 @@
 				)
 			)
 		)
-		(property "Value" "INA228AIDGSR"
+		(property "Value" "INA237AIDGSR"
 			(at 0 2.45 180)
 			(layer "F.Fab")
 			(uuid "f51298ef-fb79-439a-9e49-dc8274064de4")
@@ -36957,7 +36957,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina228.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina237.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -36968,7 +36968,7 @@
 				)
 			)
 		)
-		(property "Description" "20-bit power/energy/charge monitor, I2C, 85 V, -0.3 V common mode. Low-side on the off-board battery shunt; address 0x40. DGS (VSSOP-10) package; KiCad TSSOP-10_3x3mm_P0.5mm is the TI DGS outline."
+		(property "Description" "16-bit current/voltage/power monitor, I2C, 85 V, -0.3 V common mode (same pinout as INA228; uses the INA228 symbol). Low-side on the off-board battery shunt; address 0x40. Charge is integrated in firmware. DGS (VSSOP-10) package; KiCad TSSOP-10_3x3mm_P0.5mm is the TI DGS outline."
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -37003,7 +37003,7 @@
 				)
 			)
 		)
-		(property "MPN" "INA228AIDGSR"
+		(property "MPN" "INA237AIDGSR"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)

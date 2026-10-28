@@ -9380,7 +9380,7 @@
 		)
 		(uuid "c5a29a81-b54d-459b-8a6f-543db355178a")
 	)
-	(text "J23 off-board shunt sense, U13 INA228\nI2C1 PB6/PB7 at 0x40, ALERT -> PB4"
+	(text "J23 off-board shunt sense, U13 INA237\nI2C1 PB6/PB7 at 0x40, ALERT -> PB4"
 		(exclude_from_sim no)
 		(at 261.62 219.71 0)
 		(effects
