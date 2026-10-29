@@ -1642,6 +1642,117 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:C")
+		(at 186.69 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "522be0bc-32f0-416b-a8d0-07a361ca8952")
+		(property "Reference" "C57"
+			(at 190.5 106.68 0)
+			
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "47uF"
+			(at 190.5 109.22 0)
+			
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 186.69 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01.pdf"
+			(at 186.69 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 186.69 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Manufacturer" "Murata"
+			(at 186.69 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "MPN" "GRM32ER61C476KE15L"
+			(at 186.69 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Specification" "47uF / 16V X5R 1210 (Cout)"
+			(at 186.69 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin "1" (uuid "f49e4779-5db4-4dad-8387-ebb8fba2f208"))
+		(pin "2" (uuid "3496ed6f-1936-4401-9630-35bc1d7bce17"))
+		(instances
+			(project "delivery_robot_1"
+				(path "/30314d9c-15a8-4a77-8ae4-b5ba12ed5bc4/6703cd4e-ae4e-4732-91ad-54a19544ca3e"
+					(reference "C57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 186.69 104.14) (xy 186.69 101.6))
+		(stroke (width 0) (type default))
+		(uuid "ebff0bc6-32e3-400b-8001-354892fbe834")
+	)
+	(wire
+		(pts (xy 186.69 101.6) (xy 176.53 101.6))
+		(stroke (width 0) (type default))
+		(uuid "9770f609-ba1d-4b42-9e6b-bd7fa14fcee1")
+	)
+	(wire
+		(pts (xy 186.69 111.76) (xy 186.69 114.3))
+		(stroke (width 0) (type default))
+		(uuid "3895c833-fa82-4a95-9089-7eccdc4118f3")
+	)
+	(wire
+		(pts (xy 186.69 114.3) (xy 176.53 114.3))
+		(stroke (width 0) (type default))
+		(uuid "87977450-f1e4-4b2c-b29b-b8180960745a")
+	)
+	(junction
+		(at 176.53 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3944096d-c671-4450-b2c1-61fa39c214ad")
+	)
+	(junction
+		(at 176.53 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32abd458-a7d3-44f1-82e4-1271d8c65954")
+	)
+
 	(wire
 		(pts (xy 176.53 104.14) (xy 176.53 101.6))
 		(stroke (width 0) (type default))
